@@ -1,0 +1,180 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "plugins/types/Image/libImage.so"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"add_dependencies",
+			"add_compile_options",
+			"include_directories",
+			"target_link_libraries"
+		],
+		"files" : 
+		[
+			"plugins/types/Image/CMakeLists.txt",
+			"vendor/smm-2ng/include/smm-2ng/CMakeLists.txt",
+			"CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 1,
+				"parent" : 0
+			},
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 45,
+				"parent" : 2
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 11,
+				"parent" : 0
+			},
+			{
+				"file" : 2
+			},
+			{
+				"command" : 2,
+				"file" : 2,
+				"line" : 34,
+				"parent" : 5
+			},
+			{
+				"command" : 3,
+				"file" : 2,
+				"line" : 74,
+				"parent" : 5
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 2,
+				"parent" : 0
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-fPIC  "
+				},
+				{
+					"backtrace" : 6,
+					"fragment" : "-DBOOST_ERROR_CODE_HEADER_ONLY"
+				},
+				{
+					"fragment" : "-std=c++2a"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"define" : "Image_EXPORTS"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 7,
+					"path" : "/home/user/Загрузки/KPAC-04.04.2023-2/workspace/backend"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/user/Загрузки/KPAC-04.04.2023-2/workspace/backend/include"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/user/Загрузки/KPAC-04.04.2023-2/workspace/backend/lib"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/user/Загрузки/KPAC-04.04.2023-2/workspace/backend/build"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/user/Загрузки/KPAC-04.04.2023-2/workspace/backend/build/lib"
+				},
+				{
+					"backtrace" : 8,
+					"path" : "/home/user/Загрузки/KPAC-04.04.2023-2/workspace/backend/build/vendor/smm-2ng/include/smm-2ng/_generated"
+				}
+			],
+			"language" : "CXX",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 3,
+			"id" : "smm-2ng-type-header-target::@0c79bffd84b5499c6d70"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "bundle-Image-header::@66e4b7323648b9d61689"
+		}
+	],
+	"id" : "Image::@66e4b7323648b9d61689",
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "",
+				"role" : "flags"
+			}
+		],
+		"language" : "CXX"
+	},
+	"name" : "Image",
+	"nameOnDisk" : "libImage.so",
+	"paths" : 
+	{
+		"build" : "plugins/types/Image",
+		"source" : "plugins/types/Image"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "plugins/types/Image/Image.cpp",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "MODULE_LIBRARY"
+}

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	Copyright (c) 2020 SoftCom Ltd.
+-->
+<site>
+   <feature id="su.softcom.cldt.feature">
+      <category name="su.softcom.cldt.category"/>
+   </feature>
+   <feature id="su.softcom.cldt.all.feature">
+      <category name="su.softcom.cldt.category"/>
+   </feature>
+   <feature id="su.softcom.cldt.modeling.feature">
+      <category name="su.softcom.cldt.category"/>
+   </feature>
+   <feature id="su.softcom.cldt.qt.feature">
+      <category name="su.softcom.cldt.category"/>
+   </feature>
+   <category-def name="su.softcom.cldt.category" label="Clang Development Tool">
+      <description>
+         Clang Development Tool
+      </description>
+   </category-def>
+</site>

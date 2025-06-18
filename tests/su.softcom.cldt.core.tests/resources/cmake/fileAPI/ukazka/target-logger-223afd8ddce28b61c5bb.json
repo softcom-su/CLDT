@@ -1,0 +1,187 @@
+{
+	"archive" : {},
+	"artifacts" : 
+	[
+		{
+			"path" : "lib/utils/logger/liblogger.a"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"target_link_libraries",
+			"add_compile_options",
+			"include_directories"
+		],
+		"files" : 
+		[
+			"lib/utils/logger/CMakeLists.txt",
+			"CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 3,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 4,
+				"parent" : 0
+			},
+			{
+				"file" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 34,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 74,
+				"parent" : 3
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : " "
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "-DBOOST_ERROR_CODE_HEADER_ONLY"
+				},
+				{
+					"backtrace" : 2,
+					"fragment" : "-pthread"
+				},
+				{
+					"fragment" : "-std=c++2a"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 2,
+					"define" : "CPPHTTPLIB_ZLIB_SUPPORT"
+				},
+				{
+					"backtrace" : 2,
+					"define" : "FMT_LOCALE"
+				},
+				{
+					"backtrace" : 2,
+					"define" : "FMT_SHARED"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 5,
+					"path" : "/home/user/Загрузки/KPAC-04.04.2023-2/workspace/backend"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/user/Загрузки/KPAC-04.04.2023-2/workspace/backend/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/user/Загрузки/KPAC-04.04.2023-2/workspace/backend/lib"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/user/Загрузки/KPAC-04.04.2023-2/workspace/backend/build"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/user/Загрузки/KPAC-04.04.2023-2/workspace/backend/build/lib"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/user/Загрузки/KPAC-04.04.2023-2/workspace/backend/vendor/fpp/include"
+				},
+				{
+					"backtrace" : 2,
+					"isSystem" : true,
+					"path" : "/home/user/Загрузки/KPAC-04.04.2023-2/workspace/backend/build/vendor/cpp-httplib/out"
+				}
+			],
+			"language" : "CXX",
+			"sourceIndexes" : 
+			[
+				0,
+				1
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 2,
+			"id" : "httplib::@ea29bca9fd98f953c37c"
+		}
+	],
+	"id" : "logger::@2d75f236f9e102667520",
+	"name" : "logger",
+	"nameOnDisk" : "liblogger.a",
+	"paths" : 
+	{
+		"build" : "lib/utils/logger",
+		"source" : "lib/utils/logger"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0,
+				1
+			]
+		},
+		{
+			"name" : "Header Files",
+			"sourceIndexes" : 
+			[
+				2
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lib/utils/logger/StdoutLogger.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lib/utils/logger/SystemLogger.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"path" : "build/vendor/cpp-httplib/out/httplib.h",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "STATIC_LIBRARY"
+}

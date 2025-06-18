@@ -1,0 +1,105 @@
+{
+	"backtrace" : 2,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_custom_target",
+			"add_odb_library"
+		],
+		"files" : 
+		[
+			"cmake/UseODB.cmake",
+			"lib/persistence/scheme/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 1,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 179,
+				"parent" : 1
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"id" : "smm-2ng::@00856fd885f8f5898eaa"
+		},
+		{
+			"id" : "numerics::@c0e3ecbce36d147793f1"
+		},
+		{
+			"id" : "persistence-utils::@46d6abcba433a4e69a2a"
+		},
+		{
+			"id" : "parameter::@bbcab9a98cf2bff05986"
+		},
+		{
+			"id" : "sensor::@cb95a52f35cad3b37944"
+		},
+		{
+			"id" : "trajectory::@39a0e413281f03a60e38"
+		},
+		{
+			"id" : "algorithm::@c888555fb2d04d2a1f7d"
+		}
+	],
+	"id" : "ODB_DataSourceBlock::@ce8763f2f603756f8cf3",
+	"name" : "ODB_DataSourceBlock",
+	"paths" : 
+	{
+		"build" : "lib/persistence/scheme",
+		"source" : "lib/persistence/scheme"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				1,
+				2
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "build/lib/persistence/scheme/CMakeFiles/ODB_DataSourceBlock",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/lib/persistence/scheme/CMakeFiles/ODB_DataSourceBlock.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/lib/persistence/scheme/DataSourceBlockOdb.cxx.rule",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "UTILITY"
+}

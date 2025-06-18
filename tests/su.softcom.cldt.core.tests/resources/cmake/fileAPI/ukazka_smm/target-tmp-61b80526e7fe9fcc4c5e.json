@@ -1,0 +1,144 @@
+{
+	"archive" : {},
+	"artifacts" : 
+	[
+		{
+			"path" : "vendor/tmp/libtmp.a"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"add_compile_options",
+			"add_compile_definitions",
+			"include_directories",
+			"target_include_directories"
+		],
+		"files" : 
+		[
+			"vendor/tmp/CMakeLists.txt",
+			"CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 14,
+				"parent" : 0
+			},
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 20,
+				"parent" : 2
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 21,
+				"parent" : 2
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 22,
+				"parent" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 10,
+				"parent" : 2
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 28,
+				"parent" : 0
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : " "
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-DBOOST_ERROR_CODE_HEADER_ONLY"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "-DBOOST_LOG_DYN_LINK"
+				},
+				{
+					"fragment" : "-std=c++2a"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 5,
+					"define" : "BOOST_LOG_USE_NATIVE_SYSLOG"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 6,
+					"path" : "/home/user/kpac/workspace/ukazka/ukazka-smm-runner/include"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/user/kpac/workspace/ukazka/ukazka-smm-runner/vendor/tmp/include"
+				}
+			],
+			"language" : "CXX",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		}
+	],
+	"id" : "tmp::@98133616a1bfe54efa44",
+	"name" : "tmp",
+	"nameOnDisk" : "libtmp.a",
+	"paths" : 
+	{
+		"build" : "vendor/tmp",
+		"source" : "vendor/tmp"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "vendor/tmp/src/tmp.cpp",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "STATIC_LIBRARY"
+}

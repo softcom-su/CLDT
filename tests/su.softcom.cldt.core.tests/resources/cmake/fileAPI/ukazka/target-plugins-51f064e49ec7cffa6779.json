@@ -1,0 +1,141 @@
+{
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_custom_target",
+			"add_dependencies"
+		],
+		"files" : 
+		[
+			"plugins/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 19,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 20,
+				"parent" : 0
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 2,
+			"id" : "ControlElements::@832f13dba564d449292f"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "DataSource::@dbfb07657302be808a4f"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "Timer::@8854767fa39245a77e25"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "VideoEmulation::@1f35bd0ff503e473e3d0"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "ballistics-calc-algo::@33003f4c77db1effa545"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "create-reference-image-algo::@b3d1a0e9d85f430c6690"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "oum-search-algo::@6e1242b889d83a36dd28"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "oum-choice-algo::@62e1e9b501a565b74e16"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "start-point-calc-algo::@697a50b96208d52984f3"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "tiff-parser-algo::@ff3169be75b83a3816c8"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "tpz-calc-algo::@b9e2da2903c76c000530"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "correction-adjustment-calc-algo::@07dfd5097b36ddad7d73"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "semantic-recognition-algo::@3aaf142e7356b2c522f9"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "read-tpz-and-create-viz-task-algo::@b2df055cdc14bade1d0b"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "movement-dynamics-algo::@d8a1d36e314ea23a7543"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "navi-subsystem-algo::@e30e485a2b158eb2b6b8"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "optical-sensor::@df6f0161dab3cd6bbb65"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "radar-sensor::@a679579ea9a18664268d"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "universal-sensor::@82bf4acfa81ee3ff8674"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "rl-sensor::@ff7939f7ba042e3b6172"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "CyclogramSectionsSwitch::@79ed37d808a3868d904e"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "MuxAlgo::@8f6c2f420261d77e4e9c"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "Precision::@1a9baeb8261292bb8901"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "Image::@66e4b7323648b9d61689"
+		}
+	],
+	"id" : "plugins::@e73236870873ac66af4c",
+	"name" : "plugins",
+	"paths" : 
+	{
+		"build" : "plugins",
+		"source" : "plugins"
+	},
+	"sources" : [],
+	"type" : "UTILITY"
+}

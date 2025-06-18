@@ -1,0 +1,47 @@
+/* amdFlash8.h - AMD flash FTL support library header */
+
+#ifndef	__INCamdFlash8h
+#define	__INCamdFlash8h
+
+#include <semaphore.h>
+#include <pthread.h>
+#include <ftlDrv.h>
+
+/* flash descriptor mode bits definitions */
+
+#define	MODE_ERASE_VERIFY	0x001	/* checking sector after erase */
+#define	MODE_WRITE_VERIFY	0x002	/* checking written data */
+#define	MODE_SYNC_ERASE		0x008	/* synchronous erase */
+#define	MODE_QUERY		0x100	/* use CFI query (autodetected) */
+#define	MODE_UNIFORM		0x200	/* uniform sectors (autodetected) */
+#define	MODE_RESIDENT		0x400	/* image flash resident */
+
+/* AMD boot block structure */
+
+typedef struct {
+    int			bottom;		/* TRUE if bottom boot sector, else top */
+    int			nBlocks;	/* how many erase zones */
+    unsigned		blkSize[0];	/* sizes os erase zones in bytes */
+} AMD_BOOT_BLOCK;
+
+/* AMD flash parameters */
+
+typedef struct {
+    unsigned char	mnfID;		/* manufacturer code or 0 */
+    unsigned char	devID;		/* device code or 0 */
+    char*		name;		/* device name */
+    int			programm;	/* programm timeout in us */
+    int			suspend;	/* erase suspend timeout in us or -1 */
+    int			erase;		/* erase timeout in sec */
+    unsigned		chipSize;	/* size of one chip in bytes */
+    unsigned		sectorSize;	/* size of one chip sector in bytes */
+    AMD_BOOT_BLOCK*	bootBlock;	/* boot block structure if any */
+} AMD_FLASH_DESC;
+
+/* function declarations */
+
+int amdFlashVersion8(int silence);
+FLASH_DESC* amdFlashInit8(unsigned nChips, volatile unsigned char * base,
+    unsigned mode, AMD_FLASH_DESC flash[]);
+
+#endif	/* __INCamdFlash8h */

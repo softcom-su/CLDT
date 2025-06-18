@@ -1,0 +1,310 @@
+#=========================================
+AR=$(pref)ar
+AS=$(pref)as
+CC=$(pref)gcc
+LD=$(pref)ld
+RANLIB=$(pref)ranlib
+OBJDUMP=$(pref)objdump
+OBJCOPY =$(pref)objcopy 
+# -O binary -g -R .note -R .comment -R .line 
+NM=$(pref)nm
+RM=rm -f
+CP=cp
+OOO=$(OSBASE)/bin/ooo$(CPU)
+ELFHEAD=$(OSBASE)/bin/elfhead$(CPU)
+ELFH=$(OSBASE)/bin/elfh$(CPU)
+AWK=gawk
+WISH=wish -f
+#=========================================
+BSPXCONFIG=$(OSBASE)/bsp/$(BSP)/boardconfig/osconfig.tcl
+XCONFIGDIR=$(OSBASE)/osconfig
+XCONFIG=$(XCONFIGDIR)/osconfig$(CPU).tcl
+ifndef OC2000DOC
+  OC2000DOC=$(OSBASE)/doc
+endif
+ifeq ($(INCLUDE_MULTIPROCESSING),1)
+  MP_DEFINES += -DINCLUDE_MULTIPROCESSING=1
+  ifeq ($(INCLUDE_MP_OBJS),1)
+    MP_DEFINES += -DINCLUDE_MP_OBJS=1
+#    MPLIBP = 1
+  endif
+endif
+ifeq ($(INCLUDE_VALIDATION),1)
+  ADDED_CFLAGS += -DINCLUDE_VALIDATION
+  EXTERN_SYMBOLS += validateSystem
+endif
+##ifneq ($(CPU),I80386)
+##  G8_FLAGS = -G8
+##endif
+# ОС2 не понимает команду madd
+ifeq ($(CPU),R4000)
+endif
+ifeq ($(DEBUG_LIBRARY),1)
+  DEBUG = d
+  OSLIB = $(OSBASE)/lib/oc2000$(ARCH)d.a 
+  BSPLIB = $(OSBASE)/lib/bsp$(BSP).a
+  ifdef MPLIBP
+#    MPLIB = $(OSBASE)/lib/oc2mp$(ARCH)d.a 
+  endif
+  ifeq ($(INCLUDE_TRACE),1) ## trace
+    ADDED_CFLAGS += -DINCLUDE_TRACE
+  endif
+else
+  OSLIB = $(OSBASE)/lib/oc2000$(ARCH).a 
+  BSPLIB = $(OSBASE)/lib/bsp$(BSP).a
+  ifdef MPLIBP
+#    MPLIB = $(OSBASE)/lib/oc2mp$(ARCH).a 
+  endif
+  
+endif
+LIBNAME = $(MPLIB) $(BSPLIB)  $(OSLIB) 
+.SUFFIXES:  .cpp .out .c .s .i .S
+## default flags
+CFLAGS	= $(CC_OPTIM) $(CC_WARNINGS) $(CC_COMPILER) \
+			  $(CC_DEFINES) $(ADDED_CFLAGS) $(CC_INCLUDE) 
+CASFLAGS	= -D_ASM -x assembler-with-cpp $(CFLAGS)
+CC_COMPILER = -fno-common -fshort-wchar
+ifeq ($(ARCH),mips)
+  CC_COMPILER += -mips1
+endif  
+ifeq ($(ARCH),mips64)
+    OSLIB += $(OSBASE)/lib/libmRM7000.a
+endif  
+ifeq ($(ARCH),komdiv64)
+    OSLIB += $(OSBASE)/lib/libmK64.a
+endif  
+CC_WARNINGS	= -Wall 
+CC_INCLUDE	= $(foreach var,$(USER_INCLUDES),-I$(var)) -I$(OSBASE)/oc-include -I$(OSBASE)/include -I$(OSBASE)/include/opt -I$(OSBASE)/bsp -I$(OSBASE)/bsp/$(BSP) -I$(OSBASE)/bsp/$(BSP)/include -I$(OSBASE)/locale
+CC_DEFINES	= -DCPU=$(CPU) $(MP_DEFINES)
+ifeq ($(INCLUDE_TRACE),1)
+  CC_DEFINES	+= -DINCLUDE_TRACE
+endif
+CC_OPTIM 	= -nostdlib
+LD_UNDEF = $(foreach var,$(EXTERN_SYMBOLS),-u $(var))
+## GTK
+ifeq ($(INCLUDE_GTK),1)
+    ifeq ($(ARCH),komdiv64)
+      USER_INCLUDES  += $(GTK_DIR)/include/gtk $(GTK_DIR)/lib/include-komdiv64 .
+      USER_LIBRARIES += $(GTK_DIR)/lib/libbpgi-komdiv64.a
+    else
+      USER_INCLUDES += $(GTK_DIR)/include/gtk $(GTK_DIR)/lib/include-$(CPU) .
+      USER_LIBRARIES += $(GTK_DIR)/lib/libbpgi-$(CPU).a
+    endif  
+  USER_SOURCES += $(GTK_DIR)/src/gtk.c
+  ADDED_CFLAGS += -DINCLUDE_GTK
+endif
+## GBRV && BICRV
+ifeq ($(INCLUDE_XCLIENT),1)
+ ifeq ($(INCLUDE_GBRV),1)
+  USER_INCLUDES += $(OC2KWINHOME)/include
+  ADDED_CFLAGS += -DOC2K1x
+  ifeq ($(INCLUDE_BICRV),1)
+    ifeq ($(ARCH),komdiv64)
+      USER_LIBRARIES += $(OC2KWINHOME)/lib/komdiv64/libXW.a
+    else
+      USER_LIBRARIES += $(OC2KWINHOME)/lib/$(CPU)/libXW.a
+    endif  
+  endif
+  ifeq ($(ARCH),komdiv64)
+    USER_LIBRARIES += $(OC2KWINHOME)/lib/komdiv64/libX11.a
+  else
+    USER_LIBRARIES += $(OC2KWINHOME)/lib/$(CPU)/libX11.a
+  endif
+ endif
+endif
+## XSERVER
+ifeq ($(INCLUDE_XSERVER),1)
+ USER_OBJECTS += $(XSERVERBASE)/x_obj/$(XSERVER_NAME).o
+ USER_SOURCES += $(XSERVERBASE)/x_txt/startx42.c
+ ADDED_CFLAGS += -DINCLUDE_XSERVER
+ ifeq ($(XSERVERCFGPATH), )
+ XSERVERCFGPATH = $(XSERVERBASE)/x_cfg
+ endif
+ ifeq ($(CPU),I80386)
+ CC_INCLUDE += -I.
+ endif
+ ifeq ($(CPU),R4000)
+ CC_INCLUDE += -I.
+ endif
+ ifeq ($(XSERVER_CFGTYPE),1)
+  ADDED_CFLAGS += -DXSERVER_CFGTYPE
+  USER_OBJECTS += x_cfg.o
+ endif
+endif
+ 
+ifeq ($(INCLUDE_TARFILES),1)
+ ADDED_CFLAGS += -DINCLUDE_TARFILES
+ ifeq ($(INCLUDE_TARFILES0),1)
+  ADDED_CFLAGS += -DINCLUDE_TARFILES0
+  USER_OBJECTS += tar_file__00.o
+ endif
+ ifeq ($(INCLUDE_TARFILES1),1)
+  ADDED_CFLAGS += -DINCLUDE_TARFILES1
+  USER_OBJECTS += tar_file__01.o
+ endif
+ ifeq ($(INCLUDE_TARFILES2),1)
+  ADDED_CFLAGS += -DINCLUDE_TARFILES2
+  USER_OBJECTS += tar_file__02.o
+ endif
+ ifeq ($(INCLUDE_TARFILES3),1)
+  ADDED_CFLAGS += -DINCLUDE_TARFILES3
+  USER_OBJECTS += tar_file__03.o
+ endif
+endif
+vpath %.c $(dir $(USER_SOURCES))
+.s.o :
+	@ $(RM) $@
+	$(CC) $(CASFLAGS) -c $< 
+.S.o :
+	@ $(RM) $@
+	$(CC) $(CASFLAGS) -c $< 
+.c.i :
+	@ $(RM) $@
+	$(CC) $(CFLAGS) -P -E $< > $@
+.S.i :
+	@ $(RM) $@
+	$(CC) $(CASFLAGS) -P -E $< > $@
+.c.s :
+	@ $(RM) $@
+	$(CC) $(CFLAGS) -S $< > $@
+.c.o :
+	@ $(RM) $@
+	$(CC) $(CFLAGS) -o $@ -c $< 
+ocdep	 = oc2000.c $(USER_SOURCES)
+ocdepon0 = $(notdir $(ocdep:.c=.o))
+ocdepon1  = $(ocdepon0:.s=.o)
+ocdepon   = $(ocdepon1:.S=.o)
+oc2000: cpuinit.o tmp sym_tbl.o makefile
+	$(RM) $@
+	$(CC) -nostartfiles -N $(CC_COMPILER) -e cpuInit -Xlinker -Ttext -Xlinker $(STARTPOINT) $(LNK_OPTIONS) -o $@  cpuinit.o $(OSBASE)/lib/setdef0$(CPU).o tmp  $(OSBASE)/lib/setdef1$(CPU).o sym_tbl.o -lgcc 
+	$(RM) tmp
+ifeq ($(INCLUDE_TRACE),1)
+	  $(NM) -n $@ > symtbl.txt
+endif
+ifeq ($(INCLUDE_XSERVER),1)
+ ifeq ($(XSERVER_CFGTYPE),1)
+  ifeq ($(CPU),I80386)
+    XCFGPATH=intel
+    XLD_M=elf_i386
+    XLD_T=elf32-i386 
+  else
+    XCFGPATH=mips
+    XLD_M=elf32ebmip
+    XLD_T=elf32-bigmips 
+  endif
+$(XSERVERCFGPATH)/xf86.tar: $(XSERVERCFGPATH)/$(XCFGPATH)/XF86Config
+	$(RM) $@
+	$(XSERVERCFGPATH)/cfg2tar $(XSERVERCFGPATH)
+#	tar cf $@ $(XSERVERBASE)/x_cfg/$(XCFGPATH)/XF86Config $(XSERVERBASE)/x_cfg/$(XCFGPATH)/X0* $(XSERVERBASE)/x_cfg/X
+#  ifeq ($(CPU),I80386)
+x_cfg.o: $(XSERVERCFGPATH)/xf86.tar
+	$(RM) $@
+	echo "" > tar__tmp.c
+	$(CC) $(CFLAGS) -c -o tar__tmp.o tar__tmp.c
+	echo "SECTIONS { .data : { xs_size_tar = .; LONG(input_data_end - xs_cfg_fnt_rgb) xs_cfg_fnt_rgb = .; *(.data) input_data_end = .; }}" > tmp.lnk
+	$(LD) -m $(XLD_M) -r -o $@ -b binary $< -b $(XLD_T) -T tmp.lnk tar__tmp.o
+	$(RM) -f tmp.lnk tar__tmp.o
+#  else
+#x_cfg.o: $(XSERVERCFGPATH)/xf86.tar
+#	$(RM) $@ x_cfg.tmp x_cfg.c
+#	od -A x -v -t x1 -w4 $< > x_cfg.tmp
+#	awk 'BEGIN {print "unsigned long xs_cfg_fnt_rgb[]={"} {if ($$2!="") print "0x"$$2$$3$$4$$5;if ($$2!="") print","; sizetarf=$$1} END {print "};\nlong xs_size_tar=0x"sizetarf;print";"}' x_cfg.tmp > x_cfg.c
+##	awk 'BEGIN {print " .data\n.extern xs_cfg_fnt_rgb\n.extern xs_size_tar\nxs_cfg_fnt_rgb:"} {print " .word 0x"$$2$$3$$4$$5; sizetarf=$$1} END {print "xs_size_tar: .word 0x"sizetarf}' x_cfg.tmp > x_cfg.c
+#	$(CC) $(CFLAGS) -c -o $(notdir $@) x_cfg.c
+#	$(RM) -f x_cfg.tmp x_cfg.c
+#  endif
+ endif
+endif
+ifeq ($(INCLUDE_TARFILES),1)
+  ifeq ($(CPU),I80386)
+    XLD_M=elf_i386
+    XLD_T=elf32-i386 
+  else
+    XLD_M=elf32ebmip
+    XLD_T=elf32-bigmips 
+  endif
+ ifeq ($(INCLUDE_TARFILES0),1)
+tar_file__00.o: $(TAR_FNAME0)
+	$(RM) tar_file__00.o
+	echo "" > tar__tmp.c
+	$(CC) $(CFLAGS) -c -o tar__tmp.o tar__tmp.c
+	echo "SECTIONS { .data : { size__tar_f_00 = .; LONG(end__tar_f_00 - start__tar_f_00) start__tar_f_00 = .; *(.data) end__tar_f_00 = .; }}" > tmp.lnk
+	$(LD) -m $(XLD_M) -r -o $@ -b binary $< -b $(XLD_T) -T tmp.lnk tar__tmp.o
+	$(RM) -f tmp.lnk tar__tmp.c  tar__tmp.o
+ endif
+ ifeq ($(INCLUDE_TARFILES1),1)
+tar_file__01.o: $(TAR_FNAME1)
+	$(RM) tar_file__01.o
+	echo "" > tar__tmp.c
+	$(CC) $(CFLAGS) -c -o tar__tmp.o tar__tmp.c
+	echo "SECTIONS { .data : { size__tar_f_01 = .; LONG(end__tar_f_01 - start__tar_f_01) start__tar_f_01 = .; *(.data) end__tar_f_01 = .; }}" > tmp.lnk
+	$(LD) -m $(XLD_M) -r -o $@ -b binary $< -b $(XLD_T) -T tmp.lnk tar__tmp.o
+	$(RM) -f tmp.lnk tar__tmp.c  tar__tmp.o
+ endif
+ ifeq ($(INCLUDE_TARFILES2),1)
+tar_file__02.o: $(TAR_FNAME2)
+	$(RM) tar_file__02.o
+	echo "" > tar__tmp.c
+	$(CC) $(CFLAGS) -c -o tar__tmp.o tar__tmp.c
+	echo "SECTIONS { .data : { size__tar_f_02 = .; LONG(end__tar_f_02 - start__tar_f_02) start__tar_f_02 = .; *(.data) end__tar_f_02 = .; }}" > tmp.lnk
+	$(LD) -m $(XLD_M) -r -o $@ -b binary $< -b $(XLD_T) -T tmp.lnk tar__tmp.o
+	$(RM) -f tmp.lnk tar__tmp.c  tar__tmp.o
+ endif
+ ifeq ($(INCLUDE_TARFILES3),1)
+tar_file__03.o: $(TAR_FNAME3)
+	$(RM) tar_file__03.o
+	echo "" > tar__tmp.c
+	$(CC) $(CFLAGS) -c -o tar__tmp.o tar__tmp.c
+	echo "SECTIONS { .data : { size__tar_f_03 = .; LONG(end__tar_f_03 - start__tar_f_03) start__tar_f_03 = .; *(.data) end__tar_f_03 = .; }}" > tmp.lnk
+	$(LD) -m $(XLD_M) -r -o $@ -b binary $< -b $(XLD_T) -T tmp.lnk tar__tmp.o
+	$(RM) -f tmp.lnk tar__tmp.c  tar__tmp.o
+ endif
+endif
+oc2000.bin: flashinit.o cpuinit.o tmp sym_tbl.o makefile
+	$(RM) $@ oc2000
+	$(CC) $(CFLAGS) -N -e flashInit -Xlinker -Ttext -Xlinker $(STARTPOINT) $(LD_OPTIONS) -o oc2000  flashinit.o cpuinit.o $(OSBASE)/lib/setdef0$(CPU).o tmp  $(OSBASE)/lib/setdef1$(CPU).o sym_tbl.o -lgcc
+	$(OBJCOPY) -O binary -g oc2000 $@
+oc2000.c32: oc2000
+	$(OBJCOPY) -O binary -g oc2000 $@
+oc2000.nst: $(ocdepon) $(USER_OBJECTS) $(USER_LIBRARIES) $(LIBNAME) makefile
+	$(RM) $@
+	$(LD) -X -N -e cpuInit -Ttext $(STARTPOINT) -o $@  cpuinit.o $(ocdepon) $(USER_OBJECTS) $(USER_LIBRARIES) $(LIBNAME)  -L$(LIBDIR) -lgcc -M
+cpuinit.o : $(OSBASE)/bsp/$(BSP)/cpuinit.s
+	@ $(RM) $@
+	$(CC) $(CASFLAGS) -c -o $(notdir $@) $<
+flashinit.o : $(OSBASE)/bsp/$(BSP)/flashinit.s                                  	
+	@ $(RM) $@
+	$(CC) $(CASFLAGS) -c -o $(notdir $@) $<
+sym_tbl.s: tmp $(OSBASE)/lib/ooo$(CPU).def
+	$(OBJDUMP) --syms tmp >out
+	$(CP) $(OSBASE)/lib/ooo$(CPU).def out1
+	$(ELFH) tmp >> out1
+	$(AWK) -f $(OSBASE)/lib/def.awk out1 out |sort|$(AWK) -f $(OSBASE)/lib/sort.awk -v cpu=$(CPU) >sym_tbl.s
+#	$(OBJDUMP) -h tmp |$(AWK) -f $(OSBASE)/lib/sections.awk  >>sym_tbl.s
+	$(RM) out out1	
+	
+tmp: $(ocdepon) $(USER_OBJECTS) $(USER_LIBRARIES) $(LIBNAME) configos.h depend.os
+	$(LD) -r $(LNK_OPTIONS) -o $@ $(LD_UNDEF) $(ocdepon) $(USER_OBJECTS) $(USER_LIBRARIES) $(MPLIB)  -'(' $(BSPLIB) $(OSLIB) -')'  
+oc2000.c: $(OSBASE)/bsp/oc2000.c 
+	$(CP) $< $@
+clean: userclean
+	$(RM) oc2000.c oc2000 out out1 sym_tbl.s tmp *.o depend.os oc2000.bin oc2000.nst tmp tmp1 symtbl.txt
+configos.h: $(XCONFIG)
+	BSP=$(BSP) OSBASE=$(OSBASE) tclsh $(XCONFIG) $(BSPXCONFIG) 
+usermake.def: 
+	BSP=$(BSP) OSBASE=$(OSBASE) tclsh $(XCONFIG) $(BSPXCONFIG) 
+xconfig: 
+	OC2000DOC=$(OC2000DOC) BSP=$(BSP) $(WISH) $(XCONFIG) $(BSPXCONFIG) 
+depend.os: oc2000.c usermake.def configos.h
+	echo "##======================================" >depend.os 
+	for i in $(ocdep) ; do  \
+        $(CC) -M $(CFLAGS) -x assembler-with-cpp $$i >>depend.os || exit 1 ; \
+	echo '	$$(CC) $$(CFLAGS) -o $$@ -c $$< ' >>depend.os ; \
+        done
+.DELETE_ON_ERROR:
+ifneq ($(MAKECMDGOALS),clean)
+ifneq ($(MAKECMDGOALS),xconfig)
+include depend.os
+endif
+endif
+ 

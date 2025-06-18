@@ -1,0 +1,1 @@
+#define BOOTP_COMPAT

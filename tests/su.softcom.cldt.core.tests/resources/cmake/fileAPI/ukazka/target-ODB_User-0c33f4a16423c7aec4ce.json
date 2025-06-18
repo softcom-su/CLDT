@@ -1,0 +1,81 @@
+{
+	"backtrace" : 2,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_custom_target",
+			"add_odb_library"
+		],
+		"files" : 
+		[
+			"cmake/UseODB.cmake",
+			"lib/persistence/authorization/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 1,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 179,
+				"parent" : 1
+			}
+		]
+	},
+	"id" : "ODB_User::@64ce893590329736f0cb",
+	"name" : "ODB_User",
+	"paths" : 
+	{
+		"build" : "lib/persistence/authorization",
+		"source" : "lib/persistence/authorization"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				1,
+				2
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "build/lib/persistence/authorization/CMakeFiles/ODB_User",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/lib/persistence/authorization/CMakeFiles/ODB_User.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/lib/persistence/authorization/UserOdb.cxx.rule",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "UTILITY"
+}

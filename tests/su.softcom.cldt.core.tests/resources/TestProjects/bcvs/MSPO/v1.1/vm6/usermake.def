@@ -1,0 +1,45 @@
+INCLUDE_TARFILES = 0
+INCLUDE_TARFILES0 = 1
+TAR_FNAME0 = 
+INCLUDE_TARFILES1 = 0
+TAR_FNAME1 = 
+INCLUDE_TARFILES2 = 0
+TAR_FNAME2 = 
+INCLUDE_TARFILES3 = 0
+TAR_FNAME3 = 
+INCLUDE_MULTIPROCESSING = 0
+INCLUDE_MP_OBJS = 0
+MAKEFILE_DEFINITIONS = 1
+USER_INCLUDES = /home/osuser/SubMicL/bcvs/1890VM6/inc
+USER_SOURCES =  /home/osuser/kolosov/MSPO/v1.1/vm6/src/CRC.c \
+         /home/osuser/kolosov/MSPO/v1.1/vm6/src/InterfaceEthernet.c \
+         /home/osuser/kolosov/MSPO/v1.1/vm6/src/InterfaceMKIO.c \
+         /home/osuser/kolosov/MSPO/v1.1/vm6/src/InterfaceMRAM.c \
+         /home/osuser/kolosov/MSPO/v1.1/vm6/src/InterfaceTLM.c \
+         /home/osuser/kolosov/MSPO/v1.1/vm6/src/LVD_MSPO.c \
+         /home/osuser/kolosov/MSPO/v1.1/vm6/src/MyTimer.c \
+         /home/osuser/kolosov/MSPO/v1.1/vm6/src/ReaderID.c \
+         /home/osuser/kolosov/MSPO/v1.1/vm6/src/TransferCoord.c \
+         /home/osuser/kolosov/MSPO/v1.1/vm6/src/WorkEtalon.c \
+         /home/osuser/kolosov/MSPO/v1.1/vm6/src/bcvsm.c
+USER_OBJECTS = /home/osuser/SubMicL/bcvs/1890VM6/lib1890VM6.o
+USER_LIBRARIES = 
+EXTERN_SYMBOLS = 
+ADDED_CFLAGS =  -g -O2
+LNK_OPTIONS = 
+STARTPOINT = 0x80010000
+DEBUG_LIBRARY = 0
+INCLUDE_VALIDATION = 0
+INCLUDE_TRACE = 0
+INCLUDE_GTK = 0
+GTK_DIR = 
+XWINDOW_INCLUDE = 1
+OC2KWINHOME = 
+XSERVERBASE = 
+INCLUDE_XCLIENT = 0
+INCLUDE_GBRV = 0
+INCLUDE_BICRV = 0
+INCLUDE_XSERVER = 0
+XSERVER_NAME = XF86_ogk
+XSERVER_CFGTYPE = 1
+XSERVERCFGPATH = 

@@ -1,0 +1,410 @@
+{
+	"archive" : {},
+	"artifacts" : 
+	[
+		{
+			"path" : "lib/persistence/project/libproject.a"
+		}
+	],
+	"backtrace" : 2,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"add_odb_library",
+			"target_link_libraries",
+			"add_dependencies",
+			"add_compile_options",
+			"include_directories",
+			"target_include_directories"
+		],
+		"files" : 
+		[
+			"cmake/UseODB.cmake",
+			"lib/persistence/project/CMakeLists.txt",
+			"CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 1,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 209,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 231,
+				"parent" : 1
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 228,
+				"parent" : 1
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 228,
+				"parent" : 1
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 228,
+				"parent" : 1
+			},
+			{
+				"file" : 2
+			},
+			{
+				"command" : 4,
+				"file" : 2,
+				"line" : 34,
+				"parent" : 7
+			},
+			{
+				"command" : 5,
+				"file" : 2,
+				"line" : 74,
+				"parent" : 7
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 233,
+				"parent" : 1
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-fPIC  "
+				},
+				{
+					"backtrace" : 8,
+					"fragment" : "-DBOOST_ERROR_CODE_HEADER_ONLY"
+				},
+				{
+					"fragment" : "-std=c++2a"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 3,
+					"define" : "FMT_LOCALE"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "FMT_SHARED"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "JSON_DISABLE_ENUM_SERIALIZATION=1"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "JSON_USE_IMPLICIT_CONVERSIONS=0"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 9,
+					"path" : "/home/user/Загрузки/KPAC-04.04.2023-2/workspace/backend"
+				},
+				{
+					"backtrace" : 9,
+					"path" : "/home/user/Загрузки/KPAC-04.04.2023-2/workspace/backend/include"
+				},
+				{
+					"backtrace" : 9,
+					"path" : "/home/user/Загрузки/KPAC-04.04.2023-2/workspace/backend/lib"
+				},
+				{
+					"backtrace" : 9,
+					"path" : "/home/user/Загрузки/KPAC-04.04.2023-2/workspace/backend/build"
+				},
+				{
+					"backtrace" : 9,
+					"path" : "/home/user/Загрузки/KPAC-04.04.2023-2/workspace/backend/build/lib"
+				},
+				{
+					"backtrace" : 10,
+					"path" : "/home/user/Загрузки/KPAC-04.04.2023-2/workspace/backend/build/lib/persistence/project"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "/home/user/Загрузки/KPAC-04.04.2023-2/workspace/backend/build/lib/persistence/trajectory"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "/home/user/Загрузки/KPAC-04.04.2023-2/workspace/backend/build/lib/persistence/limitation"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "/home/user/Загрузки/KPAC-04.04.2023-2/workspace/backend/build/lib/persistence/utils"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "/home/user/Загрузки/KPAC-04.04.2023-2/workspace/backend/vendor/fpp/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "/home/user/Загрузки/KPAC-04.04.2023-2/workspace/backend/vendor/smm-2ng/src/../include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "/home/user/Загрузки/KPAC-04.04.2023-2/workspace/backend/vendor/smm-2ng/vendor/json/single_include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "/home/user/Загрузки/KPAC-04.04.2023-2/workspace/backend/build/lib/persistence/sensor"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "/home/user/Загрузки/KPAC-04.04.2023-2/workspace/backend/build/lib/persistence/model"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "/home/user/Загрузки/KPAC-04.04.2023-2/workspace/backend/build/lib/persistence/parameter"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "/home/user/Загрузки/KPAC-04.04.2023-2/workspace/backend/build/lib/persistence/smm-plugin"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "/home/user/Загрузки/KPAC-04.04.2023-2/workspace/backend/build/lib/persistence/authorization"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "/home/user/Загрузки/KPAC-04.04.2023-2/workspace/backend/lib/persistence/wrappers"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "/home/user/Загрузки/KPAC-04.04.2023-2/workspace/backend/vendor/rapidcsv/src"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "/home/user/Загрузки/KPAC-04.04.2023-2/workspace/backend/build/lib/persistence/cyclograms"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "/home/user/Загрузки/KPAC-04.04.2023-2/workspace/backend/build/lib/persistence/algorithm"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "/home/user/Загрузки/KPAC-04.04.2023-2/workspace/backend/build/lib/persistence/scheme"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "/home/user/Загрузки/KPAC-04.04.2023-2/workspace/backend/build/lib/persistence/modeling-results"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "/home/user/Загрузки/KPAC-04.04.2023-2/workspace/backend/build/lib/persistence/modeling-configuration"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "/home/user/Загрузки/KPAC-04.04.2023-2/workspace/backend/build/lib/persistence/requirement"
+				}
+			],
+			"language" : "CXX",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4,
+				5
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 3,
+			"id" : "smm-2ng::@00856fd885f8f5898eaa"
+		},
+		{
+			"id" : "utils::@82bbb9eb485b6ee150e0"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "numerics::@c0e3ecbce36d147793f1"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "persistence-utils::@46d6abcba433a4e69a2a"
+		},
+		{
+			"id" : "authorization::@64ce893590329736f0cb"
+		},
+		{
+			"id" : "parameter::@bbcab9a98cf2bff05986"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "limitation::@82f0ff8b28e19141afc8"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "model::@97138fdf0e4433680f99"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "sensor::@cb95a52f35cad3b37944"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "smm-plugin::@dc4b2a5faea53a0e678a"
+		},
+		{
+			"id" : "trajectory::@39a0e413281f03a60e38"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "algorithm::@c888555fb2d04d2a1f7d"
+		},
+		{
+			"id" : "scheme::@ce8763f2f603756f8cf3"
+		},
+		{
+			"id" : "cyclograms::@2823994de2e5f65089e7"
+		},
+		{
+			"id" : "modeling-results::@3f5a14ca3d9d87df1f3f"
+		},
+		{
+			"id" : "modeling-configuration::@615b51f638b66ad70781"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "ODB_Project::@8c353fc9613c51da4349"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "ODB_ProjectArchitecture::@8c353fc9613c51da4349"
+		},
+		{
+			"backtrace" : 6,
+			"id" : "ODB_ProjectSnapshot::@8c353fc9613c51da4349"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "requirement::@c4d52102bce658d563e8"
+		}
+	],
+	"id" : "project::@8c353fc9613c51da4349",
+	"name" : "project",
+	"nameOnDisk" : "libproject.a",
+	"paths" : 
+	{
+		"build" : "lib/persistence/project",
+		"source" : "lib/persistence/project"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4,
+				5
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				6,
+				7,
+				8
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "lib/persistence/project/ProjectArchitecture.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "lib/persistence/project/Project.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "lib/persistence/project/ProjectSnapshot.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "build/lib/persistence/project/ProjectArchitectureOdb.cxx",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "build/lib/persistence/project/ProjectOdb.cxx",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "build/lib/persistence/project/ProjectSnapshotOdb.cxx",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/lib/persistence/project/ProjectArchitectureOdb.cxx.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/lib/persistence/project/ProjectOdb.cxx.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/lib/persistence/project/ProjectSnapshotOdb.cxx.rule",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "STATIC_LIBRARY"
+}

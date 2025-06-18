@@ -1,0 +1,6769 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						16,
+						137,
+						138,
+						139,
+						174
+					],
+					"hasInstallRule" : true,
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"projectIndex" : 0,
+					"source" : "."
+				},
+				{
+					"build" : "vendor",
+					"childIndexes" : 
+					[
+						2,
+						7,
+						8,
+						9,
+						10,
+						13,
+						14
+					],
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "vendor"
+				},
+				{
+					"build" : "vendor/smm-2ng",
+					"childIndexes" : 
+					[
+						3,
+						5,
+						6
+					],
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 1,
+					"source" : "vendor/smm-2ng"
+				},
+				{
+					"build" : "vendor/smm-2ng/vendor",
+					"childIndexes" : 
+					[
+						4
+					],
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 1,
+					"source" : "vendor/smm-2ng/vendor"
+				},
+				{
+					"build" : "vendor/smm-2ng/vendor/json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1"
+					},
+					"parentIndex" : 3,
+					"projectIndex" : 2,
+					"source" : "vendor/smm-2ng/vendor/json"
+				},
+				{
+					"build" : "vendor/smm-2ng/include/smm-2ng",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 1,
+					"source" : "vendor/smm-2ng/include/smm-2ng",
+					"targetIndexes" : 
+					[
+						201,
+						202
+					]
+				},
+				{
+					"build" : "vendor/smm-2ng/src",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 1,
+					"source" : "vendor/smm-2ng/src",
+					"targetIndexes" : 
+					[
+						142,
+						198,
+						200,
+						255
+					]
+				},
+				{
+					"build" : "vendor/cpp-httplib",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.14.0"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 3,
+					"source" : "vendor/cpp-httplib",
+					"targetIndexes" : 
+					[
+						125
+					]
+				},
+				{
+					"build" : "vendor/rapidcsv",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 4,
+					"source" : "vendor/rapidcsv"
+				},
+				{
+					"build" : "vendor/fpp",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 5,
+					"source" : "vendor/fpp"
+				},
+				{
+					"build" : "vendor/cli11",
+					"childIndexes" : 
+					[
+						11,
+						12
+					],
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 6,
+					"source" : "vendor/cli11"
+				},
+				{
+					"build" : "vendor/cli11/fuzz",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"parentIndex" : 10,
+					"projectIndex" : 6,
+					"source" : "vendor/cli11/fuzz"
+				},
+				{
+					"build" : "vendor/cli11/src",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"parentIndex" : 10,
+					"projectIndex" : 6,
+					"source" : "vendor/cli11/src"
+				},
+				{
+					"build" : "vendor/tmp",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 7,
+					"source" : "vendor/tmp",
+					"targetIndexes" : 
+					[
+						233
+					]
+				},
+				{
+					"build" : "vendor/application",
+					"childIndexes" : 
+					[
+						15
+					],
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 8,
+					"source" : "vendor/application"
+				},
+				{
+					"build" : "vendor/application/src",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 14,
+					"projectIndex" : 8,
+					"source" : "vendor/application/src",
+					"targetIndexes" : 
+					[
+						82
+					]
+				},
+				{
+					"build" : "lib",
+					"childIndexes" : 
+					[
+						17,
+						28,
+						31,
+						51,
+						74,
+						76,
+						77,
+						104,
+						112,
+						114
+					],
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "lib"
+				},
+				{
+					"build" : "lib/utils",
+					"childIndexes" : 
+					[
+						18,
+						19,
+						20,
+						21,
+						22,
+						23,
+						24,
+						25,
+						26,
+						27
+					],
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 16,
+					"projectIndex" : 9,
+					"source" : "lib/utils",
+					"targetIndexes" : 
+					[
+						254
+					]
+				},
+				{
+					"build" : "lib/utils/archive",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 17,
+					"projectIndex" : 10,
+					"source" : "lib/utils/archive",
+					"targetIndexes" : 
+					[
+						83
+					]
+				},
+				{
+					"build" : "lib/utils/base64",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 17,
+					"projectIndex" : 11,
+					"source" : "lib/utils/base64",
+					"targetIndexes" : 
+					[
+						92
+					]
+				},
+				{
+					"build" : "lib/utils/builder",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 17,
+					"projectIndex" : 12,
+					"source" : "lib/utils/builder",
+					"targetIndexes" : 
+					[
+						93
+					]
+				},
+				{
+					"build" : "lib/utils/cors-server",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 17,
+					"projectIndex" : 13,
+					"source" : "lib/utils/cors-server",
+					"targetIndexes" : 
+					[
+						102
+					]
+				},
+				{
+					"build" : "lib/utils/filesystem",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 17,
+					"projectIndex" : 14,
+					"source" : "lib/utils/filesystem",
+					"targetIndexes" : 
+					[
+						113
+					]
+				},
+				{
+					"build" : "lib/utils/dylib",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 17,
+					"projectIndex" : 15,
+					"source" : "lib/utils/dylib",
+					"targetIndexes" : 
+					[
+						111
+					]
+				},
+				{
+					"build" : "lib/utils/events",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 17,
+					"projectIndex" : 16,
+					"source" : "lib/utils/events"
+				},
+				{
+					"build" : "lib/utils/logger",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 17,
+					"projectIndex" : 17,
+					"source" : "lib/utils/logger",
+					"targetIndexes" : 
+					[
+						139
+					]
+				},
+				{
+					"build" : "lib/utils/tiff",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 17,
+					"projectIndex" : 18,
+					"source" : "lib/utils/tiff",
+					"targetIndexes" : 
+					[
+						231
+					]
+				},
+				{
+					"build" : "lib/utils/numerics",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 17,
+					"projectIndex" : 19,
+					"source" : "lib/utils/numerics",
+					"targetIndexes" : 
+					[
+						160
+					]
+				},
+				{
+					"build" : "lib/cli",
+					"childIndexes" : 
+					[
+						29,
+						30
+					],
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 16,
+					"projectIndex" : 0,
+					"source" : "lib/cli"
+				},
+				{
+					"build" : "lib/cli/app-manager",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 28,
+					"projectIndex" : 20,
+					"source" : "lib/cli/app-manager",
+					"targetIndexes" : 
+					[
+						96
+					]
+				},
+				{
+					"build" : "lib/cli/config",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 28,
+					"projectIndex" : 21,
+					"source" : "lib/cli/config",
+					"targetIndexes" : 
+					[
+						97
+					]
+				},
+				{
+					"build" : "lib/persistence",
+					"childIndexes" : 
+					[
+						32,
+						33,
+						34,
+						35,
+						36,
+						37,
+						38,
+						39,
+						40,
+						41,
+						42,
+						43,
+						44,
+						45,
+						46,
+						47,
+						48,
+						49,
+						50
+					],
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 16,
+					"projectIndex" : 0,
+					"source" : "lib/persistence",
+					"targetIndexes" : 
+					[
+						162
+					]
+				},
+				{
+					"build" : "lib/persistence/wrappers",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 31,
+					"projectIndex" : 0,
+					"source" : "lib/persistence/wrappers"
+				},
+				{
+					"build" : "lib/persistence/utils",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 31,
+					"projectIndex" : 0,
+					"source" : "lib/persistence/utils",
+					"targetIndexes" : 
+					[
+						11,
+						12,
+						46,
+						59,
+						60,
+						61,
+						63,
+						73,
+						168
+					]
+				},
+				{
+					"build" : "lib/persistence/authorization",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 31,
+					"projectIndex" : 0,
+					"source" : "lib/persistence/authorization",
+					"targetIndexes" : 
+					[
+						70,
+						88
+					]
+				},
+				{
+					"build" : "lib/persistence/parameter",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 31,
+					"projectIndex" : 0,
+					"source" : "lib/persistence/parameter",
+					"targetIndexes" : 
+					[
+						29,
+						44,
+						45,
+						166
+					]
+				},
+				{
+					"build" : "lib/persistence/limitation",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 31,
+					"projectIndex" : 0,
+					"source" : "lib/persistence/limitation",
+					"targetIndexes" : 
+					[
+						30,
+						137
+					]
+				},
+				{
+					"build" : "lib/persistence/model",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 31,
+					"projectIndex" : 0,
+					"source" : "lib/persistence/model",
+					"targetIndexes" : 
+					[
+						31,
+						143
+					]
+				},
+				{
+					"build" : "lib/persistence/sensor",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 31,
+					"projectIndex" : 0,
+					"source" : "lib/persistence/sensor",
+					"targetIndexes" : 
+					[
+						54,
+						56,
+						191
+					]
+				},
+				{
+					"build" : "lib/persistence/smm-plugin",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 31,
+					"projectIndex" : 0,
+					"source" : "lib/persistence/smm-plugin",
+					"targetIndexes" : 
+					[
+						58,
+						71,
+						204
+					]
+				},
+				{
+					"build" : "lib/persistence/trajectory",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 31,
+					"projectIndex" : 0,
+					"source" : "lib/persistence/trajectory",
+					"targetIndexes" : 
+					[
+						53,
+						62,
+						65,
+						66,
+						67,
+						68,
+						237
+					]
+				},
+				{
+					"build" : "lib/persistence/type",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 31,
+					"projectIndex" : 0,
+					"source" : "lib/persistence/type",
+					"targetIndexes" : 
+					[
+						69,
+						239
+					]
+				},
+				{
+					"build" : "lib/persistence/algorithm",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 31,
+					"projectIndex" : 0,
+					"source" : "lib/persistence/algorithm",
+					"targetIndexes" : 
+					[
+						6,
+						9,
+						24,
+						43,
+						57,
+						72,
+						78
+					]
+				},
+				{
+					"build" : "lib/persistence/scheme",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 31,
+					"projectIndex" : 0,
+					"source" : "lib/persistence/scheme",
+					"targetIndexes" : 
+					[
+						5,
+						7,
+						8,
+						14,
+						15,
+						16,
+						18,
+						19,
+						20,
+						21,
+						22,
+						25,
+						26,
+						27,
+						33,
+						35,
+						37,
+						38,
+						39,
+						40,
+						41,
+						42,
+						55,
+						188
+					]
+				},
+				{
+					"build" : "lib/persistence/cyclograms",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 31,
+					"projectIndex" : 0,
+					"source" : "lib/persistence/cyclograms",
+					"targetIndexes" : 
+					[
+						17,
+						64,
+						106
+					]
+				},
+				{
+					"build" : "lib/persistence/modeling-results",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 31,
+					"projectIndex" : 0,
+					"source" : "lib/persistence/modeling-results",
+					"targetIndexes" : 
+					[
+						23,
+						34,
+						36,
+						47,
+						50,
+						152
+					]
+				},
+				{
+					"build" : "lib/persistence/modeling-configuration",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 31,
+					"projectIndex" : 0,
+					"source" : "lib/persistence/modeling-configuration",
+					"targetIndexes" : 
+					[
+						32,
+						145
+					]
+				},
+				{
+					"build" : "lib/persistence/project",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 31,
+					"projectIndex" : 0,
+					"source" : "lib/persistence/project",
+					"targetIndexes" : 
+					[
+						48,
+						49,
+						51,
+						171
+					]
+				},
+				{
+					"build" : "lib/persistence/informational-document",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 31,
+					"projectIndex" : 0,
+					"source" : "lib/persistence/informational-document",
+					"targetIndexes" : 
+					[
+						28,
+						126
+					]
+				},
+				{
+					"build" : "lib/persistence/requirement",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 31,
+					"projectIndex" : 0,
+					"source" : "lib/persistence/requirement",
+					"targetIndexes" : 
+					[
+						13,
+						52,
+						181
+					]
+				},
+				{
+					"build" : "lib/persistence/audit",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 31,
+					"projectIndex" : 0,
+					"source" : "lib/persistence/audit",
+					"targetIndexes" : 
+					[
+						10,
+						84
+					]
+				},
+				{
+					"build" : "lib/controller",
+					"childIndexes" : 
+					[
+						52,
+						53,
+						54,
+						55,
+						56,
+						57,
+						58,
+						59,
+						60,
+						61,
+						62,
+						63,
+						64,
+						65,
+						66,
+						67,
+						68,
+						69,
+						70,
+						71,
+						72,
+						73
+					],
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 16,
+					"projectIndex" : 0,
+					"source" : "lib/controller"
+				},
+				{
+					"build" : "lib/controller/audit-controller",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 51,
+					"projectIndex" : 22,
+					"source" : "lib/controller/audit-controller",
+					"targetIndexes" : 
+					[
+						85
+					]
+				},
+				{
+					"build" : "lib/controller/project-snapshots-controller",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 51,
+					"projectIndex" : 23,
+					"source" : "lib/controller/project-snapshots-controller",
+					"targetIndexes" : 
+					[
+						175
+					]
+				},
+				{
+					"build" : "lib/controller/projects-controller",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 51,
+					"projectIndex" : 24,
+					"source" : "lib/controller/projects-controller",
+					"targetIndexes" : 
+					[
+						177
+					]
+				},
+				{
+					"build" : "lib/controller/project-requirements-controller",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 51,
+					"projectIndex" : 25,
+					"source" : "lib/controller/project-requirements-controller",
+					"targetIndexes" : 
+					[
+						173
+					]
+				},
+				{
+					"build" : "lib/controller/cyclograms-controller",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 51,
+					"projectIndex" : 26,
+					"source" : "lib/controller/cyclograms-controller",
+					"targetIndexes" : 
+					[
+						107
+					]
+				},
+				{
+					"build" : "lib/controller/cyclogram-section-types-controller",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 51,
+					"projectIndex" : 27,
+					"source" : "lib/controller/cyclogram-section-types-controller",
+					"targetIndexes" : 
+					[
+						104
+					]
+				},
+				{
+					"build" : "lib/controller/navigation-system-controller",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 51,
+					"projectIndex" : 28,
+					"source" : "lib/controller/navigation-system-controller",
+					"targetIndexes" : 
+					[
+						158
+					]
+				},
+				{
+					"build" : "lib/controller/flight-mission-controller",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 51,
+					"projectIndex" : 29,
+					"source" : "lib/controller/flight-mission-controller",
+					"targetIndexes" : 
+					[
+						116
+					]
+				},
+				{
+					"build" : "lib/controller/modeling-controller",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 51,
+					"projectIndex" : 30,
+					"source" : "lib/controller/modeling-controller",
+					"targetIndexes" : 
+					[
+						149
+					]
+				},
+				{
+					"build" : "lib/controller/models-controller",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 51,
+					"projectIndex" : 31,
+					"source" : "lib/controller/models-controller",
+					"targetIndexes" : 
+					[
+						154
+					]
+				},
+				{
+					"build" : "lib/controller/algorithms-controller",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 51,
+					"projectIndex" : 32,
+					"source" : "lib/controller/algorithms-controller",
+					"targetIndexes" : 
+					[
+						80
+					]
+				},
+				{
+					"build" : "lib/controller/sensors-controller",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 51,
+					"projectIndex" : 33,
+					"source" : "lib/controller/sensors-controller",
+					"targetIndexes" : 
+					[
+						195
+					]
+				},
+				{
+					"build" : "lib/controller/smm-plugins-controller",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 51,
+					"projectIndex" : 34,
+					"source" : "lib/controller/smm-plugins-controller",
+					"targetIndexes" : 
+					[
+						206
+					]
+				},
+				{
+					"build" : "lib/controller/trajectories-controller",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 51,
+					"projectIndex" : 35,
+					"source" : "lib/controller/trajectories-controller",
+					"targetIndexes" : 
+					[
+						235
+					]
+				},
+				{
+					"build" : "lib/controller/informational-documents-controller",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 51,
+					"projectIndex" : 36,
+					"source" : "lib/controller/informational-documents-controller",
+					"targetIndexes" : 
+					[
+						128
+					]
+				},
+				{
+					"build" : "lib/controller/modeling-configuration-controller",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 51,
+					"projectIndex" : 37,
+					"source" : "lib/controller/modeling-configuration-controller",
+					"targetIndexes" : 
+					[
+						146
+					]
+				},
+				{
+					"build" : "lib/controller/stand-modeling-controller",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 51,
+					"projectIndex" : 38,
+					"source" : "lib/controller/stand-modeling-controller",
+					"targetIndexes" : 
+					[
+						207
+					]
+				},
+				{
+					"build" : "lib/controller/sensor-kinds-controller",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 51,
+					"projectIndex" : 39,
+					"source" : "lib/controller/sensor-kinds-controller",
+					"targetIndexes" : 
+					[
+						192
+					]
+				},
+				{
+					"build" : "lib/controller/types-controller",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 51,
+					"projectIndex" : 40,
+					"source" : "lib/controller/types-controller",
+					"targetIndexes" : 
+					[
+						241
+					]
+				},
+				{
+					"build" : "lib/controller/utils",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 51,
+					"projectIndex" : 41,
+					"source" : "lib/controller/utils",
+					"targetIndexes" : 
+					[
+						100
+					]
+				},
+				{
+					"build" : "lib/controller/authorization-controller",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 51,
+					"projectIndex" : 42,
+					"source" : "lib/controller/authorization-controller",
+					"targetIndexes" : 
+					[
+						89
+					]
+				},
+				{
+					"build" : "lib/controller/requirements-controller",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 51,
+					"projectIndex" : 43,
+					"source" : "lib/controller/requirements-controller",
+					"targetIndexes" : 
+					[
+						182
+					]
+				},
+				{
+					"build" : "lib/database",
+					"childIndexes" : 
+					[
+						75
+					],
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 16,
+					"projectIndex" : 44,
+					"source" : "lib/database",
+					"targetIndexes" : 
+					[
+						110
+					]
+				},
+				{
+					"build" : "lib/database/OdbDatabase",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 74,
+					"projectIndex" : 45,
+					"source" : "lib/database/OdbDatabase",
+					"targetIndexes" : 
+					[
+						74
+					]
+				},
+				{
+					"build" : "lib/initialize",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 16,
+					"projectIndex" : 46,
+					"source" : "lib/initialize",
+					"targetIndexes" : 
+					[
+						130,
+						131
+					]
+				},
+				{
+					"build" : "lib/marshaling",
+					"childIndexes" : 
+					[
+						78,
+						79,
+						80,
+						81,
+						82,
+						83,
+						84,
+						85,
+						86,
+						87,
+						88,
+						89,
+						90,
+						91,
+						92,
+						93,
+						94,
+						95,
+						96,
+						97,
+						98,
+						99,
+						100,
+						101,
+						102,
+						103
+					],
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 16,
+					"projectIndex" : 0,
+					"source" : "lib/marshaling",
+					"targetIndexes" : 
+					[
+						140
+					]
+				},
+				{
+					"build" : "lib/marshaling/algorithm",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 77,
+					"projectIndex" : 47,
+					"source" : "lib/marshaling/algorithm",
+					"targetIndexes" : 
+					[
+						79
+					]
+				},
+				{
+					"build" : "lib/marshaling/audit",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 77,
+					"projectIndex" : 48,
+					"source" : "lib/marshaling/audit",
+					"targetIndexes" : 
+					[
+						87
+					]
+				},
+				{
+					"build" : "lib/marshaling/color",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 77,
+					"projectIndex" : 49,
+					"source" : "lib/marshaling/color",
+					"targetIndexes" : 
+					[
+						98
+					]
+				},
+				{
+					"build" : "lib/marshaling/cyclograms",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 77,
+					"projectIndex" : 50,
+					"source" : "lib/marshaling/cyclograms",
+					"targetIndexes" : 
+					[
+						109
+					]
+				},
+				{
+					"build" : "lib/marshaling/flight-mission-controller",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 77,
+					"projectIndex" : 51,
+					"source" : "lib/marshaling/flight-mission-controller",
+					"targetIndexes" : 
+					[
+						117
+					]
+				},
+				{
+					"build" : "lib/marshaling/informational-document",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 77,
+					"projectIndex" : 52,
+					"source" : "lib/marshaling/informational-document",
+					"targetIndexes" : 
+					[
+						127
+					]
+				},
+				{
+					"build" : "lib/marshaling/limitation",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 77,
+					"projectIndex" : 53,
+					"source" : "lib/marshaling/limitation",
+					"targetIndexes" : 
+					[
+						138
+					]
+				},
+				{
+					"build" : "lib/marshaling/model",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 77,
+					"projectIndex" : 54,
+					"source" : "lib/marshaling/model",
+					"targetIndexes" : 
+					[
+						144
+					]
+				},
+				{
+					"build" : "lib/marshaling/modeling-configuration",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 77,
+					"projectIndex" : 55,
+					"source" : "lib/marshaling/modeling-configuration",
+					"targetIndexes" : 
+					[
+						148
+					]
+				},
+				{
+					"build" : "lib/marshaling/modeling-results",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 77,
+					"projectIndex" : 56,
+					"source" : "lib/marshaling/modeling-results",
+					"targetIndexes" : 
+					[
+						153
+					]
+				},
+				{
+					"build" : "lib/marshaling/models-controller",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 77,
+					"projectIndex" : 57,
+					"source" : "lib/marshaling/models-controller",
+					"targetIndexes" : 
+					[
+						155
+					]
+				},
+				{
+					"build" : "lib/marshaling/numerics",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 77,
+					"projectIndex" : 58,
+					"source" : "lib/marshaling/numerics",
+					"targetIndexes" : 
+					[
+						161
+					]
+				},
+				{
+					"build" : "lib/marshaling/option",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 77,
+					"projectIndex" : 59,
+					"source" : "lib/marshaling/option"
+				},
+				{
+					"build" : "lib/marshaling/parameter",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 77,
+					"projectIndex" : 60,
+					"source" : "lib/marshaling/parameter",
+					"targetIndexes" : 
+					[
+						167
+					]
+				},
+				{
+					"build" : "lib/marshaling/pointers",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 77,
+					"projectIndex" : 61,
+					"source" : "lib/marshaling/pointers"
+				},
+				{
+					"build" : "lib/marshaling/project",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 77,
+					"projectIndex" : 62,
+					"source" : "lib/marshaling/project",
+					"targetIndexes" : 
+					[
+						172
+					]
+				},
+				{
+					"build" : "lib/marshaling/scheme",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 77,
+					"projectIndex" : 63,
+					"source" : "lib/marshaling/scheme",
+					"targetIndexes" : 
+					[
+						189
+					]
+				},
+				{
+					"build" : "lib/marshaling/sensor",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 77,
+					"projectIndex" : 64,
+					"source" : "lib/marshaling/sensor",
+					"targetIndexes" : 
+					[
+						194
+					]
+				},
+				{
+					"build" : "lib/marshaling/smm",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 77,
+					"projectIndex" : 65,
+					"source" : "lib/marshaling/smm",
+					"targetIndexes" : 
+					[
+						203
+					]
+				},
+				{
+					"build" : "lib/marshaling/smm-plugin",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 77,
+					"projectIndex" : 66,
+					"source" : "lib/marshaling/smm-plugin",
+					"targetIndexes" : 
+					[
+						205
+					]
+				},
+				{
+					"build" : "lib/marshaling/trajectory",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 77,
+					"projectIndex" : 67,
+					"source" : "lib/marshaling/trajectory",
+					"targetIndexes" : 
+					[
+						238
+					]
+				},
+				{
+					"build" : "lib/marshaling/user",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 77,
+					"projectIndex" : 68,
+					"source" : "lib/marshaling/user",
+					"targetIndexes" : 
+					[
+						253
+					]
+				},
+				{
+					"build" : "lib/marshaling/type",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 77,
+					"projectIndex" : 69,
+					"source" : "lib/marshaling/type",
+					"targetIndexes" : 
+					[
+						240
+					]
+				},
+				{
+					"build" : "lib/marshaling/utils",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 77,
+					"projectIndex" : 70,
+					"source" : "lib/marshaling/utils",
+					"targetIndexes" : 
+					[
+						141
+					]
+				},
+				{
+					"build" : "lib/marshaling/json-patch",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 77,
+					"projectIndex" : 71,
+					"source" : "lib/marshaling/json-patch",
+					"targetIndexes" : 
+					[
+						135
+					]
+				},
+				{
+					"build" : "lib/marshaling/requirement",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 77,
+					"projectIndex" : 72,
+					"source" : "lib/marshaling/requirement",
+					"targetIndexes" : 
+					[
+						184
+					]
+				},
+				{
+					"build" : "lib/modeling",
+					"childIndexes" : 
+					[
+						105,
+						106,
+						109
+					],
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 16,
+					"projectIndex" : 0,
+					"source" : "lib/modeling"
+				},
+				{
+					"build" : "lib/modeling/common",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 104,
+					"projectIndex" : 73,
+					"source" : "lib/modeling/common",
+					"targetIndexes" : 
+					[
+						151
+					]
+				},
+				{
+					"build" : "lib/modeling/flight-mission",
+					"childIndexes" : 
+					[
+						107,
+						108
+					],
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 104,
+					"projectIndex" : 0,
+					"source" : "lib/modeling/flight-mission"
+				},
+				{
+					"build" : "lib/modeling/flight-mission/calculator",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 106,
+					"projectIndex" : 74,
+					"source" : "lib/modeling/flight-mission/calculator",
+					"targetIndexes" : 
+					[
+						115
+					]
+				},
+				{
+					"build" : "lib/modeling/flight-mission/ipc",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 106,
+					"projectIndex" : 75,
+					"source" : "lib/modeling/flight-mission/ipc",
+					"targetIndexes" : 
+					[
+						119
+					]
+				},
+				{
+					"build" : "lib/modeling/stand",
+					"childIndexes" : 
+					[
+						110,
+						111
+					],
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 104,
+					"projectIndex" : 0,
+					"source" : "lib/modeling/stand"
+				},
+				{
+					"build" : "lib/modeling/stand/manager",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 109,
+					"projectIndex" : 76,
+					"source" : "lib/modeling/stand/manager",
+					"targetIndexes" : 
+					[
+						210
+					]
+				},
+				{
+					"build" : "lib/modeling/stand/ipc",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 109,
+					"projectIndex" : 77,
+					"source" : "lib/modeling/stand/ipc",
+					"targetIndexes" : 
+					[
+						209
+					]
+				},
+				{
+					"build" : "lib/server",
+					"childIndexes" : 
+					[
+						113
+					],
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 16,
+					"projectIndex" : 78,
+					"source" : "lib/server",
+					"targetIndexes" : 
+					[
+						197
+					]
+				},
+				{
+					"build" : "lib/server/postgres",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 112,
+					"projectIndex" : 79,
+					"source" : "lib/server/postgres",
+					"targetIndexes" : 
+					[
+						170
+					]
+				},
+				{
+					"build" : "lib/handling",
+					"childIndexes" : 
+					[
+						115,
+						116,
+						117,
+						118,
+						119,
+						120,
+						121,
+						122,
+						123,
+						124,
+						125,
+						126,
+						127,
+						128,
+						129,
+						130,
+						131,
+						132,
+						133,
+						135,
+						136
+					],
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 16,
+					"projectIndex" : 0,
+					"source" : "lib/handling"
+				},
+				{
+					"build" : "lib/handling/audit-handler",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 114,
+					"projectIndex" : 80,
+					"source" : "lib/handling/audit-handler",
+					"targetIndexes" : 
+					[
+						86
+					]
+				},
+				{
+					"build" : "lib/handling/exception-handler",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 114,
+					"projectIndex" : 81,
+					"source" : "lib/handling/exception-handler",
+					"targetIndexes" : 
+					[
+						112
+					]
+				},
+				{
+					"build" : "lib/handling/project-snapshots-handler",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 114,
+					"projectIndex" : 82,
+					"source" : "lib/handling/project-snapshots-handler",
+					"targetIndexes" : 
+					[
+						176
+					]
+				},
+				{
+					"build" : "lib/handling/projects-handler",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 114,
+					"projectIndex" : 83,
+					"source" : "lib/handling/projects-handler",
+					"targetIndexes" : 
+					[
+						178
+					]
+				},
+				{
+					"build" : "lib/handling/project-requirements-handler",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 114,
+					"projectIndex" : 84,
+					"source" : "lib/handling/project-requirements-handler",
+					"targetIndexes" : 
+					[
+						174
+					]
+				},
+				{
+					"build" : "lib/handling/cyclograms-handler",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 114,
+					"projectIndex" : 85,
+					"source" : "lib/handling/cyclograms-handler",
+					"targetIndexes" : 
+					[
+						108
+					]
+				},
+				{
+					"build" : "lib/handling/flight-mission-handler",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 114,
+					"projectIndex" : 86,
+					"source" : "lib/handling/flight-mission-handler",
+					"targetIndexes" : 
+					[
+						118
+					]
+				},
+				{
+					"build" : "lib/handling/navigation-system-handler",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 114,
+					"projectIndex" : 87,
+					"source" : "lib/handling/navigation-system-handler",
+					"targetIndexes" : 
+					[
+						159
+					]
+				},
+				{
+					"build" : "lib/handling/modeling-handler",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 114,
+					"projectIndex" : 88,
+					"source" : "lib/handling/modeling-handler",
+					"targetIndexes" : 
+					[
+						150
+					]
+				},
+				{
+					"build" : "lib/handling/algorithms-handler",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 114,
+					"projectIndex" : 89,
+					"source" : "lib/handling/algorithms-handler",
+					"targetIndexes" : 
+					[
+						81
+					]
+				},
+				{
+					"build" : "lib/handling/trajectories-handler",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 114,
+					"projectIndex" : 90,
+					"source" : "lib/handling/trajectories-handler",
+					"targetIndexes" : 
+					[
+						236
+					]
+				},
+				{
+					"build" : "lib/handling/stand-modeling-handler",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 114,
+					"projectIndex" : 91,
+					"source" : "lib/handling/stand-modeling-handler",
+					"targetIndexes" : 
+					[
+						208
+					]
+				},
+				{
+					"build" : "lib/handling/informational-documents-handler",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 114,
+					"projectIndex" : 92,
+					"source" : "lib/handling/informational-documents-handler",
+					"targetIndexes" : 
+					[
+						129
+					]
+				},
+				{
+					"build" : "lib/handling/cyclogram-section-types-handler",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 114,
+					"projectIndex" : 93,
+					"source" : "lib/handling/cyclogram-section-types-handler",
+					"targetIndexes" : 
+					[
+						105
+					]
+				},
+				{
+					"build" : "lib/handling/modeling-configuration-handler",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 114,
+					"projectIndex" : 94,
+					"source" : "lib/handling/modeling-configuration-handler",
+					"targetIndexes" : 
+					[
+						147
+					]
+				},
+				{
+					"build" : "lib/handling/sensor-kinds-handler",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 114,
+					"projectIndex" : 95,
+					"source" : "lib/handling/sensor-kinds-handler",
+					"targetIndexes" : 
+					[
+						193
+					]
+				},
+				{
+					"build" : "lib/handling/sensors-handler",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 114,
+					"projectIndex" : 96,
+					"source" : "lib/handling/sensors-handler",
+					"targetIndexes" : 
+					[
+						196
+					]
+				},
+				{
+					"build" : "lib/handling/types-handler",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 114,
+					"projectIndex" : 97,
+					"source" : "lib/handling/types-handler",
+					"targetIndexes" : 
+					[
+						242
+					]
+				},
+				{
+					"build" : "lib/handling/utils",
+					"childIndexes" : 
+					[
+						134
+					],
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 114,
+					"projectIndex" : 98,
+					"source" : "lib/handling/utils",
+					"targetIndexes" : 
+					[
+						124
+					]
+				},
+				{
+					"build" : "lib/handling/utils/jwt",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 133,
+					"projectIndex" : 99,
+					"source" : "lib/handling/utils/jwt",
+					"targetIndexes" : 
+					[
+						136
+					]
+				},
+				{
+					"build" : "lib/handling/authorization-handler",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 114,
+					"projectIndex" : 100,
+					"source" : "lib/handling/authorization-handler",
+					"targetIndexes" : 
+					[
+						90,
+						99
+					]
+				},
+				{
+					"build" : "lib/handling/requirements-handler",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 114,
+					"projectIndex" : 101,
+					"source" : "lib/handling/requirements-handler",
+					"targetIndexes" : 
+					[
+						183
+					]
+				},
+				{
+					"build" : "libexec",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "libexec",
+					"targetIndexes" : 
+					[
+						114,
+						211
+					]
+				},
+				{
+					"build" : "src",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "src",
+					"targetIndexes" : 
+					[
+						243
+					]
+				},
+				{
+					"build" : "plugins",
+					"childIndexes" : 
+					[
+						140,
+						145,
+						153,
+						157,
+						160,
+						165,
+						168,
+						170,
+						172
+					],
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "plugins",
+					"targetIndexes" : 
+					[
+						169
+					]
+				},
+				{
+					"build" : "plugins/common",
+					"childIndexes" : 
+					[
+						141,
+						142,
+						143,
+						144
+					],
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 139,
+					"projectIndex" : 0,
+					"source" : "plugins/common"
+				},
+				{
+					"build" : "plugins/common/ControlElements",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 140,
+					"projectIndex" : 102,
+					"source" : "plugins/common/ControlElements",
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"build" : "plugins/common/DataSource",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 140,
+					"projectIndex" : 103,
+					"source" : "plugins/common/DataSource",
+					"targetIndexes" : 
+					[
+						2
+					]
+				},
+				{
+					"build" : "plugins/common/Timer",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 140,
+					"projectIndex" : 104,
+					"source" : "plugins/common/Timer",
+					"targetIndexes" : 
+					[
+						76
+					]
+				},
+				{
+					"build" : "plugins/common/VideoEmulation",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 140,
+					"projectIndex" : 105,
+					"source" : "plugins/common/VideoEmulation",
+					"targetIndexes" : 
+					[
+						77
+					]
+				},
+				{
+					"build" : "plugins/informational",
+					"childIndexes" : 
+					[
+						146,
+						147,
+						148,
+						149,
+						150,
+						151,
+						152
+					],
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 139,
+					"projectIndex" : 0,
+					"source" : "plugins/informational"
+				},
+				{
+					"build" : "plugins/informational/BallisticsCalcAlgo",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 145,
+					"projectIndex" : 106,
+					"source" : "plugins/informational/BallisticsCalcAlgo",
+					"targetIndexes" : 
+					[
+						91
+					]
+				},
+				{
+					"build" : "plugins/informational/CreateReferenceImageAlgo",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 145,
+					"projectIndex" : 107,
+					"source" : "plugins/informational/CreateReferenceImageAlgo",
+					"targetIndexes" : 
+					[
+						103
+					]
+				},
+				{
+					"build" : "plugins/informational/OUMSearchAlgo",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 145,
+					"projectIndex" : 108,
+					"source" : "plugins/informational/OUMSearchAlgo",
+					"targetIndexes" : 
+					[
+						165
+					]
+				},
+				{
+					"build" : "plugins/informational/OUMChoiceAlgo",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 145,
+					"projectIndex" : 109,
+					"source" : "plugins/informational/OUMChoiceAlgo",
+					"targetIndexes" : 
+					[
+						164
+					]
+				},
+				{
+					"build" : "plugins/informational/StartPointCalcAlgo",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 145,
+					"projectIndex" : 110,
+					"source" : "plugins/informational/StartPointCalcAlgo",
+					"targetIndexes" : 
+					[
+						212
+					]
+				},
+				{
+					"build" : "plugins/informational/tiff-parser-algo",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 145,
+					"projectIndex" : 111,
+					"source" : "plugins/informational/tiff-parser-algo",
+					"targetIndexes" : 
+					[
+						232
+					]
+				},
+				{
+					"build" : "plugins/informational/TPZCalcAlgo",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 145,
+					"projectIndex" : 112,
+					"source" : "plugins/informational/TPZCalcAlgo",
+					"targetIndexes" : 
+					[
+						234
+					]
+				},
+				{
+					"build" : "plugins/onboard",
+					"childIndexes" : 
+					[
+						154,
+						155,
+						156
+					],
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 139,
+					"projectIndex" : 0,
+					"source" : "plugins/onboard"
+				},
+				{
+					"build" : "plugins/onboard/CorrectionAdjustmentCalcAlgo",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 153,
+					"projectIndex" : 113,
+					"source" : "plugins/onboard/CorrectionAdjustmentCalcAlgo",
+					"targetIndexes" : 
+					[
+						101
+					]
+				},
+				{
+					"build" : "plugins/onboard/SemanticRecognitionAlgo",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 153,
+					"projectIndex" : 114,
+					"source" : "plugins/onboard/SemanticRecognitionAlgo",
+					"targetIndexes" : 
+					[
+						190
+					]
+				},
+				{
+					"build" : "plugins/onboard/ReadTPZAndCreateVizTaskAlgo",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 153,
+					"projectIndex" : 115,
+					"source" : "plugins/onboard/ReadTPZAndCreateVizTaskAlgo",
+					"targetIndexes" : 
+					[
+						180
+					]
+				},
+				{
+					"build" : "plugins/smm-module",
+					"childIndexes" : 
+					[
+						158,
+						159
+					],
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 139,
+					"projectIndex" : 0,
+					"source" : "plugins/smm-module"
+				},
+				{
+					"build" : "plugins/smm-module/MovementDynamicsAlgo",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 157,
+					"projectIndex" : 116,
+					"source" : "plugins/smm-module/MovementDynamicsAlgo",
+					"targetIndexes" : 
+					[
+						156
+					]
+				},
+				{
+					"build" : "plugins/smm-module/NaviSubsystemAlgo",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 157,
+					"projectIndex" : 117,
+					"source" : "plugins/smm-module/NaviSubsystemAlgo",
+					"targetIndexes" : 
+					[
+						157
+					]
+				},
+				{
+					"build" : "plugins/sensors",
+					"childIndexes" : 
+					[
+						161,
+						162,
+						163,
+						164
+					],
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 139,
+					"projectIndex" : 0,
+					"source" : "plugins/sensors"
+				},
+				{
+					"build" : "plugins/sensors/OpticalSensor",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 160,
+					"projectIndex" : 118,
+					"source" : "plugins/sensors/OpticalSensor",
+					"targetIndexes" : 
+					[
+						163
+					]
+				},
+				{
+					"build" : "plugins/sensors/RadarSensor",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 160,
+					"projectIndex" : 119,
+					"source" : "plugins/sensors/RadarSensor",
+					"targetIndexes" : 
+					[
+						179
+					]
+				},
+				{
+					"build" : "plugins/sensors/UniversalSensor",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 160,
+					"projectIndex" : 120,
+					"source" : "plugins/sensors/UniversalSensor",
+					"targetIndexes" : 
+					[
+						252
+					]
+				},
+				{
+					"build" : "plugins/sensors/ProxySensor",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 160,
+					"projectIndex" : 121,
+					"source" : "plugins/sensors/ProxySensor",
+					"targetIndexes" : 
+					[
+						187
+					]
+				},
+				{
+					"build" : "plugins/utility",
+					"childIndexes" : 
+					[
+						166,
+						167
+					],
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 139,
+					"projectIndex" : 0,
+					"source" : "plugins/utility"
+				},
+				{
+					"build" : "plugins/utility/CyclogramSectionsSwitch",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 165,
+					"projectIndex" : 122,
+					"source" : "plugins/utility/CyclogramSectionsSwitch",
+					"targetIndexes" : 
+					[
+						1
+					]
+				},
+				{
+					"build" : "plugins/utility/MuxAlgo",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 165,
+					"projectIndex" : 123,
+					"source" : "plugins/utility/MuxAlgo",
+					"targetIndexes" : 
+					[
+						4
+					]
+				},
+				{
+					"build" : "plugins/requirements",
+					"childIndexes" : 
+					[
+						169
+					],
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 139,
+					"projectIndex" : 0,
+					"source" : "plugins/requirements"
+				},
+				{
+					"build" : "plugins/requirements/Precision",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 168,
+					"projectIndex" : 124,
+					"source" : "plugins/requirements/Precision",
+					"targetIndexes" : 
+					[
+						75
+					]
+				},
+				{
+					"build" : "plugins/trajectory",
+					"childIndexes" : 
+					[
+						171
+					],
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 139,
+					"projectIndex" : 0,
+					"source" : "plugins/trajectory"
+				},
+				{
+					"build" : "plugins/trajectory/SmallLinearTrajectory",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 170,
+					"projectIndex" : 0,
+					"source" : "plugins/trajectory/SmallLinearTrajectory",
+					"targetIndexes" : 
+					[
+						199
+					]
+				},
+				{
+					"build" : "plugins/types",
+					"childIndexes" : 
+					[
+						173
+					],
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 139,
+					"projectIndex" : 0,
+					"source" : "plugins/types"
+				},
+				{
+					"build" : "plugins/types/Image",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 172,
+					"projectIndex" : 0,
+					"source" : "plugins/types/Image",
+					"targetIndexes" : 
+					[
+						3,
+						94
+					]
+				},
+				{
+					"build" : "tests",
+					"childIndexes" : 
+					[
+						175,
+						179,
+						187,
+						189,
+						192
+					],
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "tests",
+					"targetIndexes" : 
+					[
+						227
+					]
+				},
+				{
+					"build" : "tests/utils",
+					"childIndexes" : 
+					[
+						176,
+						177
+					],
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 174,
+					"projectIndex" : 125,
+					"source" : "tests/utils",
+					"targetIndexes" : 
+					[
+						230
+					]
+				},
+				{
+					"build" : "tests/utils/marshaling",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 175,
+					"projectIndex" : 126,
+					"source" : "tests/utils/marshaling",
+					"targetIndexes" : 
+					[
+						228
+					]
+				},
+				{
+					"build" : "tests/utils/fixtures",
+					"childIndexes" : 
+					[
+						178
+					],
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 175,
+					"projectIndex" : 125,
+					"source" : "tests/utils/fixtures"
+				},
+				{
+					"build" : "tests/utils/fixtures/unit",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 177,
+					"projectIndex" : 127,
+					"source" : "tests/utils/fixtures/unit",
+					"targetIndexes" : 
+					[
+						229
+					]
+				},
+				{
+					"build" : "tests/unit",
+					"childIndexes" : 
+					[
+						180,
+						181,
+						182,
+						183,
+						184,
+						185,
+						186
+					],
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 174,
+					"projectIndex" : 0,
+					"source" : "tests/unit",
+					"targetIndexes" : 
+					[
+						251
+					]
+				},
+				{
+					"build" : "tests/unit/handling",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 179,
+					"projectIndex" : 0,
+					"source" : "tests/unit/handling",
+					"targetIndexes" : 
+					[
+						246
+					]
+				},
+				{
+					"build" : "tests/unit/controller",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 179,
+					"projectIndex" : 0,
+					"source" : "tests/unit/controller",
+					"targetIndexes" : 
+					[
+						244
+					]
+				},
+				{
+					"build" : "tests/unit/database",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 179,
+					"projectIndex" : 0,
+					"source" : "tests/unit/database",
+					"targetIndexes" : 
+					[
+						245
+					]
+				},
+				{
+					"build" : "tests/unit/plugins",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 179,
+					"projectIndex" : 128,
+					"source" : "tests/unit/plugins",
+					"targetIndexes" : 
+					[
+						249
+					]
+				},
+				{
+					"build" : "tests/unit/utils",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 179,
+					"projectIndex" : 0,
+					"source" : "tests/unit/utils",
+					"targetIndexes" : 
+					[
+						250
+					]
+				},
+				{
+					"build" : "tests/unit/marshaling",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 179,
+					"projectIndex" : 129,
+					"source" : "tests/unit/marshaling",
+					"targetIndexes" : 
+					[
+						248
+					]
+				},
+				{
+					"build" : "tests/unit/initialize",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 179,
+					"projectIndex" : 130,
+					"source" : "tests/unit/initialize",
+					"targetIndexes" : 
+					[
+						247
+					]
+				},
+				{
+					"build" : "tests/integration",
+					"childIndexes" : 
+					[
+						188
+					],
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 174,
+					"projectIndex" : 131,
+					"source" : "tests/integration",
+					"targetIndexes" : 
+					[
+						133,
+						134
+					]
+				},
+				{
+					"build" : "tests/integration/requirements",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 187,
+					"projectIndex" : 131,
+					"source" : "tests/integration/requirements",
+					"targetIndexes" : 
+					[
+						132,
+						185,
+						186,
+						213
+					]
+				},
+				{
+					"build" : "tests/resources",
+					"childIndexes" : 
+					[
+						190
+					],
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 174,
+					"projectIndex" : 0,
+					"source" : "tests/resources"
+				},
+				{
+					"build" : "tests/resources/plugins",
+					"childIndexes" : 
+					[
+						191
+					],
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 189,
+					"projectIndex" : 0,
+					"source" : "tests/resources/plugins",
+					"targetIndexes" : 
+					[
+						214,
+						215,
+						216,
+						217,
+						218,
+						219,
+						220,
+						223,
+						224,
+						225,
+						226
+					]
+				},
+				{
+					"build" : "tests/resources/plugins/prebuilt-type",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 190,
+					"projectIndex" : 0,
+					"source" : "tests/resources/plugins/prebuilt-type",
+					"targetIndexes" : 
+					[
+						95,
+						221,
+						222
+					]
+				},
+				{
+					"build" : "tests/vendor",
+					"childIndexes" : 
+					[
+						193
+					],
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 174,
+					"projectIndex" : 0,
+					"source" : "tests/vendor"
+				},
+				{
+					"build" : "tests/vendor/googletest",
+					"childIndexes" : 
+					[
+						194
+					],
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.13"
+					},
+					"parentIndex" : 192,
+					"projectIndex" : 132,
+					"source" : "tests/vendor/googletest"
+				},
+				{
+					"build" : "tests/vendor/googletest/googlemock",
+					"childIndexes" : 
+					[
+						195
+					],
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.13"
+					},
+					"parentIndex" : 193,
+					"projectIndex" : 133,
+					"source" : "tests/vendor/googletest/googlemock",
+					"targetIndexes" : 
+					[
+						120,
+						121
+					]
+				},
+				{
+					"build" : "tests/vendor/googletest/googletest",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.13"
+					},
+					"parentIndex" : 194,
+					"projectIndex" : 134,
+					"source" : "tests/vendor/googletest/googletest",
+					"targetIndexes" : 
+					[
+						122,
+						123
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						20,
+						21,
+						22,
+						23,
+						24,
+						25,
+						26,
+						27,
+						28,
+						29,
+						30,
+						31,
+						32,
+						33,
+						34,
+						35,
+						36,
+						37,
+						38,
+						39,
+						40,
+						41,
+						42,
+						43,
+						44,
+						46,
+						47,
+						48,
+						49,
+						50,
+						51,
+						52,
+						53,
+						54,
+						55,
+						56,
+						57,
+						58,
+						59,
+						60,
+						61,
+						62,
+						63,
+						64,
+						65,
+						66,
+						67,
+						68,
+						69,
+						70,
+						71,
+						72,
+						73,
+						74,
+						75,
+						76,
+						77,
+						78,
+						80,
+						81,
+						82,
+						83,
+						84,
+						85,
+						86,
+						87,
+						88,
+						89,
+						90,
+						91,
+						92,
+						93,
+						94,
+						95,
+						96,
+						97,
+						98,
+						100,
+						101,
+						102,
+						103,
+						104,
+						105,
+						106,
+						107,
+						108,
+						109,
+						110,
+						111,
+						112,
+						113,
+						114,
+						115,
+						116,
+						117,
+						118,
+						119,
+						120,
+						121,
+						122,
+						123,
+						124,
+						125,
+						128,
+						129,
+						130,
+						131,
+						132
+					],
+					"directoryIndexes" : 
+					[
+						0,
+						1,
+						16,
+						28,
+						31,
+						32,
+						33,
+						34,
+						35,
+						36,
+						37,
+						38,
+						39,
+						40,
+						41,
+						42,
+						43,
+						44,
+						45,
+						46,
+						47,
+						48,
+						49,
+						50,
+						51,
+						77,
+						104,
+						106,
+						109,
+						114,
+						137,
+						138,
+						139,
+						140,
+						145,
+						153,
+						157,
+						160,
+						165,
+						168,
+						170,
+						171,
+						172,
+						173,
+						174,
+						179,
+						180,
+						181,
+						182,
+						184,
+						189,
+						190,
+						191,
+						192
+					],
+					"name" : "ukazka-backend",
+					"targetIndexes" : 
+					[
+						3,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18,
+						19,
+						20,
+						21,
+						22,
+						23,
+						24,
+						25,
+						26,
+						27,
+						28,
+						29,
+						30,
+						31,
+						32,
+						33,
+						34,
+						35,
+						36,
+						37,
+						38,
+						39,
+						40,
+						41,
+						42,
+						43,
+						44,
+						45,
+						46,
+						47,
+						48,
+						49,
+						50,
+						51,
+						52,
+						53,
+						54,
+						55,
+						56,
+						57,
+						58,
+						59,
+						60,
+						61,
+						62,
+						63,
+						64,
+						65,
+						66,
+						67,
+						68,
+						69,
+						70,
+						71,
+						72,
+						73,
+						78,
+						84,
+						88,
+						94,
+						95,
+						106,
+						114,
+						126,
+						137,
+						140,
+						143,
+						145,
+						152,
+						162,
+						166,
+						168,
+						169,
+						171,
+						181,
+						188,
+						191,
+						199,
+						204,
+						211,
+						214,
+						215,
+						216,
+						217,
+						218,
+						219,
+						220,
+						221,
+						222,
+						223,
+						224,
+						225,
+						226,
+						227,
+						237,
+						239,
+						243,
+						244,
+						245,
+						246,
+						250,
+						251
+					]
+				},
+				{
+					"childIndexes" : 
+					[
+						2
+					],
+					"directoryIndexes" : 
+					[
+						2,
+						3,
+						5,
+						6
+					],
+					"name" : "smm-2ng",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						142,
+						198,
+						200,
+						201,
+						202,
+						255
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						4
+					],
+					"name" : "nlohmann_json",
+					"parentIndex" : 1
+				},
+				{
+					"directoryIndexes" : 
+					[
+						7
+					],
+					"name" : "httplib",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						125
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						8
+					],
+					"name" : "rapidcsv",
+					"parentIndex" : 0
+				},
+				{
+					"directoryIndexes" : 
+					[
+						9
+					],
+					"name" : "fpp",
+					"parentIndex" : 0
+				},
+				{
+					"directoryIndexes" : 
+					[
+						10,
+						11,
+						12
+					],
+					"name" : "CLI11",
+					"parentIndex" : 0
+				},
+				{
+					"directoryIndexes" : 
+					[
+						13
+					],
+					"name" : "tmp",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						233
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						14,
+						15
+					],
+					"name" : "application",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						82
+					]
+				},
+				{
+					"childIndexes" : 
+					[
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18,
+						19
+					],
+					"directoryIndexes" : 
+					[
+						17
+					],
+					"name" : "utils",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						254
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						18
+					],
+					"name" : "archive",
+					"parentIndex" : 9,
+					"targetIndexes" : 
+					[
+						83
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						19
+					],
+					"name" : "base64",
+					"parentIndex" : 9,
+					"targetIndexes" : 
+					[
+						92
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						20
+					],
+					"name" : "builder",
+					"parentIndex" : 9,
+					"targetIndexes" : 
+					[
+						93
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						21
+					],
+					"name" : "cors-server",
+					"parentIndex" : 9,
+					"targetIndexes" : 
+					[
+						102
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						22
+					],
+					"name" : "filesystem-utils",
+					"parentIndex" : 9,
+					"targetIndexes" : 
+					[
+						113
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						23
+					],
+					"name" : "dylib",
+					"parentIndex" : 9,
+					"targetIndexes" : 
+					[
+						111
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						24
+					],
+					"name" : "events-utils",
+					"parentIndex" : 9
+				},
+				{
+					"directoryIndexes" : 
+					[
+						25
+					],
+					"name" : "logger",
+					"parentIndex" : 9,
+					"targetIndexes" : 
+					[
+						139
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						26
+					],
+					"name" : "tiff-parser",
+					"parentIndex" : 9,
+					"targetIndexes" : 
+					[
+						231
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						27
+					],
+					"name" : "numerics",
+					"parentIndex" : 9,
+					"targetIndexes" : 
+					[
+						160
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						29
+					],
+					"name" : "cli-app-manager",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						96
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						30
+					],
+					"name" : "cli-config",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						97
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						52
+					],
+					"name" : "audit-controller",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						85
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						53
+					],
+					"name" : "project-snapshots-controller",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						175
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						54
+					],
+					"name" : "projects-controller",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						177
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						55
+					],
+					"name" : "project-requirements-controller",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						173
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						56
+					],
+					"name" : "cyclograms-controller",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						107
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						57
+					],
+					"name" : "cyclogram-section-types-controller",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						104
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						58
+					],
+					"name" : "navigation-system-controller",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						158
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						59
+					],
+					"name" : "flight-mission-controller",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						116
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						60
+					],
+					"name" : "modeling-controller",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						149
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						61
+					],
+					"name" : "models-controller",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						154
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						62
+					],
+					"name" : "algorithms-controller",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						80
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						63
+					],
+					"name" : "sensors-controller",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						195
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						64
+					],
+					"name" : "smm-plugins-controller",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						206
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						65
+					],
+					"name" : "trajectories-controller",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						235
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						66
+					],
+					"name" : "informational-documents-controller",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						128
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						67
+					],
+					"name" : "modeling-configuration-controller",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						146
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						68
+					],
+					"name" : "stand-modeling-controller",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						207
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						69
+					],
+					"name" : "sensor-kinds-controller",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						192
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						70
+					],
+					"name" : "types-controller",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						241
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						71
+					],
+					"name" : "controller-utils",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						100
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						72
+					],
+					"name" : "authorization-controller",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						89
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						73
+					],
+					"name" : "requirements-controller",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						182
+					]
+				},
+				{
+					"childIndexes" : 
+					[
+						45
+					],
+					"directoryIndexes" : 
+					[
+						74
+					],
+					"name" : "database",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						110
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						75
+					],
+					"name" : "OdbDatabase",
+					"parentIndex" : 44,
+					"targetIndexes" : 
+					[
+						74
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						76
+					],
+					"name" : "initialize-database",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						130,
+						131
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						78
+					],
+					"name" : "algorithm-marshaling",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						79
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						79
+					],
+					"name" : "audit-marshaling",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						87
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						80
+					],
+					"name" : "color-marshaling",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						98
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						81
+					],
+					"name" : "cyclograms-marshaling",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						109
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						82
+					],
+					"name" : "flight-mission-controller-marshaling",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						117
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						83
+					],
+					"name" : "informational-document-marshaling",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						127
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						84
+					],
+					"name" : "limitation-marshaling",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						138
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						85
+					],
+					"name" : "model-marshaling",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						144
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						86
+					],
+					"name" : "modeling-configuration-marshaling",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						148
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						87
+					],
+					"name" : "modeling-results-marshaling",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						153
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						88
+					],
+					"name" : "models-controller-marshaling",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						155
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						89
+					],
+					"name" : "numerics-marshaling",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						161
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						90
+					],
+					"name" : "option-marshaling",
+					"parentIndex" : 0
+				},
+				{
+					"directoryIndexes" : 
+					[
+						91
+					],
+					"name" : "parameter-marshaling",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						167
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						92
+					],
+					"name" : "pointers-marshaling",
+					"parentIndex" : 0
+				},
+				{
+					"directoryIndexes" : 
+					[
+						93
+					],
+					"name" : "project-marshaling",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						172
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						94
+					],
+					"name" : "scheme-marshaling",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						189
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						95
+					],
+					"name" : "sensor-marshaling",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						194
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						96
+					],
+					"name" : "smm-marshaling",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						203
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						97
+					],
+					"name" : "smm-plugin-marshaling",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						205
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						98
+					],
+					"name" : "trajectory-marshaling",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						238
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						99
+					],
+					"name" : "user-marshaling",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						253
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						100
+					],
+					"name" : "type-marshaling",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						240
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						101
+					],
+					"name" : "marshaling-utils",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						141
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						102
+					],
+					"name" : "json-patch-marshaling",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						135
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						103
+					],
+					"name" : "requirements-marshaling",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						184
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						105
+					],
+					"name" : "modeling-ipc",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						151
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						107
+					],
+					"name" : "flight-mission-calculator",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						115
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						108
+					],
+					"name" : "flight-mission-ipc",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						119
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						110
+					],
+					"name" : "stand-modeling-manager",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						210
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						111
+					],
+					"name" : "stand-modeling-ipc",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						209
+					]
+				},
+				{
+					"childIndexes" : 
+					[
+						79
+					],
+					"directoryIndexes" : 
+					[
+						112
+					],
+					"name" : "server",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						197
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						113
+					],
+					"name" : "postgres",
+					"parentIndex" : 78,
+					"targetIndexes" : 
+					[
+						170
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						115
+					],
+					"name" : "audit-handler",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						86
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						116
+					],
+					"name" : "exception-handler",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						112
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						117
+					],
+					"name" : "project-snapshots-handler",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						176
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						118
+					],
+					"name" : "projects-handler",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						178
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						119
+					],
+					"name" : "project-requirements-handler",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						174
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						120
+					],
+					"name" : "cyclograms-handler",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						108
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						121
+					],
+					"name" : "flight-mission-handler",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						118
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						122
+					],
+					"name" : "navigation-system-handler",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						159
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						123
+					],
+					"name" : "modeling-handler",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						150
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						124
+					],
+					"name" : "algorithms-handler",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						81
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						125
+					],
+					"name" : "trajectories-handler",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						236
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						126
+					],
+					"name" : "stand-modeling-handler",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						208
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						127
+					],
+					"name" : "informational-documents-handler",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						129
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						128
+					],
+					"name" : "cyclogram-section-types-handler",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						105
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						129
+					],
+					"name" : "modeling-configuration-handler",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						147
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						130
+					],
+					"name" : "sensor-kinds-handler",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						193
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						131
+					],
+					"name" : "sensors-handler",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						196
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						132
+					],
+					"name" : "types-handler",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						242
+					]
+				},
+				{
+					"childIndexes" : 
+					[
+						99
+					],
+					"directoryIndexes" : 
+					[
+						133
+					],
+					"name" : "handler-utils",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						124
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						134
+					],
+					"name" : "jwt",
+					"parentIndex" : 98,
+					"targetIndexes" : 
+					[
+						136
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						135
+					],
+					"name" : "authorization-handler",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						90,
+						99
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						136
+					],
+					"name" : "requirements-handler",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						183
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						141
+					],
+					"name" : "ControlElements",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						142
+					],
+					"name" : "DataSource",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						2
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						143
+					],
+					"name" : "Timer",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						76
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						144
+					],
+					"name" : "VideoEmulation",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						77
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						146
+					],
+					"name" : "ballistics-calc-algo",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						91
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						147
+					],
+					"name" : "create-reference-image-algo",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						103
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						148
+					],
+					"name" : "oum-search-algo",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						165
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						149
+					],
+					"name" : "oum-choice-algo",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						164
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						150
+					],
+					"name" : "start-point-calc-algo",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						212
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						151
+					],
+					"name" : "tiff-parser-algo",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						232
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						152
+					],
+					"name" : "tpz-calc-algo",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						234
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						154
+					],
+					"name" : "correction-adjustment-calc-algo",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						101
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						155
+					],
+					"name" : "semantic-recognition-algo",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						190
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						156
+					],
+					"name" : "read-tpz-and-create-viz-task-algo",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						180
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						158
+					],
+					"name" : "movement-dynamics-algo",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						156
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						159
+					],
+					"name" : "navi-subsystem-algo",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						157
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						161
+					],
+					"name" : "optical-sensor",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						163
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						162
+					],
+					"name" : "radar-sensor",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						179
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						163
+					],
+					"name" : "universal-sensor",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						252
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						164
+					],
+					"name" : "rl-sensor",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						187
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						166
+					],
+					"name" : "CyclogramSectionsSwitch",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						1
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						167
+					],
+					"name" : "MuxAlgo",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						4
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						169
+					],
+					"name" : "Precision",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						75
+					]
+				},
+				{
+					"childIndexes" : 
+					[
+						126,
+						127
+					],
+					"directoryIndexes" : 
+					[
+						175,
+						177
+					],
+					"name" : "tests-utils",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						230
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						176
+					],
+					"name" : "tests-marshaling-utils",
+					"parentIndex" : 125,
+					"targetIndexes" : 
+					[
+						228
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						178
+					],
+					"name" : "tests-unit-fixtures",
+					"parentIndex" : 125,
+					"targetIndexes" : 
+					[
+						229
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						183
+					],
+					"name" : "unit-plugins-tests",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						249
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						185
+					],
+					"name" : "unit-marshaling-tests",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						248
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						186
+					],
+					"name" : "unit-initialize-tests",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						247
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						187,
+						188
+					],
+					"name" : "integration-handlers-tests",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						132,
+						133,
+						134,
+						185,
+						186,
+						213
+					]
+				},
+				{
+					"childIndexes" : 
+					[
+						133
+					],
+					"directoryIndexes" : 
+					[
+						193
+					],
+					"name" : "googletest-distribution",
+					"parentIndex" : 0
+				},
+				{
+					"childIndexes" : 
+					[
+						134
+					],
+					"directoryIndexes" : 
+					[
+						194
+					],
+					"name" : "gmock",
+					"parentIndex" : 132,
+					"targetIndexes" : 
+					[
+						120,
+						121
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						195
+					],
+					"name" : "gtest",
+					"parentIndex" : 133,
+					"targetIndexes" : 
+					[
+						122,
+						123
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 141,
+					"id" : "ControlElements::@832f13dba564d449292f",
+					"jsonFile" : "target-ControlElements-8dbcaab4f4869b7e2d7a.json",
+					"name" : "ControlElements",
+					"projectIndex" : 102
+				},
+				{
+					"directoryIndex" : 166,
+					"id" : "CyclogramSectionsSwitch::@79ed37d808a3868d904e",
+					"jsonFile" : "target-CyclogramSectionsSwitch-16f828319e7aeaa65108.json",
+					"name" : "CyclogramSectionsSwitch",
+					"projectIndex" : 122
+				},
+				{
+					"directoryIndex" : 142,
+					"id" : "DataSource::@dbfb07657302be808a4f",
+					"jsonFile" : "target-DataSource-0d6e4209226542d0c0ce.json",
+					"name" : "DataSource",
+					"projectIndex" : 103
+				},
+				{
+					"directoryIndex" : 173,
+					"id" : "Image::@66e4b7323648b9d61689",
+					"jsonFile" : "target-Image-ec3c44f770f016072163.json",
+					"name" : "Image",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 167,
+					"id" : "MuxAlgo::@8f6c2f420261d77e4e9c",
+					"jsonFile" : "target-MuxAlgo-83da58f819996656a7f3.json",
+					"name" : "MuxAlgo",
+					"projectIndex" : 123
+				},
+				{
+					"directoryIndex" : 43,
+					"id" : "ODB_AbstractBlock::@ce8763f2f603756f8cf3",
+					"jsonFile" : "target-ODB_AbstractBlock-f2fb888e2e2caf4ee93d.json",
+					"name" : "ODB_AbstractBlock",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 42,
+					"id" : "ODB_Algorithm::@c888555fb2d04d2a1f7d",
+					"jsonFile" : "target-ODB_Algorithm-039bc190369655ee62ae.json",
+					"name" : "ODB_Algorithm",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 43,
+					"id" : "ODB_AlgorithmBlock::@ce8763f2f603756f8cf3",
+					"jsonFile" : "target-ODB_AlgorithmBlock-515ca21de4c1615b1b0f.json",
+					"name" : "ODB_AlgorithmBlock",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 43,
+					"id" : "ODB_AlgorithmBlocksStorage::@ce8763f2f603756f8cf3",
+					"jsonFile" : "target-ODB_AlgorithmBlocksStorage-8a793e9e579203ff0c11.json",
+					"name" : "ODB_AlgorithmBlocksStorage",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 42,
+					"id" : "ODB_AlgorithmLimitation::@c888555fb2d04d2a1f7d",
+					"jsonFile" : "target-ODB_AlgorithmLimitation-345c83da958e8935ac84.json",
+					"name" : "ODB_AlgorithmLimitation",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 50,
+					"id" : "ODB_AuditEntry::@94a860eee32156aae729",
+					"jsonFile" : "target-ODB_AuditEntry-12eb318767c40ad7c0d9.json",
+					"name" : "ODB_AuditEntry",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 33,
+					"id" : "ODB_ByteArray::@46d6abcba433a4e69a2a",
+					"jsonFile" : "target-ODB_ByteArray-00650be2d0f1b7eb6410.json",
+					"name" : "ODB_ByteArray",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 33,
+					"id" : "ODB_ColorRGB::@46d6abcba433a4e69a2a",
+					"jsonFile" : "target-ODB_ColorRGB-30e7100f4748dcc1a616.json",
+					"name" : "ODB_ColorRGB",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 49,
+					"id" : "ODB_ConfiguredRequirement::@c4d52102bce658d563e8",
+					"jsonFile" : "target-ODB_ConfiguredRequirement-861f209e8f9290d4f5fc.json",
+					"name" : "ODB_ConfiguredRequirement",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 43,
+					"id" : "ODB_Cyclogram::@ce8763f2f603756f8cf3",
+					"jsonFile" : "target-ODB_Cyclogram-cadeabf5400b2d174ceb.json",
+					"name" : "ODB_Cyclogram",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 43,
+					"id" : "ODB_CyclogramSection::@ce8763f2f603756f8cf3",
+					"jsonFile" : "target-ODB_CyclogramSection-bb250b1a89d4229e349a.json",
+					"name" : "ODB_CyclogramSection",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 43,
+					"id" : "ODB_CyclogramSectionType::@ce8763f2f603756f8cf3",
+					"jsonFile" : "target-ODB_CyclogramSectionType-78cc5d8afea5fe2a8b11.json",
+					"name" : "ODB_CyclogramSectionType",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 44,
+					"id" : "ODB_Cyclograms::@2823994de2e5f65089e7",
+					"jsonFile" : "target-ODB_Cyclograms-2766942f2e1c0ef5647a.json",
+					"name" : "ODB_Cyclograms",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 43,
+					"id" : "ODB_DataSourceBlock::@ce8763f2f603756f8cf3",
+					"jsonFile" : "target-ODB_DataSourceBlock-dfc3fbbed9786af24134.json",
+					"name" : "ODB_DataSourceBlock",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 43,
+					"id" : "ODB_DataSourceParameter::@ce8763f2f603756f8cf3",
+					"jsonFile" : "target-ODB_DataSourceParameter-724559da3e5f1cb4a537.json",
+					"name" : "ODB_DataSourceParameter",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 43,
+					"id" : "ODB_DataSourceParameters::@ce8763f2f603756f8cf3",
+					"jsonFile" : "target-ODB_DataSourceParameters-47b2483c89ff8c2b8da6.json",
+					"name" : "ODB_DataSourceParameters",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 43,
+					"id" : "ODB_Edge::@ce8763f2f603756f8cf3",
+					"jsonFile" : "target-ODB_Edge-ca691732e5cefe40540c.json",
+					"name" : "ODB_Edge",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 43,
+					"id" : "ODB_ExportPoint::@ce8763f2f603756f8cf3",
+					"jsonFile" : "target-ODB_ExportPoint-b34c12e3abce7f5e4e64.json",
+					"name" : "ODB_ExportPoint",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 45,
+					"id" : "ODB_FlightMission::@3f5a14ca3d9d87df1f3f",
+					"jsonFile" : "target-ODB_FlightMission-722869f08cafc21873e0.json",
+					"name" : "ODB_FlightMission",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 42,
+					"id" : "ODB_FlightMissionAlgorithm::@c888555fb2d04d2a1f7d",
+					"jsonFile" : "target-ODB_FlightMissionAlgorithm-8dedf8f815c05bec4778.json",
+					"name" : "ODB_FlightMissionAlgorithm",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 43,
+					"id" : "ODB_FlightMissionExportBlock::@ce8763f2f603756f8cf3",
+					"jsonFile" : "target-ODB_FlightMissionExportBlock-4e276de6a4a896dc2f94.json",
+					"name" : "ODB_FlightMissionExportBlock",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 43,
+					"id" : "ODB_FlightMissionImportBlock::@ce8763f2f603756f8cf3",
+					"jsonFile" : "target-ODB_FlightMissionImportBlock-1ce6fcf8d9573dbe2038.json",
+					"name" : "ODB_FlightMissionImportBlock",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 43,
+					"id" : "ODB_FlightMissionScheme::@ce8763f2f603756f8cf3",
+					"jsonFile" : "target-ODB_FlightMissionScheme-cfed72f3ba1b163638c0.json",
+					"name" : "ODB_FlightMissionScheme",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 48,
+					"id" : "ODB_InformationalDocument::@08f0924ca7c35ee21044",
+					"jsonFile" : "target-ODB_InformationalDocument-bb2b427467ac43592720.json",
+					"name" : "ODB_InformationalDocument",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 35,
+					"id" : "ODB_InputParameter::@bbcab9a98cf2bff05986",
+					"jsonFile" : "target-ODB_InputParameter-c898883152e3918dfb9f.json",
+					"name" : "ODB_InputParameter",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 36,
+					"id" : "ODB_Limitation::@82f0ff8b28e19141afc8",
+					"jsonFile" : "target-ODB_Limitation-8ea18fe86da71088dc36.json",
+					"name" : "ODB_Limitation",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 37,
+					"id" : "ODB_Model::@97138fdf0e4433680f99",
+					"jsonFile" : "target-ODB_Model-81ecc2361e34c34d060d.json",
+					"name" : "ODB_Model",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 46,
+					"id" : "ODB_ModelingConfiguration::@615b51f638b66ad70781",
+					"jsonFile" : "target-ODB_ModelingConfiguration-b62041cae0fdae3247f4.json",
+					"name" : "ODB_ModelingConfiguration",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 43,
+					"id" : "ODB_ModelingExportBlock::@ce8763f2f603756f8cf3",
+					"jsonFile" : "target-ODB_ModelingExportBlock-ace772afd7d03274671a.json",
+					"name" : "ODB_ModelingExportBlock",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 45,
+					"id" : "ODB_ModelingResult::@3f5a14ca3d9d87df1f3f",
+					"jsonFile" : "target-ODB_ModelingResult-bfe1903f5d2be890ac93.json",
+					"name" : "ODB_ModelingResult",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 43,
+					"id" : "ODB_ModelingScheme::@ce8763f2f603756f8cf3",
+					"jsonFile" : "target-ODB_ModelingScheme-ad7ba92f1f437bf6b804.json",
+					"name" : "ODB_ModelingScheme",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 45,
+					"id" : "ODB_ModelingStepOutput::@3f5a14ca3d9d87df1f3f",
+					"jsonFile" : "target-ODB_ModelingStepOutput-94388ea0ba793d6d40ee.json",
+					"name" : "ODB_ModelingStepOutput",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 43,
+					"id" : "ODB_NavigationIO::@ce8763f2f603756f8cf3",
+					"jsonFile" : "target-ODB_NavigationIO-3da34f91a8c0d33d56e0.json",
+					"name" : "ODB_NavigationIO",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 43,
+					"id" : "ODB_NavigationSystem::@ce8763f2f603756f8cf3",
+					"jsonFile" : "target-ODB_NavigationSystem-4620c9f530b514b63839.json",
+					"name" : "ODB_NavigationSystem",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 43,
+					"id" : "ODB_NavigationSystemBlock::@ce8763f2f603756f8cf3",
+					"jsonFile" : "target-ODB_NavigationSystemBlock-2cecb813fe02332d3241.json",
+					"name" : "ODB_NavigationSystemBlock",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 43,
+					"id" : "ODB_NavigationSystemInputsBlock::@ce8763f2f603756f8cf3",
+					"jsonFile" : "target-ODB_NavigationSystemInputsBlock-5966769805e4bc278535.json",
+					"name" : "ODB_NavigationSystemInputsBlock",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 43,
+					"id" : "ODB_NavigationSystemOutputsBlock::@ce8763f2f603756f8cf3",
+					"jsonFile" : "target-ODB_NavigationSystemOutputsBlock-38d8eb7b6c1452b9bf6b.json",
+					"name" : "ODB_NavigationSystemOutputsBlock",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 43,
+					"id" : "ODB_NavigationSystemScheme::@ce8763f2f603756f8cf3",
+					"jsonFile" : "target-ODB_NavigationSystemScheme-6f2d1bd482d05ceedf44.json",
+					"name" : "ODB_NavigationSystemScheme",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 42,
+					"id" : "ODB_OnboardAlgorithm::@c888555fb2d04d2a1f7d",
+					"jsonFile" : "target-ODB_OnboardAlgorithm-14aa01850b9a72e8e94c.json",
+					"name" : "ODB_OnboardAlgorithm",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 35,
+					"id" : "ODB_OutputParameter::@bbcab9a98cf2bff05986",
+					"jsonFile" : "target-ODB_OutputParameter-4f8ff77f891eb91237a4.json",
+					"name" : "ODB_OutputParameter",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 35,
+					"id" : "ODB_Parameter::@bbcab9a98cf2bff05986",
+					"jsonFile" : "target-ODB_Parameter-0ea82af57028f4034804.json",
+					"name" : "ODB_Parameter",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 33,
+					"id" : "ODB_Path::@46d6abcba433a4e69a2a",
+					"jsonFile" : "target-ODB_Path-c2bea4bcb4d95bc69736.json",
+					"name" : "ODB_Path",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 45,
+					"id" : "ODB_Pipeline::@3f5a14ca3d9d87df1f3f",
+					"jsonFile" : "target-ODB_Pipeline-73d629d7d56f3e489327.json",
+					"name" : "ODB_Pipeline",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 47,
+					"id" : "ODB_Project::@8c353fc9613c51da4349",
+					"jsonFile" : "target-ODB_Project-baf70b35a3e7fd52275d.json",
+					"name" : "ODB_Project",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 47,
+					"id" : "ODB_ProjectArchitecture::@8c353fc9613c51da4349",
+					"jsonFile" : "target-ODB_ProjectArchitecture-99f1f0d81786e099eac5.json",
+					"name" : "ODB_ProjectArchitecture",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 45,
+					"id" : "ODB_ProjectResults::@3f5a14ca3d9d87df1f3f",
+					"jsonFile" : "target-ODB_ProjectResults-378e4fb2b6694081fed1.json",
+					"name" : "ODB_ProjectResults",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 47,
+					"id" : "ODB_ProjectSnapshot::@8c353fc9613c51da4349",
+					"jsonFile" : "target-ODB_ProjectSnapshot-fd5be7f6e8e35bebed75.json",
+					"name" : "ODB_ProjectSnapshot",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 49,
+					"id" : "ODB_Requirement::@c4d52102bce658d563e8",
+					"jsonFile" : "target-ODB_Requirement-46c9596129ee013affa8.json",
+					"name" : "ODB_Requirement",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 40,
+					"id" : "ODB_Section::@39a0e413281f03a60e38",
+					"jsonFile" : "target-ODB_Section-2302974cc2f8a20418ac.json",
+					"name" : "ODB_Section",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 38,
+					"id" : "ODB_Sensor::@cb95a52f35cad3b37944",
+					"jsonFile" : "target-ODB_Sensor-fe1109b58f6be7bcd96c.json",
+					"name" : "ODB_Sensor",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 43,
+					"id" : "ODB_SensorBlock::@ce8763f2f603756f8cf3",
+					"jsonFile" : "target-ODB_SensorBlock-383d1496a9e0722f5688.json",
+					"name" : "ODB_SensorBlock",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 38,
+					"id" : "ODB_SensorKind::@cb95a52f35cad3b37944",
+					"jsonFile" : "target-ODB_SensorKind-9bd8e13dbbcb23c6617c.json",
+					"name" : "ODB_SensorKind",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 42,
+					"id" : "ODB_SmmModuleAlgorithm::@c888555fb2d04d2a1f7d",
+					"jsonFile" : "target-ODB_SmmModuleAlgorithm-07f745e843915dd18454.json",
+					"name" : "ODB_SmmModuleAlgorithm",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 39,
+					"id" : "ODB_SmmPlugin::@dc4b2a5faea53a0e678a",
+					"jsonFile" : "target-ODB_SmmPlugin-cd9e924f354942731242.json",
+					"name" : "ODB_SmmPlugin",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 33,
+					"id" : "ODB_SmmType::@46d6abcba433a4e69a2a",
+					"jsonFile" : "target-ODB_SmmType-04246e6f17ffdbf9bebf.json",
+					"name" : "ODB_SmmType",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 33,
+					"id" : "ODB_SmmValue::@46d6abcba433a4e69a2a",
+					"jsonFile" : "target-ODB_SmmValue-0751efa441816af7edb9.json",
+					"name" : "ODB_SmmValue",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 33,
+					"id" : "ODB_SmmValues::@46d6abcba433a4e69a2a",
+					"jsonFile" : "target-ODB_SmmValues-61342eb25b1eef66e9a1.json",
+					"name" : "ODB_SmmValues",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 40,
+					"id" : "ODB_StateVector::@39a0e413281f03a60e38",
+					"jsonFile" : "target-ODB_StateVector-ae642050f7c79fd57f04.json",
+					"name" : "ODB_StateVector",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 33,
+					"id" : "ODB_TimePoint::@46d6abcba433a4e69a2a",
+					"jsonFile" : "target-ODB_TimePoint-5ca4ef515606c53f237a.json",
+					"name" : "ODB_TimePoint",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 44,
+					"id" : "ODB_TotalCyclogramSection::@2823994de2e5f65089e7",
+					"jsonFile" : "target-ODB_TotalCyclogramSection-66b814e5ed622f550aa6.json",
+					"name" : "ODB_TotalCyclogramSection",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 40,
+					"id" : "ODB_Trajectory::@39a0e413281f03a60e38",
+					"jsonFile" : "target-ODB_Trajectory-7ad40bf41b8ddc2becda.json",
+					"name" : "ODB_Trajectory",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 40,
+					"id" : "ODB_TrajectoryData::@39a0e413281f03a60e38",
+					"jsonFile" : "target-ODB_TrajectoryData-728a780f6874867fa40d.json",
+					"name" : "ODB_TrajectoryData",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 40,
+					"id" : "ODB_TrajectoryModel::@39a0e413281f03a60e38",
+					"jsonFile" : "target-ODB_TrajectoryModel-342dbc2cc6ce7911fbd9.json",
+					"name" : "ODB_TrajectoryModel",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 40,
+					"id" : "ODB_TrajectorySource::@39a0e413281f03a60e38",
+					"jsonFile" : "target-ODB_TrajectorySource-dcd552e320b967a580ab.json",
+					"name" : "ODB_TrajectorySource",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 41,
+					"id" : "ODB_Type::@e13c74f7343776c48024",
+					"jsonFile" : "target-ODB_Type-1948e0450fddfbd4d208.json",
+					"name" : "ODB_Type",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 34,
+					"id" : "ODB_User::@64ce893590329736f0cb",
+					"jsonFile" : "target-ODB_User-0c33f4a16423c7aec4ce.json",
+					"name" : "ODB_User",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 39,
+					"id" : "ODB_UserProvidedPluginInfo::@dc4b2a5faea53a0e678a",
+					"jsonFile" : "target-ODB_UserProvidedPluginInfo-8707ade5bd1559c933b8.json",
+					"name" : "ODB_UserProvidedPluginInfo",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 42,
+					"id" : "ODB_UtilityAlgorithm::@c888555fb2d04d2a1f7d",
+					"jsonFile" : "target-ODB_UtilityAlgorithm-f1b2615d1fb9d605fdd3.json",
+					"name" : "ODB_UtilityAlgorithm",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 33,
+					"id" : "ODB_VectorPersistence::@46d6abcba433a4e69a2a",
+					"jsonFile" : "target-ODB_VectorPersistence-edd62c493a2a3482e298.json",
+					"name" : "ODB_VectorPersistence",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 75,
+					"id" : "OdbDatabase::@6e7d9d2a25fa61f9d3a3",
+					"jsonFile" : "target-OdbDatabase-8c48ff4d408163929023.json",
+					"name" : "OdbDatabase",
+					"projectIndex" : 45
+				},
+				{
+					"directoryIndex" : 169,
+					"id" : "Precision::@1a9baeb8261292bb8901",
+					"jsonFile" : "target-Precision-55527f80746cb99cdb83.json",
+					"name" : "Precision",
+					"projectIndex" : 124
+				},
+				{
+					"directoryIndex" : 143,
+					"id" : "Timer::@8854767fa39245a77e25",
+					"jsonFile" : "target-Timer-d81871b8925fb6a73d67.json",
+					"name" : "Timer",
+					"projectIndex" : 104
+				},
+				{
+					"directoryIndex" : 144,
+					"id" : "VideoEmulation::@1f35bd0ff503e473e3d0",
+					"jsonFile" : "target-VideoEmulation-232df5fe738e3ee23ed1.json",
+					"name" : "VideoEmulation",
+					"projectIndex" : 105
+				},
+				{
+					"directoryIndex" : 42,
+					"id" : "algorithm::@c888555fb2d04d2a1f7d",
+					"jsonFile" : "target-algorithm-73604ecca15c7b31ac73.json",
+					"name" : "algorithm",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 78,
+					"id" : "algorithm-marshaling::@ba2cc002230d6e71e2b2",
+					"jsonFile" : "target-algorithm-marshaling-9924a0f1ac2a7b47c3a4.json",
+					"name" : "algorithm-marshaling",
+					"projectIndex" : 47
+				},
+				{
+					"directoryIndex" : 62,
+					"id" : "algorithms-controller::@6180e91a949049f86289",
+					"jsonFile" : "target-algorithms-controller-4ecedb02618e1793eb57.json",
+					"name" : "algorithms-controller",
+					"projectIndex" : 32
+				},
+				{
+					"directoryIndex" : 124,
+					"id" : "algorithms-handler::@30d968adad511d28446e",
+					"jsonFile" : "target-algorithms-handler-e797ac00bfc316d9810d.json",
+					"name" : "algorithms-handler",
+					"projectIndex" : 89
+				},
+				{
+					"directoryIndex" : 15,
+					"id" : "application::@87d384b84c85624b6108",
+					"jsonFile" : "target-application-03b54ed2df7cbbd63eaa.json",
+					"name" : "application",
+					"projectIndex" : 8
+				},
+				{
+					"directoryIndex" : 18,
+					"id" : "archive::@570babba172550b3194d",
+					"jsonFile" : "target-archive-19a643502a2501677556.json",
+					"name" : "archive",
+					"projectIndex" : 10
+				},
+				{
+					"directoryIndex" : 50,
+					"id" : "audit::@94a860eee32156aae729",
+					"jsonFile" : "target-audit-c95ba4f804db83e0cb19.json",
+					"name" : "audit",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 52,
+					"id" : "audit-controller::@2c6be8b563101399aa6c",
+					"jsonFile" : "target-audit-controller-f631aae44b783f4d3655.json",
+					"name" : "audit-controller",
+					"projectIndex" : 22
+				},
+				{
+					"directoryIndex" : 115,
+					"id" : "audit-handler::@149a8d7f41cbd73ee946",
+					"jsonFile" : "target-audit-handler-2377a42d46e93b59f95c.json",
+					"name" : "audit-handler",
+					"projectIndex" : 80
+				},
+				{
+					"directoryIndex" : 79,
+					"id" : "audit-marshaling::@5c2204e6787e240cdb80",
+					"jsonFile" : "target-audit-marshaling-5d81efee9714c5080ed1.json",
+					"name" : "audit-marshaling",
+					"projectIndex" : 48
+				},
+				{
+					"directoryIndex" : 34,
+					"id" : "authorization::@64ce893590329736f0cb",
+					"jsonFile" : "target-authorization-130034f99aa0fcc97784.json",
+					"name" : "authorization",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 72,
+					"id" : "authorization-controller::@d5beaeb2f6858bcadda2",
+					"jsonFile" : "target-authorization-controller-26405ef1b9037d3f8bce.json",
+					"name" : "authorization-controller",
+					"projectIndex" : 42
+				},
+				{
+					"directoryIndex" : 135,
+					"id" : "authorization-handler::@598230342eaa6813e282",
+					"jsonFile" : "target-authorization-handler-55841ad8172cd0f5f761.json",
+					"name" : "authorization-handler",
+					"projectIndex" : 100
+				},
+				{
+					"directoryIndex" : 146,
+					"id" : "ballistics-calc-algo::@33003f4c77db1effa545",
+					"jsonFile" : "target-ballistics-calc-algo-8cfbde46c960b00b0d2b.json",
+					"name" : "ballistics-calc-algo",
+					"projectIndex" : 106
+				},
+				{
+					"directoryIndex" : 19,
+					"id" : "base64::@a83cc730615319bf7b27",
+					"jsonFile" : "target-base64-c87580e8a754e8ad18e2.json",
+					"name" : "base64",
+					"projectIndex" : 11
+				},
+				{
+					"directoryIndex" : 20,
+					"id" : "builder::@f56389d12620d5305edf",
+					"jsonFile" : "target-builder-bfd7380ddd7c7cc2fc4f.json",
+					"name" : "builder",
+					"projectIndex" : 12
+				},
+				{
+					"directoryIndex" : 173,
+					"id" : "bundle-Image-header::@66e4b7323648b9d61689",
+					"jsonFile" : "target-bundle-Image-header-0d0f9336d37824745333.json",
+					"name" : "bundle-Image-header",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 191,
+					"id" : "bundle-test-prebuilt-type-header::@4e075452339d05cb7396",
+					"jsonFile" : "target-bundle-test-prebuilt-type-header-7ef77ef34197a697c59f.json",
+					"name" : "bundle-test-prebuilt-type-header",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 29,
+					"id" : "cli-app-manager::@3a372a3d0997c493f418",
+					"jsonFile" : "target-cli-app-manager-6d3ce7dff23863ae6006.json",
+					"name" : "cli-app-manager",
+					"projectIndex" : 20
+				},
+				{
+					"directoryIndex" : 30,
+					"id" : "cli-config::@9c5f740600e6f38c4a62",
+					"jsonFile" : "target-cli-config-4db51e06262c3dc70184.json",
+					"name" : "cli-config",
+					"projectIndex" : 21
+				},
+				{
+					"directoryIndex" : 80,
+					"id" : "color-marshaling::@b162a64cddf88bc4eea6",
+					"jsonFile" : "target-color-marshaling-c71bde1b486dbaba8d45.json",
+					"name" : "color-marshaling",
+					"projectIndex" : 49
+				},
+				{
+					"directoryIndex" : 135,
+					"id" : "config-copy-data::@598230342eaa6813e282",
+					"jsonFile" : "target-config-copy-data-c9704968120aa84cd34a.json",
+					"name" : "config-copy-data",
+					"projectIndex" : 100
+				},
+				{
+					"directoryIndex" : 71,
+					"id" : "controller-utils::@97f5e6d8e2ddc592f60f",
+					"jsonFile" : "target-controller-utils-b8570e58f5078a8ff5f0.json",
+					"name" : "controller-utils",
+					"projectIndex" : 41
+				},
+				{
+					"directoryIndex" : 154,
+					"id" : "correction-adjustment-calc-algo::@07dfd5097b36ddad7d73",
+					"jsonFile" : "target-correction-adjustment-calc-algo-64f0d7d680c92b08390d.json",
+					"name" : "correction-adjustment-calc-algo",
+					"projectIndex" : 113
+				},
+				{
+					"directoryIndex" : 21,
+					"id" : "cors-server::@2d595679a080aecf36b3",
+					"jsonFile" : "target-cors-server-6bdd9521a4dc2393ef8f.json",
+					"name" : "cors-server",
+					"projectIndex" : 13
+				},
+				{
+					"directoryIndex" : 147,
+					"id" : "create-reference-image-algo::@b3d1a0e9d85f430c6690",
+					"jsonFile" : "target-create-reference-image-algo-1819430f87a422fb9fe0.json",
+					"name" : "create-reference-image-algo",
+					"projectIndex" : 107
+				},
+				{
+					"directoryIndex" : 57,
+					"id" : "cyclogram-section-types-controller::@7707d166ddbce1c59abc",
+					"jsonFile" : "target-cyclogram-section-types-controller-efbcb98c91b6b7f04d97.json",
+					"name" : "cyclogram-section-types-controller",
+					"projectIndex" : 27
+				},
+				{
+					"directoryIndex" : 128,
+					"id" : "cyclogram-section-types-handler::@582908963cbf71d2f5fb",
+					"jsonFile" : "target-cyclogram-section-types-handler-76959a9a9b324840b311.json",
+					"name" : "cyclogram-section-types-handler",
+					"projectIndex" : 93
+				},
+				{
+					"directoryIndex" : 44,
+					"id" : "cyclograms::@2823994de2e5f65089e7",
+					"jsonFile" : "target-cyclograms-035eb32e27997a8797db.json",
+					"name" : "cyclograms",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 56,
+					"id" : "cyclograms-controller::@2f6320fd137d8f6660f7",
+					"jsonFile" : "target-cyclograms-controller-e9d85200c50b44c4ef9c.json",
+					"name" : "cyclograms-controller",
+					"projectIndex" : 26
+				},
+				{
+					"directoryIndex" : 120,
+					"id" : "cyclograms-handler::@b5779af10bfab5f0a3b2",
+					"jsonFile" : "target-cyclograms-handler-e69ae6678b8ac4ba5a3a.json",
+					"name" : "cyclograms-handler",
+					"projectIndex" : 85
+				},
+				{
+					"directoryIndex" : 81,
+					"id" : "cyclograms-marshaling::@5429997b677cb3b95b63",
+					"jsonFile" : "target-cyclograms-marshaling-51b30cfa68612ae2809f.json",
+					"name" : "cyclograms-marshaling",
+					"projectIndex" : 50
+				},
+				{
+					"directoryIndex" : 74,
+					"id" : "database::@b8e14e46f8adf27429f5",
+					"jsonFile" : "target-database-642b7a1d363e14e54894.json",
+					"name" : "database",
+					"projectIndex" : 44
+				},
+				{
+					"directoryIndex" : 23,
+					"id" : "dylib::@83cee984786f95ca594f",
+					"jsonFile" : "target-dylib-268186028786390d32f0.json",
+					"name" : "dylib",
+					"projectIndex" : 15
+				},
+				{
+					"directoryIndex" : 116,
+					"id" : "exception-handler::@4c040f0a7fcc5f98d58d",
+					"jsonFile" : "target-exception-handler-d8bd432a6e6971b5dc3e.json",
+					"name" : "exception-handler",
+					"projectIndex" : 81
+				},
+				{
+					"directoryIndex" : 22,
+					"id" : "filesystem-utils::@ebbb1d94c5cc98071d0a",
+					"jsonFile" : "target-filesystem-utils-58c5451a6b65bb96a696.json",
+					"name" : "filesystem-utils",
+					"projectIndex" : 14
+				},
+				{
+					"directoryIndex" : 137,
+					"id" : "flight-mission-calculation-process::@14e1f0dfe842859e1ea6",
+					"jsonFile" : "target-flight-mission-calculation-process-e9a51d29fb62a1c073e0.json",
+					"name" : "flight-mission-calculation-process",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 107,
+					"id" : "flight-mission-calculator::@b689771b9be7b3206ed2",
+					"jsonFile" : "target-flight-mission-calculator-9a22792f6769b6d943dc.json",
+					"name" : "flight-mission-calculator",
+					"projectIndex" : 74
+				},
+				{
+					"directoryIndex" : 59,
+					"id" : "flight-mission-controller::@a77bde6a2fe293978a19",
+					"jsonFile" : "target-flight-mission-controller-cbcec2a2ab344bfedaa6.json",
+					"name" : "flight-mission-controller",
+					"projectIndex" : 29
+				},
+				{
+					"directoryIndex" : 82,
+					"id" : "flight-mission-controller-marshaling::@8d0dc79add9c58c75aad",
+					"jsonFile" : "target-flight-mission-controller-marshaling-ad85e159b9a8ec670181.json",
+					"name" : "flight-mission-controller-marshaling",
+					"projectIndex" : 51
+				},
+				{
+					"directoryIndex" : 121,
+					"id" : "flight-mission-handler::@a14bd6ca1f9dcfd03396",
+					"jsonFile" : "target-flight-mission-handler-d14f941098660ccd18d6.json",
+					"name" : "flight-mission-handler",
+					"projectIndex" : 86
+				},
+				{
+					"directoryIndex" : 108,
+					"id" : "flight-mission-ipc::@61f4892950ede1d82c36",
+					"jsonFile" : "target-flight-mission-ipc-52242d4628cfdef4f726.json",
+					"name" : "flight-mission-ipc",
+					"projectIndex" : 75
+				},
+				{
+					"directoryIndex" : 194,
+					"id" : "gmock::@3e647b112d7736598b70",
+					"jsonFile" : "target-gmock-156a8ffdf97909e14a08.json",
+					"name" : "gmock",
+					"projectIndex" : 133
+				},
+				{
+					"directoryIndex" : 194,
+					"id" : "gmock_main::@3e647b112d7736598b70",
+					"jsonFile" : "target-gmock_main-ff71553999f0afeb5d9e.json",
+					"name" : "gmock_main",
+					"projectIndex" : 133
+				},
+				{
+					"directoryIndex" : 195,
+					"id" : "gtest::@72870d4ca36b93f0ecb2",
+					"jsonFile" : "target-gtest-0a7f410301a893495231.json",
+					"name" : "gtest",
+					"projectIndex" : 134
+				},
+				{
+					"directoryIndex" : 195,
+					"id" : "gtest_main::@72870d4ca36b93f0ecb2",
+					"jsonFile" : "target-gtest_main-cd55faa33a620390ac04.json",
+					"name" : "gtest_main",
+					"projectIndex" : 134
+				},
+				{
+					"directoryIndex" : 133,
+					"id" : "handler-utils::@1c37991e4eff3e331e22",
+					"jsonFile" : "target-handler-utils-b2966662225a5fbe1aa7.json",
+					"name" : "handler-utils",
+					"projectIndex" : 98
+				},
+				{
+					"directoryIndex" : 7,
+					"id" : "httplib::@ea29bca9fd98f953c37c",
+					"jsonFile" : "target-httplib-5d6942f1ddef65985712.json",
+					"name" : "httplib",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 48,
+					"id" : "informational-document::@08f0924ca7c35ee21044",
+					"jsonFile" : "target-informational-document-8db8d4d3aebb3317df95.json",
+					"name" : "informational-document",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 83,
+					"id" : "informational-document-marshaling::@571170d46888185e5f5e",
+					"jsonFile" : "target-informational-document-marshaling-2b68719b7681e36be494.json",
+					"name" : "informational-document-marshaling",
+					"projectIndex" : 52
+				},
+				{
+					"directoryIndex" : 66,
+					"id" : "informational-documents-controller::@4f742de7247a7df62041",
+					"jsonFile" : "target-informational-documents-controller-8bf1af10c1173d059eb7.json",
+					"name" : "informational-documents-controller",
+					"projectIndex" : 36
+				},
+				{
+					"directoryIndex" : 127,
+					"id" : "informational-documents-handler::@afe967c419eba7a62aea",
+					"jsonFile" : "target-informational-documents-handler-4ee100a3213294eca62b.json",
+					"name" : "informational-documents-handler",
+					"projectIndex" : 92
+				},
+				{
+					"directoryIndex" : 76,
+					"id" : "initialize-copy-data::@62e1aa7b47e708a61eb0",
+					"jsonFile" : "target-initialize-copy-data-9c0b5feca7c42815df41.json",
+					"name" : "initialize-copy-data",
+					"projectIndex" : 46
+				},
+				{
+					"directoryIndex" : 76,
+					"id" : "initialize-database::@62e1aa7b47e708a61eb0",
+					"jsonFile" : "target-initialize-database-2afee8ab639018eafe2e.json",
+					"name" : "initialize-database",
+					"projectIndex" : 46
+				},
+				{
+					"directoryIndex" : 188,
+					"id" : "inputs-values-plugin::@8bad8a20b89a02530338",
+					"jsonFile" : "target-inputs-values-plugin-2ae92ba25914aa42bf1d.json",
+					"name" : "inputs-values-plugin",
+					"projectIndex" : 131
+				},
+				{
+					"directoryIndex" : 187,
+					"id" : "integration-handlers-tests::@a40f6d277e0496dfeabf",
+					"jsonFile" : "target-integration-handlers-tests-2413e489024af7b2f19f.json",
+					"name" : "integration-handlers-tests",
+					"projectIndex" : 131
+				},
+				{
+					"directoryIndex" : 187,
+					"id" : "integration_tests::@a40f6d277e0496dfeabf",
+					"jsonFile" : "target-integration_tests-a662a8e5aeaa9f146139.json",
+					"name" : "integration_tests",
+					"projectIndex" : 131
+				},
+				{
+					"directoryIndex" : 102,
+					"id" : "json-patch-marshaling::@bc3876e19d9546b7e82a",
+					"jsonFile" : "target-json-patch-marshaling-a201ce8ac2e0eca56b58.json",
+					"name" : "json-patch-marshaling",
+					"projectIndex" : 71
+				},
+				{
+					"directoryIndex" : 134,
+					"id" : "jwt::@55140f7d8d68e868aa66",
+					"jsonFile" : "target-jwt-44166db852ba2843f96d.json",
+					"name" : "jwt",
+					"projectIndex" : 99
+				},
+				{
+					"directoryIndex" : 36,
+					"id" : "limitation::@82f0ff8b28e19141afc8",
+					"jsonFile" : "target-limitation-0e5b4a5092ccc6d18835.json",
+					"name" : "limitation",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 84,
+					"id" : "limitation-marshaling::@a0a50134a6c4b34396a0",
+					"jsonFile" : "target-limitation-marshaling-3037526126bf00acca67.json",
+					"name" : "limitation-marshaling",
+					"projectIndex" : 53
+				},
+				{
+					"directoryIndex" : 25,
+					"id" : "logger::@2d75f236f9e102667520",
+					"jsonFile" : "target-logger-223afd8ddce28b61c5bb.json",
+					"name" : "logger",
+					"projectIndex" : 17
+				},
+				{
+					"directoryIndex" : 77,
+					"id" : "marshaling::@c05d4225dd0c3e09ecdf",
+					"jsonFile" : "target-marshaling-9ef9cb2c048ddbd2f636.json",
+					"name" : "marshaling",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 101,
+					"id" : "marshaling-utils::@9c0ba022ef6a265224ea",
+					"jsonFile" : "target-marshaling-utils-7e0349524a4d64ffe627.json",
+					"name" : "marshaling-utils",
+					"projectIndex" : 70
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "merge-tele::@00856fd885f8f5898eaa",
+					"jsonFile" : "target-merge-tele-d36ed499adf1c4b2c626.json",
+					"name" : "merge-tele",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 37,
+					"id" : "model::@97138fdf0e4433680f99",
+					"jsonFile" : "target-model-9605746c0bbe99842be4.json",
+					"name" : "model",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 85,
+					"id" : "model-marshaling::@5dea685eb6108c4b491f",
+					"jsonFile" : "target-model-marshaling-6f78bee82f1a62b545c8.json",
+					"name" : "model-marshaling",
+					"projectIndex" : 54
+				},
+				{
+					"directoryIndex" : 46,
+					"id" : "modeling-configuration::@615b51f638b66ad70781",
+					"jsonFile" : "target-modeling-configuration-33eb713f122bbbf3b46c.json",
+					"name" : "modeling-configuration",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 67,
+					"id" : "modeling-configuration-controller::@8118d81af89dc59ebc23",
+					"jsonFile" : "target-modeling-configuration-controller-3d487bec3cd975f7502d.json",
+					"name" : "modeling-configuration-controller",
+					"projectIndex" : 37
+				},
+				{
+					"directoryIndex" : 129,
+					"id" : "modeling-configuration-handler::@5e6d9bee1564f5f0306d",
+					"jsonFile" : "target-modeling-configuration-handler-e1ae5878cffc15468a33.json",
+					"name" : "modeling-configuration-handler",
+					"projectIndex" : 94
+				},
+				{
+					"directoryIndex" : 86,
+					"id" : "modeling-configuration-marshaling::@c774683ae90286aebcfd",
+					"jsonFile" : "target-modeling-configuration-marshaling-ab0ac43741f5b41494cd.json",
+					"name" : "modeling-configuration-marshaling",
+					"projectIndex" : 55
+				},
+				{
+					"directoryIndex" : 60,
+					"id" : "modeling-controller::@1bdb8f123cf60b2ce9a5",
+					"jsonFile" : "target-modeling-controller-999a83512f148531961b.json",
+					"name" : "modeling-controller",
+					"projectIndex" : 30
+				},
+				{
+					"directoryIndex" : 123,
+					"id" : "modeling-handler::@9f12e549fa6b7b58d93b",
+					"jsonFile" : "target-modeling-handler-521b210f1b827fb6989f.json",
+					"name" : "modeling-handler",
+					"projectIndex" : 88
+				},
+				{
+					"directoryIndex" : 105,
+					"id" : "modeling-ipc::@10eead17825d8a91b36e",
+					"jsonFile" : "target-modeling-ipc-e08481585d86a3bcf8a4.json",
+					"name" : "modeling-ipc",
+					"projectIndex" : 73
+				},
+				{
+					"directoryIndex" : 45,
+					"id" : "modeling-results::@3f5a14ca3d9d87df1f3f",
+					"jsonFile" : "target-modeling-results-ab19826b5811cd46ca62.json",
+					"name" : "modeling-results",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 87,
+					"id" : "modeling-results-marshaling::@b6b7924ee9f25923de83",
+					"jsonFile" : "target-modeling-results-marshaling-8e033bbb71087ed02334.json",
+					"name" : "modeling-results-marshaling",
+					"projectIndex" : 56
+				},
+				{
+					"directoryIndex" : 61,
+					"id" : "models-controller::@d1775b82b2e9ad2de386",
+					"jsonFile" : "target-models-controller-803863c42feccd3d8b13.json",
+					"name" : "models-controller",
+					"projectIndex" : 31
+				},
+				{
+					"directoryIndex" : 88,
+					"id" : "models-controller-marshaling::@3584b3ceb24ec38dadb4",
+					"jsonFile" : "target-models-controller-marshaling-434bdecaa3cb1ddb7388.json",
+					"name" : "models-controller-marshaling",
+					"projectIndex" : 57
+				},
+				{
+					"directoryIndex" : 158,
+					"id" : "movement-dynamics-algo::@d8a1d36e314ea23a7543",
+					"jsonFile" : "target-movement-dynamics-algo-f9d5ba81d4a1a8d7262d.json",
+					"name" : "movement-dynamics-algo",
+					"projectIndex" : 116
+				},
+				{
+					"directoryIndex" : 159,
+					"id" : "navi-subsystem-algo::@e30e485a2b158eb2b6b8",
+					"jsonFile" : "target-navi-subsystem-algo-94deb1d0edd08ea63acc.json",
+					"name" : "navi-subsystem-algo",
+					"projectIndex" : 117
+				},
+				{
+					"directoryIndex" : 58,
+					"id" : "navigation-system-controller::@a9ea938f89fac62ac188",
+					"jsonFile" : "target-navigation-system-controller-a8f50ea715493899ba55.json",
+					"name" : "navigation-system-controller",
+					"projectIndex" : 28
+				},
+				{
+					"directoryIndex" : 122,
+					"id" : "navigation-system-handler::@50c8b1eb1fc3423bad67",
+					"jsonFile" : "target-navigation-system-handler-fbd058344a5fe2fa982c.json",
+					"name" : "navigation-system-handler",
+					"projectIndex" : 87
+				},
+				{
+					"directoryIndex" : 27,
+					"id" : "numerics::@c0e3ecbce36d147793f1",
+					"jsonFile" : "target-numerics-f11e7d05905e2fb95862.json",
+					"name" : "numerics",
+					"projectIndex" : 19
+				},
+				{
+					"directoryIndex" : 89,
+					"id" : "numerics-marshaling::@a11868602e2fe7517292",
+					"jsonFile" : "target-numerics-marshaling-f6603c75bca082cac4e4.json",
+					"name" : "numerics-marshaling",
+					"projectIndex" : 58
+				},
+				{
+					"directoryIndex" : 31,
+					"id" : "odb-targets::@7b5856b9e35a3017599c",
+					"jsonFile" : "target-odb-targets-046840e6bcd1a81a3563.json",
+					"name" : "odb-targets",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 161,
+					"id" : "optical-sensor::@df6f0161dab3cd6bbb65",
+					"jsonFile" : "target-optical-sensor-f656f744cd4336fc2a18.json",
+					"name" : "optical-sensor",
+					"projectIndex" : 118
+				},
+				{
+					"directoryIndex" : 149,
+					"id" : "oum-choice-algo::@62e1e9b501a565b74e16",
+					"jsonFile" : "target-oum-choice-algo-35dd541af036c01e34aa.json",
+					"name" : "oum-choice-algo",
+					"projectIndex" : 109
+				},
+				{
+					"directoryIndex" : 148,
+					"id" : "oum-search-algo::@6e1242b889d83a36dd28",
+					"jsonFile" : "target-oum-search-algo-ce67d72c8fba04c02ab6.json",
+					"name" : "oum-search-algo",
+					"projectIndex" : 108
+				},
+				{
+					"directoryIndex" : 35,
+					"id" : "parameter::@bbcab9a98cf2bff05986",
+					"jsonFile" : "target-parameter-d8318640bf85f3b380b1.json",
+					"name" : "parameter",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 91,
+					"id" : "parameter-marshaling::@e4fd0a3caa8b99debff0",
+					"jsonFile" : "target-parameter-marshaling-913ea06732c508cd2391.json",
+					"name" : "parameter-marshaling",
+					"projectIndex" : 60
+				},
+				{
+					"directoryIndex" : 33,
+					"id" : "persistence-utils::@46d6abcba433a4e69a2a",
+					"jsonFile" : "target-persistence-utils-1409ed7b416ad88ef537.json",
+					"name" : "persistence-utils",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 139,
+					"id" : "plugins::@e73236870873ac66af4c",
+					"jsonFile" : "target-plugins-51f064e49ec7cffa6779.json",
+					"name" : "plugins",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 113,
+					"id" : "postgres::@1babf38eaaab1e2ab90e",
+					"jsonFile" : "target-postgres-c7c09f1d5753e1034524.json",
+					"name" : "postgres",
+					"projectIndex" : 79
+				},
+				{
+					"directoryIndex" : 47,
+					"id" : "project::@8c353fc9613c51da4349",
+					"jsonFile" : "target-project-f6fa1e16b7581d27f047.json",
+					"name" : "project",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 93,
+					"id" : "project-marshaling::@25c3c54b681377823ddd",
+					"jsonFile" : "target-project-marshaling-ae61a3e55b3d620439d9.json",
+					"name" : "project-marshaling",
+					"projectIndex" : 62
+				},
+				{
+					"directoryIndex" : 55,
+					"id" : "project-requirements-controller::@e622dd81470a981720f6",
+					"jsonFile" : "target-project-requirements-controller-c61cca90974ca83c4a9d.json",
+					"name" : "project-requirements-controller",
+					"projectIndex" : 25
+				},
+				{
+					"directoryIndex" : 119,
+					"id" : "project-requirements-handler::@acaf4388b761539e9f18",
+					"jsonFile" : "target-project-requirements-handler-c0b1fec29f85d8ad7548.json",
+					"name" : "project-requirements-handler",
+					"projectIndex" : 84
+				},
+				{
+					"directoryIndex" : 53,
+					"id" : "project-snapshots-controller::@7f55ff0c839ff32bf545",
+					"jsonFile" : "target-project-snapshots-controller-1b4a1fde949bced82fb4.json",
+					"name" : "project-snapshots-controller",
+					"projectIndex" : 23
+				},
+				{
+					"directoryIndex" : 117,
+					"id" : "project-snapshots-handler::@b49e4a4768a56433ef8d",
+					"jsonFile" : "target-project-snapshots-handler-2a30874838363ba0fe15.json",
+					"name" : "project-snapshots-handler",
+					"projectIndex" : 82
+				},
+				{
+					"directoryIndex" : 54,
+					"id" : "projects-controller::@73ca8fa21e86b780d36b",
+					"jsonFile" : "target-projects-controller-5d45487deb60911ade7d.json",
+					"name" : "projects-controller",
+					"projectIndex" : 24
+				},
+				{
+					"directoryIndex" : 118,
+					"id" : "projects-handler::@78780e91124aaeec5741",
+					"jsonFile" : "target-projects-handler-340001a236017b2048b5.json",
+					"name" : "projects-handler",
+					"projectIndex" : 83
+				},
+				{
+					"directoryIndex" : 162,
+					"id" : "radar-sensor::@a679579ea9a18664268d",
+					"jsonFile" : "target-radar-sensor-3e3eea8c5ef0c7d127ed.json",
+					"name" : "radar-sensor",
+					"projectIndex" : 119
+				},
+				{
+					"directoryIndex" : 156,
+					"id" : "read-tpz-and-create-viz-task-algo::@b2df055cdc14bade1d0b",
+					"jsonFile" : "target-read-tpz-and-create-viz-task-algo-348dbb3b542a9c05c964.json",
+					"name" : "read-tpz-and-create-viz-task-algo",
+					"projectIndex" : 115
+				},
+				{
+					"directoryIndex" : 49,
+					"id" : "requirement::@c4d52102bce658d563e8",
+					"jsonFile" : "target-requirement-c476521ea5def90389bb.json",
+					"name" : "requirement",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 73,
+					"id" : "requirements-controller::@80a37bb2baf43969bfa8",
+					"jsonFile" : "target-requirements-controller-de669a4b8547887ecd44.json",
+					"name" : "requirements-controller",
+					"projectIndex" : 43
+				},
+				{
+					"directoryIndex" : 136,
+					"id" : "requirements-handler::@c7691dfb03ea5ee2a9f0",
+					"jsonFile" : "target-requirements-handler-72d7db8ea94c93d5a432.json",
+					"name" : "requirements-handler",
+					"projectIndex" : 101
+				},
+				{
+					"directoryIndex" : 103,
+					"id" : "requirements-marshaling::@e7099ba177465fb36f93",
+					"jsonFile" : "target-requirements-marshaling-6361791d774e446e0b70.json",
+					"name" : "requirements-marshaling",
+					"projectIndex" : 72
+				},
+				{
+					"directoryIndex" : 188,
+					"id" : "return-false-plugin::@8bad8a20b89a02530338",
+					"jsonFile" : "target-return-false-plugin-82068e6e87667ef1313d.json",
+					"name" : "return-false-plugin",
+					"projectIndex" : 131
+				},
+				{
+					"directoryIndex" : 188,
+					"id" : "return-true-plugin::@8bad8a20b89a02530338",
+					"jsonFile" : "target-return-true-plugin-a5423bf668ca6bd8b332.json",
+					"name" : "return-true-plugin",
+					"projectIndex" : 131
+				},
+				{
+					"directoryIndex" : 164,
+					"id" : "rl-sensor::@ff7939f7ba042e3b6172",
+					"jsonFile" : "target-rl-sensor-27979746bb0172950c3e.json",
+					"name" : "rl-sensor",
+					"projectIndex" : 121
+				},
+				{
+					"directoryIndex" : 43,
+					"id" : "scheme::@ce8763f2f603756f8cf3",
+					"jsonFile" : "target-scheme-9c249d35535a0d118fc1.json",
+					"name" : "scheme",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 94,
+					"id" : "scheme-marshaling::@60ef7c6cccb522fbe8d2",
+					"jsonFile" : "target-scheme-marshaling-debad1021842f31562c7.json",
+					"name" : "scheme-marshaling",
+					"projectIndex" : 63
+				},
+				{
+					"directoryIndex" : 155,
+					"id" : "semantic-recognition-algo::@3aaf142e7356b2c522f9",
+					"jsonFile" : "target-semantic-recognition-algo-a53e4f19788a4534e6f9.json",
+					"name" : "semantic-recognition-algo",
+					"projectIndex" : 114
+				},
+				{
+					"directoryIndex" : 38,
+					"id" : "sensor::@cb95a52f35cad3b37944",
+					"jsonFile" : "target-sensor-ff12e8cfe1e84e2aab95.json",
+					"name" : "sensor",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 69,
+					"id" : "sensor-kinds-controller::@e3ca7f98b43e022c9021",
+					"jsonFile" : "target-sensor-kinds-controller-11bb7b39a5bdac400f48.json",
+					"name" : "sensor-kinds-controller",
+					"projectIndex" : 39
+				},
+				{
+					"directoryIndex" : 130,
+					"id" : "sensor-kinds-handler::@4612efce0ac50c6c754e",
+					"jsonFile" : "target-sensor-kinds-handler-13d78f635f19e12a2d73.json",
+					"name" : "sensor-kinds-handler",
+					"projectIndex" : 95
+				},
+				{
+					"directoryIndex" : 95,
+					"id" : "sensor-marshaling::@80dd6c7ddac44fc36b15",
+					"jsonFile" : "target-sensor-marshaling-a1a78a7a9fca1c37df15.json",
+					"name" : "sensor-marshaling",
+					"projectIndex" : 64
+				},
+				{
+					"directoryIndex" : 63,
+					"id" : "sensors-controller::@f70037f636cf94fc9d52",
+					"jsonFile" : "target-sensors-controller-4fa8cab6bc2f9fd8e1cb.json",
+					"name" : "sensors-controller",
+					"projectIndex" : 33
+				},
+				{
+					"directoryIndex" : 131,
+					"id" : "sensors-handler::@272b43c488b4d9914e27",
+					"jsonFile" : "target-sensors-handler-1530eb133152eec95ffe.json",
+					"name" : "sensors-handler",
+					"projectIndex" : 96
+				},
+				{
+					"directoryIndex" : 112,
+					"id" : "server::@d1be02944fec277ff942",
+					"jsonFile" : "target-server-800399b71e03eb1d478e.json",
+					"name" : "server",
+					"projectIndex" : 78
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "sim::@00856fd885f8f5898eaa",
+					"jsonFile" : "target-sim-24972285e6f566595e62.json",
+					"name" : "sim",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 171,
+					"id" : "small-linear-trajectory::@bb5268ef5fd6d09d12f8",
+					"jsonFile" : "target-small-linear-trajectory-969702e63bb7d31a1a1b.json",
+					"name" : "small-linear-trajectory",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "smm-2ng::@00856fd885f8f5898eaa",
+					"jsonFile" : "target-smm-2ng-41e038e65823834ba815.json",
+					"name" : "smm-2ng",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "smm-2ng-plugin-header-target::@0c79bffd84b5499c6d70",
+					"jsonFile" : "target-smm-2ng-plugin-header-target-b84bdc21c3ac3d612cfc.json",
+					"name" : "smm-2ng-plugin-header-target",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "smm-2ng-type-header-target::@0c79bffd84b5499c6d70",
+					"jsonFile" : "target-smm-2ng-type-header-target-866b8b5ec28ab737b448.json",
+					"name" : "smm-2ng-type-header-target",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 96,
+					"id" : "smm-marshaling::@333fd60079f8ed470f08",
+					"jsonFile" : "target-smm-marshaling-1e21e046fc56e72a9540.json",
+					"name" : "smm-marshaling",
+					"projectIndex" : 65
+				},
+				{
+					"directoryIndex" : 39,
+					"id" : "smm-plugin::@dc4b2a5faea53a0e678a",
+					"jsonFile" : "target-smm-plugin-dc3596c22236b2f218a4.json",
+					"name" : "smm-plugin",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 97,
+					"id" : "smm-plugin-marshaling::@c008d731eb50ed0f8bfc",
+					"jsonFile" : "target-smm-plugin-marshaling-a26a910da29b3217a024.json",
+					"name" : "smm-plugin-marshaling",
+					"projectIndex" : 66
+				},
+				{
+					"directoryIndex" : 64,
+					"id" : "smm-plugins-controller::@5d8f68b4e2fefcb516e6",
+					"jsonFile" : "target-smm-plugins-controller-5ca46e6b049a5d759349.json",
+					"name" : "smm-plugins-controller",
+					"projectIndex" : 34
+				},
+				{
+					"directoryIndex" : 68,
+					"id" : "stand-modeling-controller::@b48511b95944655c811f",
+					"jsonFile" : "target-stand-modeling-controller-07f6acdb1a18c51dd99d.json",
+					"name" : "stand-modeling-controller",
+					"projectIndex" : 38
+				},
+				{
+					"directoryIndex" : 126,
+					"id" : "stand-modeling-handler::@a28886d996a3a152326a",
+					"jsonFile" : "target-stand-modeling-handler-097de71dd4289a8dd575.json",
+					"name" : "stand-modeling-handler",
+					"projectIndex" : 91
+				},
+				{
+					"directoryIndex" : 111,
+					"id" : "stand-modeling-ipc::@18973af02a717277d3e9",
+					"jsonFile" : "target-stand-modeling-ipc-e064efbaba70849a7a95.json",
+					"name" : "stand-modeling-ipc",
+					"projectIndex" : 77
+				},
+				{
+					"directoryIndex" : 110,
+					"id" : "stand-modeling-manager::@8ad981aa9e8f12efd475",
+					"jsonFile" : "target-stand-modeling-manager-17d621f5b18aa1a652c5.json",
+					"name" : "stand-modeling-manager",
+					"projectIndex" : 76
+				},
+				{
+					"directoryIndex" : 137,
+					"id" : "stand-modeling-process::@14e1f0dfe842859e1ea6",
+					"jsonFile" : "target-stand-modeling-process-113008cd2a22623a3027.json",
+					"name" : "stand-modeling-process",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 150,
+					"id" : "start-point-calc-algo::@697a50b96208d52984f3",
+					"jsonFile" : "target-start-point-calc-algo-12c39c8848d57d3a2af3.json",
+					"name" : "start-point-calc-algo",
+					"projectIndex" : 110
+				},
+				{
+					"directoryIndex" : 188,
+					"id" : "successful-test-requirement-plugin::@8bad8a20b89a02530338",
+					"jsonFile" : "target-successful-test-requirement-plugin-814d385dde0dbf042334.json",
+					"name" : "successful-test-requirement-plugin",
+					"projectIndex" : 131
+				},
+				{
+					"directoryIndex" : 190,
+					"id" : "test-aborting-algo::@214c84c3e1042c513bb5",
+					"jsonFile" : "target-test-aborting-algo-c07fcb3be9587e1395d4.json",
+					"name" : "test-aborting-algo",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 190,
+					"id" : "test-compiling-algo-zip::@214c84c3e1042c513bb5",
+					"jsonFile" : "target-test-compiling-algo-zip-326ec0dc5501e1d9b56c.json",
+					"name" : "test-compiling-algo-zip",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 190,
+					"id" : "test-compiling-type-zip::@214c84c3e1042c513bb5",
+					"jsonFile" : "target-test-compiling-type-zip-46f69119433b827182e3.json",
+					"name" : "test-compiling-type-zip",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 190,
+					"id" : "test-just-a-plugin::@214c84c3e1042c513bb5",
+					"jsonFile" : "target-test-just-a-plugin-538ef21028de71ab1eae.json",
+					"name" : "test-just-a-plugin",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 190,
+					"id" : "test-logging-algo::@214c84c3e1042c513bb5",
+					"jsonFile" : "target-test-logging-algo-f5b07ab44bde66a92386.json",
+					"name" : "test-logging-algo",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 190,
+					"id" : "test-not-compiling-algo-zip::@214c84c3e1042c513bb5",
+					"jsonFile" : "target-test-not-compiling-algo-zip-76dedd168968167c5741.json",
+					"name" : "test-not-compiling-algo-zip",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 190,
+					"id" : "test-prebuilt-algo::@214c84c3e1042c513bb5",
+					"jsonFile" : "target-test-prebuilt-algo-632685c2e77d5c69e288.json",
+					"name" : "test-prebuilt-algo",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 191,
+					"id" : "test-prebuilt-type::@4e075452339d05cb7396",
+					"jsonFile" : "target-test-prebuilt-type-89bbeaa9559819f7ec4a.json",
+					"name" : "test-prebuilt-type",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 191,
+					"id" : "test-prebuilt-type-zip::@4e075452339d05cb7396",
+					"jsonFile" : "target-test-prebuilt-type-zip-88e465b9f5313714899d.json",
+					"name" : "test-prebuilt-type-zip",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 190,
+					"id" : "test-throwing-algo::@214c84c3e1042c513bb5",
+					"jsonFile" : "target-test-throwing-algo-1599f3f251d1804c0088.json",
+					"name" : "test-throwing-algo",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 190,
+					"id" : "test-trajectory-model::@214c84c3e1042c513bb5",
+					"jsonFile" : "target-test-trajectory-model-39ae17715d07c69b093c.json",
+					"name" : "test-trajectory-model",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 190,
+					"id" : "test-trajectory-model-exceptions::@214c84c3e1042c513bb5",
+					"jsonFile" : "target-test-trajectory-model-exceptions-a218bbe86aa2d971162b.json",
+					"name" : "test-trajectory-model-exceptions",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 190,
+					"id" : "test-trajectory-model-invalid-points::@214c84c3e1042c513bb5",
+					"jsonFile" : "target-test-trajectory-model-invalid-points-678e1f2aede622f5ac5d.json",
+					"name" : "test-trajectory-model-invalid-points",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 174,
+					"id" : "tests::@a44f0ac069e85531cdee",
+					"jsonFile" : "target-tests-e891eeef1136c7126218.json",
+					"name" : "tests",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 176,
+					"id" : "tests-marshaling-utils::@b064fcd08d35a2440550",
+					"jsonFile" : "target-tests-marshaling-utils-f525e13b9cb6e63f6c76.json",
+					"name" : "tests-marshaling-utils",
+					"projectIndex" : 126
+				},
+				{
+					"directoryIndex" : 178,
+					"id" : "tests-unit-fixtures::@4da36553da479dd03bd0",
+					"jsonFile" : "target-tests-unit-fixtures-b7d7b7385f6e622046b3.json",
+					"name" : "tests-unit-fixtures",
+					"projectIndex" : 127
+				},
+				{
+					"directoryIndex" : 175,
+					"id" : "tests-utils::@aee55b7cdf71401bade2",
+					"jsonFile" : "target-tests-utils-3ad336137bd1eeec0338.json",
+					"name" : "tests-utils",
+					"projectIndex" : 125
+				},
+				{
+					"directoryIndex" : 26,
+					"id" : "tiff-parser::@d13d78874616751044aa",
+					"jsonFile" : "target-tiff-parser-830594970433bb86c768.json",
+					"name" : "tiff-parser",
+					"projectIndex" : 18
+				},
+				{
+					"directoryIndex" : 151,
+					"id" : "tiff-parser-algo::@ff3169be75b83a3816c8",
+					"jsonFile" : "target-tiff-parser-algo-861c0d834bc914a695ac.json",
+					"name" : "tiff-parser-algo",
+					"projectIndex" : 111
+				},
+				{
+					"directoryIndex" : 13,
+					"id" : "tmp::@98133616a1bfe54efa44",
+					"jsonFile" : "target-tmp-9b0302a42533b7e64740.json",
+					"name" : "tmp",
+					"projectIndex" : 7
+				},
+				{
+					"directoryIndex" : 152,
+					"id" : "tpz-calc-algo::@b9e2da2903c76c000530",
+					"jsonFile" : "target-tpz-calc-algo-418edde8ae244e3fb53e.json",
+					"name" : "tpz-calc-algo",
+					"projectIndex" : 112
+				},
+				{
+					"directoryIndex" : 65,
+					"id" : "trajectories-controller::@edd2156ab089a4b18a30",
+					"jsonFile" : "target-trajectories-controller-de7625c44a78adeac32a.json",
+					"name" : "trajectories-controller",
+					"projectIndex" : 35
+				},
+				{
+					"directoryIndex" : 125,
+					"id" : "trajectories-handler::@0040be9509982ccc0311",
+					"jsonFile" : "target-trajectories-handler-d421722b0f804e835090.json",
+					"name" : "trajectories-handler",
+					"projectIndex" : 90
+				},
+				{
+					"directoryIndex" : 40,
+					"id" : "trajectory::@39a0e413281f03a60e38",
+					"jsonFile" : "target-trajectory-b4079230004b7ba610f2.json",
+					"name" : "trajectory",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 98,
+					"id" : "trajectory-marshaling::@5bcaff621cc79d1baf28",
+					"jsonFile" : "target-trajectory-marshaling-b56aba0530c724599ccb.json",
+					"name" : "trajectory-marshaling",
+					"projectIndex" : 67
+				},
+				{
+					"directoryIndex" : 41,
+					"id" : "type::@e13c74f7343776c48024",
+					"jsonFile" : "target-type-f4f32f927bb1d22a2af7.json",
+					"name" : "type",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 100,
+					"id" : "type-marshaling::@0a568172bb9340f4c969",
+					"jsonFile" : "target-type-marshaling-74738ded810fa0c8e31a.json",
+					"name" : "type-marshaling",
+					"projectIndex" : 69
+				},
+				{
+					"directoryIndex" : 70,
+					"id" : "types-controller::@cd0170c0ffa1d9c939a9",
+					"jsonFile" : "target-types-controller-018ccb9df31e9b9cce9c.json",
+					"name" : "types-controller",
+					"projectIndex" : 40
+				},
+				{
+					"directoryIndex" : 132,
+					"id" : "types-handler::@8501cd32b0bf4681fd79",
+					"jsonFile" : "target-types-handler-70c9fe7affa4b8101976.json",
+					"name" : "types-handler",
+					"projectIndex" : 97
+				},
+				{
+					"directoryIndex" : 138,
+					"id" : "ukazka-backend::@145eef247bfb46b6828c",
+					"jsonFile" : "target-ukazka-backend-2b64f2123b6407df13e5.json",
+					"name" : "ukazka-backend",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 181,
+					"id" : "unit-controllers-tests::@61d442a5825f075dde4c",
+					"jsonFile" : "target-unit-controllers-tests-082ca3ecc7ec863c39ae.json",
+					"name" : "unit-controllers-tests",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 182,
+					"id" : "unit-database-tests::@84333e8ea612db9934d7",
+					"jsonFile" : "target-unit-database-tests-d250ddd2692beb81897a.json",
+					"name" : "unit-database-tests",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 180,
+					"id" : "unit-handlers-tests::@e46726108b243cd98f49",
+					"jsonFile" : "target-unit-handlers-tests-9d69a1e3cef54da904cb.json",
+					"name" : "unit-handlers-tests",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 186,
+					"id" : "unit-initialize-tests::@4b08ced3e57606b05849",
+					"jsonFile" : "target-unit-initialize-tests-6b49e77731cd2b0715f9.json",
+					"name" : "unit-initialize-tests",
+					"projectIndex" : 130
+				},
+				{
+					"directoryIndex" : 185,
+					"id" : "unit-marshaling-tests::@26bf767f9b2e0f2f8b41",
+					"jsonFile" : "target-unit-marshaling-tests-99cb6ea292b30ec59c09.json",
+					"name" : "unit-marshaling-tests",
+					"projectIndex" : 129
+				},
+				{
+					"directoryIndex" : 183,
+					"id" : "unit-plugins-tests::@1d85ca2a1c336f7085fb",
+					"jsonFile" : "target-unit-plugins-tests-3631c5d5af4e095f229a.json",
+					"name" : "unit-plugins-tests",
+					"projectIndex" : 128
+				},
+				{
+					"directoryIndex" : 184,
+					"id" : "unit-utils-tests::@2163941c0f90c92f826f",
+					"jsonFile" : "target-unit-utils-tests-a684fa8c5ff026c899a8.json",
+					"name" : "unit-utils-tests",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 179,
+					"id" : "unit_tests::@17bd492d087794b9594e",
+					"jsonFile" : "target-unit_tests-f37117ad3d60f898edc7.json",
+					"name" : "unit_tests",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 163,
+					"id" : "universal-sensor::@82bf4acfa81ee3ff8674",
+					"jsonFile" : "target-universal-sensor-90967d036749d98739ee.json",
+					"name" : "universal-sensor",
+					"projectIndex" : 120
+				},
+				{
+					"directoryIndex" : 99,
+					"id" : "user-marshaling::@2498d2530bc661150251",
+					"jsonFile" : "target-user-marshaling-c5d83f6f3e23255f9dec.json",
+					"name" : "user-marshaling",
+					"projectIndex" : 68
+				},
+				{
+					"directoryIndex" : 17,
+					"id" : "utils::@82bbb9eb485b6ee150e0",
+					"jsonFile" : "target-utils-16dd4e131dced50a5403.json",
+					"name" : "utils",
+					"projectIndex" : 9
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "validate-schema::@00856fd885f8f5898eaa",
+					"jsonFile" : "target-validate-schema-ef7c87c3cac3daf6f66a.json",
+					"name" : "validate-schema",
+					"projectIndex" : 1
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/user/Загрузки/KPAC-04.04.2023-2/workspace/backend/build",
+		"source" : "/home/user/Загрузки/KPAC-04.04.2023-2/workspace/backend"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 0
+	}
+}

@@ -1,0 +1,197 @@
+{
+	"archive" : {},
+	"artifacts" : 
+	[
+		{
+			"path" : "lib/runner/config-converter/libconfig-converter.a"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"target_link_libraries",
+			"add_compile_options",
+			"add_compile_definitions",
+			"include_directories"
+		],
+		"files" : 
+		[
+			"lib/runner/config-converter/CMakeLists.txt",
+			"CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 3,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 5,
+				"parent" : 0
+			},
+			{
+				"file" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 20,
+				"parent" : 3
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 21,
+				"parent" : 3
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 37,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 22,
+				"parent" : 3
+			},
+			{
+				"command" : 4,
+				"file" : 1,
+				"line" : 10,
+				"parent" : 3
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : " "
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "-DBOOST_ERROR_CODE_HEADER_ONLY"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-DBOOST_LOG_DYN_LINK"
+				},
+				{
+					"backtrace" : 6,
+					"fragment" : "-Werror"
+				},
+				{
+					"backtrace" : 6,
+					"fragment" : "-Wall"
+				},
+				{
+					"backtrace" : 6,
+					"fragment" : "-Wextra"
+				},
+				{
+					"backtrace" : 6,
+					"fragment" : "-pedantic"
+				},
+				{
+					"fragment" : "-std=c++2a"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 7,
+					"define" : "BOOST_LOG_USE_NATIVE_SYSLOG"
+				},
+				{
+					"backtrace" : 2,
+					"define" : "FMT_LOCALE"
+				},
+				{
+					"backtrace" : 2,
+					"define" : "FMT_SHARED"
+				},
+				{
+					"backtrace" : 2,
+					"define" : "FPP_EXPLICIT_CONVERSIONS=1"
+				},
+				{
+					"backtrace" : 2,
+					"define" : "JSON_DISABLE_ENUM_SERIALIZATION=1"
+				},
+				{
+					"backtrace" : 2,
+					"define" : "JSON_USE_IMPLICIT_CONVERSIONS=0"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 8,
+					"path" : "/home/user/kpac/workspace/ukazka/ukazka-smm-runner/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/user/kpac/workspace/ukazka/ukazka-smm-runner/vendor/fpp/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/user/kpac/workspace/ukazka/ukazka-smm-runner/vendor/json/single_include"
+				}
+			],
+			"language" : "CXX",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 2,
+			"id" : "marshaling::@c05d4225dd0c3e09ecdf"
+		}
+	],
+	"id" : "config-converter::@a4abea674a26d8947014",
+	"name" : "config-converter",
+	"nameOnDisk" : "libconfig-converter.a",
+	"paths" : 
+	{
+		"build" : "lib/runner/config-converter",
+		"source" : "lib/runner/config-converter"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lib/runner/config-converter/ConfigConverter.cpp",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "STATIC_LIBRARY"
+}

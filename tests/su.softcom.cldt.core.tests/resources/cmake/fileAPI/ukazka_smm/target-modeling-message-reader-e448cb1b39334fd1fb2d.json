@@ -1,0 +1,197 @@
+{
+	"archive" : {},
+	"artifacts" : 
+	[
+		{
+			"path" : "lib/runner/modeling-message-reader/libmodeling-message-reader.a"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"target_link_libraries",
+			"add_compile_options",
+			"add_compile_definitions",
+			"include_directories"
+		],
+		"files" : 
+		[
+			"lib/runner/modeling-message-reader/CMakeLists.txt",
+			"CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 3,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 5,
+				"parent" : 0
+			},
+			{
+				"file" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 20,
+				"parent" : 3
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 21,
+				"parent" : 3
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 37,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 22,
+				"parent" : 3
+			},
+			{
+				"command" : 4,
+				"file" : 1,
+				"line" : 10,
+				"parent" : 3
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : " "
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "-DBOOST_ERROR_CODE_HEADER_ONLY"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-DBOOST_LOG_DYN_LINK"
+				},
+				{
+					"backtrace" : 6,
+					"fragment" : "-Werror"
+				},
+				{
+					"backtrace" : 6,
+					"fragment" : "-Wall"
+				},
+				{
+					"backtrace" : 6,
+					"fragment" : "-Wextra"
+				},
+				{
+					"backtrace" : 6,
+					"fragment" : "-pedantic"
+				},
+				{
+					"fragment" : "-std=c++2a"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 7,
+					"define" : "BOOST_LOG_USE_NATIVE_SYSLOG"
+				},
+				{
+					"backtrace" : 2,
+					"define" : "CROW_USE_BOOST"
+				},
+				{
+					"backtrace" : 2,
+					"define" : "FMT_LOCALE"
+				},
+				{
+					"backtrace" : 2,
+					"define" : "FMT_SHARED"
+				},
+				{
+					"backtrace" : 2,
+					"define" : "FPP_EXPLICIT_CONVERSIONS=1"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 8,
+					"path" : "/home/user/kpac/workspace/ukazka/ukazka-smm-runner/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/user/kpac/workspace/ukazka/ukazka-smm-runner/vendor/fpp/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/user/kpac/workspace/ukazka/ukazka-smm-runner/vendor/crow/include"
+				}
+			],
+			"language" : "CXX",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 2,
+			"id" : "logger::@b1ed54b1683c721ba216"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "connections-manager::@2dfefdbabf486391e68c"
+		}
+	],
+	"id" : "modeling-message-reader::@aac6cac1342c70d5a65f",
+	"name" : "modeling-message-reader",
+	"nameOnDisk" : "libmodeling-message-reader.a",
+	"paths" : 
+	{
+		"build" : "lib/runner/modeling-message-reader",
+		"source" : "lib/runner/modeling-message-reader"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lib/runner/modeling-message-reader/ModelingMessageReader.cpp",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "STATIC_LIBRARY"
+}

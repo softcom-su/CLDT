@@ -1,0 +1,206 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "plugins/MotionDynamics/libMotionDynamics.so"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"target_link_libraries",
+			"add_dependencies",
+			"target_include_directories"
+		],
+		"files" : 
+		[
+			"plugins/MotionDynamics/CMakeLists.txt",
+			"vendor/smm-2ng/include/smm-2ng/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 1,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 2,
+				"parent" : 0
+			},
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 23,
+				"parent" : 3
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 14,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 24,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 13,
+				"parent" : 0
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-std=c++20 -fPIC"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 2,
+					"define" : "FMT_SHARED"
+				},
+				{
+					"define" : "MotionDynamics_EXPORTS"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 7,
+					"path" : "/home/ivan/\u0417\u0430\u0433\u0440\u0443\u0437\u043a\u0438/linux_product/ru.npomash.excellence.kpac.ide.product-linux.gtk.x86_64/workspace/smm2024/plugins/MotionDynamics/../.."
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/ivan/\u0417\u0430\u0433\u0440\u0443\u0437\u043a\u0438/linux_product/ru.npomash.excellence.kpac.ide.product-linux.gtk.x86_64/workspace/smm2024/build/vendor/smm-2ng/include/smm-2ng/_generated"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/ivan/\u0417\u0430\u0433\u0440\u0443\u0437\u043a\u0438/linux_product/ru.npomash.excellence.kpac.ide.product-linux.gtk.x86_64/workspace/smm2024/types/Duration"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/ivan/\u0417\u0430\u0433\u0440\u0443\u0437\u043a\u0438/linux_product/ru.npomash.excellence.kpac.ide.product-linux.gtk.x86_64/workspace/smm2024/types/Orientation"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/ivan/\u0417\u0430\u0433\u0440\u0443\u0437\u043a\u0438/linux_product/ru.npomash.excellence.kpac.ide.product-linux.gtk.x86_64/workspace/smm2024/types/Angle"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/ivan/\u0417\u0430\u0433\u0440\u0443\u0437\u043a\u0438/linux_product/ru.npomash.excellence.kpac.ide.product-linux.gtk.x86_64/workspace/smm2024/types/Direction"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/ivan/\u0417\u0430\u0433\u0440\u0443\u0437\u043a\u0438/linux_product/ru.npomash.excellence.kpac.ide.product-linux.gtk.x86_64/workspace/smm2024/types/Position"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/ivan/\u0417\u0430\u0433\u0440\u0443\u0437\u043a\u0438/linux_product/ru.npomash.excellence.kpac.ide.product-linux.gtk.x86_64/workspace/smm2024/types/Distance"
+				}
+			],
+			"language" : "CXX",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					2
+				],
+				"standard" : "20"
+			},
+			"sourceIndexes" : 
+			[
+				0
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 5,
+			"id" : "acceleration::@ada8aea7666a860a0932"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "angle-velocity::@ade9c0e87a0f3ec119c1"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "velocity::@0a744ec27635d8b43362"
+		},
+		{
+			"backtrace" : 6,
+			"id" : "smm-2ng-plugin-header-target::@0c79bffd84b5499c6d70"
+		}
+	],
+	"id" : "MotionDynamics::@eb7c7b77abbbbead7b59",
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libfmt.so.9.1.0",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "-ldl",
+				"role" : "libraries"
+			}
+		],
+		"language" : "CXX"
+	},
+	"name" : "MotionDynamics",
+	"nameOnDisk" : "libMotionDynamics.so",
+	"paths" : 
+	{
+		"build" : "plugins/MotionDynamics",
+		"source" : "plugins/MotionDynamics"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "plugins/MotionDynamics/MotionDynamics.cpp",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "MODULE_LIBRARY"
+}

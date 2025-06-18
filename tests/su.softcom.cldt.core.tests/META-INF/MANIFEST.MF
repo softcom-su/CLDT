@@ -1,0 +1,28 @@
+Manifest-Version: 1.0
+Automatic-Module-Name: su.softcom.cldt.core.tests
+Bundle-ManifestVersion: 2
+Bundle-SymbolicName: su.softcom.cldt.core.tests
+Bundle-Version: 0.1.0.qualifier
+Bundle-Name: CLDT::Core tests
+Bundle-Vendor: SoftCom Ltd
+Bundle-RequiredExecutionEnvironment: JavaSE-17
+Require-Bundle: org.eclipse.core.runtime;bundle-version="0.0.0",
+ org.eclipse.core.resources;bundle-version="0.0.0",
+ org.eclipse.jface;bundle-version="0.0.0",
+ su.softcom.cldt.core;bundle-version="0.0.0",
+ org.eclipse.ui.ide,
+ org.eclipse.core.commands,
+ org.eclipse.ui.workbench,
+ su.softcom.cldt.common,
+ org.junit.jupiter.params,
+ org.junit.jupiter.api,
+ org.junit,
+ org.eclipse.jdt.junit5.runtime,
+ junit-jupiter-api,
+ org.mockito.mockito-core,
+ wrapped.org.mockito.mockito-inline,
+ com.fasterxml.jackson.core.jackson-databind,
+ com.fasterxml.jackson.core.jackson-core,
+ org.yaml.snakeyaml,
+ junit-jupiter-params
+Eclipse-BundleShape: dir

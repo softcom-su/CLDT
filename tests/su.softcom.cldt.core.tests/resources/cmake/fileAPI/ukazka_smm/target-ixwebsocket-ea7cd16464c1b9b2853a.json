@@ -1,0 +1,741 @@
+{
+	"archive" : {},
+	"artifacts" : 
+	[
+		{
+			"path" : "vendor/ixwebsocket/libixwebsocket.a"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"add_compile_options",
+			"add_compile_definitions",
+			"target_compile_definitions",
+			"include_directories",
+			"target_include_directories"
+		],
+		"files" : 
+		[
+			"vendor/ixwebsocket/CMakeLists.txt",
+			"CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 174,
+				"parent" : 0
+			},
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 20,
+				"parent" : 2
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 21,
+				"parent" : 2
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 22,
+				"parent" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 242,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 1,
+				"line" : 10,
+				"parent" : 2
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 272,
+				"parent" : 0
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : " -Wall -Wextra -pedantic -Wshorten-64-to-32 -fPIC  "
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-DBOOST_ERROR_CODE_HEADER_ONLY"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "-DBOOST_LOG_DYN_LINK"
+				},
+				{
+					"fragment" : "-std=c++11"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 5,
+					"define" : "BOOST_LOG_USE_NATIVE_SYSLOG"
+				},
+				{
+					"backtrace" : 6,
+					"define" : "IXWEBSOCKET_USE_ZLIB"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 7,
+					"path" : "/home/user/kpac/workspace/ukazka/ukazka-smm-runner/include"
+				},
+				{
+					"backtrace" : 8,
+					"path" : "/home/user/kpac/workspace/ukazka/ukazka-smm-runner/vendor/ixwebsocket"
+				}
+			],
+			"language" : "CXX",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13,
+				14,
+				15,
+				16,
+				17,
+				18,
+				19,
+				20,
+				21,
+				22,
+				23,
+				24,
+				25,
+				26,
+				27,
+				28,
+				29,
+				30,
+				31,
+				32,
+				33,
+				34,
+				35
+			]
+		}
+	],
+	"id" : "ixwebsocket::@52c86d19ba3e2d689c27",
+	"name" : "ixwebsocket",
+	"nameOnDisk" : "libixwebsocket.a",
+	"paths" : 
+	{
+		"build" : "vendor/ixwebsocket",
+		"source" : "vendor/ixwebsocket"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13,
+				14,
+				15,
+				16,
+				17,
+				18,
+				19,
+				20,
+				21,
+				22,
+				23,
+				24,
+				25,
+				26,
+				27,
+				28,
+				29,
+				30,
+				31,
+				32,
+				33,
+				34,
+				35
+			]
+		},
+		{
+			"name" : "Header Files",
+			"sourceIndexes" : 
+			[
+				36,
+				37,
+				38,
+				39,
+				40,
+				41,
+				42,
+				43,
+				44,
+				45,
+				46,
+				47,
+				48,
+				49,
+				50,
+				51,
+				52,
+				53,
+				54,
+				55,
+				56,
+				57,
+				58,
+				59,
+				60,
+				61,
+				62,
+				63,
+				64,
+				65,
+				66,
+				67,
+				68,
+				69,
+				70,
+				71,
+				72,
+				73,
+				74,
+				75,
+				76,
+				77,
+				78,
+				79,
+				80,
+				81,
+				82,
+				83,
+				84,
+				85
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "vendor/ixwebsocket/ixwebsocket/IXBench.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "vendor/ixwebsocket/ixwebsocket/IXCancellationRequest.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "vendor/ixwebsocket/ixwebsocket/IXConnectionState.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "vendor/ixwebsocket/ixwebsocket/IXDNSLookup.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "vendor/ixwebsocket/ixwebsocket/IXExponentialBackoff.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "vendor/ixwebsocket/ixwebsocket/IXGetFreePort.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "vendor/ixwebsocket/ixwebsocket/IXGzipCodec.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "vendor/ixwebsocket/ixwebsocket/IXHttp.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "vendor/ixwebsocket/ixwebsocket/IXHttpClient.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "vendor/ixwebsocket/ixwebsocket/IXHttpServer.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "vendor/ixwebsocket/ixwebsocket/IXNetSystem.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "vendor/ixwebsocket/ixwebsocket/IXSelectInterrupt.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "vendor/ixwebsocket/ixwebsocket/IXSelectInterruptFactory.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "vendor/ixwebsocket/ixwebsocket/IXSelectInterruptPipe.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "vendor/ixwebsocket/ixwebsocket/IXSelectInterruptEvent.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "vendor/ixwebsocket/ixwebsocket/IXSetThreadName.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "vendor/ixwebsocket/ixwebsocket/IXSocket.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "vendor/ixwebsocket/ixwebsocket/IXSocketConnect.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "vendor/ixwebsocket/ixwebsocket/IXSocketFactory.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "vendor/ixwebsocket/ixwebsocket/IXSocketServer.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "vendor/ixwebsocket/ixwebsocket/IXSocketTLSOptions.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "vendor/ixwebsocket/ixwebsocket/IXStrCaseCompare.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "vendor/ixwebsocket/ixwebsocket/IXUdpSocket.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "vendor/ixwebsocket/ixwebsocket/IXUrlParser.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "vendor/ixwebsocket/ixwebsocket/IXUuid.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "vendor/ixwebsocket/ixwebsocket/IXUserAgent.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "vendor/ixwebsocket/ixwebsocket/IXWebSocket.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "vendor/ixwebsocket/ixwebsocket/IXWebSocketCloseConstants.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "vendor/ixwebsocket/ixwebsocket/IXWebSocketHandshake.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "vendor/ixwebsocket/ixwebsocket/IXWebSocketHttpHeaders.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "vendor/ixwebsocket/ixwebsocket/IXWebSocketPerMessageDeflate.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "vendor/ixwebsocket/ixwebsocket/IXWebSocketPerMessageDeflateCodec.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "vendor/ixwebsocket/ixwebsocket/IXWebSocketPerMessageDeflateOptions.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "vendor/ixwebsocket/ixwebsocket/IXWebSocketProxyServer.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "vendor/ixwebsocket/ixwebsocket/IXWebSocketServer.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "vendor/ixwebsocket/ixwebsocket/IXWebSocketTransport.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "vendor/ixwebsocket/ixwebsocket/IXBase64.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "vendor/ixwebsocket/ixwebsocket/IXBench.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "vendor/ixwebsocket/ixwebsocket/IXCancellationRequest.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "vendor/ixwebsocket/ixwebsocket/IXConnectionState.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "vendor/ixwebsocket/ixwebsocket/IXDNSLookup.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "vendor/ixwebsocket/ixwebsocket/IXExponentialBackoff.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "vendor/ixwebsocket/ixwebsocket/IXGetFreePort.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "vendor/ixwebsocket/ixwebsocket/IXGzipCodec.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "vendor/ixwebsocket/ixwebsocket/IXHttp.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "vendor/ixwebsocket/ixwebsocket/IXHttpClient.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "vendor/ixwebsocket/ixwebsocket/IXHttpServer.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "vendor/ixwebsocket/ixwebsocket/IXNetSystem.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "vendor/ixwebsocket/ixwebsocket/IXProgressCallback.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "vendor/ixwebsocket/ixwebsocket/IXSelectInterrupt.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "vendor/ixwebsocket/ixwebsocket/IXSelectInterruptFactory.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "vendor/ixwebsocket/ixwebsocket/IXSelectInterruptPipe.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "vendor/ixwebsocket/ixwebsocket/IXSelectInterruptEvent.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "vendor/ixwebsocket/ixwebsocket/IXSetThreadName.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "vendor/ixwebsocket/ixwebsocket/IXSocket.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "vendor/ixwebsocket/ixwebsocket/IXSocketConnect.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "vendor/ixwebsocket/ixwebsocket/IXSocketFactory.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "vendor/ixwebsocket/ixwebsocket/IXSocketServer.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "vendor/ixwebsocket/ixwebsocket/IXSocketTLSOptions.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "vendor/ixwebsocket/ixwebsocket/IXStrCaseCompare.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "vendor/ixwebsocket/ixwebsocket/IXUdpSocket.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "vendor/ixwebsocket/ixwebsocket/IXUniquePtr.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "vendor/ixwebsocket/ixwebsocket/IXUrlParser.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "vendor/ixwebsocket/ixwebsocket/IXUuid.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "vendor/ixwebsocket/ixwebsocket/IXUtf8Validator.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "vendor/ixwebsocket/ixwebsocket/IXUserAgent.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "vendor/ixwebsocket/ixwebsocket/IXWebSocket.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "vendor/ixwebsocket/ixwebsocket/IXWebSocketCloseConstants.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "vendor/ixwebsocket/ixwebsocket/IXWebSocketCloseInfo.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "vendor/ixwebsocket/ixwebsocket/IXWebSocketErrorInfo.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "vendor/ixwebsocket/ixwebsocket/IXWebSocketHandshake.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "vendor/ixwebsocket/ixwebsocket/IXWebSocketHandshakeKeyGen.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "vendor/ixwebsocket/ixwebsocket/IXWebSocketHttpHeaders.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "vendor/ixwebsocket/ixwebsocket/IXWebSocketInitResult.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "vendor/ixwebsocket/ixwebsocket/IXWebSocketMessage.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "vendor/ixwebsocket/ixwebsocket/IXWebSocketMessageType.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "vendor/ixwebsocket/ixwebsocket/IXWebSocketOpenInfo.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "vendor/ixwebsocket/ixwebsocket/IXWebSocketPerMessageDeflate.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "vendor/ixwebsocket/ixwebsocket/IXWebSocketPerMessageDeflateCodec.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "vendor/ixwebsocket/ixwebsocket/IXWebSocketPerMessageDeflateOptions.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "vendor/ixwebsocket/ixwebsocket/IXWebSocketProxyServer.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "vendor/ixwebsocket/ixwebsocket/IXWebSocketSendData.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "vendor/ixwebsocket/ixwebsocket/IXWebSocketSendInfo.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "vendor/ixwebsocket/ixwebsocket/IXWebSocketServer.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "vendor/ixwebsocket/ixwebsocket/IXWebSocketTransport.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "vendor/ixwebsocket/ixwebsocket/IXWebSocketVersion.h",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "STATIC_LIBRARY"
+}

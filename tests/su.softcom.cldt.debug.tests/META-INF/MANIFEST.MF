@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Tests for debug functionality
+Bundle-SymbolicName: su.softcom.cldt.debug.tests
+Bundle-Version: 1.0.0.qualifier
+Require-Bundle: org.junit,
+ junit-jupiter-api,
+ su.softcom.cldt.debug.core,
+ org.eclipse.core.resources;bundle-version="3.18.200",
+ org.eclipse.core.runtime;bundle-version="3.26.100",
+ junit-jupiter-params
+Automatic-Module-Name: su.softcom.cldt.debug.tests
+Bundle-RequiredExecutionEnvironment: JavaSE-17

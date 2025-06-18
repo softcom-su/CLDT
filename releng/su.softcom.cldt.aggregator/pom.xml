@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	Copyright (c) 2020 SoftCom Ltd.
+-->
+<project
+	xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+	<modelVersion>4.0.0</modelVersion>
+	<artifactId>su.softcom.cldt.aggregator</artifactId>
+	<packaging>pom</packaging>
+
+	<parent>
+		<groupId>su.softcom.cldt</groupId>
+		<artifactId>su.softcom.cldt.parent</artifactId>
+		<version>0.1.0-SNAPSHOT</version>
+		<relativePath>../su.softcom.cldt.parent</relativePath>
+	</parent>
+
+	<modules>
+		<module>../su.softcom.cldt.target</module>
+
+		<module>../../bundles/su.softcom.cldt.debug.core</module>
+		<module>../../bundles/su.softcom.cldt.debug.core.win32</module>
+		<module>../../bundles/su.softcom.cldt.debug.core.linux</module>
+		<module>../../bundles/su.softcom.cldt.debug.ui</module>
+		<module>../../bundles/su.softcom.cldt.common</module>
+		<module>../../bundles/su.softcom.cldt.core</module>
+		<module>../../bundles/su.softcom.cldt.modeling</module>
+		<module>../../bundles/su.softcom.cldt.nativebuild</module>
+		<module>../../bundles/su.softcom.cldt.ui</module>
+		<module>../../bundles/su.softcom.cldt.ui.console</module>
+		<module>../../bundles/su.softcom.cldt.ui.launch</module>
+		<module>../../bundles/su.softcom.cldt.ui.wizards</module>
+		<module>../../bundles/su.softcom.cldt.qt</module>
+		<module>../../bundles/su.softcom.cldt.obfuscation</module>
+		<module>../../bundles/su.softcom.cldt.msvc</module>
+		
+		
+		<module>../../tests/su.softcom.cldt.core.tests</module>
+		<module>../../tests/su.softcom.cldt.debug.tests</module>
+		<module>../../tests/su.softcom.cldt.parsers.tests</module>
+		
+		<module>../../features/su.softcom.cldt.feature</module>
+		<module>../../features/su.softcom.cldt.modeling.feature</module>
+		<module>../../features/su.softcom.cldt.all.feature</module>
+		<module>../../features/su.softcom.cldt.qt.feature</module>
+		<module>../../features/su.softcom.cldt.obfuscation.feature</module>
+		<module>../../features/su.softcom.cldt.msvc.feature</module>
+
+		<module>../../releng/su.softcom.cldt.repository</module>
+		
+		<module>../../products/su.softcom.cldt.ide.product</module>
+	</modules>
+
+</project>

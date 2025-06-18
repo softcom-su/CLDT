@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         id="su.softcom.cldt.common.markers.buildmarker"
+         name="Маркер сборки"
+         point="org.eclipse.core.resources.markers">
+      <super
+        	type="org.eclipse.core.resources.problemmarker">
+      </super>
+      <persistent
+            value="true">
+      </persistent>
+      <attribute
+            name="severity">
+      </attribute>
+      <attribute
+            name="message">
+      </attribute>
+      <attribute
+            name="location">
+      </attribute>
+   </extension>
+   <extension
+       point="org.eclipse.ui.perspectives">
+    <perspective
+          class="su.softcom.cldt.common.ui.OptimizationPerspective"
+          icon="icons/view16/optimization.png"
+          id="su.softcom.cldt.ui.perspective.optimization"
+          name="%perspectives.perspective.optimizationperspective.name">
+    </perspective>
+    <perspective
+          class="su.softcom.cldt.common.ui.TranslationPerspective"
+          icon="icons/view16/trans.png"
+          id="su.softcom.cldt.ui.perspective.translation"
+          name="%perspectives.perspective.translation.name">
+    </perspective>
+    <perspective
+          class="su.softcom.cldt.common.ui.BuildPerspectiveFactory"
+          icon="icons/view16/build.png"
+          id="su.softcom.cldt.ui.perspective.nativebuild"
+          name="Сборка для целевого вычислителя">
+    </perspective>
+    <perspective
+          class="su.softcom.cldt.common.ui.LoadPerspectiveFactory"
+          icon="icons/view16/deploy.png"
+          id="su.softcom.cldt.ui.perspective.loadsolution"
+          name="Выгрузка на целевой вычислитель">
+    </perspective>
+ </extension>
+</plugin>

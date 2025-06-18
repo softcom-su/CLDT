@@ -1,0 +1,58 @@
+{Project} {Проект}
+{Load} {Загрузить}
+{Change} {Изменить}
+{Save} {Сохранить}
+{Save & Exit} {Сохранить и выйти}
+{Variable name} {Имя переменной}
+{Default value} {Умолчательное значение}
+{Exit} {Выход}
+{Up} {Вверх}
+{Down} {Вниз}
+{Ok} {Выход}
+{Help} {Помощь}
+{Remove} {Удалить}
+{Cancel} {Отказ}
+{Filter} {Фильтр}
+{Diffrerence} {Различия}
+{Full list} {Полный список}
+{Set default} {Установить умолч.}
+{Set like} {Установить как}
+{Add} {Добавить}
+{Source files} {Исходные файлы}
+{Object files} {Объектные файлы}
+{Archive files} {Библиотеки}
+{All files} {Все файлы}
+{Show List} {Показать список}
+{Save All} {Сохранить все}
+{file "%s" line %d level=%d type=%d id=%s} {Файл "%s" строка %d уровень=%d тип=%d ид=%s}
+{No filename %s} {Нет файла %s}
+{open header %s error} {Ошибка открытия исходного файла %s}
+{rest of line skipped '%s'} {Конец строки опущен '%s'}
+{Line must start with number '%s'} {Строка должна начинаться с цифры '%s'}
+{Unknown type '%s'} {Неизвестный тип '%s'}
+{Here should be ID '%s'} {Здесь должен быть идентификатор'%s'}
+{Unknown option '%s'} {Неизвестный параметр '%s'}
+{Unterminated string constant '%s'} {Незавершенная строчная константа '%s'}
+{Garbage %s} {Мусор '%s'}
+{Unknown option format} {Неизвестный формат опции}
+{false condition:} {Неверное условие:}
+{false uplevel condition:} {Не включен:}
+{Wrong level (too big)} {неверный номер уровня (слишком большой)}
+{Wrong level (too low)} {неверный номер уровня (слишком маленький)}
+{Improper attribute cond for array element} {параметр cond недопустим для элемента массива}
+{Wrong format in opt parameter} {неверный формат параметра opt}
+{No filename for %s} {не указано имя файла для переменной %s}
+{Wrong default value for an integer} {неверное значение по умолчанию для целого данного}
+{Wrong default value for hex} {неверное значение по умолчанию для шестнадцатеричного данного}
+{open header %s error} {ошибка при открытии %s}
+{Internal error  %d} {внутренняя ошибка транслятора %d}
+{Invalid parameter %s for type %s} {параметр %s недопустим для типа %s}
+{Improper opt value(s) for an integer} {значение параметра opt недопустимо для целого типа}
+{Improper opt value(s) for a string} {значение параметра opt недопустимо для строкового типа}
+{Improper opt value(s) %s for %s ... skipped} {недопустимое значение параметра opt %s для %s ... опущено}
+{Wrong default value %d (%s) for %s} {неверное значение по умолчанию %d (%s) для переменной %s}
+{Wrong default value %s (%s) for %s} {неверное значение по умолчанию %s (%s) для переменной %s}
+{bool expected} {булевское}
+{int expected} {целое}
+{string expected} {строка}
+{parse error} {Ошибка синтаксического разбора}

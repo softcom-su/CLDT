@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension-point id="su.softcom.cldt.debug.core.interal.core.lldb" name="AbstractLLDB" schema="schema/su.softcom.cldt.debug.core.interal.core.lldb.exsd"/>
+   <extension
+         point="org.eclipse.debug.core.launchDelegates">
+      <launchDelegate
+            delegate="su.softcom.cldt.debug.internal.core.HostLaunchDelegate"
+            id="su.softcom.cldt.debug.core.hostLaunchDelegate"
+            name="Host launch delegate"
+            sourceLocatorId="su.softcom.cldt.debug.internal.core.dwarf.dwarfSourceLocator">
+      </launchDelegate>
+      <launchDelegate
+            delegate="su.softcom.cldt.debug.internal.core.RemoteLaunchConfigurationDelegate"
+            id="su.softcom.cldt.debug.core.remoteLaunchDelegate"
+            name="Remote launch delegate"
+            sourceLocatorId="su.softcom.cldt.debug.internal.core.dwarf.dwarfSourceLocator">
+      </launchDelegate>
+   </extension>
+   <extension
+         point="org.eclipse.debug.core.launchConfigurationTypes">
+      <launchConfigurationType
+            delegate="su.softcom.cldt.debug.internal.core.HostLaunchDelegate"
+            delegateName="Host debug launch delegate"
+            id="su.softcom.cldt.debug.core.launchConfigurationTypeGDB"
+            modes="run, debug"
+            name="Локальный запуск">
+      <!--
+      <launchConfigurationType
+            id="su.softcom.cldt.debug.core.remoteLaunch"
+            modes="run, debug"
+            name="Remote Launch">
+      </launchConfigurationType>
+      <launchConfigurationType
+            id="su.softcom.cldt.debug.core.UemuLaunch"
+            name="EmulatorLaunch">
+                  -->
+      </launchConfigurationType>
+
+   </extension>
+   
+   <extension
+         point="org.eclipse.debug.core.sourceLocators">
+      <sourceLocator
+            class="su.softcom.cldt.debug.internal.core.dwarf.DwarfSourceLocator"
+            id="su.softcom.cldt.debug.internal.core.dwarf.dwarfSourceLocator"
+            name="DwarfSourceLocator">
+      </sourceLocator>
+   </extension>
+<!--   <extension
+         point="org.eclipse.debug.core.breakpoints">
+      <breakpoint
+            class="su.softcom.cldt.debug.core.CommandLineBreakpoint"
+            id="su.softcom.cldt.debug.breakpoint.lineBreakpoint"
+            markerType="su.softcom.cldt.debug.core.CommandLineBreakpointMarker">
+      </breakpoint>
+      <breakpoint
+            class="su.softcom.cldt.debug.core.GDBEntryBreakpoint"
+            id="su.softcom.cldt.debug.breakpoint.entryBreakpoint"
+            markerType="su.softcom.cldt.debug.core.CommandLineBreakpointMarker">
+      </breakpoint>
+   </extension>-->
+</plugin>

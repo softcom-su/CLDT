@@ -1,0 +1,191 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "plugins/informational/tiff-parser-algo/libtiff-parser-algo.so"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"add_dependencies",
+			"add_compile_options",
+			"include_directories",
+			"target_link_libraries"
+		],
+		"files" : 
+		[
+			"plugins/informational/tiff-parser-algo/CMakeLists.txt",
+			"vendor/smm-2ng/include/smm-2ng/CMakeLists.txt",
+			"CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 3,
+				"parent" : 0
+			},
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 24,
+				"parent" : 2
+			},
+			{
+				"file" : 2
+			},
+			{
+				"command" : 2,
+				"file" : 2,
+				"line" : 34,
+				"parent" : 4
+			},
+			{
+				"command" : 3,
+				"file" : 2,
+				"line" : 74,
+				"parent" : 4
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 4,
+				"parent" : 0
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-fPIC  "
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-DBOOST_ERROR_CODE_HEADER_ONLY"
+				},
+				{
+					"fragment" : "-std=c++2a"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"define" : "tiff_parser_algo_EXPORTS"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 6,
+					"path" : "/home/user/Загрузки/KPAC-04.04.2023-2/workspace/backend"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "/home/user/Загрузки/KPAC-04.04.2023-2/workspace/backend/include"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "/home/user/Загрузки/KPAC-04.04.2023-2/workspace/backend/lib"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "/home/user/Загрузки/KPAC-04.04.2023-2/workspace/backend/build"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "/home/user/Загрузки/KPAC-04.04.2023-2/workspace/backend/build/lib"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/user/Загрузки/KPAC-04.04.2023-2/workspace/backend/build/vendor/smm-2ng/include/smm-2ng/_generated"
+				},
+				{
+					"backtrace" : 7,
+					"isSystem" : true,
+					"path" : "/usr/include/gdal"
+				}
+			],
+			"language" : "CXX",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 3,
+			"id" : "smm-2ng-plugin-header-target::@0c79bffd84b5499c6d70"
+		}
+	],
+	"id" : "tiff-parser-algo::@ff3169be75b83a3816c8",
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "-ldl",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-pthread",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "/usr/lib/libgdal.so",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lstdc++fs",
+				"role" : "libraries"
+			}
+		],
+		"language" : "CXX"
+	},
+	"name" : "tiff-parser-algo",
+	"nameOnDisk" : "libtiff-parser-algo.so",
+	"paths" : 
+	{
+		"build" : "plugins/informational/tiff-parser-algo",
+		"source" : "plugins/informational/tiff-parser-algo"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "plugins/informational/tiff-parser-algo/TiffParserAlgo.cpp",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "MODULE_LIBRARY"
+}

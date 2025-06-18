@@ -1,0 +1,290 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Template|Win32">
+      <Configuration>Template</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{607704CF-423F-42F6-A854-87881CF7446C}</ProjectGuid>
+    <Keyword>MFCDLLProj</Keyword>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Template|Win32'">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)/exe\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)/tmp/Debug/Common3D\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)/Release/</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)/tmp/Release/Common3D\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Template|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Template|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Template|Win32'" />
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Template|Win32'">.dll</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_AFXEXT;__COMMON3D_DLL__;_CRTDBG_MAP_ALLOC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>OpenGL32.Lib;GlU32.Lib;GlAux.Lib;GdiPlus.lib;Vfw32.lib;Common.lib;Config.lib;Math.lib;NaviBase.lib;NaviGraph.lib;NetWorkLib.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)Common3D.dll</OutputFile>
+      <ModuleDefinitionFile>.\Common3D.def</ModuleDefinitionFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <ImportLibrary>$(OutDir)Common3D.lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+      <AdditionalOptions> /FORCE:MULTIPLE %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalLibraryDirectories>$(SolutionDir)/exe\</AdditionalLibraryDirectories>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+    </Link>
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0419</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_AFXEXT;__COMMON3D_DLL__;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>OpenGL32.Lib;GlU32.Lib;GlAux.Lib;GdiPlus.lib;Vfw32.lib;Common.lib;Config.lib;Math.lib;NaviBase.lib;NaviGraph.lib;NetWorkLib.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)Common3D.dll</OutputFile>
+      <ModuleDefinitionFile>.\Common3D.def</ModuleDefinitionFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <ImportLibrary>$(OutDir)Common3D.lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+      <AdditionalLibraryDirectories>$(OutDir)</AdditionalLibraryDirectories>
+    </Link>
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0419</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="BoundingBox.cpp" />
+    <ClCompile Include="Camera.cpp" />
+    <ClCompile Include="ChannelCtrlDlg.cpp" />
+    <ClCompile Include="ChannelPropDlg.cpp" />
+    <ClCompile Include="ChannelsStripeDlg.cpp" />
+    <ClCompile Include="ChannelViewDlg.cpp" />
+    <ClCompile Include="Common3D.cpp" />
+    <ClCompile Include="Common3DConfig.cpp" />
+    <ClCompile Include="Convertor3ds.cpp" />
+    <ClCompile Include="EnvironmentModel.cpp" />
+    <ClCompile Include="FData.cpp" />
+    <ClCompile Include="Font.cpp" />
+    <ClCompile Include="Frustum.cpp" />
+    <ClCompile Include="FTOChannelToolBar.cpp" />
+    <ClCompile Include="FTOModelLoader.cpp" />
+    <ClCompile Include="FTOMonitorDlg.cpp" />
+    <ClCompile Include="FTOResourceModel.cpp" />
+    <ClCompile Include="GeoTiffClass.cpp" />
+    <ClCompile Include="GLExternal.cpp" />
+    <ClCompile Include="GLSLProgram\GLSLProgram.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../stdafx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="Matrix3f.cpp" />
+    <ClCompile Include="Matrix4f.cpp" />
+    <ClCompile Include="MeshVirtual.cpp" />
+    <ClCompile Include="Model3DLoader.cpp" />
+    <ClCompile Include="OpenGlInitialObj.cpp" />
+    <ClCompile Include="Plane.cpp" />
+    <ClCompile Include="RenderWnd.cpp" />
+    <ClCompile Include="ShaderProgramManager.cpp" />
+    <ClCompile Include="SkyModel.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="TDescriptionFTO.cpp" />
+    <ClCompile Include="TerrainLoader.cpp" />
+    <ClCompile Include="TerrainPatch.cpp" />
+    <ClCompile Include="Texture.cpp" />
+    <ClCompile Include="Texture3D.cpp" />
+    <ClCompile Include="TextureManager.cpp" />
+    <ClCompile Include="TImage.cpp" />
+    <ClCompile Include="Tools.cpp" />
+    <ClCompile Include="Vector2f.cpp" />
+    <ClCompile Include="Vector3f.cpp" />
+    <ClCompile Include="Vector4f.cpp" />
+    <ClCompile Include="ViewImageWnd.cpp" />
+    <ClCompile Include="WorldTimeMetrics.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\BalR55mod\aircraft.vcproj" />
+    <None Include="Common3D.def" />
+    <None Include="res\Common3D.rc2" />
+    <None Include="Shaders\Sample_frag_program.fs" />
+    <None Include="Shaders\Sample_vertex_program.vs" />
+    <None Include="Shaders\sky.fs" />
+    <None Include="Shaders\sky.vs" />
+    <None Include="Shaders\test_frag_program.fs" />
+    <None Include="Shaders\test_vertex_program.vs" />
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Common3D.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="allinclude.h" />
+    <ClInclude Include="BoundingBox.h" />
+    <ClInclude Include="Camera.h" />
+    <ClInclude Include="ChannelCtrlDlg.h" />
+    <ClInclude Include="ChannelPropDlg.h" />
+    <ClInclude Include="ChannelsStripeDlg.h" />
+    <ClInclude Include="ChannelViewDlg.h" />
+    <ClInclude Include="Common3D.h" />
+    <ClInclude Include="Common3DConfig.h" />
+    <ClInclude Include="Common3DDll.h" />
+    <ClInclude Include="Convertor3ds.h" />
+    <ClInclude Include="DdsDefs.h" />
+    <ClInclude Include="EnvironmentModel.h" />
+    <ClInclude Include="FData.h" />
+    <ClInclude Include="Font.h" />
+    <ClInclude Include="Frustum.h" />
+    <ClInclude Include="FTOChannelToolBar.h" />
+    <ClInclude Include="FTOModelLoader.h" />
+    <ClInclude Include="FTOMonitorDlg.h" />
+    <ClInclude Include="FTOResourceModel.h" />
+    <ClInclude Include="GeoTiffClass.h" />
+    <ClInclude Include="GLExternal.h" />
+    <ClInclude Include="GLSLProgram\GLSLProgram.h" />
+    <ClInclude Include="Matrix3f.h" />
+    <ClInclude Include="Matrix4f.h" />
+    <ClInclude Include="MeshVirtual.h" />
+    <ClInclude Include="Model3DLoader.h" />
+    <ClInclude Include="OpenGlInitialObj.h" />
+    <ClInclude Include="Plane.h" />
+    <ClInclude Include="RenderWnd.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="ShaderProgramManager.h" />
+    <ClInclude Include="SkyModel.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="TDescriptionFTO.h" />
+    <ClInclude Include="TerrainLoader.h" />
+    <ClInclude Include="TerrainPatch.h" />
+    <ClInclude Include="Texture.h" />
+    <ClInclude Include="Texture3D.h" />
+    <ClInclude Include="TextureManager.h" />
+    <ClInclude Include="TImage.h" />
+    <ClInclude Include="Tools.h" />
+    <ClInclude Include="Vector2f.h" />
+    <ClInclude Include="Vector3f.h" />
+    <ClInclude Include="Vector4f.h" />
+    <ClInclude Include="ViewImageWnd.h" />
+    <ClInclude Include="WorldTimeMetrics.h" />
+    <ClInclude Include="GL.h" />
+    <ClInclude Include="GLAux.h" />
+    <ClInclude Include="glext.h" />
+    <ClInclude Include="GLU.h" />
+    <ClInclude Include="wglext.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Common\Common.vcxproj">
+      <Project>{fa4a68e1-eec5-4823-be52-e0ad499a0cba}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\Config\Config.vcxproj">
+      <Project>{b32d68ca-317d-45c1-8e5c-688645987559}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\NaviBase\NaviBase.vcxproj">
+      <Project>{66a7b4f2-862d-4366-b4ad-63b8c02b2a26}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\NaviGraph\NaviGraph.vcxproj">
+      <Project>{4172d7f6-1340-404f-be53-742713335561}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\NetWorkLib\NetWorkLib.vcxproj">
+      <Project>{ff86dd2f-1069-4b36-be2d-087c0b0214e9}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="GLAUX.LIB" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="Common3D.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

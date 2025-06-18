@@ -1,0 +1,77 @@
+{
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_custom_target",
+			"add_dependencies"
+		],
+		"files" : 
+		[
+			"tests/unit/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 9,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 10,
+				"parent" : 0
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 2,
+			"id" : "unit-config-converter-test::@8b1c9165409e5057fcd1"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "unit-modeling-message-reader-test::@d1950a7e0d667b58859f"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "unit-session-test::@a92299d40ab371681fe5"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "unit-sessions-manager-test::@ea94472632494902fc6b"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "unit-base-test::@962be5b49d74271b6f3c"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "unit-launcher-test::@b91671b61560cec8ccd2"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "unit-logger-test::@12b77aa8db9c792986db"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "unit-logger-module-test::@59b1c33a74fa8079185f"
+		}
+	],
+	"id" : "unit-tests::@17bd492d087794b9594e",
+	"name" : "unit-tests",
+	"paths" : 
+	{
+		"build" : "tests/unit",
+		"source" : "tests/unit"
+	},
+	"sources" : [],
+	"type" : "UTILITY"
+}

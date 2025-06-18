@@ -1,0 +1,1 @@
+wsl ./build2.sh %1 %2

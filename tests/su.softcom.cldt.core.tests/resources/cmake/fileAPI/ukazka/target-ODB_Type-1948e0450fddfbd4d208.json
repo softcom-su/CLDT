@@ -1,0 +1,90 @@
+{
+	"backtrace" : 2,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_custom_target",
+			"add_odb_library"
+		],
+		"files" : 
+		[
+			"cmake/UseODB.cmake",
+			"lib/persistence/type/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 1,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 179,
+				"parent" : 1
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"id" : "persistence-utils::@46d6abcba433a4e69a2a"
+		},
+		{
+			"id" : "smm-plugin::@dc4b2a5faea53a0e678a"
+		}
+	],
+	"id" : "ODB_Type::@e13c74f7343776c48024",
+	"name" : "ODB_Type",
+	"paths" : 
+	{
+		"build" : "lib/persistence/type",
+		"source" : "lib/persistence/type"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				1,
+				2
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "build/lib/persistence/type/CMakeFiles/ODB_Type",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/lib/persistence/type/CMakeFiles/ODB_Type.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/lib/persistence/type/TypeOdb.cxx.rule",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "UTILITY"
+}

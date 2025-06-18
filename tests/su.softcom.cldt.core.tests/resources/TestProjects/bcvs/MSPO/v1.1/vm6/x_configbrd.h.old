@@ -1,0 +1,488 @@
+/*! Last Saved by OS VERSION 2.75.2 BSP VERSION 1.19.1 */
+#define __BOARD_CONFIG 1                /*!    Board support package configuration */
+#define __BOARD_CONFIG_0 1              /*!       Device drivers                  */
+#undef INCLUDE_FLASH                    /*!          Flash                        */
+#undef INCLUDE_NVRAM                    /*!          NVRAM                        */
+#define INCLUDE_DE 1                    /*!          Ethernet                     */
+#undef INCLUDE_RGB                      /*!          RGB Console                  */
+#undef INCLUDE_ARINC                    /*!          BTM404                       */
+#undef INCLUDE_QBUS                     /*!          QBUS                         */
+#define INCLUDE_BTM401 1                /*!          PMC Manchester               */
+#undef INCLUDE_SCSI                     /*!          SCSI                         */
+#undef INCLUDE_LPT                      /*!          Parallel port                */
+#undef INCLUDE_PRINTER                  /*!          Printer                      */
+#undef INCLUDE_LS120                    /*!          Floppy LS120                 */
+#undef INCLUDE_IDE                      /*!          IDE                          */
+#undef INCLUDE_PMC_PORTS                /*!          PMC serial ports             */
+#undef INCLUDE_AIC                      /*!          SOUND                        */
+#undef INCLUDE_VI                       /*!          VIDEO_IN                     */
+#define INCLUDE_RIO 1                   /*!          RapidIO                      */
+#define NEW_K64RIO_DRV 1                /*!          New RapidIO drv              */
+#define BOARD_TIMER_HZ 100              /*!       System clock frequency          */
+#define __AUX 1                         /*!       Serial ports                    */
+#define AUX_CONFIG 1                    /*!          System Controller serial ports */
+#define AUX_CONFIG0 1                   /*!          System Controller serial ports(0) */
+#define AUX_NAME0 "/dev/console"        /*!             Имя(0)                    */
+#define AUX_RBUF0 512                   /*!             Read buf(0)               */
+#define AUX_WBUF0 512                   /*!             Write buf(0)              */
+#define AUX_SPEED0 115200               /*!             Baud rate(0)              */
+#define AUX_INT_ENABLE0 1               /*!             Int enable(0)             */
+#undef AUX_CONFIG1                      /*!          System Controller serial ports(1) */
+#define AUX_NAME1 "/dev/aux1"           /*!             Имя(1)                    */
+#define AUX_RBUF1 8192                  /*!             Read buf(1)               */
+#define AUX_WBUF1 8192                  /*!             Write buf(1)              */
+#define AUX_SPEED1 115200               /*!             Baud rate(1)              */
+#define AUX_INT_ENABLE1 0               /*!             Int enable(1)             */
+#define __DE_CONFIG 1                   /*!       Ethernet                        */
+#define DE0_INCLUDE 1                   /*!          de0 (Onboard Ethernet)       */
+#define DE0_CSR11 0x0                   /*!             CSR11                     */
+#define DE0_TTM 0                       /*!             TTM                       */
+#define DE0_10HD 1                      /*!             10M half duplex           */
+#define DE0_10FD 1                      /*!             10M full duplex           */
+#define DE0_100HD 1                     /*!             100M half duplex          */
+#define DE0_100FD 1                     /*!             100M full duplex          */
+#undef DE0_RESET                        /*!             Forced reset              */
+#undef DE1_INCLUDE                      /*!          de1 (BTM23-408/BT83-405)     */
+#define DE1_CSR11 0x0                   /*!             CSR11                     */
+#define DE1_TTM -1                      /*!             TTM                       */
+#define DE1_10HD 1                      /*!             10M half duplex           */
+#define DE1_10FD 1                      /*!             10M full duplex           */
+#define DE1_100HD 1                     /*!             100M half duplex          */
+#define DE1_100FD 1                     /*!             100M full duplex          */
+#undef DE1_RESET                        /*!             Forced reset              */
+#define __RGB_CONFIG 1                  /*!       RGB Console                     */
+#define COLOR_FG LIGHTGREEN             /*!          Foreground color             */
+#define COLOR_BG BLACK                  /*!          Background color             */
+#define TAB_SIZE 8                      /*!          Tab size                     */
+#define RGB_MQ_DEPTH 1024               /*!          Output queue size            */
+#define RGB_THREAD_PRI 100              /*!          Приоритет потока             */
+#define RGB_INHERIT_MODE 1              /*!          Inherit mode                 */
+#define RGB_CURSOR_BLINK 1              /*!          Cursor blink                 */
+#undef RGB_FLAT_PANEL                   /*!          Use Flat Panel               */
+#define RGB_MODE CRT_640x480x75         /*!          CRT Video mode               */
+#define FP_MODE FP_RS6                  /*!          LCD Video mode               */
+#define __IDE_CONFIG 1                  /*!       IDE                             */
+#define __IDE_CONFIG1 1                 /*!          Common parameters            */
+#undef IDE_RESET                        /*!             Reset IDE after initialization */
+#define IDE_SLOW_IO 1                   /*!             Enable slow IO access     */
+#define IDE_PRI 100                     /*!             Приоритет потока          */
+#undef IDE_PARAMS                       /*!             Attached hard disk drives */
+#define IDE_PARAMS0 1                   /*!             Attached hard disk drives(0) */
+#define IDE_NAME0 "/dev/ide0"           /*!                Device name(0)         */
+#define IDE_CTRL0 0                     /*!                Controller(0)          */
+#define IDE_CHANNEL0 0                  /*!                Channel(0)             */
+#define IDE_DRIVE0 IDE_MASTER           /*!                M/S(0)                 */
+#define IDE_DMA0 0                      /*!                Enable DMA(0)          */
+#define IDE_MBR0 1                      /*!                Use MBR(0)             */
+#undef IDE_PARAMS1                      /*!             Attached hard disk drives(1) */
+#define IDE_NAME1 "/dev/ide1"           /*!                Device name(1)         */
+#define IDE_CTRL1 0                     /*!                Controller(1)          */
+#define IDE_CHANNEL1 1                  /*!                Channel(1)             */
+#define IDE_DRIVE1 IDE_MASTER           /*!                M/S(1)                 */
+#define IDE_DMA1 0                      /*!                Enable DMA(1)          */
+#define IDE_MBR1 1                      /*!                Use MBR(1)             */
+#undef IDE_PARAMS2                      /*!             Attached hard disk drives(2) */
+#define IDE_NAME2 "/dev/ide2"           /*!                Device name(2)         */
+#define IDE_CTRL2 1                     /*!                Controller(2)          */
+#define IDE_CHANNEL2 0                  /*!                Channel(2)             */
+#define IDE_DRIVE2 IDE_MASTER           /*!                M/S(2)                 */
+#define IDE_DMA2 0                      /*!                Enable DMA(2)          */
+#define IDE_MBR2 1                      /*!                Use MBR(2)             */
+#undef IDE_PARAMS3                      /*!             Attached hard disk drives(3) */
+#define IDE_NAME3 "/dev/ide3"           /*!                Device name(3)         */
+#define IDE_CTRL3 1                     /*!                Controller(3)          */
+#define IDE_CHANNEL3 1                  /*!                Channel(3)             */
+#define IDE_DRIVE3 IDE_MASTER           /*!                M/S(3)                 */
+#define IDE_DMA3 0                      /*!                Enable DMA(3)          */
+#define IDE_MBR3 1                      /*!                Use MBR(3)             */
+#define __INCLUDE_BTM405_IDE 1          /*!          BTM23-405 IDE                */
+#define __BTM405_IDE0 1                 /*!             Controller 0 Timings      */
+                                        /*!                Channel 0 PIO          */
+#define BTM405_CTRL0_CH0_PIO BAGET_TIMINGS_DEF
+                                        /*!                Channel 0 DMA          */
+#define BTM405_CTRL0_CH0_DMA BAGET_TIMINGS_DEF
+                                        /*!                Channel 1 PIO          */
+#define BTM405_CTRL0_CH1_PIO BAGET_TIMINGS_DEF
+                                        /*!                Channel 1 DMA          */
+#define BTM405_CTRL0_CH1_DMA BAGET_TIMINGS_DEF
+#define __BTM405_IDE1 1                 /*!             Controller 1 Timings      */
+                                        /*!                Channel 0 PIO          */
+#define BTM405_CTRL1_CH0_PIO BAGET_TIMINGS_DEF
+                                        /*!                Channel 0 DMA          */
+#define BTM405_CTRL1_CH0_DMA BAGET_TIMINGS_DEF
+                                        /*!                Channel 1 PIO          */
+#define BTM405_CTRL1_CH1_PIO BAGET_TIMINGS_DEF
+                                        /*!                Channel 1 DMA          */
+#define BTM405_CTRL1_CH1_DMA BAGET_TIMINGS_DEF
+#define __SCSI_CONFIG 1                 /*!       SCSI controller                 */
+#define __INCLUDE_BTM406 1              /*!          SCSI threads                 */
+#define BTM406_IO_PRI 240               /*!             Controller thread priority */
+#define BTM406_BQ_PRI 100               /*!             Data transfere thread priority */
+#define BTM406_ID 7                     /*!             Adapter bus ID            */
+#define SCSI_AUTO_CONFIG 1              /*!          Automatic Configuration      */
+#undef SCSI_AUTO_LUNS                   /*!             Config LUNs               */
+#define SCSI_AUTO_NAME "/dev/scsi"      /*!             Device name               */
+#define SCSI_AUTO_DISCONNECT 1          /*!             Disconnect                */
+#define SCSI_AUTO_SYNC 1                /*!             Synchronous mode          */
+#define SCSI_AUTO_WIDE 1                /*!             Wide mode                 */
+#define SCSI_AUTO_TAGGED 1              /*!             Tagged                    */
+#define SCSI_AUTO_TOUT 0                /*!             Request timeout           */
+#define SCSI_AUTO_SPINUP 0              /*!             Spinup timeout            */
+#define SCSI_AUTO_MBR 1                 /*!             Use MBR                   */
+#undef SCSI_MAN_CONFIG                  /*!          Manual configuration         */
+#define SCSI_MAN_CONFIG0 1              /*!          Manual configuration(0)      */
+#define SCSI_MAN_NAME0 "/dev/scsi0"     /*!             Device name(0)            */
+#define SCSI_MAN_ID0 0                  /*!             ID(0)                     */
+#define SCSI_MAN_LUN0 0                 /*!             LUN(0)                    */
+#define SCSI_MAN_DISCONNECT0 1          /*!             Dscnct(0)                 */
+#define SCSI_MAN_SYNC0 1                /*!             Sync(0)                   */
+#define SCSI_MAN_WIDE0 1                /*!             Wide mode(0)              */
+#define SCSI_MAN_TAGGED0 1              /*!             Tagged(0)                 */
+#define SCSI_MAN_TOUT0 0                /*!             RTout(0)                  */
+#define SCSI_MAN_SPINUP0 0              /*!             STout(0)                  */
+#define SCSI_MAN_MBR0 1                 /*!             Use MBR(0)                */
+#undef SCSI_MAN_CONFIG1                 /*!          Manual configuration(1)      */
+#define SCSI_MAN_NAME1 "/dev/scsi1"     /*!             Device name(1)            */
+#define SCSI_MAN_ID1 1                  /*!             ID(1)                     */
+#define SCSI_MAN_LUN1 0                 /*!             LUN(1)                    */
+#define SCSI_MAN_DISCONNECT1 1          /*!             Dscnct(1)                 */
+#define SCSI_MAN_SYNC1 1                /*!             Sync(1)                   */
+#define SCSI_MAN_WIDE1 1                /*!             Wide mode(1)              */
+#define SCSI_MAN_TAGGED1 1              /*!             Tagged(1)                 */
+#define SCSI_MAN_TOUT1 0                /*!             RTout(1)                  */
+#define SCSI_MAN_SPINUP1 0              /*!             STout(1)                  */
+#define SCSI_MAN_MBR1 1                 /*!             Use MBR(1)                */
+#undef SCSI_MAN_CONFIG2                 /*!          Manual configuration(2)      */
+#define SCSI_MAN_NAME2 "/dev/scsi2"     /*!             Device name(2)            */
+#define SCSI_MAN_ID2 2                  /*!             ID(2)                     */
+#define SCSI_MAN_LUN2 0                 /*!             LUN(2)                    */
+#define SCSI_MAN_DISCONNECT2 1          /*!             Dscnct(2)                 */
+#define SCSI_MAN_SYNC2 1                /*!             Sync(2)                   */
+#define SCSI_MAN_WIDE2 1                /*!             Wide mode(2)              */
+#define SCSI_MAN_TAGGED2 1              /*!             Tagged(2)                 */
+#define SCSI_MAN_TOUT2 0                /*!             RTout(2)                  */
+#define SCSI_MAN_SPINUP2 0              /*!             STout(2)                  */
+#define SCSI_MAN_MBR2 1                 /*!             Use MBR(2)                */
+#undef SCSI_MAN_CONFIG3                 /*!          Manual configuration(3)      */
+#define SCSI_MAN_NAME3 "/dev/scsi3"     /*!             Device name(3)            */
+#define SCSI_MAN_ID3 3                  /*!             ID(3)                     */
+#define SCSI_MAN_LUN3 0                 /*!             LUN(3)                    */
+#define SCSI_MAN_DISCONNECT3 1          /*!             Dscnct(3)                 */
+#define SCSI_MAN_SYNC3 1                /*!             Sync(3)                   */
+#define SCSI_MAN_WIDE3 1                /*!             Wide mode(3)              */
+#define SCSI_MAN_TAGGED3 1              /*!             Tagged(3)                 */
+#define SCSI_MAN_TOUT3 0                /*!             RTout(3)                  */
+#define SCSI_MAN_SPINUP3 0              /*!             STout(3)                  */
+#define SCSI_MAN_MBR3 1                 /*!             Use MBR(3)                */
+#undef SCSI_MAN_CONFIG4                 /*!          Manual configuration(4)      */
+#define SCSI_MAN_NAME4 "/dev/scsi4"     /*!             Device name(4)            */
+#define SCSI_MAN_ID4 4                  /*!             ID(4)                     */
+#define SCSI_MAN_LUN4 0                 /*!             LUN(4)                    */
+#define SCSI_MAN_DISCONNECT4 1          /*!             Dscnct(4)                 */
+#define SCSI_MAN_SYNC4 1                /*!             Sync(4)                   */
+#define SCSI_MAN_WIDE4 1                /*!             Wide mode(4)              */
+#define SCSI_MAN_TAGGED4 1              /*!             Tagged(4)                 */
+#define SCSI_MAN_TOUT4 0                /*!             RTout(4)                  */
+#define SCSI_MAN_SPINUP4 0              /*!             STout(4)                  */
+#define SCSI_MAN_MBR4 1                 /*!             Use MBR(4)                */
+#undef SCSI_MAN_CONFIG5                 /*!          Manual configuration(5)      */
+#define SCSI_MAN_NAME5 "/dev/scsi5"     /*!             Device name(5)            */
+#define SCSI_MAN_ID5 5                  /*!             ID(5)                     */
+#define SCSI_MAN_LUN5 0                 /*!             LUN(5)                    */
+#define SCSI_MAN_DISCONNECT5 1          /*!             Dscnct(5)                 */
+#define SCSI_MAN_SYNC5 1                /*!             Sync(5)                   */
+#define SCSI_MAN_WIDE5 1                /*!             Wide mode(5)              */
+#define SCSI_MAN_TAGGED5 1              /*!             Tagged(5)                 */
+#define SCSI_MAN_TOUT5 0                /*!             RTout(5)                  */
+#define SCSI_MAN_SPINUP5 0              /*!             STout(5)                  */
+#define SCSI_MAN_MBR5 1                 /*!             Use MBR(5)                */
+#undef SCSI_MAN_CONFIG6                 /*!          Manual configuration(6)      */
+#define SCSI_MAN_NAME6 "/dev/scsi6"     /*!             Device name(6)            */
+#define SCSI_MAN_ID6 6                  /*!             ID(6)                     */
+#define SCSI_MAN_LUN6 0                 /*!             LUN(6)                    */
+#define SCSI_MAN_DISCONNECT6 1          /*!             Dscnct(6)                 */
+#define SCSI_MAN_SYNC6 1                /*!             Sync(6)                   */
+#define SCSI_MAN_WIDE6 1                /*!             Wide mode(6)              */
+#define SCSI_MAN_TAGGED6 1              /*!             Tagged(6)                 */
+#define SCSI_MAN_TOUT6 0                /*!             RTout(6)                  */
+#define SCSI_MAN_SPINUP6 0              /*!             STout(6)                  */
+#define SCSI_MAN_MBR6 1                 /*!             Use MBR(6)                */
+#define __BSP_MISC 1                    /*!       Дополнительные возможности      */
+#define __BSP_MISC1 1                   /*!          Additional libraries and flags */
+#define INCLUDE_LOGGING 1               /*!             INCLUDE_LOGGING           */
+#define LOG_MSG_MAX 100                 /*!             LOG_MSG_MAX               */
+#define BAD_INTS_LOGGING 1              /*!             BAD_INTS_LOGGING          */
+#define WARM_REBOOT 0xbfc00000          /*!             Reboot entry              */
+#undef INCLUDE_IDLE                     /*!             INCLUDE_IDLE              */
+#define IDLE_PRIORITY 0                 /*!             IDLE_PRIORITY             */
+#define IDLE_DELAY 32                   /*!             IDLE_DELAY                */
+#define __CRC_ERROR 1                   /*!          CRC                          */
+#define CRC_ERROR_BEHAVIOR 1            /*!             Error processing          */
+#define CRC_REBOOT_ENTRY 0xbfc00000     /*!             Reboot entry              */
+#define CRC_NVRAM_ADDRESS 0xa0000600    /*!             Check result address      */
+#define _RIO_CONFIG 1                   /*!       Rapid IO Configuration          */
+#define RIO_SEND_THR_PRIORITY 120       /*!          RIO send thread priority     */
+#define RIO_TIMEOUT 10                  /*!          RIO request/data timeout (sec) */
+#define INCLUDE_RREG 1                  /*!          RIO ID Registration Table    */
+#define RREG_ID00 0x0                   /*!             0                         */
+#define RREG_ID01 0x1                   /*!             1                         */
+#define RREG_ID02 0x1                   /*!             2                         */
+#define RREG_ID03 0x0                   /*!             3                         */
+#define RREG_ID04 0x0                   /*!             4                         */
+#define RREG_ID05 0x0                   /*!             5                         */
+#define RREG_ID06 0x0                   /*!             6                         */
+#define RREG_ID07 0x0                   /*!             7                         */
+#define RREG_ID08 0x0                   /*!             8                         */
+#define RREG_ID09 0x0                   /*!             9                         */
+#define RREG_ID0A 0x0                   /*!             A                         */
+#define RREG_ID0B 0x0                   /*!             B                         */
+#define RREG_ID0C 0x0                   /*!             C                         */
+#define RREG_ID0D 0x0                   /*!             D                         */
+#define RREG_ID0E 0x0                   /*!             E                         */
+#define RREG_ID0F 0x0                   /*!             F                         */
+#define RREG_ID10 0x0                   /*!             10                        */
+#define RREG_ID11 0x0                   /*!             11                        */
+#define RREG_ID12 0x0                   /*!             12                        */
+#define RREG_ID13 0x0                   /*!             13                        */
+#define RREG_ID14 0x0                   /*!             14                        */
+#define RREG_ID15 0x0                   /*!             15                        */
+#define RREG_ID16 0x0                   /*!             16                        */
+#define RREG_ID17 0x0                   /*!             17                        */
+#define RREG_ID18 0x0                   /*!             18                        */
+#define RREG_ID19 0x0                   /*!             19                        */
+#define RREG_ID1A 0x0                   /*!             1A                        */
+#define RREG_ID1B 0x0                   /*!             1B                        */
+#define RREG_ID1C 0x0                   /*!             1C                        */
+#define RREG_ID1D 0x0                   /*!             1D                        */
+#define RREG_ID1E 0x0                   /*!             1E                        */
+#define RREG_ID1F 0x0                   /*!             1F                        */
+#define RREG_ID20 0x0                   /*!             20                        */
+#define RREG_ID21 0x0                   /*!             21                        */
+#define RREG_ID22 0x0                   /*!             22                        */
+#define RREG_ID23 0x0                   /*!             23                        */
+#define RREG_ID24 0x0                   /*!             24                        */
+#define RREG_ID25 0x0                   /*!             25                        */
+#define RREG_ID26 0x0                   /*!             26                        */
+#define RREG_ID27 0x0                   /*!             27                        */
+#define RREG_ID28 0x0                   /*!             28                        */
+#define RREG_ID29 0x0                   /*!             29                        */
+#define RREG_ID2A 0x0                   /*!             2A                        */
+#define RREG_ID2B 0x0                   /*!             2B                        */
+#define RREG_ID2C 0x0                   /*!             2C                        */
+#define RREG_ID2D 0x0                   /*!             2D                        */
+#define RREG_ID2E 0x0                   /*!             2E                        */
+#define RREG_ID2F 0x0                   /*!             2F                        */
+#define RREG_ID30 0x0                   /*!             30                        */
+#define RREG_ID31 0x0                   /*!             31                        */
+#define RREG_ID32 0x0                   /*!             32                        */
+#define RREG_ID33 0x0                   /*!             33                        */
+#define RREG_ID34 0x0                   /*!             34                        */
+#define RREG_ID35 0x0                   /*!             35                        */
+#define RREG_ID36 0x0                   /*!             36                        */
+#define RREG_ID37 0x0                   /*!             37                        */
+#define RREG_ID38 0x0                   /*!             38                        */
+#define RREG_ID39 0x0                   /*!             39                        */
+#define RREG_ID3A 0x0                   /*!             3A                        */
+#define RREG_ID3B 0x0                   /*!             3B                        */
+#define RREG_ID3C 0x0                   /*!             3C                        */
+#define RREG_ID3D 0x0                   /*!             3D                        */
+#define RREG_ID3E 0x0                   /*!             3E                        */
+#define RREG_ID3F 0x0                   /*!             3F                        */
+#define RREG_ID40 0x0                   /*!             40                        */
+#define RREG_ID41 0x0                   /*!             41                        */
+#define RREG_ID42 0x0                   /*!             42                        */
+#define RREG_ID43 0x0                   /*!             43                        */
+#define RREG_ID44 0x0                   /*!             44                        */
+#define RREG_ID45 0x0                   /*!             45                        */
+#define RREG_ID46 0x0                   /*!             46                        */
+#define RREG_ID47 0x0                   /*!             47                        */
+#define RREG_ID48 0x0                   /*!             48                        */
+#define RREG_ID49 0x0                   /*!             49                        */
+#define RREG_ID4A 0x0                   /*!             4A                        */
+#define RREG_ID4B 0x0                   /*!             4B                        */
+#define RREG_ID4C 0x0                   /*!             4C                        */
+#define RREG_ID4D 0x0                   /*!             4D                        */
+#define RREG_ID4E 0x0                   /*!             4E                        */
+#define RREG_ID4F 0x0                   /*!             4F                        */
+#define RREG_ID50 0x0                   /*!             50                        */
+#define RREG_ID51 0x0                   /*!             51                        */
+#define RREG_ID52 0x0                   /*!             52                        */
+#define RREG_ID53 0x0                   /*!             53                        */
+#define RREG_ID54 0x0                   /*!             54                        */
+#define RREG_ID55 0x0                   /*!             55                        */
+#define RREG_ID56 0x0                   /*!             56                        */
+#define RREG_ID57 0x0                   /*!             57                        */
+#define RREG_ID58 0x0                   /*!             58                        */
+#define RREG_ID59 0x0                   /*!             59                        */
+#define RREG_ID5A 0x0                   /*!             5A                        */
+#define RREG_ID5B 0x0                   /*!             5B                        */
+#define RREG_ID5C 0x0                   /*!             5C                        */
+#define RREG_ID5D 0x0                   /*!             5D                        */
+#define RREG_ID5E 0x0                   /*!             5E                        */
+#define RREG_ID5F 0x0                   /*!             5F                        */
+#define RREG_ID60 0x0                   /*!             60                        */
+#define RREG_ID61 0x0                   /*!             61                        */
+#define RREG_ID62 0x0                   /*!             62                        */
+#define RREG_ID63 0x0                   /*!             63                        */
+#define RREG_ID64 0x0                   /*!             64                        */
+#define RREG_ID65 0x0                   /*!             65                        */
+#define RREG_ID66 0x0                   /*!             66                        */
+#define RREG_ID67 0x0                   /*!             67                        */
+#define RREG_ID68 0x0                   /*!             68                        */
+#define RREG_ID69 0x0                   /*!             69                        */
+#define RREG_ID6A 0x0                   /*!             6A                        */
+#define RREG_ID6B 0x0                   /*!             6B                        */
+#define RREG_ID6C 0x0                   /*!             6C                        */
+#define RREG_ID6D 0x0                   /*!             6D                        */
+#define RREG_ID6E 0x0                   /*!             6E                        */
+#define RREG_ID6F 0x0                   /*!             6F                        */
+#define RREG_ID70 0x0                   /*!             70                        */
+#define RREG_ID71 0x0                   /*!             71                        */
+#define RREG_ID72 0x0                   /*!             72                        */
+#define RREG_ID73 0x0                   /*!             73                        */
+#define RREG_ID74 0x0                   /*!             74                        */
+#define RREG_ID75 0x0                   /*!             75                        */
+#define RREG_ID76 0x0                   /*!             76                        */
+#define RREG_ID77 0x0                   /*!             77                        */
+#define RREG_ID78 0x0                   /*!             78                        */
+#define RREG_ID79 0x0                   /*!             79                        */
+#define RREG_ID7A 0x0                   /*!             7A                        */
+#define RREG_ID7B 0x0                   /*!             7B                        */
+#define RREG_ID7C 0x0                   /*!             7C                        */
+#define RREG_ID7D 0x0                   /*!             7D                        */
+#define RREG_ID7E 0x0                   /*!             7E                        */
+#define RREG_ID7F 0x0                   /*!             7F                        */
+#define RREG_ID80 0x0                   /*!             80                        */
+#define RREG_ID81 0x0                   /*!             81                        */
+#define RREG_ID82 0x0                   /*!             82                        */
+#define RREG_ID83 0x0                   /*!             83                        */
+#define RREG_ID84 0x0                   /*!             84                        */
+#define RREG_ID85 0x0                   /*!             85                        */
+#define RREG_ID86 0x0                   /*!             86                        */
+#define RREG_ID87 0x0                   /*!             87                        */
+#define RREG_ID88 0x0                   /*!             88                        */
+#define RREG_ID89 0x0                   /*!             89                        */
+#define RREG_ID8A 0x0                   /*!             8A                        */
+#define RREG_ID8B 0x0                   /*!             8B                        */
+#define RREG_ID8C 0x0                   /*!             8C                        */
+#define RREG_ID8D 0x0                   /*!             8D                        */
+#define RREG_ID8E 0x0                   /*!             8E                        */
+#define RREG_ID8F 0x0                   /*!             8F                        */
+#define RREG_ID90 0x0                   /*!             90                        */
+#define RREG_ID91 0x0                   /*!             91                        */
+#define RREG_ID92 0x0                   /*!             92                        */
+#define RREG_ID93 0x0                   /*!             93                        */
+#define RREG_ID94 0x0                   /*!             94                        */
+#define RREG_ID95 0x0                   /*!             95                        */
+#define RREG_ID96 0x0                   /*!             96                        */
+#define RREG_ID97 0x0                   /*!             97                        */
+#define RREG_ID98 0x0                   /*!             98                        */
+#define RREG_ID99 0x0                   /*!             99                        */
+#define RREG_ID9A 0x0                   /*!             9A                        */
+#define RREG_ID9B 0x0                   /*!             9B                        */
+#define RREG_ID9C 0x0                   /*!             9C                        */
+#define RREG_ID9D 0x0                   /*!             9D                        */
+#define RREG_ID9E 0x0                   /*!             9E                        */
+#define RREG_ID9F 0x0                   /*!             9F                        */
+#define RREG_IDA0 0x0                   /*!             A0                        */
+#define RREG_IDA1 0x0                   /*!             A1                        */
+#define RREG_IDA2 0x0                   /*!             A2                        */
+#define RREG_IDA3 0x0                   /*!             A3                        */
+#define RREG_IDA4 0x0                   /*!             A4                        */
+#define RREG_IDA5 0x0                   /*!             A5                        */
+#define RREG_IDA6 0x0                   /*!             A6                        */
+#define RREG_IDA7 0x0                   /*!             A7                        */
+#define RREG_IDA8 0x0                   /*!             A8                        */
+#define RREG_IDA9 0x0                   /*!             A9                        */
+#define RREG_IDAA 0x0                   /*!             AA                        */
+#define RREG_IDAB 0x0                   /*!             AB                        */
+#define RREG_IDAC 0x0                   /*!             AC                        */
+#define RREG_IDAD 0x0                   /*!             AD                        */
+#define RREG_IDAE 0x0                   /*!             AE                        */
+#define RREG_IDAF 0x0                   /*!             AF                        */
+#define RREG_IDB0 0x0                   /*!             B0                        */
+#define RREG_IDB1 0x0                   /*!             B1                        */
+#define RREG_IDB2 0x0                   /*!             B2                        */
+#define RREG_IDB3 0x0                   /*!             B3                        */
+#define RREG_IDB4 0x0                   /*!             B4                        */
+#define RREG_IDB5 0x0                   /*!             B5                        */
+#define RREG_IDB6 0x0                   /*!             B6                        */
+#define RREG_IDB7 0x0                   /*!             B7                        */
+#define RREG_IDB8 0x0                   /*!             B8                        */
+#define RREG_IDB9 0x0                   /*!             B9                        */
+#define RREG_IDBA 0x0                   /*!             BA                        */
+#define RREG_IDBB 0x0                   /*!             BB                        */
+#define RREG_IDBC 0x0                   /*!             BC                        */
+#define RREG_IDBD 0x0                   /*!             BD                        */
+#define RREG_IDBE 0x0                   /*!             BE                        */
+#define RREG_IDBF 0x0                   /*!             BF                        */
+#define RREG_IDC0 0x0                   /*!             C0                        */
+#define RREG_IDC1 0x0                   /*!             C1                        */
+#define RREG_IDC2 0x0                   /*!             C2                        */
+#define RREG_IDC3 0x0                   /*!             C3                        */
+#define RREG_IDC4 0x0                   /*!             C4                        */
+#define RREG_IDC5 0x0                   /*!             C5                        */
+#define RREG_IDC6 0x0                   /*!             C6                        */
+#define RREG_IDC7 0x0                   /*!             C7                        */
+#define RREG_IDC8 0x0                   /*!             C8                        */
+#define RREG_IDC9 0x0                   /*!             C9                        */
+#define RREG_IDCA 0x0                   /*!             CA                        */
+#define RREG_IDCB 0x0                   /*!             CB                        */
+#define RREG_IDCC 0x0                   /*!             CC                        */
+#define RREG_IDCD 0x0                   /*!             CD                        */
+#define RREG_IDCE 0x0                   /*!             CE                        */
+#define RREG_IDCF 0x0                   /*!             CF                        */
+#define RREG_IDD0 0x0                   /*!             D0                        */
+#define RREG_IDD1 0x0                   /*!             D1                        */
+#define RREG_IDD2 0x0                   /*!             D2                        */
+#define RREG_IDD3 0x0                   /*!             D3                        */
+#define RREG_IDD4 0x0                   /*!             D4                        */
+#define RREG_IDD5 0x0                   /*!             D5                        */
+#define RREG_IDD6 0x0                   /*!             D6                        */
+#define RREG_IDD7 0x0                   /*!             D7                        */
+#define RREG_IDD8 0x0                   /*!             D8                        */
+#define RREG_IDD9 0x0                   /*!             D9                        */
+#define RREG_IDDA 0x0                   /*!             DA                        */
+#define RREG_IDDB 0x0                   /*!             DB                        */
+#define RREG_IDDC 0x0                   /*!             DC                        */
+#define RREG_IDDD 0x0                   /*!             DD                        */
+#define RREG_IDDE 0x0                   /*!             DE                        */
+#define RREG_IDDF 0x0                   /*!             DF                        */
+#define RREG_IDE0 0x0                   /*!             E0                        */
+#define RREG_IDE1 0x0                   /*!             E1                        */
+#define RREG_IDE2 0x0                   /*!             E2                        */
+#define RREG_IDE3 0x0                   /*!             E3                        */
+#define RREG_IDE4 0x0                   /*!             E4                        */
+#define RREG_IDE5 0x0                   /*!             E5                        */
+#define RREG_IDE6 0x0                   /*!             E6                        */
+#define RREG_IDE7 0x0                   /*!             E7                        */
+#define RREG_IDE8 0x0                   /*!             E8                        */
+#define RREG_IDE9 0x0                   /*!             E9                        */
+#define RREG_IDEA 0x0                   /*!             EA                        */
+#define RREG_IDEB 0x0                   /*!             EB                        */
+#define RREG_IDEC 0x0                   /*!             EC                        */
+#define RREG_IDED 0x0                   /*!             ED                        */
+#define RREG_IDEE 0x0                   /*!             EE                        */
+#define RREG_IDEF 0x0                   /*!             EF                        */
+#define RREG_IDF0 0x0                   /*!             F0                        */
+#define RREG_IDF1 0x0                   /*!             F1                        */
+#define RREG_IDF2 0x0                   /*!             F2                        */
+#define RREG_IDF3 0x0                   /*!             F3                        */
+#define RREG_IDF4 0x0                   /*!             F4                        */
+#define RREG_IDF5 0x0                   /*!             F5                        */
+#define RREG_IDF6 0x0                   /*!             F6                        */
+#define RREG_IDF7 0x0                   /*!             F7                        */
+#define RREG_IDF8 0x0                   /*!             F8                        */
+#define RREG_IDF9 0x0                   /*!             F9                        */
+#define RREG_IDFA 0x0                   /*!             FA                        */
+#define RREG_IDFB 0x0                   /*!             FB                        */
+#define RREG_IDFC 0x0                   /*!             FC                        */
+#define RREG_IDFD 0x0                   /*!             FD                        */
+#define RREG_IDFE 0x0                   /*!             FE                        */
+#define RREG_IDFF 0x0                   /*!             FF                        */
+#define RREG_TIMEOUT 5                  /*!          Registration timeout         */
+#define RREG_THREAD_PRI 220             /*!          Registration thread priority */
+#define RREG_ID_MAX 32                  /*!          Registration ID limit        */
+#define INCLUDE_RMSG_NET 1              /*!          Ethernet over RIO            */
+#define RMSG_NET_RX_SIZE 256            /*!             Number of receive network buffers */
+#define RMSG_CHAN_RX_SIZE 256           /*!             Number of receive mpchan buffers */

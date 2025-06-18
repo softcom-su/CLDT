@@ -1,0 +1,137 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "types/Duration/libDuration.so"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"add_dependencies",
+			"target_link_libraries"
+		],
+		"files" : 
+		[
+			"types/Duration/CMakeLists.txt",
+			"vendor/smm-2ng/include/smm-2ng/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 4,
+				"parent" : 0
+			},
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 45,
+				"parent" : 2
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 5,
+				"parent" : 0
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-std=c++20 -fPIC"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"define" : "DurationImpl_EXPORTS"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 4,
+					"path" : "/home/ivan/\u0417\u0430\u0433\u0440\u0443\u0437\u043a\u0438/linux_product/ru.npomash.excellence.kpac.ide.product-linux.gtk.x86_64/workspace/smm2024/types/Duration"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "/home/ivan/\u0417\u0430\u0433\u0440\u0443\u0437\u043a\u0438/linux_product/ru.npomash.excellence.kpac.ide.product-linux.gtk.x86_64/workspace/smm2024/build/vendor/smm-2ng/include/smm-2ng/_generated"
+				}
+			],
+			"language" : "CXX",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					1
+				],
+				"standard" : "20"
+			},
+			"sourceIndexes" : 
+			[
+				0
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 3,
+			"id" : "smm-2ng-type-header-target::@0c79bffd84b5499c6d70"
+		}
+	],
+	"id" : "DurationImpl::@478245351230234262c2",
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "",
+				"role" : "flags"
+			}
+		],
+		"language" : "CXX"
+	},
+	"name" : "DurationImpl",
+	"nameOnDisk" : "libDuration.so",
+	"paths" : 
+	{
+		"build" : "types/Duration",
+		"source" : "types/Duration"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "types/Duration/Duration.cpp",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "MODULE_LIBRARY"
+}

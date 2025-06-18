@@ -1,0 +1,87 @@
+{
+	"backtrace" : 2,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_custom_target",
+			"add_odb_library"
+		],
+		"files" : 
+		[
+			"cmake/UseODB.cmake",
+			"lib/persistence/audit/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 1,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 179,
+				"parent" : 1
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"id" : "authorization::@64ce893590329736f0cb"
+		}
+	],
+	"id" : "ODB_AuditEntry::@94a860eee32156aae729",
+	"name" : "ODB_AuditEntry",
+	"paths" : 
+	{
+		"build" : "lib/persistence/audit",
+		"source" : "lib/persistence/audit"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				1,
+				2
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "build/lib/persistence/audit/CMakeFiles/ODB_AuditEntry",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/lib/persistence/audit/CMakeFiles/ODB_AuditEntry.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/lib/persistence/audit/AuditEntryOdb.cxx.rule",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "UTILITY"
+}

@@ -1,0 +1,192 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "tests/resources/plugins/libtest-prebuilt-algo.so"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"add_dependencies",
+			"add_compile_options",
+			"include_directories",
+			"target_link_libraries"
+		],
+		"files" : 
+		[
+			"tests/resources/plugins/CMakeLists.txt",
+			"vendor/smm-2ng/include/smm-2ng/CMakeLists.txt",
+			"CMakeLists.txt",
+			"tests/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 59,
+				"parent" : 0
+			},
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 24,
+				"parent" : 2
+			},
+			{
+				"file" : 2
+			},
+			{
+				"command" : 2,
+				"file" : 2,
+				"line" : 34,
+				"parent" : 4
+			},
+			{
+				"command" : 3,
+				"file" : 2,
+				"line" : 74,
+				"parent" : 4
+			},
+			{
+				"file" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 3,
+				"line" : 11,
+				"parent" : 7
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 60,
+				"parent" : 0
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-fPIC  "
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-DBOOST_ERROR_CODE_HEADER_ONLY"
+				},
+				{
+					"fragment" : "-std=c++2a"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"define" : "test_prebuilt_algo_EXPORTS"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 6,
+					"path" : "/home/user/Загрузки/KPAC-04.04.2023-2/workspace/backend"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "/home/user/Загрузки/KPAC-04.04.2023-2/workspace/backend/include"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "/home/user/Загрузки/KPAC-04.04.2023-2/workspace/backend/lib"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "/home/user/Загрузки/KPAC-04.04.2023-2/workspace/backend/build"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "/home/user/Загрузки/KPAC-04.04.2023-2/workspace/backend/build/lib"
+				},
+				{
+					"backtrace" : 8,
+					"path" : "/home/user/Загрузки/KPAC-04.04.2023-2/workspace/backend/build/tests"
+				},
+				{
+					"backtrace" : 9,
+					"path" : "/home/user/Загрузки/KPAC-04.04.2023-2/workspace/backend/build/vendor/smm-2ng/include/smm-2ng/_generated"
+				}
+			],
+			"language" : "CXX",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 3,
+			"id" : "smm-2ng-plugin-header-target::@0c79bffd84b5499c6d70"
+		}
+	],
+	"id" : "test-prebuilt-algo::@214c84c3e1042c513bb5",
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "-ldl",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-pthread",
+				"role" : "libraries"
+			}
+		],
+		"language" : "CXX"
+	},
+	"name" : "test-prebuilt-algo",
+	"nameOnDisk" : "libtest-prebuilt-algo.so",
+	"paths" : 
+	{
+		"build" : "tests/resources/plugins",
+		"source" : "tests/resources/plugins"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "tests/resources/plugins/PrebuiltAlgo.cpp",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "MODULE_LIBRARY"
+}

@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: CLDT::Win32 debug extension
+Bundle-SymbolicName: su.softcom.cldt.debug.core.win32;singleton:=true
+Bundle-Version: 0.1.0.qualifier
+Eclipse-PlatformFilter: (osgi.os=win32)
+Fragment-Host: su.softcom.cldt.debug.core;bundle-version="0.1.0"
+Require-Bundle: com.sun.jna,
+ com.sun.jna.platform
+Automatic-Module-Name: su.softcom.cldt.debug.core.win32
+Bundle-ClassPath: lldb.jar,
+ .
+Bundle-RequiredExecutionEnvironment: JavaSE-17
+Eclipse-PatchFragment: true

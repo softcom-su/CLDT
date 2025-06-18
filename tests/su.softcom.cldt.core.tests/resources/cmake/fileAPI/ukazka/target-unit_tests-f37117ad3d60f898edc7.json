@@ -1,0 +1,77 @@
+{
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_custom_target",
+			"add_dependencies"
+		],
+		"files" : 
+		[
+			"tests/unit/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 10,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 11,
+				"parent" : 0
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 2,
+			"id" : "tests-utils::@aee55b7cdf71401bade2"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "unit-handlers-tests::@e46726108b243cd98f49"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "unit-controllers-tests::@61d442a5825f075dde4c"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "unit-database-tests::@84333e8ea612db9934d7"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "unit-plugins-tests::@1d85ca2a1c336f7085fb"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "unit-utils-tests::@2163941c0f90c92f826f"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "unit-marshaling-tests::@26bf767f9b2e0f2f8b41"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "unit-initialize-tests::@4b08ced3e57606b05849"
+		}
+	],
+	"id" : "unit_tests::@17bd492d087794b9594e",
+	"name" : "unit_tests",
+	"paths" : 
+	{
+		"build" : "tests/unit",
+		"source" : "tests/unit"
+	},
+	"sources" : [],
+	"type" : "UTILITY"
+}

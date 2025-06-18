@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?pde version="3.5"?>
+
+<product name="CLDT" uid="su.softcom.cldt.ide.product" id="org.eclipse.platform.ide" application="org.eclipse.ui.ide.workbench" version="0.1.0.qualifier" type="features" includeLaunchers="true" autoIncludeRequirements="true">
+
+   <configIni use="default">
+   </configIni>
+
+   <launcherArgs>
+      <vmArgsMac>-XstartOnFirstThread -Dorg.eclipse.swt.internal.carbon.smallFonts
+      </vmArgsMac>
+   </launcherArgs>
+
+   <windowImages/>
+
+   <launcher>
+      <win useIco="false">
+         <bmp/>
+      </win>
+   </launcher>
+
+   <vm>
+   </vm>
+
+   <plugins>
+   </plugins>
+
+   <features>
+      <feature id="su.softcom.cldt.feature" installMode="root"/>
+      <feature id="su.softcom.cldt.all.feature" installMode="root"/>
+      <feature id="su.softcom.cldt.modeling.feature"/>
+      <feature id="su.softcom.cldt.qt.feature"/>
+      <feature id="su.softcom.cldt.obfuscation.feature"/>
+      <feature id="su.softcom.cldt.msvc.feature"/>
+      <feature id="org.eclipse.platform"/>
+      <feature id="org.eclipse.babel.nls_eclipse_ru"/>
+      <feature id="org.eclipse.emf.ecp.emfforms.runtime.feature"/>
+      <feature id="org.eclipse.emf.ecp.viewmodel.feature"/>
+      <feature id="org.eclipse.epp.mpc"/>
+      <feature id="org.eclipse.babel.nls_technology.lsp4e_ru"/>
+      <feature id="org.eclipse.babel.nls_technology.tm4e_ru"/>
+      <feature id="org.eclipse.tm4e.feature"/>
+      <feature id="org.eclipse.tm4e.language_pack.feature" installMode="root"/>
+   </features>
+
+   <configurations>
+      <plugin id="org.apache.felix.scr" autoStart="true" startLevel="2" />
+      <plugin id="org.eclipse.core.runtime" autoStart="true" startLevel="4" />
+      <plugin id="org.eclipse.equinox.common" autoStart="true" startLevel="2" />
+      <plugin id="org.eclipse.equinox.event" autoStart="true" startLevel="2" />
+      <plugin id="org.eclipse.equinox.simpleconfigurator" autoStart="true" startLevel="1" />
+      <plugin id="org.eclipse.osgi" autoStart="true" startLevel="-1" />
+   </configurations>
+
+   <preferencesInfo>
+      <targetfile overwrite="false"/>
+   </preferencesInfo>
+
+   <cssInfo>
+   </cssInfo>
+
+</product>

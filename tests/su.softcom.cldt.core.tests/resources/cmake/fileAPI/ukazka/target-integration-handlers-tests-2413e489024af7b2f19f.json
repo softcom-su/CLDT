@@ -1,0 +1,1700 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "tests/integration-handlers-tests"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_executable",
+			"target_link_libraries",
+			"add_dependencies",
+			"add_compile_options",
+			"include_directories"
+		],
+		"files" : 
+		[
+			"tests/integration/CMakeLists.txt",
+			"CMakeLists.txt",
+			"tests/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 45,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 46,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 79,
+				"parent" : 0
+			},
+			{
+				"file" : 1
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 34,
+				"parent" : 4
+			},
+			{
+				"command" : 4,
+				"file" : 1,
+				"line" : 74,
+				"parent" : 4
+			},
+			{
+				"file" : 2
+			},
+			{
+				"command" : 4,
+				"file" : 2,
+				"line" : 11,
+				"parent" : 7
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : " "
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-DBOOST_ERROR_CODE_HEADER_ONLY"
+				},
+				{
+					"backtrace" : 2,
+					"fragment" : "-pthread"
+				},
+				{
+					"fragment" : "-std=c++2a"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 2,
+					"define" : "CPPHTTPLIB_ZLIB_SUPPORT"
+				},
+				{
+					"backtrace" : 2,
+					"define" : "FMT_LOCALE"
+				},
+				{
+					"backtrace" : 2,
+					"define" : "FMT_SHARED"
+				},
+				{
+					"backtrace" : 2,
+					"define" : "JSON_DISABLE_ENUM_SERIALIZATION=1"
+				},
+				{
+					"backtrace" : 2,
+					"define" : "JSON_USE_IMPLICIT_CONVERSIONS=0"
+				},
+				{
+					"define" : "integration_handlers_tests_EXPORTS"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 6,
+					"path" : "/home/user/Загрузки/KPAC-04.04.2023-2/workspace/backend"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "/home/user/Загрузки/KPAC-04.04.2023-2/workspace/backend/include"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "/home/user/Загрузки/KPAC-04.04.2023-2/workspace/backend/lib"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "/home/user/Загрузки/KPAC-04.04.2023-2/workspace/backend/build"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "/home/user/Загрузки/KPAC-04.04.2023-2/workspace/backend/build/lib"
+				},
+				{
+					"backtrace" : 8,
+					"path" : "/home/user/Загрузки/KPAC-04.04.2023-2/workspace/backend/build/tests"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/user/Загрузки/KPAC-04.04.2023-2/workspace/backend/vendor/application/src/../include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/user/Загрузки/KPAC-04.04.2023-2/workspace/backend/vendor/smm-2ng/vendor/json/single_include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/user/Загрузки/KPAC-04.04.2023-2/workspace/backend/vendor/fpp/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/user/Загрузки/KPAC-04.04.2023-2/workspace/backend/vendor/rapidcsv/src"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/user/Загрузки/KPAC-04.04.2023-2/workspace/backend/build/lib/persistence/algorithm"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/user/Загрузки/KPAC-04.04.2023-2/workspace/backend/build/lib/persistence/model"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/user/Загрузки/KPAC-04.04.2023-2/workspace/backend/build/lib/persistence/parameter"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/user/Загрузки/KPAC-04.04.2023-2/workspace/backend/build/lib/persistence/utils"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/user/Загрузки/KPAC-04.04.2023-2/workspace/backend/vendor/smm-2ng/src/../include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/user/Загрузки/KPAC-04.04.2023-2/workspace/backend/build/lib/persistence/smm-plugin"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/user/Загрузки/KPAC-04.04.2023-2/workspace/backend/build/lib/persistence/authorization"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/user/Загрузки/KPAC-04.04.2023-2/workspace/backend/lib/persistence/wrappers"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/user/Загрузки/KPAC-04.04.2023-2/workspace/backend/build/lib/persistence/sensor"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/user/Загрузки/KPAC-04.04.2023-2/workspace/backend/build/lib/persistence/limitation"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/user/Загрузки/KPAC-04.04.2023-2/workspace/backend/build/lib/persistence/trajectory"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/user/Загрузки/KPAC-04.04.2023-2/workspace/backend/build/lib/persistence/type"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/user/Загрузки/KPAC-04.04.2023-2/workspace/backend/build/lib/persistence/scheme"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/user/Загрузки/KPAC-04.04.2023-2/workspace/backend/build/lib/persistence/modeling-results"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/user/Загрузки/KPAC-04.04.2023-2/workspace/backend/build/lib/persistence/cyclograms"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/user/Загрузки/KPAC-04.04.2023-2/workspace/backend/build/lib/persistence/modeling-configuration"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/user/Загрузки/KPAC-04.04.2023-2/workspace/backend/build/lib/persistence/project"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/user/Загрузки/KPAC-04.04.2023-2/workspace/backend/build/lib/persistence/requirement"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/user/Загрузки/KPAC-04.04.2023-2/workspace/backend/build/lib/persistence/informational-document"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/user/Загрузки/KPAC-04.04.2023-2/workspace/backend/build/lib/persistence/audit"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/user/Загрузки/KPAC-04.04.2023-2/workspace/backend/vendor/tmp/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/user/Загрузки/KPAC-04.04.2023-2/workspace/backend/build/src"
+				},
+				{
+					"backtrace" : 2,
+					"isSystem" : true,
+					"path" : "/home/user/Загрузки/KPAC-04.04.2023-2/workspace/backend/tests/vendor/googletest/googletest/include"
+				},
+				{
+					"backtrace" : 2,
+					"isSystem" : true,
+					"path" : "/home/user/Загрузки/KPAC-04.04.2023-2/workspace/backend/tests/vendor/googletest/googletest"
+				},
+				{
+					"backtrace" : 2,
+					"isSystem" : true,
+					"path" : "/home/user/Загрузки/KPAC-04.04.2023-2/workspace/backend/build/vendor/cpp-httplib/out"
+				},
+				{
+					"backtrace" : 2,
+					"isSystem" : true,
+					"path" : "/home/user/Загрузки/KPAC-04.04.2023-2/workspace/backend/tests/vendor/googletest/googlemock/include"
+				},
+				{
+					"backtrace" : 2,
+					"isSystem" : true,
+					"path" : "/home/user/Загрузки/KPAC-04.04.2023-2/workspace/backend/tests/vendor/googletest/googlemock"
+				}
+			],
+			"language" : "CXX",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13,
+				14,
+				15,
+				16,
+				17,
+				18,
+				19,
+				20,
+				21,
+				22,
+				23,
+				24,
+				25,
+				26,
+				27,
+				28,
+				29,
+				30,
+				31,
+				32,
+				33,
+				34,
+				35
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"id" : "smm-2ng::@00856fd885f8f5898eaa"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "httplib::@ea29bca9fd98f953c37c"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "tmp::@98133616a1bfe54efa44"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "application::@87d384b84c85624b6108"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "utils::@82bbb9eb485b6ee150e0"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "archive::@570babba172550b3194d"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "base64::@a83cc730615319bf7b27"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "builder::@f56389d12620d5305edf"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "filesystem-utils::@ebbb1d94c5cc98071d0a"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "dylib::@83cee984786f95ca594f"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "tiff-parser::@d13d78874616751044aa"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "numerics::@c0e3ecbce36d147793f1"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "persistence-utils::@46d6abcba433a4e69a2a"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "authorization::@64ce893590329736f0cb"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "parameter::@bbcab9a98cf2bff05986"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "limitation::@82f0ff8b28e19141afc8"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "model::@97138fdf0e4433680f99"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "sensor::@cb95a52f35cad3b37944"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "smm-plugin::@dc4b2a5faea53a0e678a"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "trajectory::@39a0e413281f03a60e38"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "type::@e13c74f7343776c48024"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "algorithm::@c888555fb2d04d2a1f7d"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "scheme::@ce8763f2f603756f8cf3"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "cyclograms::@2823994de2e5f65089e7"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "modeling-results::@3f5a14ca3d9d87df1f3f"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "modeling-configuration::@615b51f638b66ad70781"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "project::@8c353fc9613c51da4349"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "informational-document::@08f0924ca7c35ee21044"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "requirement::@c4d52102bce658d563e8"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "audit::@94a860eee32156aae729"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "audit-controller::@2c6be8b563101399aa6c"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "project-snapshots-controller::@7f55ff0c839ff32bf545"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "projects-controller::@73ca8fa21e86b780d36b"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "project-requirements-controller::@e622dd81470a981720f6"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "cyclograms-controller::@2f6320fd137d8f6660f7"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "cyclogram-section-types-controller::@7707d166ddbce1c59abc"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "navigation-system-controller::@a9ea938f89fac62ac188"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "flight-mission-controller::@a77bde6a2fe293978a19"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "modeling-controller::@1bdb8f123cf60b2ce9a5"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "models-controller::@d1775b82b2e9ad2de386"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "algorithms-controller::@6180e91a949049f86289"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "sensors-controller::@f70037f636cf94fc9d52"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "smm-plugins-controller::@5d8f68b4e2fefcb516e6"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "trajectories-controller::@edd2156ab089a4b18a30"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "informational-documents-controller::@4f742de7247a7df62041"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "sensor-kinds-controller::@e3ca7f98b43e022c9021"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "types-controller::@cd0170c0ffa1d9c939a9"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "controller-utils::@97f5e6d8e2ddc592f60f"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "authorization-controller::@d5beaeb2f6858bcadda2"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "requirements-controller::@80a37bb2baf43969bfa8"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "database::@b8e14e46f8adf27429f5"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "OdbDatabase::@6e7d9d2a25fa61f9d3a3"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "initialize-database::@62e1aa7b47e708a61eb0"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "algorithm-marshaling::@ba2cc002230d6e71e2b2"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "audit-marshaling::@5c2204e6787e240cdb80"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "color-marshaling::@b162a64cddf88bc4eea6"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "limitation-marshaling::@a0a50134a6c4b34396a0"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "model-marshaling::@5dea685eb6108c4b491f"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "modeling-results-marshaling::@b6b7924ee9f25923de83"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "numerics-marshaling::@a11868602e2fe7517292"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "parameter-marshaling::@e4fd0a3caa8b99debff0"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "project-marshaling::@25c3c54b681377823ddd"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "scheme-marshaling::@60ef7c6cccb522fbe8d2"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "sensor-marshaling::@80dd6c7ddac44fc36b15"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "smm-marshaling::@333fd60079f8ed470f08"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "smm-plugin-marshaling::@c008d731eb50ed0f8bfc"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "trajectory-marshaling::@5bcaff621cc79d1baf28"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "user-marshaling::@2498d2530bc661150251"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "type-marshaling::@0a568172bb9340f4c969"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "marshaling-utils::@9c0ba022ef6a265224ea"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "json-patch-marshaling::@bc3876e19d9546b7e82a"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "requirements-marshaling::@e7099ba177465fb36f93"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "modeling-ipc::@10eead17825d8a91b36e"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "flight-mission-ipc::@61f4892950ede1d82c36"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "stand-modeling-ipc::@18973af02a717277d3e9"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "postgres::@1babf38eaaab1e2ab90e"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "handler-utils::@1c37991e4eff3e331e22"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "jwt::@55140f7d8d68e868aa66"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "authorization-handler::@598230342eaa6813e282"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "CyclogramSectionsSwitch::@79ed37d808a3868d904e"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "MuxAlgo::@8f6c2f420261d77e4e9c"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "tests-utils::@aee55b7cdf71401bade2"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "tests-marshaling-utils::@b064fcd08d35a2440550"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "return-false-plugin::@8bad8a20b89a02530338"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "successful-test-requirement-plugin::@8bad8a20b89a02530338"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "inputs-values-plugin::@8bad8a20b89a02530338"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "return-true-plugin::@8bad8a20b89a02530338"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "test-trajectory-model-exceptions::@214c84c3e1042c513bb5"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "test-just-a-plugin::@214c84c3e1042c513bb5"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "test-compiling-type-zip::@214c84c3e1042c513bb5"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "test-prebuilt-algo::@214c84c3e1042c513bb5"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "test-not-compiling-algo-zip::@214c84c3e1042c513bb5"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "test-trajectory-model::@214c84c3e1042c513bb5"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "test-compiling-algo-zip::@214c84c3e1042c513bb5"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "test-trajectory-model-invalid-points::@214c84c3e1042c513bb5"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "test-prebuilt-type-zip::@4e075452339d05cb7396"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "gmock::@3e647b112d7736598b70"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "gtest_main::@72870d4ca36b93f0ecb2"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "gtest::@72870d4ca36b93f0ecb2"
+		}
+	],
+	"id" : "integration-handlers-tests::@a40f6d277e0496dfeabf",
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "-Wl,--export-dynamic -rdynamic",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libboost_date_time.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "../../lib/libgtest_main.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "../../vendor/application/src/libapplication.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "../../lib/handling/utils/libhandler-utils.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "../../lib/marshaling/algorithm/libalgorithm-marshaling.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "../../lib/marshaling/audit/libaudit-marshaling.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "../../lib/marshaling/scheme/libscheme-marshaling.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "../../lib/marshaling/modeling-results/libmodeling-results-marshaling.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "../../lib/marshaling/requirement/librequirements-marshaling.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "../../lib/marshaling/project/libproject-marshaling.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "../../lib/marshaling/type/libtype-marshaling.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "../../vendor/cpp-httplib/libhttplib.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "../../lib/handling/authorization-handler/libauthorization-handler.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "../../lib/handling/utils/jwt/libjwt.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "../../lib/database/libdatabase.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "../../lib/initialize/libinitialize-database.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "../../lib/persistence/parameter/libparameter.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "../../lib/persistence/project/libproject.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "../utils/libtests-utils.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "../../lib/marshaling/trajectory/libtrajectory-marshaling.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "../../lib/controller/project-snapshots-controller/libproject-snapshots-controller.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "../../lib/controller/projects-controller/libprojects-controller.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "../../lib/controller/flight-mission-controller/libflight-mission-controller.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "../../lib/controller/sensor-kinds-controller/libsensor-kinds-controller.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "../../lib/handling/utils/libhandler-utils.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "../../vendor/cpp-httplib/libhttplib.a",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libz.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "../../lib/marshaling/algorithm/libalgorithm-marshaling.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "../../lib/marshaling/scheme/libscheme-marshaling.a",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "../../lib/marshaling/color/libcolor-marshaling.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "../../lib/marshaling/type/libtype-marshaling.a",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "../../lib/marshaling/sensor/libsensor-marshaling.a",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "../../lib/marshaling/model/libmodel-marshaling.a",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "../../lib/marshaling/smm-plugin/libsmm-plugin-marshaling.a",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "../../lib/marshaling/limitation/liblimitation-marshaling.a",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "../../lib/marshaling/parameter/libparameter-marshaling.a",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "../../lib/controller/cyclogram-section-types-controller/libcyclogram-section-types-controller.a",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "../../lib/controller/types-controller/libtypes-controller.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "../../lib/handling/utils/jwt/libjwt.a",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "../../lib/marshaling/user/libuser-marshaling.a",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "../../lib/marshaling/utils/libmarshaling-utils.a",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "../../lib/server/postgres/libpostgres.a",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "../../lib/database/OdbDatabase/libOdbDatabase.a",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lodb-pgsql",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "../../lib/libgmock.a",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "../utils/marshaling/libtests-marshaling-utils.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "../../lib/libgtest_main.a",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "../../lib/libgtest.a",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "../../lib/controller/requirements-controller/librequirements-controller.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "../../lib/controller/project-snapshots-controller/libproject-snapshots-controller.a",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "../../lib/controller/modeling-controller/libmodeling-controller.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "../../lib/controller/flight-mission-controller/libflight-mission-controller.a",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "../../lib/modeling/flight-mission/ipc/libflight-mission-ipc.a",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "../../lib/controller/algorithms-controller/libalgorithms-controller.a",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "../../lib/marshaling/json-patch/libjson-patch-marshaling.a",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "../../lib/controller/navigation-system-controller/libnavigation-system-controller.a",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "../../lib/controller/audit-controller/libaudit-controller.a",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "../../lib/modeling/stand/ipc/libstand-modeling-ipc.a",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "../../lib/marshaling/smm/libsmm-marshaling.a",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "../../lib/modeling/common/libmodeling-ipc.a",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lrt",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "../../lib/controller/utils/libcontroller-utils.a",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "../../lib/utils/base64/libbase64.a",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libcrypto.so",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "../../lib/controller/cyclograms-controller/libcyclograms-controller.a",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "../../lib/controller/sensors-controller/libsensors-controller.a",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "../../lib/controller/models-controller/libmodels-controller.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "../../vendor/application/src/libapplication.a",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "../../lib/controller/smm-plugins-controller/libsmm-plugins-controller.a",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "../../lib/utils/builder/libbuilder.a",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "../../lib/controller/trajectories-controller/libtrajectories-controller.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "../../lib/controller/projects-controller/libprojects-controller.a",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "../../lib/controller/informational-documents-controller/libinformational-documents-controller.a",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "../../lib/utils/archive/libarchive.a",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libarchive.so",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "../../lib/utils/tiff/libtiff-parser.a",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "/usr/lib/libgdal.so",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "../../lib/controller/authorization-controller/libauthorization-controller.a",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "../../lib/utils/filesystem/libfilesystem-utils.a",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "../../lib/utils/dylib/libdylib.a",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "../../vendor/tmp/libtmp.a",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "../../lib/controller/project-requirements-controller/libproject-requirements-controller.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "../../lib/database/libdatabase.a",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "../../lib/persistence/audit/libaudit.a",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "../../lib/persistence/type/libtype.a",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "../../lib/persistence/informational-document/libinformational-document.a",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lodb",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "../../lib/persistence/project/libproject.a",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "../../lib/persistence/requirement/librequirement.a",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "../../lib/persistence/cyclograms/libcyclograms.a",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "../../lib/persistence/scheme/libscheme.a",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "../../lib/persistence/algorithm/libalgorithm.a",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "../../lib/persistence/modeling-results/libmodeling-results.a",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "../../lib/utils/libutils.a",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "../../lib/persistence/modeling-configuration/libmodeling-configuration.a",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "../../lib/marshaling/numerics/libnumerics-marshaling.a",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "../../lib/persistence/trajectory/libtrajectory.a",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "../../lib/persistence/sensor/libsensor.a",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "../../lib/persistence/model/libmodel.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "../../lib/persistence/parameter/libparameter.a",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "../../lib/persistence/smm-plugin/libsmm-plugin.a",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "../../lib/persistence/utils/libpersistence-utils.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libfmt.so.7.1.3",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-Wl,--as-needed",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lstdc++fs",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-ldl",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-pthread",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "../../lib/utils/numerics/libnumerics.a",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "../../lib/persistence/authorization/libauthorization.a",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "../../lib/persistence/limitation/liblimitation.a",
+				"role" : "libraries"
+			}
+		],
+		"language" : "CXX"
+	},
+	"name" : "integration-handlers-tests",
+	"nameOnDisk" : "integration-handlers-tests",
+	"paths" : 
+	{
+		"build" : "tests/integration",
+		"source" : "tests/integration"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13,
+				14,
+				15,
+				16,
+				17,
+				18,
+				19,
+				20,
+				21,
+				22,
+				23,
+				24,
+				25,
+				26,
+				27,
+				28,
+				29,
+				30,
+				31,
+				32,
+				33,
+				34,
+				35
+			]
+		},
+		{
+			"name" : "Header Files",
+			"sourceIndexes" : 
+			[
+				36
+			]
+		},
+		{
+			"name" : "Object Libraries",
+			"sourceIndexes" : 
+			[
+				37,
+				38,
+				39,
+				40,
+				41,
+				42,
+				43,
+				44,
+				45,
+				46,
+				47,
+				48,
+				49,
+				50,
+				51,
+				52,
+				53,
+				54,
+				55,
+				56,
+				57,
+				58,
+				59,
+				60,
+				61,
+				62,
+				63,
+				64,
+				65
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "tests/integration/audit/ListTest.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "tests/integration/InitializationTest.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "tests/integration/PingTest.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "tests/integration/ModelingTests.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "tests/integration/ProjectsTests.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "tests/integration/TrajectoriesTests.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "tests/integration/SensorKindsTests.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "tests/integration/CyclogramSectionTypesTests.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "tests/integration/flight-mission-scheme/FlightMissionTest.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "tests/integration/flight-mission-scheme/FlightMissionSchemeErrorsTest.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "tests/integration/modeling-configuration/ModelingConfigurationTests.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "tests/integration/cyclograms/CyclogramsTests.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "tests/integration/project/RenameTest.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "tests/integration/project-snapshots/CreateTest.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "tests/integration/project-snapshots/GetModelingResultTest.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "tests/integration/project-snapshots/ListTest.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "tests/integration/project-snapshots/RemoveTest.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "tests/integration/sensors/RemoveTest.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "tests/integration/sensors/SensorsListTests.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "tests/integration/sensors/PatchTest.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "tests/integration/sensors/UploadTest.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "tests/integration/algorithms/AlgorithmsTests.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "tests/integration/algorithms/PatchTest.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "tests/integration/stand-modeling-scheme/StandModelingSchemeTest.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "tests/integration/trajectories/DetachTest.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "tests/integration/trajectories/ModelAttachTest.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "tests/integration/trajectories/ModelListTest.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "tests/integration/trajectories/ModelRemovalTest.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "tests/integration/trajectories/ModelUploadTest.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "tests/integration/types/GetTest.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "tests/integration/types/ListTest.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "tests/integration/types/RemoveTest.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "tests/integration/types/UploadTest.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "tests/integration/navigation-system-scheme/NavigationSystemSchemeTest.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "tests/integration/requirements/RequirementsTest.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "tests/integration/requirements/ProjectRequirementsTest.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"path" : "build/vendor/cpp-httplib/out/httplib.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "build/vendor/smm-2ng/src/CMakeFiles/smm-2ng.dir/abstract_algorithm.cpp.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "build/vendor/smm-2ng/src/CMakeFiles/smm-2ng.dir/abstract_core.cpp.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "build/vendor/smm-2ng/src/CMakeFiles/smm-2ng.dir/abstract_export_point.cpp.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "build/vendor/smm-2ng/src/CMakeFiles/smm-2ng.dir/abstract_module.cpp.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "build/vendor/smm-2ng/src/CMakeFiles/smm-2ng.dir/algorithm_metadata.cpp.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "build/vendor/smm-2ng/src/CMakeFiles/smm-2ng.dir/composite_algorithm.cpp.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "build/vendor/smm-2ng/src/CMakeFiles/smm-2ng.dir/config_manager.cpp.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "build/vendor/smm-2ng/src/CMakeFiles/smm-2ng.dir/core_config.cpp.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "build/vendor/smm-2ng/src/CMakeFiles/smm-2ng.dir/file_export_point.cpp.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "build/vendor/smm-2ng/src/CMakeFiles/smm-2ng.dir/logger.cpp.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "build/vendor/smm-2ng/src/CMakeFiles/smm-2ng.dir/marshaling.cpp.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "build/vendor/smm-2ng/src/CMakeFiles/smm-2ng.dir/math_mode_core.cpp.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "build/vendor/smm-2ng/src/CMakeFiles/smm-2ng.dir/math_mode_module.cpp.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "build/vendor/smm-2ng/src/CMakeFiles/smm-2ng.dir/math_mode_mt_core.cpp.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "build/vendor/smm-2ng/src/CMakeFiles/smm-2ng.dir/math_mode_mt_module.cpp.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "build/vendor/smm-2ng/src/CMakeFiles/smm-2ng.dir/math_mode_st_core.cpp.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "build/vendor/smm-2ng/src/CMakeFiles/smm-2ng.dir/math_mode_st_module.cpp.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "build/vendor/smm-2ng/src/CMakeFiles/smm-2ng.dir/module_config.cpp.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "build/vendor/smm-2ng/src/CMakeFiles/smm-2ng.dir/plugin_manager.cpp.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "build/vendor/smm-2ng/src/CMakeFiles/smm-2ng.dir/smm_port.cpp.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "build/vendor/smm-2ng/src/CMakeFiles/smm-2ng.dir/smm_register.cpp.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "build/vendor/smm-2ng/src/CMakeFiles/smm-2ng.dir/smm_value.cpp.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "build/vendor/smm-2ng/src/CMakeFiles/smm-2ng.dir/tcp_export_point.cpp.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "build/vendor/smm-2ng/src/CMakeFiles/smm-2ng.dir/telemetry.cpp.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "build/vendor/smm-2ng/src/CMakeFiles/smm-2ng.dir/types_manager.cpp.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "build/vendor/smm-2ng/src/CMakeFiles/smm-2ng.dir/imit_mode_clock_source.cpp.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "build/vendor/smm-2ng/src/CMakeFiles/smm-2ng.dir/imit_mode_core.cpp.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "build/vendor/smm-2ng/src/CMakeFiles/smm-2ng.dir/imit_mode_hil_module.cpp.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "build/vendor/smm-2ng/src/CMakeFiles/smm-2ng.dir/imit_mode_module.cpp.o",
+			"sourceGroupIndex" : 2
+		}
+	],
+	"type" : "EXECUTABLE"
+}

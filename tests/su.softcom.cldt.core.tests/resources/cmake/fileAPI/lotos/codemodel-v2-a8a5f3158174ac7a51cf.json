@@ -1,0 +1,680 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						8,
+						20
+					],
+					"jsonFile" : "directory-.-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"projectIndex" : 0,
+					"source" : "."
+				},
+				{
+					"build" : "plugins",
+					"childIndexes" : 
+					[
+						2,
+						3,
+						4,
+						5,
+						6,
+						7
+					],
+					"jsonFile" : "directory-plugins-55275e3f2f02dcd473ff.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "plugins"
+				},
+				{
+					"build" : "plugins/MotionDynamics",
+					"jsonFile" : "directory-plugins.MotionDynamics-d0e7271ac44f58aba850.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 0,
+					"source" : "plugins/MotionDynamics",
+					"targetIndexes" : 
+					[
+						5
+					]
+				},
+				{
+					"build" : "plugins/NavigationSystem",
+					"jsonFile" : "directory-plugins.NavigationSystem-a09a6525703633ac2f6c.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 0,
+					"source" : "plugins/NavigationSystem",
+					"targetIndexes" : 
+					[
+						6
+					]
+				},
+				{
+					"build" : "plugins/OpticalElectronicSystem",
+					"jsonFile" : "directory-plugins.OpticalElectronicSystem-3a57aeefc8b7df0ca978.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 0,
+					"source" : "plugins/OpticalElectronicSystem",
+					"targetIndexes" : 
+					[
+						7
+					]
+				},
+				{
+					"build" : "plugins/ccn",
+					"jsonFile" : "directory-plugins.ccn-89be09e84adde0cec1e5.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 0,
+					"source" : "plugins/ccn",
+					"targetIndexes" : 
+					[
+						12
+					]
+				},
+				{
+					"build" : "plugins/fco",
+					"jsonFile" : "directory-plugins.fco-e44bcfaac68a0b85d81c.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 0,
+					"source" : "plugins/fco",
+					"targetIndexes" : 
+					[
+						13
+					]
+				},
+				{
+					"build" : "plugins/loader-appz",
+					"jsonFile" : "directory-plugins.loader-appz-89ee632cb6a98a8b2b14.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 0,
+					"source" : "plugins/loader-appz",
+					"targetIndexes" : 
+					[
+						15
+					]
+				},
+				{
+					"build" : "types",
+					"childIndexes" : 
+					[
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18,
+						19
+					],
+					"jsonFile" : "directory-types-23296132209ec1ee85ea.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "types"
+				},
+				{
+					"build" : "types/Angle",
+					"jsonFile" : "directory-types.Angle-c12a697c7fbb3bfc18d5.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 8,
+					"projectIndex" : 0,
+					"source" : "types/Angle",
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"build" : "types/Direction",
+					"jsonFile" : "directory-types.Direction-b364fee783d325e0b08d.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 8,
+					"projectIndex" : 0,
+					"source" : "types/Direction",
+					"targetIndexes" : 
+					[
+						1
+					]
+				},
+				{
+					"build" : "types/Orientation",
+					"jsonFile" : "directory-types.Orientation-9d037a52cc48c8c06214.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 8,
+					"projectIndex" : 0,
+					"source" : "types/Orientation",
+					"targetIndexes" : 
+					[
+						8
+					]
+				},
+				{
+					"build" : "types/Distance",
+					"jsonFile" : "directory-types.Distance-11c7b0b1b4555b4253b5.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 8,
+					"projectIndex" : 0,
+					"source" : "types/Distance",
+					"targetIndexes" : 
+					[
+						2
+					]
+				},
+				{
+					"build" : "types/Position",
+					"jsonFile" : "directory-types.Position-62519b5fa473792cb3cf.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 8,
+					"projectIndex" : 0,
+					"source" : "types/Position",
+					"targetIndexes" : 
+					[
+						9
+					]
+				},
+				{
+					"build" : "types/Duration",
+					"jsonFile" : "directory-types.Duration-3092540772df17dfb335.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 8,
+					"projectIndex" : 0,
+					"source" : "types/Duration",
+					"targetIndexes" : 
+					[
+						3
+					]
+				},
+				{
+					"build" : "types/GrayscaleImage",
+					"jsonFile" : "directory-types.GrayscaleImage-46d7a4922558e08daaee.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 8,
+					"projectIndex" : 0,
+					"source" : "types/GrayscaleImage",
+					"targetIndexes" : 
+					[
+						4
+					]
+				},
+				{
+					"build" : "types/acceleration",
+					"jsonFile" : "directory-types.acceleration-aa3c974d929b06eb542e.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 8,
+					"projectIndex" : 0,
+					"source" : "types/acceleration",
+					"targetIndexes" : 
+					[
+						10
+					]
+				},
+				{
+					"build" : "types/angle-velocity",
+					"jsonFile" : "directory-types.angle-velocity-8d771a72ae50972ce4d8.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 8,
+					"projectIndex" : 0,
+					"source" : "types/angle-velocity",
+					"targetIndexes" : 
+					[
+						11
+					]
+				},
+				{
+					"build" : "types/image-rgb",
+					"jsonFile" : "directory-types.image-rgb-11cc68ebc7366dd45bfa.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 8,
+					"projectIndex" : 0,
+					"source" : "types/image-rgb",
+					"targetIndexes" : 
+					[
+						14
+					]
+				},
+				{
+					"build" : "types/velocity",
+					"jsonFile" : "directory-types.velocity-a6cceca252fa18bc0afd.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 8,
+					"projectIndex" : 0,
+					"source" : "types/velocity",
+					"targetIndexes" : 
+					[
+						22
+					]
+				},
+				{
+					"build" : "vendor",
+					"childIndexes" : 
+					[
+						21
+					],
+					"jsonFile" : "directory-vendor-650fd368ad88650ee272.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "vendor"
+				},
+				{
+					"build" : "vendor/smm-2ng",
+					"childIndexes" : 
+					[
+						22,
+						24,
+						25
+					],
+					"jsonFile" : "directory-vendor.smm-2ng-3e6b6588af2c6fc141a5.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"parentIndex" : 20,
+					"projectIndex" : 1,
+					"source" : "vendor/smm-2ng"
+				},
+				{
+					"build" : "vendor/smm-2ng/vendor",
+					"childIndexes" : 
+					[
+						23
+					],
+					"jsonFile" : "directory-vendor.smm-2ng.vendor-f5ccf81ab1ce5217d25f.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"parentIndex" : 21,
+					"projectIndex" : 1,
+					"source" : "vendor/smm-2ng/vendor"
+				},
+				{
+					"build" : "vendor/smm-2ng/vendor/json",
+					"jsonFile" : "directory-vendor.smm-2ng.vendor.json-f4b79b3f9eb924dd76c5.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1"
+					},
+					"parentIndex" : 22,
+					"projectIndex" : 2,
+					"source" : "vendor/smm-2ng/vendor/json"
+				},
+				{
+					"build" : "vendor/smm-2ng/include/smm-2ng",
+					"jsonFile" : "directory-vendor.smm-2ng.include.smm-2ng-fa19a7d5b74736c56507.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"parentIndex" : 21,
+					"projectIndex" : 1,
+					"source" : "vendor/smm-2ng/include/smm-2ng",
+					"targetIndexes" : 
+					[
+						19,
+						20
+					]
+				},
+				{
+					"build" : "vendor/smm-2ng/src",
+					"jsonFile" : "directory-vendor.smm-2ng.src-f05597e48a1d2af631e4.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"parentIndex" : 21,
+					"projectIndex" : 1,
+					"source" : "vendor/smm-2ng/src",
+					"targetIndexes" : 
+					[
+						16,
+						17,
+						18,
+						21
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1
+					],
+					"directoryIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18,
+						19,
+						20
+					],
+					"name" : "SMM2024",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						22
+					]
+				},
+				{
+					"childIndexes" : 
+					[
+						2
+					],
+					"directoryIndexes" : 
+					[
+						21,
+						22,
+						24,
+						25
+					],
+					"name" : "smm-2ng",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						16,
+						17,
+						18,
+						19,
+						20,
+						21
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						23
+					],
+					"name" : "nlohmann_json",
+					"parentIndex" : 1
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 9,
+					"id" : "AngleImpl::@1203f38325a84f5387f2",
+					"jsonFile" : "target-AngleImpl-a74c5c0d923409795e24.json",
+					"name" : "AngleImpl",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 10,
+					"id" : "DirectionImpl::@9275cf6f2d615581ae87",
+					"jsonFile" : "target-DirectionImpl-d36e1d6c5929d9f53461.json",
+					"name" : "DirectionImpl",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 12,
+					"id" : "DistanceImpl::@338abed949e1c1b46722",
+					"jsonFile" : "target-DistanceImpl-021320ad49909c5dd127.json",
+					"name" : "DistanceImpl",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 14,
+					"id" : "DurationImpl::@478245351230234262c2",
+					"jsonFile" : "target-DurationImpl-8e44c068f4fbc2cdf4e4.json",
+					"name" : "DurationImpl",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 15,
+					"id" : "GrayscaleImageImpl::@b0a92429d07a9cf0cfbe",
+					"jsonFile" : "target-GrayscaleImageImpl-3fa336b42b927f2bf544.json",
+					"name" : "GrayscaleImageImpl",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "MotionDynamics::@eb7c7b77abbbbead7b59",
+					"jsonFile" : "target-MotionDynamics-a49f1146f32e5d0e557c.json",
+					"name" : "MotionDynamics",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "NavigationSystem::@ac557c1c8cff7cd847e9",
+					"jsonFile" : "target-NavigationSystem-938c28f04eb2463d1d79.json",
+					"name" : "NavigationSystem",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "OpticalElectronicSystem::@083b7b900ccaa56575bc",
+					"jsonFile" : "target-OpticalElectronicSystem-92b3b69a46f34c4e9290.json",
+					"name" : "OpticalElectronicSystem",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 11,
+					"id" : "OrientationImpl::@19146d9513fe9ff94e91",
+					"jsonFile" : "target-OrientationImpl-bdc9dbd66b776b59feb0.json",
+					"name" : "OrientationImpl",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 13,
+					"id" : "PositionImpl::@a3fa2908d1caf8bc1b19",
+					"jsonFile" : "target-PositionImpl-b775ecbd047fb1a8cb1b.json",
+					"name" : "PositionImpl",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 16,
+					"id" : "acceleration::@ada8aea7666a860a0932",
+					"jsonFile" : "target-acceleration-ebe157eb8bac9b7698fb.json",
+					"name" : "acceleration",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 17,
+					"id" : "angle-velocity::@ade9c0e87a0f3ec119c1",
+					"jsonFile" : "target-angle-velocity-4ddbdbcfccac15d5ff9e.json",
+					"name" : "angle-velocity",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "ccn::@dfbb462db2d4538c1a93",
+					"jsonFile" : "target-ccn-f7570fd350e9f0d7db7d.json",
+					"name" : "ccn",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "fco::@da389d75aec4da260dbb",
+					"jsonFile" : "target-fco-b987d6bdbf19d62cf98a.json",
+					"name" : "fco",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 18,
+					"id" : "image-rgb-impl::@5c63bd553db03ac71bba",
+					"jsonFile" : "target-image-rgb-impl-8c9f16f486c43785de51.json",
+					"name" : "image-rgb-impl",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 7,
+					"id" : "loader-appz::@5f8a91bb1013119ae675",
+					"jsonFile" : "target-loader-appz-e24cac341880f5935311.json",
+					"name" : "loader-appz",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 25,
+					"id" : "merge-tele::@00856fd885f8f5898eaa",
+					"jsonFile" : "target-merge-tele-72a18542b9e7d03283f2.json",
+					"name" : "merge-tele",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 25,
+					"id" : "sim::@00856fd885f8f5898eaa",
+					"jsonFile" : "target-sim-c431e25a614b1543a845.json",
+					"name" : "sim",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 25,
+					"id" : "smm-2ng::@00856fd885f8f5898eaa",
+					"jsonFile" : "target-smm-2ng-00fe4e61d47a190e75e2.json",
+					"name" : "smm-2ng",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 24,
+					"id" : "smm-2ng-plugin-header-target::@0c79bffd84b5499c6d70",
+					"jsonFile" : "target-smm-2ng-plugin-header-target-b84bdc21c3ac3d612cfc.json",
+					"name" : "smm-2ng-plugin-header-target",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 24,
+					"id" : "smm-2ng-type-header-target::@0c79bffd84b5499c6d70",
+					"jsonFile" : "target-smm-2ng-type-header-target-866b8b5ec28ab737b448.json",
+					"name" : "smm-2ng-type-header-target",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 25,
+					"id" : "validate-schema::@00856fd885f8f5898eaa",
+					"jsonFile" : "target-validate-schema-1a67fe37e06203b34971.json",
+					"name" : "validate-schema",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 19,
+					"id" : "velocity::@0a744ec27635d8b43362",
+					"jsonFile" : "target-velocity-e69b3afeed66c4f8de42.json",
+					"name" : "velocity",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/ivan/\u0417\u0430\u0433\u0440\u0443\u0437\u043a\u0438/linux_product/ru.npomash.excellence.kpac.ide.product-linux.gtk.x86_64/workspace/smm2024/build",
+		"source" : "/home/ivan/\u0417\u0430\u0433\u0440\u0443\u0437\u043a\u0438/linux_product/ru.npomash.excellence.kpac.ide.product-linux.gtk.x86_64/workspace/smm2024"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

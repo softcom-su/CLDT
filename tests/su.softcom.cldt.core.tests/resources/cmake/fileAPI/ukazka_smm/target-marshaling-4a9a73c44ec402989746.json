@@ -1,0 +1,222 @@
+{
+	"archive" : {},
+	"artifacts" : 
+	[
+		{
+			"path" : "lib/marshaling/libmarshaling.a"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"add_compile_options",
+			"add_compile_definitions",
+			"target_link_libraries",
+			"include_directories"
+		],
+		"files" : 
+		[
+			"lib/marshaling/CMakeLists.txt",
+			"CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 3,
+				"parent" : 0
+			},
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 20,
+				"parent" : 2
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 21,
+				"parent" : 2
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 37,
+				"parent" : 2
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 22,
+				"parent" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 11,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 1,
+				"line" : 10,
+				"parent" : 2
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : " "
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-DBOOST_ERROR_CODE_HEADER_ONLY"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "-DBOOST_LOG_DYN_LINK"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Werror"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wall"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wextra"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-pedantic"
+				},
+				{
+					"fragment" : "-std=c++2a"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 6,
+					"define" : "BOOST_LOG_USE_NATIVE_SYSLOG"
+				},
+				{
+					"backtrace" : 7,
+					"define" : "FMT_LOCALE"
+				},
+				{
+					"backtrace" : 7,
+					"define" : "FMT_SHARED"
+				},
+				{
+					"backtrace" : 7,
+					"define" : "FPP_EXPLICIT_CONVERSIONS=1"
+				},
+				{
+					"backtrace" : 7,
+					"define" : "JSON_DISABLE_ENUM_SERIALIZATION=1"
+				},
+				{
+					"backtrace" : 7,
+					"define" : "JSON_USE_IMPLICIT_CONVERSIONS=0"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 8,
+					"path" : "/home/user/kpac/workspace/ukazka/ukazka-smm-runner/include"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/user/kpac/workspace/ukazka/ukazka-smm-runner/vendor/json/single_include"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/user/kpac/workspace/ukazka/ukazka-smm-runner/vendor/fpp/include"
+				}
+			],
+			"language" : "CXX",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4
+			]
+		}
+	],
+	"id" : "marshaling::@c05d4225dd0c3e09ecdf",
+	"name" : "marshaling",
+	"nameOnDisk" : "libmarshaling.a",
+	"paths" : 
+	{
+		"build" : "lib/marshaling",
+		"source" : "lib/marshaling"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lib/marshaling/coordinate/Coordinate.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lib/marshaling/modeling/launcher/Config.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lib/marshaling/modeling/launcher/StepOutput.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lib/marshaling/modeling/logger-module/LogEntity.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lib/marshaling/smm/Core.cpp",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "STATIC_LIBRARY"
+}

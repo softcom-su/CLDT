@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?pde version="3.8"?>
+<!--
+	Copyright (c) 2020-2025 SoftCom Ltd.
+--><target name="su.softcom.cldt.target" sequenceNumber="2">
+	<locations>
+		<location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
+			<repository location="https://download.eclipse.org/releases/2023-03/"/>
+			<unit id="org.eclipse.epp.mpc.feature.group" version="1.10.1.v20221110-1841"/>
+			<unit id="org.eclipse.platform.sdk" version="0.0.0"/>
+			<unit id="org.eclipse.equinox.executable.feature.group" version="0.0.0"/>
+			<unit id="org.eclipse.equinox.sdk.feature.group" version="0.0.0"/>
+			<unit id="org.eclipse.jdt.junit5.runtime" version="0.0.0"/>
+			<unit id="org.eclipse.tm.terminal.feature.feature.group" version="11.1.0.202212091724"/>
+		</location>
+		<location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
+			<unit id="org.eclipse.emf.ecp.emfforms.runtime.feature.feature.group" version="0.0.0"/>
+			<unit id="org.eclipse.emfforms.setup.base" version="0.0.0"/>
+			<repository location="https://download.eclipse.org/ecp/releases/releases_127/1270/"/>
+		</location>
+		<location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
+			<repository location="https://download.eclipse.org/tools/orbit/downloads/drops/R20220830213456/repository"/>
+			<unit id="org.apache.commons.io" version="2.8.0.v20210415-0900"/>
+			<unit id="org.junit" version="4.13.2.v20211018-1956"/>
+			<unit id="org.junit.jupiter.api" version="5.8.2.v20220624-2009"/>
+			<unit id="org.junit.jupiter.params" version="5.8.2.v20220624-2009"/>
+			<unit id="org.junit.jupiter.engine" version="5.8.2.v20220624-2009"/>
+			<unit id="org.junit.platform.commons" version="1.8.2.v20220624-2009"/>
+			<unit id="org.junit.platform.engine" version="1.8.2.v20220624-2009"/>
+			<unit id="org.junit.platform.launcher" version="1.8.2.v20220624-2009"/>
+			<unit id="org.junit.platform.runner" version="1.8.2.v20220624-2009"/>
+			<unit id="org.antlr.runtime" version="4.7.2.v20200218-0804"/>
+			<unit id="org.yaml.snakeyaml" version="1.27.0.v20201111-1638"/>
+			<unit id="org.junit.platform.suite.api" version="1.8.2.v20220624-2009"/>
+			<unit id="org.junit.platform.suite.commons" version="1.8.2.v20220624-2009"/>
+			<unit id="org.junit.platform.suite.engine" version="1.8.2.v20220624-2009"/>
+			<unit id="com.fasterxml.jackson.module.jackson-module-jaxb-annotations" version="2.13.2.v20220426-1653"/>
+		</location>
+		<location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
+			<repository location="https://download.eclipse.org/technology/babel/update-site/R0.20.0RC4/2022-12/"/>
+			<unit id="org.eclipse.babel.nls_eclipse_ru.feature.group" version="4.26.0.v20230220105658"/>
+			<unit id="org.eclipse.babel.nls_technology.lsp4e_ru.feature.group" version="4.26.0.v20230220105658"/>
+			<unit id="org.eclipse.babel.nls_technology.tm4e_ru.feature.group" version="4.26.0.v20230220105658"/>
+		</location>
+
+		<location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
+			<repository location="https://download.eclipse.org/tools/orbit/downloads/drops/R20200831200620/repository"/>
+			<unit id="com.fasterxml.jackson.core.jackson-core" version="2.10.3.v20200512-1600"/>
+			<unit id="com.fasterxml.jackson.core.jackson-databind" version="2.10.3.v20200512-1600"/>
+			<unit id="org.apache.velocity" version="1.5.0.v200905192330"/>
+		</location>
+		<location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
+			<repository location="https://download.eclipse.org/lsp4e/releases/0.24.1/"/>
+			<unit id="com.google.gson" version="0.0.0"/>
+			<unit id="org.eclipse.lsp4e" version="0.0.0"/>
+			<unit id="org.eclipse.lsp4e.debug" version="0.0.0"/>
+			<unit id="org.eclipse.lsp4j" version="0.0.0"/>
+			<unit id="org.eclipse.lsp4j.debug" version="0.0.0"/>
+			<unit id="org.eclipse.lsp4j.jsonrpc" version="0.0.0"/>
+			<unit id="org.eclipse.lsp4j.jsonrpc.debug" version="0.0.0"/>
+		</location>
+		<location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
+			<repository location="http://download.eclipse.org/tm4e/releases/0.14.0"/>
+			<unit id="org.eclipse.tm4e.feature.feature.group" version="0.0.0"/>
+			<unit id="org.eclipse.tm4e.language_pack.feature.feature.group" version="0.0.0"/>
+			<unit id="org.jcodings" version="0.0.0"/>
+			<unit id="org.joni" version="0.0.0"/>
+		</location>
+		<location includeDependencyDepth="infinite" includeDependencyScopes="compile" missingManifest="generate" type="Maven">
+
+			<feature id="org.mockito" label="Mockito" version="1.0.0.qualifier">
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+				<description url="http://www.example.com/description">
+      [Enter Feature Description here.]
+   </description>
+				<copyright url="http://www.example.com/copyright">
+      [Enter Copyright Description here.]
+   </copyright>
+				<license url="http://www.example.com/license">
+      [Enter License Description here.]
+   </license>
+				<plugin id="org.mockito.mockito-core" version="1.8.11"/>
+				<plugin id="net.bytebuddy.byte-buddy-agent" version="1.8.11"/>
+				<plugin id="net.bytebuddy.byte-buddy" version="1.8.11"/>
+				<plugin id="wrapped.org.mockito.mockito-inline" version="0.0.0"/>
+			</feature>
+			<dependencies>
+				<dependency>
+					<groupId>com.fasterxml.jackson.core</groupId>
+					<artifactId>jackson-annotations</artifactId>
+					<version>2.16.0</version>
+					<type>jar</type>
+				</dependency>
+				<dependency>
+					<groupId>com.fasterxml.jackson.core</groupId>
+					<artifactId>jackson-core</artifactId>
+					<version>2.16.0</version>
+					<type>jar</type>
+				</dependency>
+				<dependency>
+					<groupId>com.fasterxml.jackson.core</groupId>
+					<artifactId>jackson-databind</artifactId>
+					<version>2.16.0</version>
+					<type>jar</type>
+				</dependency>
+				<dependency>
+					<groupId>com.fasterxml.jackson.dataformat</groupId>
+					<artifactId>jackson-dataformat-xml</artifactId>
+					<version>2.12.0</version>
+					<type>jar</type>
+				</dependency>
+				<dependency>
+					<groupId>org.mockito</groupId>
+					<artifactId>mockito-core</artifactId>
+					<version>4.11.0</version>
+					<type>jar</type>
+				</dependency>
+				<dependency>
+					<groupId>org.mockito</groupId>
+					<artifactId>mockito-inline</artifactId>
+					<version>3.9.0</version>
+					<type>jar</type>
+				</dependency>
+				<dependency>
+					<groupId>org.objenesis</groupId>
+					<artifactId>objenesis</artifactId>
+					<version>3.2</version>
+					<type>jar</type>
+				</dependency>
+			</dependencies>
+		</location>
+	</locations>
+</target>

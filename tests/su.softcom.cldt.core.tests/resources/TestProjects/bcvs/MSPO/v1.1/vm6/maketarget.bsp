@@ -1,0 +1,227 @@
+    COMP=compress
+    CAT=cat
+    SIZE=$(OSBASE)/bin/size.sh
+    CRC32=$(OSBASE)/bin/crc32
+    SED=sed
+
+include usermake.def
+
+GP_FLAGS = -G0
+ifneq (,$(findstring -G,$(ADDED_CFLAGS)))
+GP_FLAGS =
+endif
+
+  ADDED_CFLAGS += $(GP_FLAGS) -Wno-trigraphs -fno-strict-aliasing -pipe -fno-merge-constants
+  ifeq ($(CPU),R3000)
+    ADDED_CFLAGS += -komdiv
+    LNK_OPTIONS += -mips1
+  endif
+  ifdef CPU_TUNE
+    ifeq ($(CPU_TUNE),R3000)
+      ADDED_CFLAGS += -march=r3000 -mtune=r3000
+    endif
+    ifeq ($(CPU_TUNE),KOMDIV32)
+      ADDED_CFLAGS += -march=komdiv -mtune=komdiv -mfix-komdiv32v1
+    endif
+    ifeq ($(CPU_TUNE),KOMDIV64)
+      ifneq ($(pref),bt23h-)
+        ADDED_CFLAGS += -march=komdiv64 -mtune=komdiv64 
+      endif
+      ifdef  CMODEL
+        ADDED_CFLAGS += -DCMODEL
+      else
+        ifdef ALTERA
+          ADDED_CFLAGS += -DALTERA
+        endif
+      endif # ifdef  CMODEL
+    endif   # ifeq ($(CPU_TUNE),KOMDIV64)
+    ifeq ($(CPU_TUNE),RM7000)
+      ADDED_CFLAGS += -march=rm7000 -mtune=rm7000
+   endif
+  endif   # CPU_TUNE
+
+ifdef NO_CACHE_RESET
+  ADDED_CFLAGS += -DNO_CACHE_RESET
+endif
+
+
+LIBDIR		= $(dir $(subst \,/,$(shell $(CC) -v 2>&1|awk -f $(OSBASE)/lib/make.awk )))
+
+ifndef BOOTER
+  RAM_LOW_ADRS	:= $(STARTPOINT) # flash resident image .data base
+endif
+ifdef BOOTER
+  ifneq ($(TARGET),oc2000res.bin)
+     RAM_LOW_ADRS := $(STARTPOINT) # for booter's flash resident image
+  else   
+     ADDED_CFLAGS += -DFLASH_RESIDENT -DCODE_FLASH_RESIDENT -mlong-calls
+  endif                            #  it is .data section's base
+endif                              #  and it comes from m_res.sh
+
+USER_SOURCES += $(OSBASE)/bsp/$(BSP)/cpuLib.S $(OSBASE)/bsp/$(BSP)/atrace.S
+USER_INCLUDES += $(OSBASE)/bsp/$(BSP)/lib/include
+
+ifdef BOOTER
+  USER_INCLUDES += $(OSBASE)/bsp/$(BSP)/booter
+  USER_SOURCES += $(wildcard $(OSBASE)/bsp/$(BSP)/booter/*.c) netutils.c
+  ADDED_CFLAGS += -DBOOTER
+endif
+
+include $(OSBASE)/lib/maketarget.def
+
+CC_INCLUDE += -I.
+CC_DEFINES += -DRAM_COMP_ADRS=$(RAM_COMP_ADRS) \
+	-DROM_TEXT_ADRS=$(ROM_TEXT_ADRS) \
+	-DRAM_LOW_ADRS=$(RAM_LOW_ADRS) \
+	-DSTARTPOINT=$(STARTPOINT) \
+        -DCOMPRESS
+ifdef BAGET_MODULE
+    CC_DEFINES += -DBT${BAGET_MODULE}
+endif
+ifdef INCLUDE_CRC
+    CC_DEFINES += -DINCLUDE_CRC
+endif
+#MPLIB = $(OSBASE)/lib/oc2mp$(CPU).a 
+#-------------------------------------------------------
+.SUFFIXES: .bin .rec
+
+.bin.rec :
+	$(prefr)objcopy -O srec -I binary $< tmp
+	$(SED) <tmp >$@ s/S8/S7/
+	$(RM) tmp
+
+userclean:
+	$(RM) oc2000*.bin oc2000*.rec oc202*
+
+oc2000_RAM.bin: cpuinit.o tmp sym_tbl.o makefile
+	$(RM) $@ oc2000
+	$(CC) -nostartfiles -N $(CC_COMPILER) -e cpuInit -Xlinker -Ttext -Xlinker $(STARTPOINT) $(LNK_OPTIONS) -o oc2000  cpuinit.o $(OSBASE)/lib/setdef0$(CPU).o tmp  $(OSBASE)/lib/setdef1$(CPU).o sym_tbl.o -lgcc 
+	$(RM) tmp
+	$(OBJCOPY) -O binary -g oc2000 $@
+
+oc2000res.bin: romInit.o oc2000res.o tmp sym_tbl.o makefile
+	$(RM) oc2000
+	$(CC) $(CFLAGS) -N -e romInit -Xlinker -Ttext -Xlinker $(ROM_TEXT_ADRS) \
+	    -Xlinker -Tdata -Xlinker $(RAM_LOW_ADRS) \
+	    $(LD_OPTIONS) -o oc2000 romInit.o $(OSBASE)/lib/setdef0$(CPU).o tmp \
+	    $(OSBASE)/lib/setdef1$(CPU).o sym_tbl.o $(LIBNAME) -lgcc
+	$(RM) $@
+	$(OBJCOPY) -O binary -g -R .data -R .sdata -R .sbss -R .bss -R .reginfo \
+	-R .lit4 -R .lit8 -R .netisr_set -R .sysctl_set -R .domain_set -R .eh_frame -R .locales \
+        oc2000 oc2000.bin1
+	$(OBJCOPY) -O binary -g -R .text -R .rodata -R .reginfo -R .roend oc2000 oc2000.bin2
+	$(CAT) oc2000.bin1  oc2000.bin2 > oc2000res.bin
+	$(RM) oc2000.bin1 oc2000.bin2 tmp*
+romInit.o : $(OSBASE)/bsp/$(BSP)/romInit.S
+	@ $(RM) $@
+	$(CC) $(CASFLAGS) -c $< -o $(notdir $@)
+oc2000res.o: oc2000.c
+	$(RM) oc2000.o
+	$(CC) $(CFLAGS) -DFLASH_RESIDENT -c oc2000.c
+oc2000comp.bin: uncompress.bin cpuInitUncomp.o oc2000.o tmp sym_tbl.o makefile
+	$(RM) oc2000
+	$(CC) $(CFLAGS) -N -e cpuInit -Xlinker -Ttext -Xlinker $(STARTPOINT) \
+	    $(LD_OPTIONS) -o oc2000 cpuInit.o $(OSBASE)/lib/setdef0$(CPU).o tmp \
+	    $(OSBASE)/lib/setdef1$(CPU).o sym_tbl.o $(LIBNAME) -lgcc
+	$(RM) $@ oc2000.bin
+	$(OBJCOPY) -O binary -g oc2000 oc2000.bin
+	$(COMP) -f -b 16 oc2000.bin 
+	$(SIZE) oc2000.bin.Z > size.oc
+	$(CAT) uncompress.bin size.oc oc2000.bin.Z > $@
+	$(RM) uncompress.bin oc2000.bin.Z size.oc oc2000.bin tmp*
+uncompress.bin: uncompInit.o uncompress.o cpuLib.o
+	$(RM) $@
+	$(LD) -X -N -e uncompInit -Ttext $(RAM_COMP_ADRS) -o uncompress $? \
+	    $(LIBNAME)
+	$(OBJCOPY) -O binary -g -R .sbss -R .bss uncompress uncompress.bin
+	$(RM) tmp* uncompress.o # uncompress
+uncompInit.o : $(OSBASE)/bsp/$(BSP)/uncompInit.S
+	@ $(RM) $@
+	$(CC) $(CASFLAGS) -c $< -o $(notdir $@)
+uncompress.o : $(OSBASE)/bsp/$(BSP)/uncompress.c
+	@ $(RM) $@
+	$(CC) $(CC_WARNINGS) $(CC_INCLUDE) $(CC_COMPILER) $(CC_DEFINES) \
+	       $(ADDED_CFLAGS) -nostdlib -fno-builtin -fno-defer-pop -O2 \
+	       -funroll-loops -c $<
+cpuInitUncomp.o : $(OSBASE)/bsp/$(BSP)/cpuinit.s
+	@ $(RM) cpuInit.o
+	$(CC) $(CASFLAGS) -DCOMPRESS -c $< -o cpuInit.o
+	@ $(RM) tmp.s
+dummy_crc32: cpuinit.o oc2000.o tmp sym_tbl.o
+	$(RM) oc2000
+	$(CC) $(CFLAGS) -c $(OSBASE)/bsp/$(BSP)/dummy_crc32.c -o dummy_crc32.o
+	$(CC) $(CFLAGS) -N -e cpuInit -Xlinker -Ttext -Xlinker $(STARTPOINT) \
+	    $(LD_OPTIONS) -o oc2000 cpuinit.o $(OSBASE)/lib/setdef0$(CPU).o tmp \
+	    $(OSBASE)/lib/setdef1$(CPU).o dummy_crc32.o sym_tbl.o $(LIBNAME) -lgcc
+	$(RM) oc2000.bin
+	$(OBJCOPY) -O binary -g oc2000 oc2000.bin
+	$(CRC32) oc2000.bin > crc32.c
+crc32: dummy_crc32 crc32.o
+	$(RM) oc2000
+	$(CC) $(CFLAGS) -N -e cpuInit -Xlinker -Ttext -Xlinker $(STARTPOINT) \
+	    $(LD_OPTIONS) -o oc2000 cpuinit.o $(OSBASE)/lib/setdef0$(CPU).o tmp \
+	    $(OSBASE)/lib/setdef1$(CPU).o crc32.o sym_tbl.o $(LIBNAME) -lgcc
+oc2000_crc: crc32 makefile
+	$(RM) tmp
+dummy_crc32b: flashinit.o cpuinit.o oc2000.o tmp sym_tbl.o
+	$(RM) oc2000
+	$(CC) $(CFLAGS) -c $(OSBASE)/bsp/$(BSP)/dummy_crc32.c -o dummy_crc32.o
+	$(CC) $(CFLAGS) -N -e flashInit -Xlinker -Ttext -Xlinker $(STARTPOINT) \
+	    $(LD_OPTIONS) -o oc2000 flashinit.o $(OSBASE)/lib/setdef0$(CPU).o tmp \
+	    $(OSBASE)/lib/setdef1$(CPU).o dummy_crc32.o sym_tbl.o $(LIBNAME) -lgcc
+	$(RM) oc2000.bin
+	$(OBJCOPY) -O binary -g oc2000 oc2000.bin
+	$(CRC32) oc2000.bin > crc32.c
+crc32b: dummy_crc32b crc32.o
+	$(RM) oc2000
+	$(CC) $(CFLAGS) -N -e flashInit -Xlinker -Ttext -Xlinker $(STARTPOINT) \
+	    $(LD_OPTIONS) -o oc2000 flashinit.o $(OSBASE)/lib/setdef0$(CPU).o tmp \
+	    $(OSBASE)/lib/setdef1$(CPU).o crc32.o sym_tbl.o $(LIBNAME) -lgcc
+	$(RM) oc2000.bin
+	$(OBJCOPY) -O binary -g oc2000 oc2000_crc.bin
+oc2000_crc.bin: crc32b makefile
+	$(RM) tmp tmp1
+dummy_crc32c: cpuinit.o cpuLib.o oc2000.o tmp sym_tbl.o
+	$(RM) oc2000
+	$(CC) $(CFLAGS) -c $(OSBASE)/bsp/$(BSP)/dummy_crc32.c -o dummy_crc32.o
+	$(CC) $(CFLAGS) -N -e cpuInit -Xlinker -Ttext -Xlinker $(STARTPOINT) \
+	    $(LD_OPTIONS) -o oc2000 cpuinit.o $(OSBASE)/lib/setdef0$(CPU).o tmp \
+	    $(OSBASE)/lib/setdef1$(CPU).o dummy_crc32.o sym_tbl.o $(LIBNAME) -lgcc
+	$(RM) oc2000.bin
+	$(OBJCOPY) -O binary -g oc2000 oc2000.bin
+	$(CRC32) oc2000.bin > crc32.c
+crc32.o: crc32.c
+crc32c: dummy_crc32c crc32.o
+	$(RM) oc2000
+	$(CC) $(CFLAGS) -N -e cpuInit -Xlinker -Ttext -Xlinker $(STARTPOINT) \
+	    $(LD_OPTIONS) -o oc2000 cpuinit.o $(OSBASE)/lib/setdef0$(CPU).o tmp \
+	    $(OSBASE)/lib/setdef1$(CPU).o crc32.o sym_tbl.o $(LIBNAME) -lgcc
+	$(RM) oc2000.bin
+	$(OBJCOPY) -O binary -g oc2000 oc2000.bin
+oc2000comp_crc.bin: crc32c uncompress_crc.bin makefile
+	$(COMP) -f -b 16 oc2000.bin
+	$(SIZE) oc2000.bin.Z > size.oc
+	$(CAT) uncompress.bin size.oc oc2000.bin.Z > oc2000comp_crc.bin
+	$(RM) uncompress.bin oc2000.bin.Z size.oc oc2000.bin tmp*
+dummy_crc32u: uncompInit.o uncompress.o cpuLib.o $(OSBASE)/bsp/$(BSP)/dummy_crc32.o
+	$(LD) -X -N -e uncompInit -Ttext $(RAM_COMP_ADRS) -o uncompress \
+	    uncompInit.o uncompress.o cpuLib.o dummy_crc32.o $(LIBNAME)
+	$(RM) uncompress.bin
+	$(OBJCOPY) -O binary -g -R .sbss -R .bss uncompress uncompress.bin
+	$(CRC32) uncompress.bin > crc32u.c
+crc32u.o: crc32u.c
+crc32u: dummy_crc32u crc32u.o
+	$(RM) $@
+	$(LD) -X -N -e uncompInit -Ttext $(RAM_COMP_ADRS) -o uncompress \
+	    uncompInit.o uncompress.o cpuLib.o crc32u.o $(LIBNAME)
+	ls -al uncompress.bin
+	$(RM) uncompress.bin
+	$(OBJCOPY) -O binary -g -R .sbss -R .bss uncompress uncompress.bin
+uncompress_crc.bin: crc32u
+	$(RM) tmp* uncompress.o uncompress
+oc2000bsp.bin: flashinit.o cpuinit.o tmp sym_tbl.o makefile
+	$(RM) $@ oc2000
+	$(CC) $(CFLAGS) -N -e flashInit -Xlinker -Ttext -Xlinker $(STARTPOINT) $(LD_OPTIONS) -o oc2000  flashinit.o cpuinit.o $(OSBASE)/lib/setdef0$(CPU).o tmp  $(OSBASE)/lib/setdef1$(CPU).o sym_tbl.o $(LIBNAME) -lgcc
+	$(OBJCOPY) -O binary -g oc2000 $@
+
+

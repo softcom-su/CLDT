@@ -1,0 +1,207 @@
+{
+	"archive" : {},
+	"artifacts" : 
+	[
+		{
+			"path" : "lib/handling/exception-handler/libexception-handler.a"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"target_link_libraries",
+			"add_compile_options",
+			"include_directories"
+		],
+		"files" : 
+		[
+			"lib/handling/exception-handler/CMakeLists.txt",
+			"CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 3,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 4,
+				"parent" : 0
+			},
+			{
+				"file" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 34,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 74,
+				"parent" : 3
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : " "
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "-DBOOST_ERROR_CODE_HEADER_ONLY"
+				},
+				{
+					"backtrace" : 2,
+					"fragment" : "-pthread"
+				},
+				{
+					"fragment" : "-std=c++2a"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 2,
+					"define" : "CPPHTTPLIB_ZLIB_SUPPORT"
+				},
+				{
+					"backtrace" : 2,
+					"define" : "FMT_LOCALE"
+				},
+				{
+					"backtrace" : 2,
+					"define" : "FMT_SHARED"
+				},
+				{
+					"backtrace" : 2,
+					"define" : "JSON_DISABLE_ENUM_SERIALIZATION=1"
+				},
+				{
+					"backtrace" : 2,
+					"define" : "JSON_USE_IMPLICIT_CONVERSIONS=0"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 5,
+					"path" : "/home/user/Загрузки/KPAC-04.04.2023-2/workspace/backend"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/user/Загрузки/KPAC-04.04.2023-2/workspace/backend/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/user/Загрузки/KPAC-04.04.2023-2/workspace/backend/lib"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/user/Загрузки/KPAC-04.04.2023-2/workspace/backend/build"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/user/Загрузки/KPAC-04.04.2023-2/workspace/backend/build/lib"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/user/Загрузки/KPAC-04.04.2023-2/workspace/backend/vendor/smm-2ng/vendor/json/single_include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/user/Загрузки/KPAC-04.04.2023-2/workspace/backend/vendor/fpp/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/user/Загрузки/KPAC-04.04.2023-2/workspace/backend/vendor/rapidcsv/src"
+				},
+				{
+					"backtrace" : 2,
+					"isSystem" : true,
+					"path" : "/home/user/Загрузки/KPAC-04.04.2023-2/workspace/backend/build/vendor/cpp-httplib/out"
+				}
+			],
+			"language" : "CXX",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 2,
+			"id" : "httplib::@ea29bca9fd98f953c37c"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "utils::@82bbb9eb485b6ee150e0"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "numerics::@c0e3ecbce36d147793f1"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "handler-utils::@1c37991e4eff3e331e22"
+		}
+	],
+	"id" : "exception-handler::@4c040f0a7fcc5f98d58d",
+	"name" : "exception-handler",
+	"nameOnDisk" : "libexception-handler.a",
+	"paths" : 
+	{
+		"build" : "lib/handling/exception-handler",
+		"source" : "lib/handling/exception-handler"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		},
+		{
+			"name" : "Header Files",
+			"sourceIndexes" : 
+			[
+				1
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lib/handling/exception-handler/ExceptionHandler.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"path" : "build/vendor/cpp-httplib/out/httplib.h",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "STATIC_LIBRARY"
+}

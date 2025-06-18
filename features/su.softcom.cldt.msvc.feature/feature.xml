@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="su.softcom.cldt.msvc.feature"
+      label="Micrsoft Visual C++ support"
+      version="0.1.0.qualifier"
+      provider-name="Softcom">
+
+   <description url="http://www.example.com/description">
+      Micrsoft Visual C++ support
+   </description>
+
+   <copyright url="http://www.example.com/copyright">
+      [Enter Copyright Description here.]
+   </copyright>
+
+   <license url="http://www.example.com/license">
+      [Enter License Description here.]
+   </license>
+
+   <plugin
+         id="su.softcom.cldt.msvc"
+         version="0.0.0"/>
+
+</feature>

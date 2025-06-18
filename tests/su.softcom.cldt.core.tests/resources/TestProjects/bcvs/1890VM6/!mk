@@ -1,0 +1,3 @@
+#!/bin/sh
+#
+make 2>&1 | tee -a lib1890VM6.log

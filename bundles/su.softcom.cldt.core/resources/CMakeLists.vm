@@ -1,0 +1,10 @@
+cmake_minimum_required (VERSION 3.20.0)
+
+project ($project.name C CXX ASM)
+
+string(COMPARE EQUAL ${PROJECT_SOURCE_DIR} ${CMAKE_SOURCE_DIR} TEST_IS_TOP_LEVEL)
+
+if(TEST_IS_TOP_LEVEL)
+	include(CMakePackageConfigHelpers)
+	configure_package_config_file(\"cmake/Config.cmake.in\" \"TestConfig.cmake\" INSTALL_DESTINATION \"${CMAKE_INSTALL_LIBDIR}/cmake/${PROJECT_NAME}\")
+endif()

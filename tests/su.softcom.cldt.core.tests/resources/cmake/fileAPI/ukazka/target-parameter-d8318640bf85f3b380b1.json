@@ -1,0 +1,301 @@
+{
+	"archive" : {},
+	"artifacts" : 
+	[
+		{
+			"path" : "lib/persistence/parameter/libparameter.a"
+		}
+	],
+	"backtrace" : 2,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"add_odb_library",
+			"target_link_libraries",
+			"add_dependencies",
+			"add_compile_options",
+			"include_directories",
+			"target_include_directories"
+		],
+		"files" : 
+		[
+			"cmake/UseODB.cmake",
+			"lib/persistence/parameter/CMakeLists.txt",
+			"CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 1,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 209,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 231,
+				"parent" : 1
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 228,
+				"parent" : 1
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 228,
+				"parent" : 1
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 228,
+				"parent" : 1
+			},
+			{
+				"file" : 2
+			},
+			{
+				"command" : 4,
+				"file" : 2,
+				"line" : 34,
+				"parent" : 7
+			},
+			{
+				"command" : 5,
+				"file" : 2,
+				"line" : 74,
+				"parent" : 7
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 233,
+				"parent" : 1
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-fPIC  "
+				},
+				{
+					"backtrace" : 8,
+					"fragment" : "-DBOOST_ERROR_CODE_HEADER_ONLY"
+				},
+				{
+					"fragment" : "-std=c++2a"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 3,
+					"define" : "FMT_LOCALE"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "FMT_SHARED"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "JSON_DISABLE_ENUM_SERIALIZATION=1"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "JSON_USE_IMPLICIT_CONVERSIONS=0"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 9,
+					"path" : "/home/user/Загрузки/KPAC-04.04.2023-2/workspace/backend"
+				},
+				{
+					"backtrace" : 9,
+					"path" : "/home/user/Загрузки/KPAC-04.04.2023-2/workspace/backend/include"
+				},
+				{
+					"backtrace" : 9,
+					"path" : "/home/user/Загрузки/KPAC-04.04.2023-2/workspace/backend/lib"
+				},
+				{
+					"backtrace" : 9,
+					"path" : "/home/user/Загрузки/KPAC-04.04.2023-2/workspace/backend/build"
+				},
+				{
+					"backtrace" : 9,
+					"path" : "/home/user/Загрузки/KPAC-04.04.2023-2/workspace/backend/build/lib"
+				},
+				{
+					"backtrace" : 10,
+					"path" : "/home/user/Загрузки/KPAC-04.04.2023-2/workspace/backend/build/lib/persistence/parameter"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "/home/user/Загрузки/KPAC-04.04.2023-2/workspace/backend/build/lib/persistence/utils"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "/home/user/Загрузки/KPAC-04.04.2023-2/workspace/backend/vendor/fpp/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "/home/user/Загрузки/KPAC-04.04.2023-2/workspace/backend/vendor/smm-2ng/src/../include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "/home/user/Загрузки/KPAC-04.04.2023-2/workspace/backend/vendor/smm-2ng/vendor/json/single_include"
+				}
+			],
+			"language" : "CXX",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4,
+				5
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 3,
+			"id" : "smm-2ng::@00856fd885f8f5898eaa"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "numerics::@c0e3ecbce36d147793f1"
+		},
+		{
+			"id" : "persistence-utils::@46d6abcba433a4e69a2a"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "ODB_OutputParameter::@bbcab9a98cf2bff05986"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "ODB_Parameter::@bbcab9a98cf2bff05986"
+		},
+		{
+			"backtrace" : 6,
+			"id" : "ODB_InputParameter::@bbcab9a98cf2bff05986"
+		}
+	],
+	"id" : "parameter::@bbcab9a98cf2bff05986",
+	"name" : "parameter",
+	"nameOnDisk" : "libparameter.a",
+	"paths" : 
+	{
+		"build" : "lib/persistence/parameter",
+		"source" : "lib/persistence/parameter"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4,
+				5
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				6,
+				7,
+				8
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "lib/persistence/parameter/Parameter.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "lib/persistence/parameter/OutputParameter.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "lib/persistence/parameter/InputParameter.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "build/lib/persistence/parameter/ParameterOdb.cxx",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "build/lib/persistence/parameter/OutputParameterOdb.cxx",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "build/lib/persistence/parameter/InputParameterOdb.cxx",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/lib/persistence/parameter/ParameterOdb.cxx.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/lib/persistence/parameter/OutputParameterOdb.cxx.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/lib/persistence/parameter/InputParameterOdb.cxx.rule",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "STATIC_LIBRARY"
+}

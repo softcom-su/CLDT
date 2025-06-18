@@ -1,0 +1,109 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "vendor/smm-2ng/src/merge-tele"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_executable",
+			"target_include_directories"
+		],
+		"files" : 
+		[
+			"vendor/smm-2ng/src/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 55,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 56,
+				"parent" : 0
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-std=c++20"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 2,
+					"path" : "/home/ivan/\u0417\u0430\u0433\u0440\u0443\u0437\u043a\u0438/linux_product/ru.npomash.excellence.kpac.ide.product-linux.gtk.x86_64/workspace/smm2024/vendor/smm-2ng/src/../include/smm-2ng"
+				}
+			],
+			"language" : "CXX",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					1
+				],
+				"standard" : "20"
+			},
+			"sourceIndexes" : 
+			[
+				0
+			]
+		}
+	],
+	"id" : "merge-tele::@00856fd885f8f5898eaa",
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "",
+				"role" : "flags"
+			}
+		],
+		"language" : "CXX"
+	},
+	"name" : "merge-tele",
+	"nameOnDisk" : "merge-tele",
+	"paths" : 
+	{
+		"build" : "vendor/smm-2ng/src",
+		"source" : "vendor/smm-2ng/src"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "vendor/smm-2ng/src/merge-tele.cpp",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "EXECUTABLE"
+}

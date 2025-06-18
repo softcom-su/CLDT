@@ -1,0 +1,405 @@
+{Board support package configuration} {Конфигурирование ППМ}
+{Device drivers} {Включаемые драйверы}
+{Flash} {РПЗУ}
+{Flash read, erase, write functions} {Функции для чтения, стирания, записи РПЗУ}
+{NVRAM} {Использование ЭЗУ (NVRAM)}
+{Nonvolatile memory} {Энергонезависимое запоминающее устройство}
+{Compress NVRAM} {Сжать ЭЗУ}
+{Compress data in nonvolatile memory} {Сжать данные в энергонезависимой памяти}
+{Ethernet} {Контроллер ЛВС}
+{Network ethernet interface driver for onboard ethernet and BTM23-403/BTM23-408} {Драйвер для контроллера ЛВС (Ethernet)}
+{ARINC} {БТМ23-404}
+{Include driver for BTM23-404 (ARINC)} {Включить в загрузочный образ ОС и настроить драйвер мезонина БТМ23-404}
+{QBUS} {МПИ}
+{Include driver for BTM23-402 (QBUS)} {Включить в загрузочный образ ОС и настроить драйвер мезонина БТМ23-402}
+{PCI Serial ports} {Послед. порты на PCI}
+{VME bus support} {Работа с VME}
+{Basic VME bus initialization and support} {Инициализация VME и функции для работы с мостом PCI-VME}
+{Real Time Clock} {Часы реального времени}
+{RTC} {Часы реального времени}
+{RGB Console} {Консоль на граф. экране}
+{Duplicate console output to onboard video} {Дублировать на графический интерфейс выдачу на консольный терминал}
+{PMC Manchester} {Мезонин - Манчестер}
+{Include driver for PMC Manchester interface} {Включить в образ драйвер мезонинов БТМ23-401 и БТМ23-421}
+{VME Manchester} {Манчестер VME}
+{Include driver for BT23-401A/B - Manchester on VME} {Включить в загрузочный образ ОС драйвер модуля БТ23-401а/б - манчестер на VME}
+{Parallel port} {Параллельный порт}
+{Include driver for LPT of multicontroller} {Включить в загрузочный образ ОС драйвер параллельного порта мультиконтроллера}
+{Printer} {Принтер}
+{Include driver for printer} {Включить в загрузочный образ ОС драйвер принтера, подключенного к БТМ23-405/БТМ23-420}
+{Floppy LS120} {Гибкий диск LS120}
+{Include driver for floppy LS120} {Включить в загрузочный образ ОС драйвер дисковода LS120, подключенного к БТМ23-405/БТМ23-420}
+{IDE} {Жесткий диск IDE}
+{Include driver for IDE hard disk} {Включить в загрузочный образ ОС драйвер жесткого диска на интерфейсе IDE мультиконтроллера}
+{PMC serial ports} {Посл. порты мезонина}
+{Configure PMC serial ports} {Конфигурирование последовательных портов мезонинов}
+{SCSI} {Мезонин SCSI}
+{Include driver for SCSI hard disk} {Включить в загрузочный образ ОС драйвер жесткого диска на интефейсе SCSI мезонинов БТМ23-406 и БТМ23-407}
+{RTC} {Часы с батарейкой}
+{SOUND} {Звук}
+{VIDEO_IN} {Видео-ввод}
+{VSK} {ВСК}
+{Include driver for VSK source data input (from libvsk-kernel.a)} {Включить в загрузочный образ ОС драйвер ВСК для ввода первичных данных (из библиотекиlibvsk-kernel.a)}
+
+{System clock frequency} {Системные часы Hz}
+{System clock frequency in Hz} {Частота системных часов в герцах}
+{NVRAM sector} {Сектор для ЭЗУ в РПЗУ}
+{Sector used for NVRAM in system flash, choose -1 for last sector} {Номер сектора, используемого для эмуляции ЭЗУ, -1 - последний сектор РПЗУ}
+
+{Interrupts configuration} {Конфигурирование прерываний}
+{Assign interrupts to lines, set interrupts priorities} {Распределение прерываний по линиям, приоритеты прерываний}
+{Enable nested interrupts} {Разрешить вложенность прерываний}
+{Assign IRQ to ASIC pins} {Связь источников прерываний и линий контроллера прерываний}
+{UART A} {Порт А}
+{UART B} {Порт B}
+{EXT_INT_0} {Внешнее прер. 0}
+{EXT_INT_1} {Внешнее прер. 1}
+{EXT_INT_2} {Внешнее прер. 2}
+{EXT_INT_3} {Внешнее прер. 3}
+{EXT_INT_4} {Внешнее прер. 4}
+{TIMER A} {Сист. часы}
+{TIMER B} {Доп. часы}
+{TIMER C} {Доп. часы 2}
+{PCI BUS} {Прерывания от PCI}
+{DRAM ERROR} {Ошибка памяти}
+{WRITE ERROR} {Ошибка записи на лок. шине}
+
+{Assign priority to CPU pins} {Приоритет прерываний в процессоре}
+{Software Trap 1} {Прогр. прерывание 1}
+{Software Trap 2} {Прогр. прерывание 2}
+{Software interrupt 1} {}
+{Software interrupt 2} {}
+{Watchdog} {Сторожевой таймер}
+{FPA} {Сопроцессор}
+{Floating point coprocessor} {Арифметический сопроцессор}
+{ASIC 0} {Линия контр. прерываний 0}
+{ASIC 1} {Линия контр. прерываний 1}
+{ASIC 2} {Линия контр. прерываний 2}
+{ASIC 3} {Линия контр. прерываний 3}
+{Enable CPU IRQ} {Прерывания, разрешенные  в процессоре}
+
+{PCI devices interrupt line} {Линия запроса прерывания на PCI}
+{Device 1} {Устройство 1}
+{Device 2} {Устройство 2}
+{Device 3} {Устройство 3}
+{Device 4} {Устройство 4}
+
+{Onboard serial ports} {Наплатные последовательные порты}
+{Serial ports} {Последовательные порты}
+{System Controller serial ports} {Порты сист. контроллера}
+{Name} {Имя устр.}
+{OC PB device name} {Имя устройства ОС РВ, создаваемого для данного порта}
+{Read buf} {Буфер чтения}
+{Input buffer size in bytes} {Размер буфера чтения в байтах}
+{Write buf} {Буфер выдачи}
+{Output buffer size in bytes} {Размер буфера выдачи в байтах}
+{Baud rate} {Скорость}
+{PCI serial ports} {Последовательные порты мультиконтроллера}
+{For KL85 and X server - /dev/xconsole, for mouse - /dev/mouse} {Для КЛ85 в Х сервере - /dev/xconsole, для мыши - /dev/mouse}
+{For /dev/mouse - 1200} {Для мыши скорость - 1200}
+{Int enable} {Разр. прер.}
+{Enable input interrupts on device creation} {Разрешить прерывания по вводу при создании устройства}
+
+{PS2 mouse} {Мышь PS2}
+{Mouse name} {Имя устройства}
+
+{Multicontrollers} {Мультиконтроллеры}
+{Channel 0} {Канал 0}
+{Channel 1} {Канал 1}
+{Channel 2} {Канал 2}
+{Channel 3} {Канал 3}
+{Channel 4} {Канал 4}
+{Channel 5} {Канал 5}
+{Channel 6} {Канал 6}
+{Channel 7} {Канал 7}
+{PCI serial ports - multicontroller 0} {Последовательные порты на мультиконтроллере 0}
+{PCI serial ports - multicontroller 1} {Последовательные порты на мультиконтроллере 1}
+{Discrete signals 0,1} {Дискретные сигналы 0,1}
+{Discrete signals 2,3} {Дискретные сигналы 2,3}
+{Discrete signals 4,5} {Дискретные сигналы 4,5}
+{Discrete signals 6,7} {Дискретные сигналы 6,7}
+{Discrete signals 8,9} {Дискретные сигналы 8,9}
+{Discrete signals 10,11} {Дискретные сигналы 10,11}
+{Discrete signals 12,13} {Дискретные сигналы 12,13}
+{Discrete signals 14,15} {Дискретные сигналы 14,15}
+{PCI serial port 0} {Последовательный порт 0}
+{PCI serial port 1} {Последовательный порт 1}
+{PCI serial port 2} {Последовательный порт 2}
+{PCI serial port 3} {Последовательный порт 3}
+{PCI serial port 4} {Последовательный порт 4}
+{PCI serial port 5} {Последовательный порт 5}
+{PCI serial port 6} {Последовательный порт 6}
+{PCI serial port 7} {Последовательный порт 7}
+
+{Ethernet} {Контроллер ЛВС}
+{Ethernet (BTM23-403/BTM23-408) driver setup} {Настройка драйвера ЛВС}
+{de0 (Onboard Ethernet)} {de0 - наплатный контроллер}
+{Interrupts configuration. 0 - no special modes} {Конфигурирование прерываний. 0 - никаких специальных режимов}
+{Output start FIFO threshhold. -1 - frame as whole} {Сколько байт нужно прочитать контроллеру из памяти, прежде чем начать вывод в линию. -1 - весь кадр}
+{10M half duplex} {10М полудуплекс}
+{Possible connection mode} {Включить данный режим в число возможных для данного контроллера}
+{10M full duplex} {10М дуплекс}
+{100M half duplex} {100М полудуплекс}
+{100M full duplex} {100М дуплекс}
+{Forced reset} {Сброс при запуске}
+{Reset interface during driver initializing procedure} {Выполнить программный сброс контроллера при его инициализации в драйвере}
+{de1 (PMC)} {ЛВС - мезонин}
+
+{VME setup} {Настройки VME}
+{VME memory layout} {Распределение общей памяти по VME}
+{MODULE_VME_STEP} {Шаг по адресам VME}
+{Step between modules on VME, select 0x200000 for work with BT23-202} {Шаг по адресам VME между модулями, для работы с БТ23-202 нужно 0x200000}
+{Step between modules on VME} {Шаг по адресам VME между модулями}
+{Sizes of memory areas in bytes} {Области общей памяти на VME в байтах}
+{Firmware data} {Данные техн. монитора}
+{Shared memory area used by embedded (ROM) monitor during board check and initializing} {Общая память используемая технологическим монитором (программа ПЗУ) при инициализации и тестировании модуля}
+{Reserved area} {Зарезервировано}
+{Shared memory reserved area size} {Сколько памяти зарезервировать}
+{MP objects} {Память под объекты}
+{MP objects area size (on the board)} {Сколько общей памяти отвести под объекты на общей памяти ОС РВ в данном модуле}
+{ARINC channels area} {Буферы каналов}
+{Area used by ARINC channels} {Разделяемая память, используемая ARINC-каналами}
+{VME-net area} {Память сетевого драйвера}
+{Shared memory used by driver 'Ethernet on VME' (memory end alligned)} {VME-память модуля, используемая драйвером 'Ethernet на VME' (прижимается к концу VME-памяти)}
+{DMA parameters} {Параметры DMA}
+{Number of mcsecs to wait DMA transfere end} {Сколько мксек ждать завершения DMA операции}
+{DMA threshold} {Порог DMA}
+{Size of packet enabling using DMA} {Размер пакета, разрешающий использование DMA}
+{Polling threshold} {Порог опроса}
+{Size of packet disabling polling} {До какого размера использовать ожидание на опросе}
+{} {}
+
+{BUSNET Ethernet on VME setup} {Эмулятор 'Ethernet на VME' (BUSNET)}
+{BUSNET ethernet emulation on VME setup} {}
+{Driver type} {Тип драйвера}
+{Interface name} {Имя устройства}
+{CRC using} {Дополнительное суммирование}
+{Use additional check sum for all data transferes} {Использовать дополнительное суммирование при всех передачах данных}
+{ANSI-VITA Ethernet on VME setup} {Эмулятор 'Ethernet на VME' (ANSI-VITA)}
+{ANSI-VITA ethernet emulation on VME setup} {Дополнительные настройки драйвера Ethernet-ANSI-VITA}
+{VME window} {Окно на VME}
+{VME master window used for ANSI-VITA dynamic mapping or -1 for static mapping} {Номер окна, динамически отображаемого на нужные VME-адреса. Значение -1 отменяет динамическое отображение}
+{Fast mapping} {Быстрая трансляция адресов}
+{Use fast static mapping} {Использовать статическое отображение памяти - самая быстрая трансляция}
+{VME module registration setup} {VME-регистрация ППМ}
+{VME_MAIN_BOARD} {Модуль регистрации}
+{TIMEOUT} {Макс. время}
+{Registration module number} {Номер модуля, в памяти которого осуществляется регистрация при инициализации ППМ}
+{VME module registration timeout in seconds} {Максимальное время ожидания основного модуля в секундах}
+
+{VME processors} {Модули на VME}
+{VME slot} {Позиция на VME}
+{Module name} {Тип модуля}
+
+{Onboard RGB Console} {Граф. консоль}
+{Console on onboard video setup} {Настройки граф. консоли, использующей наплатный граф. контроллер}
+{Foreground color} {Цвет текста}
+{Background color} {Цвет фона}
+{Tab size} {Шаг табуляции}
+{Output queue size} {Размер очереди}
+{Size of queue for output lines} {Размер очереди для строк, выводимых на граф. консоль через служебный поток}
+{Thread priority} {Приоритет служ. потока}
+{Priority of thread transfering data from queue to screen} {Приоритет служебного потока, выводящего строки из очереди на экран}
+{Inherit mode} {Наследование экрана}
+{Inherit cursor position and frame buffer data from booter} {Унаследовать положение курсора и изображение от загрузчика}
+{Video mode} {Видео режим}
+
+{IDE inteface (BTM23-405) setup} {Настройки интерфейса IDE}
+{Common parameters} {Общие параметры}
+{Reset IDE after initialization} {Сброс интерфейса после инициализации}
+{Priority of thread supporting asynchronous input/output. -1 for synchronous input/output} {Приоритет потока, выполняющего асинхронный ввод/вывод. -1 - синхронный режим}
+{Attached hard disk drives} {Подключенные устройства}
+{Drive device name} {Уникальное имя для данного диска как устройства ОС РВ}
+{Controller} {Контроллер}
+{Controller number (0 or 1)} {Номер контроллера (0 или 1)}
+{Channel} {Канал}
+{Channel number} {Номер канала данного контроллера}
+{M/S} {Главн/Подч}
+{Drive type (master or slave)} {Тип диска - главный (master) или подчиненный (slave)}
+{Enable DMA} {ПДП}
+{Enable embedded DMA} {Использовать режим прямого доступа к памяти}
+{Use MBR} {Разделы}
+{Use Master Boot Record (disk slicing)} {Использовать таблицу разделов - создать блочные устройства для разделов}
+
+{Interface IDE} {Настройки IDE}
+{Controller 0 Timings} {Настройки контроллера 0}
+{BAGET_TIMINGS_DEF - default setups} {BAGET_TIMINGS_DEF - установки по умолчанию}
+{Channel 0 PIO} {Канал 0 программный режим}
+{Channel 0 DMA} {Канал 0 ПДП}
+{Channel 1 PIO} {Канал 1 программный режим}
+{Channel 1 DMA} {Канал 1 ПДП}
+{Controller 1 Timings} {Настройки контроллера 1}
+{BAGET_TIMINGS_DEF - default setups} {BAGET_TIMINGS_DEF - установки по умолчанию}
+{Channel 0 PIO} {Канал 0 программный режим}
+{Channel 0 DMA} {Канал 0 ПДП}
+{Channel 1 PIO} {Канал 1 программный режим}
+{Channel 1 DMA} {Канал 1 ПДП}
+
+{CMD64X IDE} {Компакт-флэш мезонин} 
+{PMC with 'True IDE' compact flash and IDE controller from Silion Image} {Мезонин 'Compact Flash' с интерфейсом True IDE и IDE контроллером фирмы Silicon Image} 
+{Logical IDE controller number} {Логический номер контроллера} 
+{Number for indexing block device descriptor in array of desriptors} {Индекс дескриптора соответствующего блочного устройства в массиве дескрипторов для IDE} 
+{CMD64X unit number} {Номер мезонина}
+{CMD64X controller unit number} {Порядковый номер мезонина - 0 или 1 (если установлены два мезонина)}
+{CMD64X PIO mode} {Режим PIO}
+{CMD64X programm I/O IDE mode: CMD_PIO_DEF mode after reset (slowest), mode 4 fastest} {PIO-режим (ПДП не поддерживается). После сброса CMD_PIO_DEF - самый медленный, 4 - самый быстрый}
+
+{SCSI controller} {SCSI контроллер}
+{SCSI threads} {Потоки, обслуживающие SCSI-контроллер}
+{Controller thread priority} {Приоритет потока SCSI-контроллера}
+{Priority of thread, supporting controller} {Приоритет служ. потока, обслуживающего SCSI-контроллер}
+{Data transfere thread priority} {Приоритет потока передачи данных}
+{Priority of thread for asynchronous input/output. -1 for synchronous input/output} {Приоритет потока, выполняющего асинхронный ввод/вывод. -1 - синхронный режим}
+{Adapter bus ID} {Номер устройства}
+{Device name} {Устройство}
+{Unique adapter ID on SCSI bus} {Уникальный номер, идентифицирующий контроллер  на шине SCSI}
+{Automatic Configuration} {Автоматическое конфигурирование}
+{Config LUNs} {Конфигурирование подустройств}
+{Autoconfig logical subdevices} {Автоматическое конфигурирование подустройств на каждом устройстве}
+{Disconnect} {Отключение от шины}
+{Disconnect if no data} {Устройство отключается от шины, когда у него нет данных для передачи}
+{Synchronous mode} {Синхронный режим}
+{Enable synchronous mode on SCSI bus - transfere data in blocks} {Разрешение выполнять пересылки данных по SCSI-шине в синхронном режиме - блоками}
+{Wide mode} {16 бит}
+{Transfere data by 16 bits words} {Разрешить передачу данных по SCSI-шине 16-ти и 32-х битными словами}
+{Tagged} {Очередь}
+{Enable requests queueing on SCSI-bus} {Разрешить встроенную (в SCSI-протокол) очередь запросов}
+{Request timeout} {Ограничение на время выполнения запроса}
+{Timeout interval for input/output request} {Ограничение на время выполнения операции ввода/вывода}
+{Spinup timeout} {Время раскрутки}
+{Disk spinup timeout} {Предельное время раскрутки диска}
+
+{Manual configuration} {Конфигурирование вручную}
+{ID} {Номер}
+{ID of the device on SCSI BUS} {Номер данного устройства на шине SCSI}
+{LUN} {Подустр.}
+{Subdevice number} {Номер подустройства на данном устройстве}
+{Dscnct} {Откл.}
+{Sync} {Синх.}
+{RTout} {T запр.}
+{STout} {T раскр.}
+
+{Shared use} {Совместное использование}
+{Enable to share LPT by several drivers (for example, printer and LS120)} {Разрешить совместное использование порта более чем одним драйвером (например, принтер и LS120)}
+{Controller mode} {Режим}
+{ECP mode} {ECP режим}
+{PCI timeout enable} {Разрешить освобождение PCI}
+{Free PCI in case of timeout} {Разрешить освобождение шины PCI до завершения операции устройством, подключенным к порту}
+{Read FIFO threshold} {Порог прерывания от буфера чтения}
+{How much bytes need to be read in input FIFO to generate interrupt} {Число байт, которые необходимо прочитать в буфер ввода для генерации прерывания}
+{Write FIFO threshold} {Порог прерывания от буфера записи}
+{Size of free space in output FIFO to generate interrupt} {Размер в байтах свободного места в буфере вывода для генерации прерывания}
+{EPP Delay} {Задержка EPP цикла}
+{EPP transaction delay in PCI-bus ticks} {Задержка EPP-цикла в циклах PCI}
+{EPP 1.7 mode enable} {Разрешить EPP версии 1.7}
+{ISA Delay} {Задержка доступа к регистрам}
+{LPT registers access delay} {Задержка при доступе к регистрам порта (выбор из допустимых значений)}
+{Printer thread priority} {Приоритет служ. потока}
+{Descriptor} {Описатель}
+{Pointer to decriptor of LPT controller} {Указатель на описатель контроллера параллельного порта}
+{Hook routine} {Функция уведомления}
+{Function to call on various events} {Функция, которая будет вызываться при различных событиях}
+{Hook argument} {Аргумент}
+{SPP Autofeed} {Автоперевод строки}
+{Automatically output 'line feed' character after 'carriage return' (SPP mode only)} {Автоматический вывод символа 'перевод строки' после символа 'возврат каретки' (только для режима SPP)}
+{Controller mode} {Режим контроллера}
+{LPT controller mode} {Используемый режим контроллера параллельного порта}
+{ECP mode} {ECP подрежим}
+{Submode of ECP mode} {Используемый подрежим режима ECP}
+{Paper timeout} {Ждать бумагу}
+{'No paper' timeout in seconds} {Время ожидания установки бумаги в секундах}
+{Paper notify} {Конец бумаги}
+{Time interval in seconds between printing 'No paper' message} {Интервал времени в секундах, после которого будет выводиться сообщение об отсутствии бумаги}
+{Busy timeout} {Ждать готовности}
+{'No ready' timeout in seconds} {Время ожидания готовности от принтера в секундах}
+{Busy retries} {Опрос готовности}
+{Number of status register pollings before switching to polling on each system clocks tick} {Сколько раз опрашивать статусный регистр в ожидании готовности принтера до перехода к опросу на каждом тике системных часов}
+{Select retries} {Опрос 'принтер выбран'}
+{Number of status register pollings for signal 'printer selected'} {Число опросов статусного регистра в ожидании сигнала 'принтер выбран'}
+{FIFO retries} {Опрос буфера}
+{Number of FIFO pollings} {Число опросов внутреннего буфера(очереди) в ожидании его освобождения}
+{DMA enable} {Разрешить ПДП}
+{Enable use of DMA for data transferes} {Разрешить использование прямого доступа контроллера в память процессорного модуля при передачах данных через LPT}
+{DMA timeout} {Ждать ПДП}
+{Time to wait DMA complete} {Время ожидания завершения операции ПДП в секундах}
+{DMA threshold} {Порог ПДП}
+{Minimum portion to be transfered by DMA} {Минимальное количество байт для передачи с использованием ПДП}
+
+{LS120} {Гибкий диск LS120}
+{Verbose} {Отладочные сообщения}
+{Verbose log to console} {Подробные сообщения о выполняемых операциях}
+{LPT descriptor} {LPT дескриптор}
+{Parallel port descriptor name} {Имя указателя на дескриптор параллельного порта}
+{Mode} {Режим}
+{LS120 mode of functioning} {Режим работы LS120}
+{Unit} {Устройство}
+{Unit number in chain of LPT port devices with same protocol} {Номер устройства в цепочке устройств работающих по одному протоколу}
+{Protocol} {Протокол}
+{Protocol of interface with LS-120} {Протокол взаимодействия с устройством LS-120}
+{Delay} {Задержка}
+{Access to registers delay in mksecs} {Задержка доступа к регистрам в микросекундах (-1 - режим по умолчанию)}
+{Drive} {Накопитель}
+{Drive's subunit number} {Номер подустройства в данном накопителе}
+{Read portion} {Порция чтения}
+{Maximum number of sectors to read in one request} {Максимальное число секторов, которое можно прочитать за один запрос к устройству}
+{Polling} {Опрос}
+{0 - hang on polling, n - do polling every n ticks of system clock} {0 - висеть на опросе, n - опрашивать каждые n тиков системных часов}
+
+{Miscellaneous} {Дополнительные возможности}
+{Additional libraries and flags} {Дополнительные библиотеки и режимы}
+{Reboot entry} {Адрес перезапуска}
+{^X jump entry. Note: flash based at 0xb8000000, prime at 0xbfc00000} {Адрес передачи управления по ctrl+x. Напоминаем: РПЗУ начинается по адресу 0xb8000000, технол. монитор - 0xbfc00000}
+{INCLUDE_LOGGING} {Библиотека logLib}
+{Message output library for interrupt handlers} {Библиотека, позволяющая выводить сообщения из обработчиков прерываний}
+{LOG_MSG_MAX} {Очередь logLib}
+{logLib queue size} {Размер очереди, через которую передаются сообщения от функции logMsg}
+{BAD_INTS_LOGGING} {Сообщения об ошибках}
+{Output messages about some bad events: bus errors, etc.} {Вывод сообщений о прерываниях, возникающих при различных ошибках аппаратуры}
+{INCLUDE_IDLE} {Фоновый поток}
+{CPU load measurements library} {Поток, измеряющий загрузку процессора}
+{IDLE_PRIORITY} {Приоритет фонового потока}
+{IDLE_DELAY} {Пауза}
+{Delay in CPU cycles in inner loop} {Задержка во внутреннем цикле потока в циклах процессора}
+{INCLUDE_PCI_SHOW} {pciShow}
+{Include pciShow() routine} {Включить в образ функцию pciShow - просмотр конфигурации и состояния контроллера PCI}
+{INCLUDE_INT_NEST_CHECK} {Контроль вложенности прерываний}
+{Output message if INT_NEST_WARN level reached} {Вывести сообщение, когда уровень вложенности прерываний достигнет заданного порога}
+{INT_NEST_WARN} {Порог вложенности прерываний}
+{Show boot times} {Времена инициализации ОС РВ и ППМ}
+{Calculate and display image boot times} {Подсчитать и вывести на консоль времена выполнения различных этапов инициализации ОС РВ и ППМ}
+{Array of boot times} {Адрес массива времен}
+{Where store boot times} {Адрес, по которому запишутся вычисленные времена}
+
+{Cache} {Кэш}
+{Cache size} {Конфигурация кэша}
+{Cache allocation: instruction/data} {Распределение кэш-памяти в килобайтах (только для R3081): I- команды, D - данные}
+{Cache read mode} {Заполнение кэша}
+{Burst mode enable/disable} {Разрешение читать данные из памяти блоками по 4 слова (READ_BURST)}
+
+{CRC} {Контроль образа по CRC}
+{CRC check of image integrity} {Проверка целостности образа по CRC}
+{Check OS image loading using check sum} {Проверить правильность загрузки образа ОС контрольным суммированием}
+{Error processing} {Поведение при ошибке}
+{Ignore, reboot or stop} {Действия при ошибке суммы: игнорировать, повторный старт, остановиться}
+{Entry point for reboot} {Куда отдать управление при повторном запуске}
+{Check result address} {Результат проверки}
+{Address to store check results (Special scratch register by default)} {Адрес, по которому сохранятся результаты проверки (по умолчанию специальный регистр системного контроллера)}
+
+{BT83-401/BT83-404} {МКИО}
+{Manchester interface module} {Манчестер на БТ83-401 или БТ83-404}
+{BT83-402} {БТ83-402}
+{PCI-ISA brige, serial ports, clocks} {Модуль с мостом PCI-ISA, последовательными портами и часами}
+{Ethernet RL} {Контроллер ЛВС RL}
+{PCI ethernet PCM-3363} {Контроллер ЛВС PCM-3363 на базе микросхемы Realtek 8139}
+
+{BT83-405} {БТ83-405}
+{Ethernet, IDE, LPT, serial ports} {Модуль с контроллером ЛВС, интерфейсами IDE и LPT и последовательными портами}
+{Ethernet on BT83-405} {Контроллер ЛВС на БТ83-405}
+{IDE on BT83-405} {Интерфейс IDE на БТ83-405}
+{Serial ports on BT83-405} {Последовательные порты на БТ83-405}
+
+{BT83-402 Settings} {Конфигурирование БТ83-402}
+{Ports settings} {Параметры портов}
+{Ethernet NE2000} {Контроллер ЛВС NE2000}
+{Ethernet NE2000 on ISA pins of BT83-402} {Контроллер ЛВС NE2000, установленный на ISA разъеме БТ83-402}
+

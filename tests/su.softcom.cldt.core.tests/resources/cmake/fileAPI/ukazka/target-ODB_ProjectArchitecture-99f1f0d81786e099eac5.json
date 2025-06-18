@@ -1,0 +1,108 @@
+{
+	"backtrace" : 2,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_custom_target",
+			"add_odb_library"
+		],
+		"files" : 
+		[
+			"cmake/UseODB.cmake",
+			"lib/persistence/project/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 1,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 179,
+				"parent" : 1
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"id" : "utils::@82bbb9eb485b6ee150e0"
+		},
+		{
+			"id" : "authorization::@64ce893590329736f0cb"
+		},
+		{
+			"id" : "parameter::@bbcab9a98cf2bff05986"
+		},
+		{
+			"id" : "trajectory::@39a0e413281f03a60e38"
+		},
+		{
+			"id" : "scheme::@ce8763f2f603756f8cf3"
+		},
+		{
+			"id" : "cyclograms::@2823994de2e5f65089e7"
+		},
+		{
+			"id" : "modeling-results::@3f5a14ca3d9d87df1f3f"
+		},
+		{
+			"id" : "modeling-configuration::@615b51f638b66ad70781"
+		}
+	],
+	"id" : "ODB_ProjectArchitecture::@8c353fc9613c51da4349",
+	"name" : "ODB_ProjectArchitecture",
+	"paths" : 
+	{
+		"build" : "lib/persistence/project",
+		"source" : "lib/persistence/project"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				1,
+				2
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "build/lib/persistence/project/CMakeFiles/ODB_ProjectArchitecture",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/lib/persistence/project/CMakeFiles/ODB_ProjectArchitecture.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/lib/persistence/project/ProjectArchitectureOdb.cxx.rule",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "UTILITY"
+}

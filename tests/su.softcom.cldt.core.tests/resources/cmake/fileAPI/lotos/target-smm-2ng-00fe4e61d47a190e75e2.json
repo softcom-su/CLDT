@@ -1,0 +1,393 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "vendor/smm-2ng/src/CMakeFiles/smm-2ng.dir/./abstract_algorithm.cpp.o"
+		},
+		{
+			"path" : "vendor/smm-2ng/src/CMakeFiles/smm-2ng.dir/./abstract_core.cpp.o"
+		},
+		{
+			"path" : "vendor/smm-2ng/src/CMakeFiles/smm-2ng.dir/./abstract_export_point.cpp.o"
+		},
+		{
+			"path" : "vendor/smm-2ng/src/CMakeFiles/smm-2ng.dir/./abstract_module.cpp.o"
+		},
+		{
+			"path" : "vendor/smm-2ng/src/CMakeFiles/smm-2ng.dir/./algorithm_metadata.cpp.o"
+		},
+		{
+			"path" : "vendor/smm-2ng/src/CMakeFiles/smm-2ng.dir/./composite_algorithm.cpp.o"
+		},
+		{
+			"path" : "vendor/smm-2ng/src/CMakeFiles/smm-2ng.dir/./config_manager.cpp.o"
+		},
+		{
+			"path" : "vendor/smm-2ng/src/CMakeFiles/smm-2ng.dir/./core_config.cpp.o"
+		},
+		{
+			"path" : "vendor/smm-2ng/src/CMakeFiles/smm-2ng.dir/./file_export_point.cpp.o"
+		},
+		{
+			"path" : "vendor/smm-2ng/src/CMakeFiles/smm-2ng.dir/./logger.cpp.o"
+		},
+		{
+			"path" : "vendor/smm-2ng/src/CMakeFiles/smm-2ng.dir/./marshaling.cpp.o"
+		},
+		{
+			"path" : "vendor/smm-2ng/src/CMakeFiles/smm-2ng.dir/./math_mode_core.cpp.o"
+		},
+		{
+			"path" : "vendor/smm-2ng/src/CMakeFiles/smm-2ng.dir/./math_mode_module.cpp.o"
+		},
+		{
+			"path" : "vendor/smm-2ng/src/CMakeFiles/smm-2ng.dir/./math_mode_mt_core.cpp.o"
+		},
+		{
+			"path" : "vendor/smm-2ng/src/CMakeFiles/smm-2ng.dir/./math_mode_mt_module.cpp.o"
+		},
+		{
+			"path" : "vendor/smm-2ng/src/CMakeFiles/smm-2ng.dir/./math_mode_st_core.cpp.o"
+		},
+		{
+			"path" : "vendor/smm-2ng/src/CMakeFiles/smm-2ng.dir/./math_mode_st_module.cpp.o"
+		},
+		{
+			"path" : "vendor/smm-2ng/src/CMakeFiles/smm-2ng.dir/./module_config.cpp.o"
+		},
+		{
+			"path" : "vendor/smm-2ng/src/CMakeFiles/smm-2ng.dir/./plugin_manager.cpp.o"
+		},
+		{
+			"path" : "vendor/smm-2ng/src/CMakeFiles/smm-2ng.dir/./smm_port.cpp.o"
+		},
+		{
+			"path" : "vendor/smm-2ng/src/CMakeFiles/smm-2ng.dir/./smm_register.cpp.o"
+		},
+		{
+			"path" : "vendor/smm-2ng/src/CMakeFiles/smm-2ng.dir/./smm_value.cpp.o"
+		},
+		{
+			"path" : "vendor/smm-2ng/src/CMakeFiles/smm-2ng.dir/./tcp_export_point.cpp.o"
+		},
+		{
+			"path" : "vendor/smm-2ng/src/CMakeFiles/smm-2ng.dir/./telemetry.cpp.o"
+		},
+		{
+			"path" : "vendor/smm-2ng/src/CMakeFiles/smm-2ng.dir/./types_manager.cpp.o"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"target_link_libraries",
+			"target_include_directories"
+		],
+		"files" : 
+		[
+			"vendor/smm-2ng/src/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 38,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 41,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 39,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 40,
+				"parent" : 0
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-std=c++20"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 2,
+					"define" : "JSON_DISABLE_ENUM_SERIALIZATION=1"
+				},
+				{
+					"backtrace" : 2,
+					"define" : "JSON_USE_IMPLICIT_CONVERSIONS=0"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 3,
+					"path" : "/home/ivan/\u0417\u0430\u0433\u0440\u0443\u0437\u043a\u0438/linux_product/ru.npomash.excellence.kpac.ide.product-linux.gtk.x86_64/workspace/smm2024/vendor/smm-2ng/src/../include"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "/home/ivan/\u0417\u0430\u0433\u0440\u0443\u0437\u043a\u0438/linux_product/ru.npomash.excellence.kpac.ide.product-linux.gtk.x86_64/workspace/smm2024/vendor/smm-2ng/src/../include/smm-2ng"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/ivan/\u0417\u0430\u0433\u0440\u0443\u0437\u043a\u0438/linux_product/ru.npomash.excellence.kpac.ide.product-linux.gtk.x86_64/workspace/smm2024/vendor/smm-2ng/vendor/json/single_include"
+				}
+			],
+			"language" : "CXX",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					2
+				],
+				"standard" : "20"
+			},
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13,
+				14,
+				15,
+				16,
+				17,
+				18,
+				19,
+				20,
+				21,
+				22,
+				23,
+				24
+			]
+		}
+	],
+	"id" : "smm-2ng::@00856fd885f8f5898eaa",
+	"name" : "smm-2ng",
+	"paths" : 
+	{
+		"build" : "vendor/smm-2ng/src",
+		"source" : "vendor/smm-2ng/src"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13,
+				14,
+				15,
+				16,
+				17,
+				18,
+				19,
+				20,
+				21,
+				22,
+				23,
+				24
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "vendor/smm-2ng/src/abstract_algorithm.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "vendor/smm-2ng/src/abstract_core.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "vendor/smm-2ng/src/abstract_export_point.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "vendor/smm-2ng/src/abstract_module.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "vendor/smm-2ng/src/algorithm_metadata.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "vendor/smm-2ng/src/composite_algorithm.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "vendor/smm-2ng/src/config_manager.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "vendor/smm-2ng/src/core_config.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "vendor/smm-2ng/src/file_export_point.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "vendor/smm-2ng/src/logger.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "vendor/smm-2ng/src/marshaling.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "vendor/smm-2ng/src/math_mode_core.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "vendor/smm-2ng/src/math_mode_module.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "vendor/smm-2ng/src/math_mode_mt_core.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "vendor/smm-2ng/src/math_mode_mt_module.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "vendor/smm-2ng/src/math_mode_st_core.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "vendor/smm-2ng/src/math_mode_st_module.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "vendor/smm-2ng/src/module_config.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "vendor/smm-2ng/src/plugin_manager.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "vendor/smm-2ng/src/smm_port.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "vendor/smm-2ng/src/smm_register.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "vendor/smm-2ng/src/smm_value.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "vendor/smm-2ng/src/tcp_export_point.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "vendor/smm-2ng/src/telemetry.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "vendor/smm-2ng/src/types_manager.cpp",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "OBJECT_LIBRARY"
+}

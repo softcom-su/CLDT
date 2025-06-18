@@ -1,0 +1,9 @@
+- name: "testProject"
+  type: "external"
+  build_folder: "build"
+  targets:
+    - name: "test"
+      type: "EXECUTABLE"
+      sources:
+        - path: "src/main.cpp"
+          generated: false

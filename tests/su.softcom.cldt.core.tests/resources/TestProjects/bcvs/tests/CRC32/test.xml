@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<contents>
+  <name>CRC32</name>
+  <expected>
+    <argument>
+      <type>unsigned</type>
+      <value>1191942644</value>
+    </argument>
+  </expected>
+  <parameters>
+    <argument>
+      <type>unsigned char*</type>
+      <value>(unsigned char[5]) {1, 2, 3, 4, 5}</value>
+    </argument>
+    <argument>
+      <type>unsigned</type>
+      <value>5</value>
+    </argument>
+  </parameters>
+</contents>

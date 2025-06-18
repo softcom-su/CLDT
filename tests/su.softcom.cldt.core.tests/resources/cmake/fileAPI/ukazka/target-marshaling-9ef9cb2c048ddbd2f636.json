@@ -1,0 +1,117 @@
+{
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_custom_target",
+			"add_dependencies"
+		],
+		"files" : 
+		[
+			"lib/marshaling/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 28,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 29,
+				"parent" : 0
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 2,
+			"id" : "algorithm-marshaling::@ba2cc002230d6e71e2b2"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "audit-marshaling::@5c2204e6787e240cdb80"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "color-marshaling::@b162a64cddf88bc4eea6"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "cyclograms-marshaling::@5429997b677cb3b95b63"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "informational-document-marshaling::@571170d46888185e5f5e"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "limitation-marshaling::@a0a50134a6c4b34396a0"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "modeling-configuration-marshaling::@c774683ae90286aebcfd"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "modeling-results-marshaling::@b6b7924ee9f25923de83"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "numerics-marshaling::@a11868602e2fe7517292"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "parameter-marshaling::@e4fd0a3caa8b99debff0"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "project-marshaling::@25c3c54b681377823ddd"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "scheme-marshaling::@60ef7c6cccb522fbe8d2"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "sensor-marshaling::@80dd6c7ddac44fc36b15"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "smm-marshaling::@333fd60079f8ed470f08"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "smm-plugin-marshaling::@c008d731eb50ed0f8bfc"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "trajectory-marshaling::@5bcaff621cc79d1baf28"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "user-marshaling::@2498d2530bc661150251"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "type-marshaling::@0a568172bb9340f4c969"
+		}
+	],
+	"id" : "marshaling::@c05d4225dd0c3e09ecdf",
+	"name" : "marshaling",
+	"paths" : 
+	{
+		"build" : "lib/marshaling",
+		"source" : "lib/marshaling"
+	},
+	"sources" : [],
+	"type" : "UTILITY"
+}

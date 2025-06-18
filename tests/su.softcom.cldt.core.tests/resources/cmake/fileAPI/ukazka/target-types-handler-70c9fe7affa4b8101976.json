@@ -1,0 +1,435 @@
+{
+	"archive" : {},
+	"artifacts" : 
+	[
+		{
+			"path" : "lib/handling/types-handler/libtypes-handler.a"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"target_link_libraries",
+			"add_compile_options",
+			"include_directories"
+		],
+		"files" : 
+		[
+			"lib/handling/types-handler/CMakeLists.txt",
+			"CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 3,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 4,
+				"parent" : 0
+			},
+			{
+				"file" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 34,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 74,
+				"parent" : 3
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : " "
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "-DBOOST_ERROR_CODE_HEADER_ONLY"
+				},
+				{
+					"backtrace" : 2,
+					"fragment" : "-pthread"
+				},
+				{
+					"fragment" : "-std=c++2a"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 2,
+					"define" : "CPPHTTPLIB_ZLIB_SUPPORT"
+				},
+				{
+					"backtrace" : 2,
+					"define" : "FMT_LOCALE"
+				},
+				{
+					"backtrace" : 2,
+					"define" : "FMT_SHARED"
+				},
+				{
+					"backtrace" : 2,
+					"define" : "JSON_DISABLE_ENUM_SERIALIZATION=1"
+				},
+				{
+					"backtrace" : 2,
+					"define" : "JSON_USE_IMPLICIT_CONVERSIONS=0"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 5,
+					"path" : "/home/user/Загрузки/KPAC-04.04.2023-2/workspace/backend"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/user/Загрузки/KPAC-04.04.2023-2/workspace/backend/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/user/Загрузки/KPAC-04.04.2023-2/workspace/backend/lib"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/user/Загрузки/KPAC-04.04.2023-2/workspace/backend/build"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/user/Загрузки/KPAC-04.04.2023-2/workspace/backend/build/lib"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/user/Загрузки/KPAC-04.04.2023-2/workspace/backend/build/lib/persistence/type"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/user/Загрузки/KPAC-04.04.2023-2/workspace/backend/build/lib/persistence/smm-plugin"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/user/Загрузки/KPAC-04.04.2023-2/workspace/backend/vendor/fpp/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/user/Загрузки/KPAC-04.04.2023-2/workspace/backend/build/lib/persistence/authorization"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/user/Загрузки/KPAC-04.04.2023-2/workspace/backend/vendor/smm-2ng/vendor/json/single_include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/user/Загрузки/KPAC-04.04.2023-2/workspace/backend/lib/persistence/wrappers"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/user/Загрузки/KPAC-04.04.2023-2/workspace/backend/build/lib/persistence/utils"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/user/Загрузки/KPAC-04.04.2023-2/workspace/backend/vendor/smm-2ng/src/../include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/user/Загрузки/KPAC-04.04.2023-2/workspace/backend/build/lib/persistence/parameter"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/user/Загрузки/KPAC-04.04.2023-2/workspace/backend/build/lib/persistence/limitation"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/user/Загрузки/KPAC-04.04.2023-2/workspace/backend/build/lib/persistence/model"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/user/Загрузки/KPAC-04.04.2023-2/workspace/backend/build/lib/persistence/sensor"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/user/Загрузки/KPAC-04.04.2023-2/workspace/backend/build/lib/persistence/trajectory"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/user/Загрузки/KPAC-04.04.2023-2/workspace/backend/vendor/rapidcsv/src"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/user/Загрузки/KPAC-04.04.2023-2/workspace/backend/build/lib/persistence/algorithm"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/user/Загрузки/KPAC-04.04.2023-2/workspace/backend/build/lib/persistence/scheme"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/user/Загрузки/KPAC-04.04.2023-2/workspace/backend/build/lib/persistence/modeling-results"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/user/Загрузки/KPAC-04.04.2023-2/workspace/backend/build/lib/persistence/cyclograms"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/user/Загрузки/KPAC-04.04.2023-2/workspace/backend/build/lib/persistence/modeling-configuration"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/user/Загрузки/KPAC-04.04.2023-2/workspace/backend/build/lib/persistence/project"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/user/Загрузки/KPAC-04.04.2023-2/workspace/backend/build/lib/persistence/requirement"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/user/Загрузки/KPAC-04.04.2023-2/workspace/backend/build/lib/persistence/informational-document"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/user/Загрузки/KPAC-04.04.2023-2/workspace/backend/build/lib/persistence/audit"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/user/Загрузки/KPAC-04.04.2023-2/workspace/backend/vendor/tmp/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/user/Загрузки/KPAC-04.04.2023-2/workspace/backend/vendor/application/src/../include"
+				},
+				{
+					"backtrace" : 2,
+					"isSystem" : true,
+					"path" : "/home/user/Загрузки/KPAC-04.04.2023-2/workspace/backend/build/vendor/cpp-httplib/out"
+				}
+			],
+			"language" : "CXX",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 2,
+			"id" : "smm-2ng::@00856fd885f8f5898eaa"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "httplib::@ea29bca9fd98f953c37c"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "tmp::@98133616a1bfe54efa44"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "application::@87d384b84c85624b6108"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "utils::@82bbb9eb485b6ee150e0"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "archive::@570babba172550b3194d"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "base64::@a83cc730615319bf7b27"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "builder::@f56389d12620d5305edf"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "dylib::@83cee984786f95ca594f"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "numerics::@c0e3ecbce36d147793f1"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "persistence-utils::@46d6abcba433a4e69a2a"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "authorization::@64ce893590329736f0cb"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "parameter::@bbcab9a98cf2bff05986"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "limitation::@82f0ff8b28e19141afc8"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "model::@97138fdf0e4433680f99"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "sensor::@cb95a52f35cad3b37944"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "smm-plugin::@dc4b2a5faea53a0e678a"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "trajectory::@39a0e413281f03a60e38"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "type::@e13c74f7343776c48024"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "algorithm::@c888555fb2d04d2a1f7d"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "scheme::@ce8763f2f603756f8cf3"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "cyclograms::@2823994de2e5f65089e7"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "modeling-results::@3f5a14ca3d9d87df1f3f"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "modeling-configuration::@615b51f638b66ad70781"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "project::@8c353fc9613c51da4349"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "informational-document::@08f0924ca7c35ee21044"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "requirement::@c4d52102bce658d563e8"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "audit::@94a860eee32156aae729"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "smm-plugins-controller::@5d8f68b4e2fefcb516e6"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "types-controller::@cd0170c0ffa1d9c939a9"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "authorization-controller::@d5beaeb2f6858bcadda2"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "database::@b8e14e46f8adf27429f5"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "smm-plugin-marshaling::@c008d731eb50ed0f8bfc"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "user-marshaling::@2498d2530bc661150251"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "type-marshaling::@0a568172bb9340f4c969"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "marshaling-utils::@9c0ba022ef6a265224ea"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "handler-utils::@1c37991e4eff3e331e22"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "jwt::@55140f7d8d68e868aa66"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "authorization-handler::@598230342eaa6813e282"
+		}
+	],
+	"id" : "types-handler::@8501cd32b0bf4681fd79",
+	"name" : "types-handler",
+	"nameOnDisk" : "libtypes-handler.a",
+	"paths" : 
+	{
+		"build" : "lib/handling/types-handler",
+		"source" : "lib/handling/types-handler"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		},
+		{
+			"name" : "Header Files",
+			"sourceIndexes" : 
+			[
+				1
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lib/handling/types-handler/TypesHandler.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"path" : "build/vendor/cpp-httplib/out/httplib.h",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "STATIC_LIBRARY"
+}

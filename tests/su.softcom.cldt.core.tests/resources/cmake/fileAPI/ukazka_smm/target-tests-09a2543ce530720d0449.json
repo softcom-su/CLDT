@@ -1,0 +1,57 @@
+{
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_custom_target",
+			"add_dependencies"
+		],
+		"files" : 
+		[
+			"tests/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 9,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 10,
+				"parent" : 0
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 2,
+			"id" : "utils-tests::@aee55b7cdf71401bade2"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "unit-tests::@17bd492d087794b9594e"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "unit-config-converter-test::@8b1c9165409e5057fcd1"
+		}
+	],
+	"id" : "tests::@a44f0ac069e85531cdee",
+	"name" : "tests",
+	"paths" : 
+	{
+		"build" : "tests",
+		"source" : "tests"
+	},
+	"sources" : [],
+	"type" : "UTILITY"
+}

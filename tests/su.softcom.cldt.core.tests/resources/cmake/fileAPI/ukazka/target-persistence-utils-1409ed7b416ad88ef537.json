@@ -1,0 +1,631 @@
+{
+	"archive" : {},
+	"artifacts" : 
+	[
+		{
+			"path" : "lib/persistence/utils/libpersistence-utils.a"
+		}
+	],
+	"backtrace" : 2,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"add_odb_library",
+			"add_dependencies",
+			"add_compile_options",
+			"target_link_libraries",
+			"include_directories",
+			"target_include_directories"
+		],
+		"files" : 
+		[
+			"cmake/UseODB.cmake",
+			"lib/persistence/utils/CMakeLists.txt",
+			"CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 1,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 209,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 228,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 228,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 228,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 228,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 228,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 228,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 228,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 228,
+				"parent" : 1
+			},
+			{
+				"file" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 2,
+				"line" : 34,
+				"parent" : 11
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 231,
+				"parent" : 1
+			},
+			{
+				"command" : 5,
+				"file" : 2,
+				"line" : 74,
+				"parent" : 11
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 233,
+				"parent" : 1
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-fPIC  "
+				},
+				{
+					"backtrace" : 12,
+					"fragment" : "-DBOOST_ERROR_CODE_HEADER_ONLY"
+				},
+				{
+					"fragment" : "-std=c++2a"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 13,
+					"define" : "FMT_LOCALE"
+				},
+				{
+					"backtrace" : 13,
+					"define" : "FMT_SHARED"
+				},
+				{
+					"backtrace" : 13,
+					"define" : "JSON_DISABLE_ENUM_SERIALIZATION=1"
+				},
+				{
+					"backtrace" : 13,
+					"define" : "JSON_USE_IMPLICIT_CONVERSIONS=0"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 14,
+					"path" : "/home/user/Загрузки/KPAC-04.04.2023-2/workspace/backend"
+				},
+				{
+					"backtrace" : 14,
+					"path" : "/home/user/Загрузки/KPAC-04.04.2023-2/workspace/backend/include"
+				},
+				{
+					"backtrace" : 14,
+					"path" : "/home/user/Загрузки/KPAC-04.04.2023-2/workspace/backend/lib"
+				},
+				{
+					"backtrace" : 14,
+					"path" : "/home/user/Загрузки/KPAC-04.04.2023-2/workspace/backend/build"
+				},
+				{
+					"backtrace" : 14,
+					"path" : "/home/user/Загрузки/KPAC-04.04.2023-2/workspace/backend/build/lib"
+				},
+				{
+					"backtrace" : 15,
+					"path" : "/home/user/Загрузки/KPAC-04.04.2023-2/workspace/backend/build/lib/persistence/utils"
+				},
+				{
+					"backtrace" : 13,
+					"path" : "/home/user/Загрузки/KPAC-04.04.2023-2/workspace/backend/vendor/fpp/include"
+				},
+				{
+					"backtrace" : 13,
+					"path" : "/home/user/Загрузки/KPAC-04.04.2023-2/workspace/backend/vendor/smm-2ng/src/../include"
+				},
+				{
+					"backtrace" : 13,
+					"path" : "/home/user/Загрузки/KPAC-04.04.2023-2/workspace/backend/vendor/smm-2ng/vendor/json/single_include"
+				}
+			],
+			"language" : "CXX",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"id" : "smm-2ng::@00856fd885f8f5898eaa"
+		},
+		{
+			"id" : "numerics::@c0e3ecbce36d147793f1"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "ODB_ColorRGB::@46d6abcba433a4e69a2a"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "ODB_VectorPersistence::@46d6abcba433a4e69a2a"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "ODB_SmmValues::@46d6abcba433a4e69a2a"
+		},
+		{
+			"backtrace" : 6,
+			"id" : "ODB_SmmType::@46d6abcba433a4e69a2a"
+		},
+		{
+			"backtrace" : 7,
+			"id" : "ODB_ByteArray::@46d6abcba433a4e69a2a"
+		},
+		{
+			"backtrace" : 8,
+			"id" : "ODB_SmmValue::@46d6abcba433a4e69a2a"
+		},
+		{
+			"backtrace" : 9,
+			"id" : "ODB_Path::@46d6abcba433a4e69a2a"
+		},
+		{
+			"backtrace" : 10,
+			"id" : "ODB_TimePoint::@46d6abcba433a4e69a2a"
+		}
+	],
+	"id" : "persistence-utils::@46d6abcba433a4e69a2a",
+	"name" : "persistence-utils",
+	"nameOnDisk" : "libpersistence-utils.a",
+	"paths" : 
+	{
+		"build" : "lib/persistence/utils",
+		"source" : "lib/persistence/utils"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				11,
+				12,
+				13,
+				14,
+				15,
+				16,
+				17,
+				18
+			]
+		},
+		{
+			"name" : "Object Libraries",
+			"sourceIndexes" : 
+			[
+				19,
+				20,
+				21,
+				22,
+				23,
+				24,
+				25,
+				26,
+				27,
+				28,
+				29,
+				30,
+				31,
+				32,
+				33,
+				34,
+				35,
+				36,
+				37,
+				38,
+				39,
+				40,
+				41,
+				42,
+				43,
+				44,
+				45,
+				46,
+				47
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "lib/persistence/utils/SmmType.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "lib/persistence/utils/SmmValue.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "lib/persistence/utils/SmmValues.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "build/lib/persistence/utils/SmmTypeOdb.cxx",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "build/lib/persistence/utils/SmmValueOdb.cxx",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "build/lib/persistence/utils/SmmValuesOdb.cxx",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "build/lib/persistence/utils/VectorPersistenceOdb.cxx",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "build/lib/persistence/utils/ColorRGBOdb.cxx",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "build/lib/persistence/utils/ByteArrayOdb.cxx",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "build/lib/persistence/utils/TimePointOdb.cxx",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "build/lib/persistence/utils/PathOdb.cxx",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/lib/persistence/utils/SmmTypeOdb.cxx.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/lib/persistence/utils/SmmValueOdb.cxx.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/lib/persistence/utils/SmmValuesOdb.cxx.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/lib/persistence/utils/VectorPersistenceOdb.cxx.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/lib/persistence/utils/ColorRGBOdb.cxx.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/lib/persistence/utils/ByteArrayOdb.cxx.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/lib/persistence/utils/TimePointOdb.cxx.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/lib/persistence/utils/PathOdb.cxx.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 13,
+			"isGenerated" : true,
+			"path" : "build/vendor/smm-2ng/src/CMakeFiles/smm-2ng.dir/abstract_algorithm.cpp.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 13,
+			"isGenerated" : true,
+			"path" : "build/vendor/smm-2ng/src/CMakeFiles/smm-2ng.dir/abstract_core.cpp.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 13,
+			"isGenerated" : true,
+			"path" : "build/vendor/smm-2ng/src/CMakeFiles/smm-2ng.dir/abstract_export_point.cpp.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 13,
+			"isGenerated" : true,
+			"path" : "build/vendor/smm-2ng/src/CMakeFiles/smm-2ng.dir/abstract_module.cpp.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 13,
+			"isGenerated" : true,
+			"path" : "build/vendor/smm-2ng/src/CMakeFiles/smm-2ng.dir/algorithm_metadata.cpp.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 13,
+			"isGenerated" : true,
+			"path" : "build/vendor/smm-2ng/src/CMakeFiles/smm-2ng.dir/composite_algorithm.cpp.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 13,
+			"isGenerated" : true,
+			"path" : "build/vendor/smm-2ng/src/CMakeFiles/smm-2ng.dir/config_manager.cpp.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 13,
+			"isGenerated" : true,
+			"path" : "build/vendor/smm-2ng/src/CMakeFiles/smm-2ng.dir/core_config.cpp.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 13,
+			"isGenerated" : true,
+			"path" : "build/vendor/smm-2ng/src/CMakeFiles/smm-2ng.dir/file_export_point.cpp.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 13,
+			"isGenerated" : true,
+			"path" : "build/vendor/smm-2ng/src/CMakeFiles/smm-2ng.dir/logger.cpp.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 13,
+			"isGenerated" : true,
+			"path" : "build/vendor/smm-2ng/src/CMakeFiles/smm-2ng.dir/marshaling.cpp.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 13,
+			"isGenerated" : true,
+			"path" : "build/vendor/smm-2ng/src/CMakeFiles/smm-2ng.dir/math_mode_core.cpp.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 13,
+			"isGenerated" : true,
+			"path" : "build/vendor/smm-2ng/src/CMakeFiles/smm-2ng.dir/math_mode_module.cpp.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 13,
+			"isGenerated" : true,
+			"path" : "build/vendor/smm-2ng/src/CMakeFiles/smm-2ng.dir/math_mode_mt_core.cpp.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 13,
+			"isGenerated" : true,
+			"path" : "build/vendor/smm-2ng/src/CMakeFiles/smm-2ng.dir/math_mode_mt_module.cpp.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 13,
+			"isGenerated" : true,
+			"path" : "build/vendor/smm-2ng/src/CMakeFiles/smm-2ng.dir/math_mode_st_core.cpp.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 13,
+			"isGenerated" : true,
+			"path" : "build/vendor/smm-2ng/src/CMakeFiles/smm-2ng.dir/math_mode_st_module.cpp.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 13,
+			"isGenerated" : true,
+			"path" : "build/vendor/smm-2ng/src/CMakeFiles/smm-2ng.dir/module_config.cpp.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 13,
+			"isGenerated" : true,
+			"path" : "build/vendor/smm-2ng/src/CMakeFiles/smm-2ng.dir/plugin_manager.cpp.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 13,
+			"isGenerated" : true,
+			"path" : "build/vendor/smm-2ng/src/CMakeFiles/smm-2ng.dir/smm_port.cpp.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 13,
+			"isGenerated" : true,
+			"path" : "build/vendor/smm-2ng/src/CMakeFiles/smm-2ng.dir/smm_register.cpp.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 13,
+			"isGenerated" : true,
+			"path" : "build/vendor/smm-2ng/src/CMakeFiles/smm-2ng.dir/smm_value.cpp.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 13,
+			"isGenerated" : true,
+			"path" : "build/vendor/smm-2ng/src/CMakeFiles/smm-2ng.dir/tcp_export_point.cpp.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 13,
+			"isGenerated" : true,
+			"path" : "build/vendor/smm-2ng/src/CMakeFiles/smm-2ng.dir/telemetry.cpp.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 13,
+			"isGenerated" : true,
+			"path" : "build/vendor/smm-2ng/src/CMakeFiles/smm-2ng.dir/types_manager.cpp.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 13,
+			"isGenerated" : true,
+			"path" : "build/vendor/smm-2ng/src/CMakeFiles/smm-2ng.dir/imit_mode_clock_source.cpp.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 13,
+			"isGenerated" : true,
+			"path" : "build/vendor/smm-2ng/src/CMakeFiles/smm-2ng.dir/imit_mode_core.cpp.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 13,
+			"isGenerated" : true,
+			"path" : "build/vendor/smm-2ng/src/CMakeFiles/smm-2ng.dir/imit_mode_hil_module.cpp.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 13,
+			"isGenerated" : true,
+			"path" : "build/vendor/smm-2ng/src/CMakeFiles/smm-2ng.dir/imit_mode_module.cpp.o",
+			"sourceGroupIndex" : 2
+		}
+	],
+	"type" : "STATIC_LIBRARY"
+}

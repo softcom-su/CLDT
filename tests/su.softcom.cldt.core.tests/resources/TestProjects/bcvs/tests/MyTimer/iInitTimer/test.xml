@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<contents>
+  <name>iInitTimer</name>
+  <expected>
+    <argument>
+      <type>int</type>
+      <value>3</value>
+    </argument>
+  </expected>
+  <parameters>
+    <argument>
+      <type>float</type>
+      <value>0</value>
+    </argument>
+    <argument>
+      <type>unsigned char</type>
+      <value>0</value>
+    </argument>
+    <argument>
+      <type>long</type>
+      <value>0</value>
+    </argument>
+  </parameters>
+</contents>

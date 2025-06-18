@@ -1,0 +1,774 @@
+{OS Configuration} {Конфигурирование ОС}
+{Kernel} {Ядро}
+{Ready queue PRIO256} {Очередь работоспособных потоков типа PRIO256}
+{Recommended if queue is big} {Рекомендуется в случае больших очередей}
+{Timer queue SPAN256} {Очередь к таймеру типа SPAN256}
+{ISR Stack size} {Стек обработки прерываний}
+{Stack size for interrupt routines} {Размер стека (в байтах) для обработки прерываний}
+{Default stack size} {Стек потоков управления}
+{Default stack size for theads} {Значение по умолчанию атрибута stacksize (размер стека в байтах)}
+{Default inheritsched} {Наследование атрибутов планирования}
+{The default value for the inheritsched attribute} {Значение по умолчанию атрибута inheritsched (наследование атрибутов планирования)}
+{Default schedpolicy} {Cтратегия планирования}
+{The default value for the schedpolicy attribute} {Значение по умолчанию атрибута schedpolicy (стратегия планирования)}
+{Default priority} {Приоритет по умолчанию}
+{The default value for thread priority} {Значение по умолчанию приоритета потока управления }
+{Default fpustate} {Использование плавающей арифметики}
+{The default value for the fpustate attribute} {Значение по умолчанию атрибута fpustate (использование плавающей арифметики)}
+{Time quantum} {Квант планирования}
+{Execution time limit for SCHED_RR scheduling policy (in ticks)} {Значение кванта планирования (в тиках) для стратегии планирования SCHED_RR}
+{Scaling} {Масштабирование}
+{Include signals} {Обработка сигналов}
+{Include signal support} {Подключение средств порождения и обработки сигналов}
+{Include timers} {Таймеры}
+{Include timer support} {Подключение средств поддержки таймеров}
+{Number of timers} {Число таймеров}
+{Maximum number of timers} {Максимальное число таймеров}
+{Include semaphores} {Семафоры}
+{Include semaphore support} {Подключение средств поддержки семафоров}
+{Number of semaphores} {Число семафоров}
+{Maximum number of semaphores} {Максимальное число семафоров}
+{Include cond. var.} {Условные переменные}
+{Include conditional variable support} {Подключение средств поддержки условных переменных}
+{Include msg queues} {Очереди сообщений}
+{Include message queue support} {Подключение средств поддержки очередей сообщений}
+{Message que PRIO32} {Очереди сообщений типа PRIO32}
+{Number of msg queues} {Число очередей сообщений}
+{Maximum number of message queues} {Максимальное число одновременно открытых очередей сообщений}
+{Include pipes} {Программные каналы}
+{Include pipes support} {Подключение средств поддержки программных каналов (PIPE)}
+{Include console} {Консоли}
+{Include console support} {Подключение средств поддержки консоли}
+{Console device name} {Имя устройства, используемого в качестве консоли}
+{Console name} {Имя консоли}
+{Include VFAT} {Файловая система VFAT}
+{Include VFAT file system support} {Подключение файловой системы VFAT}
+{Include FTP} {Файловая система FTP}
+{Include FTP file system support} {Подключение файловой системы FTP}
+{Include TAR} {Файловая система TAR}
+{Include TAR file system support} {Подключение файловой системы TAR}
+{Include NFS} {Файловая система NFS}
+{Include NFS file system support} {Подключение файловой системы NFS}
+{Include environment} {Переменные окружения}
+{Include environment variable support} {Подключение средств поддержки переменных окружения}
+{Include IEEE754} {Поддержка IEEE754}
+{Include support of floating point exceptions conforming to IEEE754} {Подключение средств обработки исключительных ситуаций при выполнении операций с плавающей точкой (стандарт IEEE754)}
+{Number of streams} {Число потоков данных}
+{The maximum number of streams may be open at one time} {Максимальное число одновременно открытых потоков данных}
+{Number of open files} {Число открытых файлов}
+{The maximum number of files may be open at one time} {Максимальное число одновременно открытых файлов}
+{Standard C Libraries} {Библиотеки стандарта С}
+{Include functions defined in ctype.h} {Подключение библиотеки функций обработки символов <ctype.h>}
+{Include functions defined in math.h} {Подключение библиотеки математических функций <math.h>}
+{Include functions defined in stdio.h} {Подключение библиотеки функций обслуживания потоков данных и файловых операций <stdio.h>}
+{Include functions defined in stdlib.h} {Подключение библиотеки стандартных функций (распределение памяти, сортировка, преобразование форматов и др.) <stdlib.h>}
+{Include functions defined in string.h} {Подключение библиотеки обработки строк <string.h>}
+{Include functions defined in time.h} {Подключение библиотеки обслуживания часов и таймеров <time.h>}
+{Architecture dependent functions} {Архитектурно зависимые функции}
+{Include architecture dependent functions} {Подключение архитектурно зависимых функций}
+{Network} {Взаимодействие с сетью}
+{Inetd priority} {Приоритет inetd}
+{Priority of the inetd thread} {Приоритет сетевого потока управления inetd (потока управления, обеспечивающего сетевой сервис)}
+{User ID} {Идентификатор пользователя}
+{Group ID} {Идентификатор группы}
+{User identifier} {Идентификатор пользователя (User ID)}
+{Group identifier} {Идентификатор группы (Group ID)}
+{Include ping} {Функция ping()}
+{Include the ping function} {Подключение функции (команды) ping()}
+{Include telnet client} {Подключение telnet-клиента}
+{Include telnet server} {Подключение telnet-сервера}
+{Server priority} {Приоритет сервера}
+{Telnet server priority} {Приоритет потока telnetd, в рамках которого исполняется telnet-сервер, а также порождённых им потоков}
+{Include ARP} {Протокол ARP}
+{Include ARP protocol} {Подключение средств просмотра таблиц протокола ARP}
+{Include RPC} {Протокол RPC}
+{Include RPC sever} {Подключение сервера удалённого вызова процедур (RPC)}
+{Get time from Net} {Получить значение времени по сети}
+{Get time using Network Time Protocol and set system time} {Получить значение времени по сети, используя протокол Time, и установить часы}
+{Host address} {Адрес компьютера}
+{Address of host to get time from} {IP-адрес компьютера, используемого для получения времени}
+{Number of attempts} {Число попыток}
+{Timeout in sec} {Тайм-аут в секундах}
+{Network addresses} {Сетевые адреса}
+{Default gateway} {Используемый по умолчанию шлюз}
+{Gateway address} {Сетевой адрес шлюза}
+{IP address in dotted decimal notation} {IP-адрес в точечной десятичной нотации}
+{Network interfaces} {Сетевые интерфейсы}
+{Interface name} {Имя интерфейса}
+{Name of the network interface} {Имя сетевого интерфейса}
+{IP address} {IP адрес}
+{Netmask} {Сетевая маска}
+{Net mask in dotted decimal notation} {Сетевая маска в точечной десятичной нотации}
+{Partner address} {Адрес партнера}
+{IP address of the remote side in dotted decimal notation (for SLIP and PPP)} {IP-адрес партнера в точечной десятичной нотации (для SLIP и PPP)}
+{Host table} {Таблица компьютеров}
+{Number of entries} {Число элементов}
+{Maximum number of the table entries} {Максимальное число элементов в таблице}
+{Number of aliases} {Число псевдонимов}
+{Maximum number of aliases per host} {Максимальное число псевдонимов у одного компьютера}
+{Number of IP addresses} {Число IP адресов}
+{Maximum number of IP addresses per host} {Максимальное число IP-адресов у одного компьютера}
+{Name length} {Длина имени}
+{Maximum length of host name} {Максимальная длина имени компьютера}
+{Address length} {Длина адреса}
+{Maximum length of address} {Максимальная длина адреса}
+{Host list} {Список компьютеров}
+{Host name} {Имя компьютера}
+{SLIP protocol} {Протокол SLIP}
+{Serial device name} {Имя последовательного устройства}
+{PPP protocol} {Протокол PPP}
+{Network buffers} {Сетевые буфера}
+{Init num of mbufs} {Начальное число m-буферов}
+{Numbers of mbufs created at system initialization} {Число m-буферов, создаваемых при инициализации системы}
+{Init num of clusters} {Начальное число кластеров}
+{Numbers of clusters created at system initialization} {Число кластеров, создаваемых при инициализации системы}
+{Num of mbufs add} {Добавляемое число m-буферов}
+{Numbers of mbufs to be added in the case of lack of mbufs} {Количество m-буферов, которое будет дополнительно выделено в случае их исчерпания}
+{Num of clusters add} {Добавляемое число кластеров}
+{Numbers of clusters to be added in the case of lack of clusters} {Количество кластеров, которое будет дополнительно выделено в случае их исчерпания}
+{Max num of mbufs} {Максимальное число m-буферов}
+{Maximum number of mbufs} {Максимальное число m-буферов}
+{Max num of clusters} {Максимальное число кластеров}
+{Maximum number of clusters} {Максимальное число кластеров}
+{File systems} {Файловые системы}
+{Mount VFAT} {Файловая система VFAT}
+{Disk check options} {Параметры проверки диска}
+{Output mode} {Режим вывода}
+{Correction mode} {Режим исправления}
+{Save bad chains} {Сохранять некорректные цепочки}
+{Save bad chains to the 'BAD' directory} {Сохранять некорректные цепочки в каталоге 'BAD'}
+{Check file lengths} {Проверять длины файлов}
+{Check if stated file length is greater then actual} {Проверять, не превышает ли указанная длина файла фактическую}
+{Synchronize FAT tables} {Согласовать таблицы FAT}
+{Make FAT tables equal after check} {Дублировать изменения во всех таблицах FAT}
+{Mount options} {Параметры установки VFAT}
+{Mount the VFAT file system} {Установка файловой системы VFAT}
+{Mount point} {Точка установки}
+{Catalogue name where file system will be mounted} {Имя каталога, где должна быть установлена файловая система}
+{Block device name} {Имя блочного устройства}
+{Mount CD-ISO9660} {Файловая система CD-ISO9660}
+{Mount TAR} {Файловая система TAR}
+{Mount the TAR file system} {Установить файловую систему TAR}
+{Memory address} {Адрес памяти}
+{Address of memory area containing tared files} {Адрес области памяти, содержащей tar-файл}
+{Memory size} {Размер}
+{Size of memory area containing tared files} {Размер области памяти, содержащей tar-файл}
+{Mount TAR FILES} {Tar файлы, как файловая система TAR}
+{Tar Filename} {Имя tar файлов}
+{Mount NFS} {Файловая система NFS}
+{Mount the NFS file system} {Установить файловую систему NFS}
+{Check before mount} {Проверять на корректность перед установкой}
+{Host аddress} {Адрес компьютера}
+{Server address} {Адрес сервера}
+{NFS server address (IP address in dotted decimal notation or name from the host table)} {Адрес NFS-сервера (IP-адрес в точечной десятичной нотации или имя из таблицы компьютеров)}
+{Export name} {Имя каталога на сервере}
+{Catalogue name on the NFS server} {Имя каталога на NFS сервере (export name)}
+{Mount FTP} {Файловая система FTP}
+{Mount the FTP file system} {Установить файловую систему FTP}
+{Parameters} {Параметры}
+{Parameter string to log in FTP server} {Строка параметров для подключения (login) к FTP серверу}
+{Multiprocessing} {Многопроцессорные системы}
+{Include shared mem objects} {Объекты на общей памяти}
+{Include shared memory object support} {Подключение средств поддержки объектов общей памяти (семафоров, очередей сообщений и словаря)}
+{Master CPU seq num} {Номер ведущего процессора}
+{Sequence number of the master CPU board} {Номер ведущего процессора, ответственного за инициализацию общей памяти}
+{Num of CPU boards} {Число процессоров}
+{Quantity of the CPU boards} {Число процессоров (номер последнего плюс 1, если нумерация начинается с 0)}
+{Shared mem obj size} {Объем общей памяти}
+{Size of area allocated for shared memory objects} {Объем общей памяти на плате, который будет использоваться объектами на общей памяти (включая пул памяти)}
+{Number of threads} {Число потоков управления}
+{Maximum number of threads using shared memory objects} {Максимальное число потоков, имеющих доступ к объектам общей памяти}
+{Maximum number of shared memory semaphores} {Максимальное число семафоров на общей памяти}
+{Maximum number of shared memory message queues} {Максимальное число очередей сообщений в общей памяти}
+{Number of dic entries} {Число элементов в словаре}
+{Maximum number of dictionary entries} {Максимальное число элементов в словаре объектов общей памяти}
+{Individual mem pool} {Отдельный пул}
+{Create individual shared memory pool for this board} {Создать отдельный пул общей памяти на этой плате}
+{Number of lock tries} {Число попыток}
+{MIT sh. memory ext.} {Использование общей памяти X протоколом}
+{Include support of MIT shared memory extension} {Использование общей памяти для передачи данных между X клиентом и сервером (MIT Shared Memory Extension)}
+{Maximum number of spin lock tries} {Максимальное число попыток захватить спин}
+{Use ANSI/Vita VME Network} {ANSI/Vita эмулятор Ethernet}
+{Include Ethernet emulator on VME conforming ANSI/VITA} {Использовать эмулятор Ethernet, соответствующий стандарту ANSI/VITA}
+{Ethernet emulation on VME} {Эмуляция Ethernet на VME}
+{Include Ethernet emulation on VME} {Подключение эмулятора Ethernet (сети) на VME}
+{Implementation} {Реализация}
+{Implementation of Ethernet emulation on VME} {Реализация эмулятора Ethernet}
+{Shared memory size} {Объем общей памяти}
+{Shared memory size to be allocated for emulator} {Размер общей памяти, используемой эмулятором}
+{Miscellaneous} {Дополнительные возможности}
+{Environment variable} {Переменные окружения}
+{Assignment of values to environment variables (name=value separated by space(s))} {Определение значений переменных окружения (в виде имя=значение через пробел)}
+{Application} {Подключение прикладных программ}
+{Display logo} {Вывод заставки}
+{Display logo while booting} {Вывод заставки на консоль во время загрузки}
+{Start demo thread} {Демонстрационная программа}
+{Include and start demo thread} {Запустить демонстрационную программу}
+{Start user thread} {Прикладная программа}
+{User thread entry} {Точка входа}
+{Name of the user thread function} {Имя точки входа в прикладную программу}
+{User thread priority} {Приоритет корневого потока}
+{MAKEFILE_DEFINITIONS} {Формирование make-файла}
+{make file definitions} {Определения файлов и флагов для создания образа системы}
+{Include files} {Заголовочные файлы}
+{Source files} {Исходные файлы}
+{Object files} {Объектные файлы}
+{Libraries} {Библиотеки}
+{Extern symbols} {Внешние ссылки}
+{CC options} {Параметры C компилятора}
+{List of directories to search include files} {Каталоги для поиска заголовочных файлов (h-файлов)}
+{Source file list} {Список исходных файлов, включаемых в прикладную программу}
+{Object file list} {Список объектных файлов, включаемых в прикладную программу}
+{Library list} {Список используемых библиотек}
+{Extern symbol list} {Список дополнительных внешних ссылок}
+{Additional C compiler parameters} {Список дополнительных параметров C компилятора}
+{Debug} {Средства отладки}
+{Exceptions processing} {Обработка исключений}
+{Exceptions processing mode} {Способ обработки исключительных ситуаций}
+{Include symtable} {Таблица символов}
+{Include symbol table} {Подключение таблицы имен (символов)}
+{Include loader} {Динамический загрузчик}
+{Include dynamic loader} {Подключение динамического загрузчика}
+{Include shell} {Командный интерпретатор}
+{Include shell thread} {Подключение командного интерпретатора}
+{Shell priority} {Приоритет}
+{Priority of the shell thread} {Приоритет командного интерпретатора}
+{Include loc debugger} {Локальный отладчик}
+{Include local debugger} {Подключение локального отладчика}
+{Include rem debugger} {Удаленный отладчик}
+{Include remote debugger} {Подключение удаленного отладчика}
+{Object info commands} {Команды вывода информации об объектах ОС}
+{Include shell commands providing OS object information} {Подключение команд вывода информации о состоянии объектов ОС}
+{Memory info commands} {Команды вывода содержимого памяти}
+{Network info commands} {Команды вывода информации о сети}
+{Include shell commands providing network information} {Подключение команд вывода информации о сети}
+{Include shell commands providing memory information} {Подключение команд вывода и изменения содержимого памяти}
+{Include error msg} {Таблица сообщений об ошибках}
+{Include error messages} {Подключение таблицы сообщений об ошибках}
+{Error msg type} {Вид сообщений об ошибках}
+{Error messages type} {Вид сообщений об ошибках (SHORT - краткие, LONG - полные)}
+{Check memory pool} {Проверять корректность пула памяти}
+{Memory error processing} {Реакция на ошибку}
+{Thread suspend} {Приостановка потока}
+{Suspend thread in the case of allocation/deallocation error} {Приостанавливать поток, получивший ошибку}
+{Error logging} {Регистрация ошибки}
+{Log memory allocation/deallocation error} {Запись сообщения об ошибке в системный журнал}
+{Output init msg} {Сообщения об инициализации}
+{Output system initializing messages} {Вывод сообщений об инициализации системы}
+{Debug library} {Библиотека отладки}
+{Trace} {Протоколирование}
+{Trace buffer size} {Размер буфера}
+{Minimum size in bytes of trace stream (stream-min-size attribute)} {Минимальный размер буфера протокола в байтах (атрибут stream-min-size)}
+{Stream-full-policy} {Действия при переполнении буфера}
+{The policy followed when the trace stream is full (stream-full-policy attribute)} {Действия при переполнении буфера(атрибут stream-full-policy)}
+{Create trace log} {Создание файла протокола}
+{Associate a trace log with the trace stream} {Записывать протокол в файл}
+{Trace name} {Имя протокола}
+{Name of the trace} {Имя протокола}
+{Trace log name} {Имя файла}
+{Name of the trace log file} {Имя файла протокола}
+{Log size} {Размер файла}
+{The maximum size in bytes of the trace log (log-max-size attribute)} {Максимальный размер файла протокола в байтах (атрибут log-max-size)}
+{Log-full-policy} {Действия при переполнении файла}
+{The policy followed when the trace log is full (log-full-policy attribute)} {Действия при переполнении файла протокола (атрибут log-full-policy)}
+{Trace thread priority} {Приоритет потока обслуживания трассы }
+{Priority of the thread writing trace stream to trace log} {Приоритет потока traceSender, копирующего информацию из буфера протокола в файл протокола}
+{Number of trace log files} {Максимальный номер файла}
+{Number of trace files (0-unlimited)} {Максимальный номер файла трассы, который используется при автоматическом именовании файлов протокола (0 - неограничено)}
+{User data size} {Размер пользовательских данных}
+{The maximum size for the user data (max-data-size attribute)} {Максимальный размер пользовательских данных в байтах (атрибут max-data-size)}
+{Save trace of previous session} {Сохранить предыдущую трассу}
+{Write to the log last portion of trace stream if it was not written before} {Записать в файл протокола последнюю порцию протокола предыдущего сеанса (если это возможно и не было сделано ранее)}
+{Event filter} {Фильтр событий}
+{Interrupts} {Прерывания}
+{Interrupt entry} {Вход в прерывание}
+{Interrupt exit} {Выход из прерывания}
+{Exceptions} {Исключительные ситуации}
+{Thread switch} {Переключение потоков}
+{System idle} {Ожидание (простой)}
+{Dispatch} {Вызов планировщика}
+{Thread status change} {Изменение состояния потоков}
+{Thread create} {Создание потока}
+{Thread exit} {Завершение потока}
+{Thread is ready} {Переход в работоспособное состояние}
+{Thread is not ready} {Переход в неработоспособное состояние}
+{Signal generation and delivery} {Порождение и доставка сигналов}
+{Signal generation} {Порождение сигнала}
+{Signal delivery} {Доставка сигнала}
+{Signal-catching function call} {Вызов функции обработки сигнала}
+{Exit from signal-catching function} {Выход из функции обработки сигнала}
+{Thread cancellation request} {Получение запроса на удаление потока}
+{Time quantum expired} {Исчерпание кванта времени}
+{Wait for a signal} {Ожидание сигналов}
+{Memory allocation} {Распределение памяти}
+{Mem alloc} {Выделение памяти}
+{Mem free} {Освобождение памяти}
+{Thread control functions} {Функции управления потоками}
+{Return} {Возврат управления}
+{Semaphore management functions} {Функции управления семафорами}
+{Delayed post} {Отложенный sem_post}
+{Mutex management functions} {Функции управления мьютексами}
+{Conditional variable management functions} {Функции управления условными переменными}
+{Message queue management functions} {Функции управления очередями сообщений}
+{Timer management functions} {Часы и таймеры}
+{IO management functions} {Операции ввода/вывода}
+{Memory allocation(MP)} {Распределение общей памяти}
+{Semaphore management functions(MP)} {Функции управления семафорами на общей памяти}
+{Message queue management functions(MP)} {Функции управления очередями сообщений на общей памяти}
+{OS init} {Инициализация ОС}
+{User events} {События прикладной программы}
+{Variables} {Переменные}
+{Number of variables} {Число переменных}
+{Maximum number of traced variables} {Максимальное число переменных}
+{Name/Address} {Имя/адрес}
+{Type} {Тип}
+{Size} {Размер}
+{OS Objects} {Объекты ОС}
+{Number of OS objects} {Число объектов ОС}
+{Maximum number of traced OS objects} {Максимальное число объектов ОС}
+{Threads} {Потоки управления}
+{Threads to be traced} {Протоколируемые потоки управления}
+{Trace functions} {Функции протоколирования}
+{User trace function} {Функция протоколирования прикладной программы}
+{Check of system object} {Проверка системного объекта}
+{Check of class objects} {Проверка списка объектов класса}
+{Check of pool memory} {Проверка пула памяти}
+{Call stack} {Вывод стека вызовов}
+{Object class} {Класс объекта}
+{Object name} {Имя объекта}
+{Pool name} {Имя пула памяти}
+{User trace function} {Функция пользователя}
+{Function name} {Функция}
+{Loader} {Загрузчик}
+{Boot dialog} {Диалог во время загрузки}
+{Provide dialog to input paramerers while loading} {Разрешить ввод параметров во время загрузки}
+{Boot counting} {Отсчет при загрузке}
+{Delay (count-down) when operator can start dialog} {Пауза (обратный отсчет), во время которой оператор может начать диалог}
+{Boot file} {Имя файла}
+{Name of boot file} {Имя файла, содержащего образ операционной системы}
+{Config file} {Файл параметров загрузки}
+{Name of config file} {Положение файла, из которого могут браться параметры загрузки}
+{Load address} {Адрес загрузки}
+{Address} {Адрес}
+{Name} {Имя}
+{Data type} {Тип данных}
+{Data size} {Размер данных}
+{Type of data generated by the function} {Тип данных, протоколируемых функцией}
+{Size of data generated by the function} {Размер данных, протоколируемых функцией}
+{X Window} {}
+{X client directory} {Каталог X клиента}
+{Directory where X client is installed (base directory)} {Каталог, где установлен X клиент (базовый каталог)}
+{X server directory} {Каталог X сервера}
+{Directory where X server is installed (base directory)} {Каталог, где установлен X сервер (базовый каталог)}
+{X client} {X клиент}
+{Include X client} {Включить X клиент}
+{GBRV library} {Библиотека ГБРВ}
+{Include  GBRV library} {Включить библиотеку ГБРВ}
+{BICRV library} {Библиотека БИКРВ}
+{Include  BICRV library} {Включить библиотеку БИКРВ}
+{Set DISPLAY variable} {Определить переменную DISPLAY}
+{Value of DISPLAY variable} {Значение переменной DISPLAY}
+{Server name or IP address and display number} {Имя или IP-адрес сервера и номер дисплея}
+{X server} {X сервер}
+{Include X server} {Включить X сервер}
+{Start X server} {Запустить X сервер}
+{Start thread executing X server} {Запустить поток, в контексте которого исполняется X сервер }
+{X server type} {Тип X сервера}
+{Graphic adapter type} {Тип графического адаптера}
+{Access control} {Управление доступом}
+{Enable host-based access control} {Включить средства управления доступом}
+{Include config in the image} {Включить файл конфигурации в образ}
+{Include X server config file in the OS image} {Включить конфигурационный файл сервера в образ ОС}
+{XF86Config file} {Файл XF86Config}
+{X server config file (path)name} {Маршрутное имя файла конфигурации X сервера }
+{X server out stream} {Выходной поток X сервера}
+{File name for server output messages (console by default)} {Имя файла для выходных сообщений сервера (по умолчанию консоль)}
+{X server log} {Протокол X сервера (log)}
+{Enable X server system log} {Включить протокол X сервера (log)}
+{Log file name} {Имя файла протокола}
+{X server system log file (path)name} {Маршрутное имя файла протокола X сервера}
+{The value for X server thread priority} {Приоритет потока Х сервера}
+{X server priority} {Приоритет Х-сервера}
+{Overload config param.} {Заместить значения в файле конфигурации}
+{Parameters below will overload config file parameters} {Ниже представленные параметры заместят значения из файла конфигурации Х сервера}
+{Prefix} {Префикс}
+{Prefix for RGB color database, font pathes & config file name} {Префикс для файлов с базой данных цветов, шрифтов и конфигурации}
+{RGB path} {Имя RGB файла}
+{Path name for the RGB color database} {Маршрутное имя файла с базой данных цветов}
+{Font pathes} {Пути к шрифтам}
+{Search path for fonts} {Список маршрутных имен к каталогам со шрифтами}
+{Depth} {Глубина цвета}
+{Color depth (may be 8, or 16, or 32)} {Глубина цвета может принимать значения 8, или 16, или 32 бита на пиксел}
+{Master addr} {Номер мастера}
+{Packet size} {Размер пакетов}
+{Probe startdelay(mcs)} {Стартовая задержка(мкс)}
+{Probe mininterval(mcs)} {Задержка между попытками(мкс)}
+{Probe maxcount} {Число попыток}
+{Probe backoff count} {Число неудачных попыток}
+{Probe maxinterval(mcs)} {Максимальное время попыток(мкс)}
+{Named object} {Именованный объект}
+{Virtual filesystem configuration} {Файловая система}
+{Number of vnodes} {Количество структур vnode}
+{Number of buffers} {Количество буферов}
+{Amount of buffer space} {Объем буферной памяти}
+{Maximum amount of memory allocated for buffer's data} {Максимальный размер памяти, выделяемой под буфера}
+{NFS read buffer size} {Размер буферов записи NFS}
+{NFS write buffer size} {Размер буферов чтения NFS}
+{System logger} {Системный журнал}
+{portmapd priority} {Приоритет portmapd}
+{Trace stream initialization} {Создание протокола}
+{Create an active trace stream during the system initilization} {Создать протокол при инициализации ОС}
+{Trace autostart} {Автоматический старт}
+{Start tracing after initilisation} {Запуск протоколирования после инициализации ОС}
+{Modes} {Режимы}
+{List of video modes to use} {Список используемых видеорежимов}
+{symtbl changes} {Изменения symtbl}
+{Maximum amount of memory allocated for buffers} {Максимальная память выделяемая под буфера}
+{Include loopback} {Интерфейс петля}
+{Include loopback support} {Подключение поддержки интерфейса петля (loopback)}
+{rdbFunction stack size} {Размер стека запускаемых потоков управления}
+{Syslog-daemon priority} {Приоритет syslog-демона}
+{Priority of the system logger thread} {Приоритет системного потока протоколирования}
+{Buffer size} {Размер буфера}
+{Syslog buffer size} {Размер буфера системного журнала}
+{Number of syslog buffers} {Число буферов системного журнала}
+{No message header} {Без заголовка}
+{The logged message will not include a message header} {Отключить формирование заголовка для всех выводимых сообщений}
+{Output message to} {Выводить сообщения в}
+{Stream where the message will be output} {Нужно указать, куда будут выводиться сообщения, выводимые в системный журнал}
+{Output emergency message to} {Выводить сообщения о тяжелых ошибках в}
+{Stream where the emergency message will be output} {Нужно указать, куда будут выводиться сообщения о тяжелых ошибках, выводимые в системный журнал}
+{File name} {Имя файла}
+{Erase flash memory} {Очистить флэш память}
+{Erase flash memory assigned for system log before using it} {Перед использованием стереть область флэш памяти, предназначенную для системного журнала}
+{Flash memory address} {Адрес флэш памяти}
+{Address of the flash memory area to be used} {Адрес области флэш памяти, выделенной под системный журнал}
+{Flash memory size} {Размер флэш памяти}
+{Size of flash memory area to be used} {Размер области флэш памяти, выделенной под системный журнал}
+{Move syslog data from flash-memory to} {Переместить сообщения из флэш памяти в}
+{File where syslog data from flash-memory will be moved to at the system initialization} {Переместить сообщения системного журнала из флэш памяти в указанный файл при старте системы}
+{Stream full policy} {При переполнении писать в начало}
+{Write syslog message to the beginning of the file} {Выводить сообщение системного журнала в начало буфера по его заполнении}
+{Move syslog data from persistent memory to} {Переместить сообщения из сохраняемой памяти в}
+{File where syslog data in persistent memory will be moved to at the system initialization} {Сообщения системного журнала из сохраняемой памяти при старте системы переместить в указанный файл}
+{Syslog user open function} {Пользовательская функция открытия}
+{Function to be called at file open} {Указанная функция будет вызвана при открытии системного журнала}
+{Syslog user output function} {Пользовательская функция вывода}
+{The function to be called to output messages} {Указанная функция будет вызваться для вывода сообщений в системный журнал}
+{Syslog user close function} {Пользовательская функция закрытия}
+{The function to be called to close system log} {Указанная функция будет вызвана при закрытии системного журнала}
+{LD options} {Параметры редактора связей (linker)}
+{Additional linker parameters} {}
+{Include periodic threads} {}
+{Include periodic threads support} {}
+{Arg1-name} {1 аргумент - имя}
+{Arg2-name} {2 аргумент - имя}
+{Name of variable} {Имя переменной}
+{Name/address} {Имя или адрес}
+{Name (else address) of variable} {Переменная задается именем, иначе адресом}
+{Type of variable} {Тип переменной}
+{Size in bytes (only for MEM,STR)} {Размер в байтах (только для типа MEM,STR)}
+{Object definition type} {Способ определения объекта}
+{Selection between named object or object by name/address} {Объект именованный, иначе задается именем.адресом пер-ной}
+{Name or address of variable} {Имя или адрес переменной}
+{Argument definition with name} {Аргументом является имя переменной}
+{Argument name or address} {Имя аргумента или адрес}
+{Include CD-ISO9660} {Файловая система ISO9660}
+{Include CD-ISO9660 file system support} {Подключение файловой системы ISO9660}
+{Inherit booter parameters} {Наследовать параметры загрузчика}
+{Gateway table} {Таблица маршрутизации}
+{Dst} {Цель}
+{Gw} {Маршрут}
+{Mask} {Маска}
+{IP mask in dotted decimal notation} {IP-маска в точечной десятичной нотации}
+{Static Routes table} {Таблица MAC-адресов}
+{Hardware address} {MAC адрес}
+{Read only} {Только чтение}
+{FAT synchronous} {Синхронизировать}
+{FAT UID} {}
+{FAT GID} {}
+{Permissions} {Права доступа}
+{Mount the CD9660 file system} {Монтировать файловую систему CD9660}
+{Shell stack size} {Размер стека}
+{Stack size of the shell thread} {Размер стека потока Shell}
+{ctype.h} {}
+{math.h} {}
+{stdio.h} {}
+{stdlib.h} {}
+{string.h} {}
+{time.h} {}
+{No Check} {Не проверять}
+{UID} {}
+{GID} {}
+{NFS_RSIZE} {}
+{NFS_WSIZE} {}
+{VITA} {}
+{rdbThread priority} {Приоритет}
+{rdbFunction priority} {Приоритет запускаемых потоков управления}
+{sched_yield()} {}
+{Thread suspend} {Приостановка потока}
+{Thread resume} {Возобновление работы потока}
+{Clear memory} {Очистка памяти}
+{Clear memory after memory deallocation} {Очистка выделяемого блока памяти}
+{pause()} {}
+{sigsuspend()} {}
+{sigtimedwait()} {}
+{sigwait()} {}
+{sigwaitinfo()} {}
+{memPoolCreate()} {}
+{memPoolAdd()} {}
+{memPoolDelete()} {}
+{pthread_cancel()} {}
+{pthread_join()} {}
+{pthread_sigmask()} {}
+{pthread_setschedparam()} {}
+{pthread_setcancelstate()} {}
+{pthread_setcanceltype()} {}
+{pthread_detach()} {}
+{pthread_mutex_destroy()} {}
+{pthread_mutex_init()} {}
+{pthread_mutex_setprioceiling()} {}
+{pthread_mutex_getprioceiling()} {}
+{pthread_mutex_lock()} {}
+{pthread_mutex_trylock()} {}
+{pthread_mutex_timedlock()} {}
+{pthread_mutex_unlock} {}
+{pthread_cond_broadcast()} {}
+{pthread_cond_destroy()} {}
+{pthread_cond_init()} {}
+{pthread_cond_signal()} {}
+{pthread_cond_timedwait()} {}
+{pthread_cond_wait()} {}
+{mq_close()} {}
+{mq_notify()} {}
+{mq_open()} {}
+{mq_receive()} {}
+{mq_timedreceive()} {}
+{mq_send()} {}
+{mq_timedsend()} {}
+{mq_setattr()} {}
+{mq_getattr()} {}
+{mq_unlink()} {}
+{sleep()} {}
+{nanosleep()} {}
+{timerExpire()} {}
+{timer_create()} {}
+{timer_delete()} {}
+{timer_getoverrun()} {}
+{timer_settime()} {}
+{clock_settime()} {}
+{mkfifo()} {}
+{lseek()} {}
+{open(),creat()} {}
+{dup()} {}
+{dup2()} {}
+{pipe()} {}
+{read()} {}
+{write()} {}
+{fdatasync()} {}
+{aio_read()} {}
+{aio_write()} {}
+{aio_fsync()} {}
+{aio_cancel()} {}
+{aio_error()} {}
+{aio_return()} {}
+{aio_suspend()} {}
+{sem_trywait() MP} {}
+{sem_timedwait MP} {}
+{sem_wait() MP} {}
+{sem_post() MP} {}
+{sem_init() MP} {}
+{sem_open() MP} {}
+{sem_getvalue() MP} {}
+{mq_close() MP} {}
+{mq_open() MP} {}
+{mq_receive() MP} {}
+{mq_timedreceive() MP} {}
+{mq_send() MP} {}
+{mq_timedsend() MP} {}
+{mq_setattr() MP} {}
+{mq_getattr() MP} {}
+{Type of object} {Тип объекта}
+{traceCheckObj} {}
+{traceCheckClass} {}
+{traceCheckPool} {}
+{traceCallStack} {}
+{IP Address} {IP-адрес}
+{Mac Address} {MAC-адрес}
+{Maximum Transmission Unit} {Максимальный размер блока (в байтах)}
+{Check FAT volumes} {Выполнить проверку FAT}
+{Check FAT volumes consistency before mount} {Перед монтированием тома выполнить проверку FAT}
+{sem_getvalue()} {}
+{sem_open()} {}
+{sem_close()} {}
+{sem_unlink()} {}
+{sem_init()} {}
+{sem_destroy()} {}
+{sem_post()} {}
+{sem_wait()} {}
+{sem_timedwait()} {}
+{sem_trywait()} {}
+{close()} {}
+{GTK} {БПГИ}
+{GTK directory} {Каталог БПГИ}
+{Include GTK library} {Включить БПГИ}
+{Path to GTK directory} {Путь к каталогу БПГИ}
+{Locale directory} {Каталог региональных настроек}
+{Path to GTK localization directory on target file system} {Путь к каталогу региональных настроек БПГИ в файловой системе целевой ЭВМ}
+{XLocale directory} {Каталог XLocale}
+{Path to Xlib localization directory on target file system} {Путь к каталогу региональных настроек XLIB в файловой системе целевой ЭВМ}
+{Shell script} {Командный файл}
+{Shell startup script} {Стартовый командный файл}
+{NFS_FORCE} {}
+{Wait for mounting forever} {Бесконечное ожидание монтирования}
+{Syslog function} {Переопределение функции системного журнала}
+{Syslog user function} {Имя функции}
+{Syslog output function} {Имя пользовательской функции вывода системного журнала}
+{Arg1} {}
+{Arg2} {}
+{Self-test facilities} {Средства проверки объектов ОС}
+{Enable self-test facilities} {Включить средства проверки объектов ОС}
+{Show buffer state} {}
+{Persistent memory} {Сохраняемая память}
+{Memory allocation method} {Метод выделения памяти}
+{Persistent memory address} {Адрес сохраняемой памяти}
+{Persistent memory areas} {Таблица областей сохраняемой памяти}
+{Save area} {Область сохранения}
+{OS legacy size} {Размер завещания ОС}
+{User legacy size} {Размер завещания пользователя}
+{Save area allocate} {Спосов размещения области сохранения}
+{Trace stream information} {}
+{Include trace stream information software} {}
+{Save area address} {}
+{Number of trace logs} {Число файлов трассы}
+{Number of trace logs (0-unlimited)} {Число файлов трассы (0-не ограничено)}
+{X server config directory} {Каталог с параметрами Х сервера}
+{Directory where X server config is installed} {Каталог, где заданы параметры Х сервера}
+{Report exceptions} {Что выводить при особой ситуации}
+{Disassemble source code} {Дизассемблирование окрестности точки ошибки}
+{Report disassemble source code on exceptions} {Дизассемблировать исходный код в окрестности команды, вызвавшей особую ситуацию}
+{Stack backtrace} {Стек вызовов функций}
+{Report stack backtrace on exceptions} {При возникновении особой ситуации выводить стек вызовов функций}
+{Threads list} {Список потоков}
+{Report threads list on exceptions} {При возникновении особой ситуации выводить список потоков и информацию об аварийном потоке}
+{System objects self-test} {Автоматическое тестирование системных объектов}
+{Enable system objects self-test} {Включить средства автоматического естирования системных объектов}
+{Floating-point registers} {Плавающие регистры}
+{Report floating-point registers on exceptions} {В особых случаях выводить содержимое плавающих регистров}
+{Number of service blocks} {Число служебных блоков}
+{Number of service blocks allocated for trace objects description} {Число служебных блоков трассы, зарезервированных под описания объектов ОС}
+{Priority of the thread writing trace stream to trace log} {Приоритет потока, копирующего информацию из буфера протокола в файл протокола}
+{Trace thread normal priority} {Приоритет сервисного потока}
+{Trace thread high priority} {Приоритет сервисного потока при аварии}
+{Priority of the thread writing trace stream to trace log} {Приоритет сервисного потока копирующего трассу в log-файл}
+{Exception tracing} {Протоколирование исключений}
+{Advanced exception tracing} {Информация, протоколируемая при возникновениии исключительных стуаций}
+{Exception policy} {Реакция на исключения}
+{Exception processing} {Влияние исключений на протоколирование}
+{} {}
+{MTU} {}
+{Include channels} {Каналы передачи данных}
+{Include channels support} {Подключение поддержки каналов передачи данных}
+{Thread priority} {Приоритет потока}
+{MP-channels thread priority} {Приоритет потока, обслуживающего каналы передачи данных между платами}
+{Number of channels} {Число каналов}
+{Number of MP-channels} {Максимальное число (логических) каналов для передачи данных между двумя фиксированными процессорными платами}
+{VME} {}
+{Include VME channel support} {Подключение каналов передачи данных по шине VME}
+{Include RapidIO channel support} {Подключение каналов передачи данных по RapidIO}
+{RIO} {}
+{NET} {}
+{Include Net channel support} {Подключение каналов передачи данных по сети}
+{Ignore etimedout while sending multimodule message} {Игнорировать ошибку etimedout при отправлении сообщений по межмодульным каналам}
+{mpchanThread periodic} {Периодический mpchanThread}
+{mpchanThread period} {Период потока mpchanThread в нс}
+{Period (nsec)} {Период (нс)}
+{Queuing ports} {Порты с очередью сообщений}
+{Include queuing port support} {Подключение средств поддержки портов с очередью сообщений}
+{Number of queuing port list} {Число списков портов с очередью сообщений}
+{Maximum number of queuing port list} {Максимальное число списков портов с очередью сообщений}
+{Number of } {Число портов}
+{Maximum number of } {Максимальное количество портов}
+{Include queuing ports support for privileged system partition} {}
+{Port name} {Имя порта}
+{Direction} {Направление передачи данных}
+{Transfer direction} {Укажите, является ли порт отправителем (SOURCE) или получателем (DESTINATION)}
+{Buffer number} {Число буферов}
+{Maximum number of messages} {Максимальное количество сообщений}
+{Buffer size} {Размер буфера}
+{Maximum size of messages (bytes)} {Максимальный размер сообщения (в байтах)}
+{Sampling ports} {Порты без очереди сообщений}
+{Include sampling port support} {Подключение средств поддержки портов без очереди сообщений}
+{Include sampling ports support for privileged system partition} {}
+{Refresh period} {Период обновления}
+{Refresh period (seconds)} {Период обновления (в секундах)}
+{Include SAP ports} {}
+{Include SAP port support} {}
+{Number of SAP ports} {}
+{Maximum number of SAP ports} {}
+{Connection} {Таблица связей}
+{Channel id} {Идентификатор канала}
+{Channel name} {Имя канала}
+{Cpu partner} {Номер модуля-партнёра}
+{Logical link} {Номер логической связи}
+{debug-daemon priority} {Приоритет debug-демона}
+{Priority of the debug daemon thread} {Приоритет потока (debug-демон), обслуживающего локальный отдадчик}
+{Output message to console, as well} {Дублировать вывод сообщений на консоль}
+{Write syslog messages to console, as well} {Также выводить сообщения системного журнала на консоль}
+{Loop on overflow} {При переполнении писать в начало}
+{Wrap to beginning of the area on overflow} {После заполнения всей области сохраняемой памяти пролжить вывод сообщений в начало области}
+{Address flash memory area allocated for system log} {Адрес области флэш памяти, выделенной под системный журнал}
+{Size of flash memory area allocated for system log} {}
+{Move syslog data to} {Переместить сообщения журнала в}
+{Move system log messages from memory (persistent or flash) to specified file at the system startup} {Перед стартом системы сообщения журнала переместить из памяти (сохраняемой или флэш) в указанный файл}
+{File write policy} {Как выгружать сообщения в файл}
+{Data can be written to the begining or the end of file or can be looped} {Сообщения могут перемещаться в начало файла, в конец, или в файл - как в циклический буфер}
+{Circuler buffer file size} {Размер файла}
+{The size of the circuler buffer file to which data should be written} {Размер файла, используемого для выгрузки сообщений как циклический буфер}
+{Name of persistent memory area} {Имя области сохраняемой памяти}
+{Name of persistent memory area to be used for system log} {Имя области сохраняемой памяти, которая будет использоваться для вывода сообщений системного журнала}
+{Check OS objects} {Проверить объекты ОС}
+{Check OS objects on error} {В случае ошибки проверить корректность объектов ОС}
+{User function} {Пользовательская функция}
+{User function name} {Имя функции пользователя}
+{Function to be called when an error occurs} {Функция будет вызвана при возникновении ошибки}
+{Size of fp area} {Размер фрейма}
+{Size of frame to be printed} {Размер области, адресуемой регистром FP/FP}
+{Partition name} {}
+{Partition size} {}
+{Channel tracing} {Трассировка каналов}
+{Include channel tracing} {Подключить средства трассировки каналов}
+{Id} {Идентификатор}
+{Channel identificator} {Идентификатор канала}
+{Count of bytes which should be written} {Количество первых байт сообщений, который будут записаны}
+{Header} {Заголовок}
+{Write header of message} {Записывать ли заголовок сообщения}
+{traceSetOptions} {}
+{Include traceSetOptions.c} {Использовать файл traceSetOptions.c}
+{Configuration load} {Загрузка конфигурации}
+{Include configuration loading} {Подключить средства загрузки конфигурации}
+{Configuration file name} {Имя конфигурационного файла}
+{Configuration mask events file name} {Имя файла конфигурации маски протоколирования событий}
+{Configuration mask variable file name} {Имя файла конфигурации маски протоколирования переменных}
+{Configuration channel file name} {Имя файла конфигурации каналов}
+{Include sysShell-daemon} {Выполнение команд оболочки}
+{sysShell-daemon priority} {Приоритет sysShell-демона}
+{Priority of the sysShell thread} {Приоритет потока (sysShell-демон), обслуживающего выполнение команд оболочки}
+{Buffer size for commands} {Размер буфера для команд}
+{Number of buffers(sysShell)} {Количество буферов}
+{Number of buffers for commands} {Количество буферов для команд}
+{Redirect output to syslog} {Перенаправлять вывод в системный журнал}
+{Redirect output of commands to syslog} {Перенаправлять вывод команд в системный журнал}
+{Print the command} {Выводить команду}
+{Print the command to be executed} {Выводить команду перед её исполнением}
+{Flash memory} {Флэш память}
+{Flash memory areas} {Области флэш памяти}
+{Name of flash memory area} {Имя области флэш памяти}
+{Offset} {Смещение}
+{Offset of flash memory area relative to base address} {Смещение начала области флэш памяти}
+{Number of sectors} {Число секторов}
+{Number of flash memory sectors in area} {Размер области флэш памяти(число секторов}
+{Name of flash memory area} {Имя области флэш памяти}
+{Name of flash memory area tobe used for system log} {Укажите имя области флэш для системного журнала}
+{Floating point register} {}
+{Log contents of floating point register at exception time} {}

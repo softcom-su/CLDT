@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<contents>
+  <name>CRC401</name>
+  <expected>
+    <argument>
+      <type>unsigned short</type>
+      <value>65521</value>
+    </argument>
+  </expected>
+  <parameters>
+    <argument>
+      <type>unsigned short*</type>
+      <value>(unsigned short[5]) {1, 2, 3, 4, 5}</value>
+    </argument>
+    <argument>
+      <type>unsigned</type>
+      <value>5</value>
+    </argument>
+  </parameters>
+</contents>

@@ -1,0 +1,25 @@
+
+BCVSCPU	=1890VM6
+BCVSBASE=/mnt/c/Users/victo/Desktop/bcvs/$(BCVSCPU)
+
+BCVS_REVISION	=1
+BCVS_BUILD	=1
+BCVS_INCLUDES	= $(BCVSBASE)/inc
+BCVS_SOURCES	=
+BCVS_OBJECTS	= $(BCVSBASE)/libbcvs$(BCVSCPU).o
+BCVS_LIBRARIES	=
+
+BSP		:= cprio64
+CPU		:= R4000
+ARCH		= mips64
+CPU_TUNE	:= K64SMP
+
+include /mnt/c/Users/victo/Desktop/bcvs/tgtconf.def   # в tgtconf.def определены pref и OSBASE
+#pref		:= bt23f-
+#OSBASE	:= /usr/local/share/rtos/2.73.004/mips64
+
+###---ROM_TEXT_ADRS	:= 0x98300000		# flash resident image .text base
+#RAM_COMP_ADRS	:= 0xa0e00000		# uncompress image .text base
+###---include maketarget.bsp
+CC_DEFINES += -DK64SMP -DK64RIO -DCPRIO64 -fno-builtin-sqrt \
+        -DIMAGE_DATE="\"$(shell LC_TIME="en" date)\""

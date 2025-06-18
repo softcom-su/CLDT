@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.debug.ui.launchShortcuts">
+      <shortcut
+            class="su.softcom.cldt.internal.debug.ui.HostLaunchShortcut"
+            icon="icons/view16/pc.png"
+            id="su.softcom.cldt.debug.ui.launch"
+            label="Локальный запуск"
+            modes="run">
+         <contextualLaunch>
+            <enablement>
+               <iterate>
+               </iterate>
+               <with
+                     variable="selection">
+                  <count
+                        value="1">
+                  </count>
+                  <iterate>
+                     <or>
+                        <instanceof
+                              value="org.eclipse.core.resources.IProject">
+                        </instanceof>
+                        <instanceof
+                              value="su.softcom.cldt.core.cmake.Target">
+                        </instanceof>
+                     </or>
+                  </iterate>
+               </with>
+            </enablement>
+         </contextualLaunch>
+      </shortcut>
+   </extension>
+   <extension
+         point="org.eclipse.debug.ui.launchConfigurationTypeImages">
+      <launchConfigurationTypeImage
+            configTypeID="su.softcom.cldt.debug.core.launchConfigurationTypeGDB"
+            icon="icons/view16/pc.png"
+            id="su.softcom.cldt.debug.ui.launchConfigurationTypeImageGDB">
+      </launchConfigurationTypeImage>
+   </extension>
+   <extension
+         point="org.eclipse.debug.ui.launchConfigurationTabGroups">
+      <launchConfigurationTabGroup
+            class="su.softcom.cldt.internal.debug.ui.AbstractCppTabGroup"
+            id="su.softcom.cldt.debug.ui.launchConfigurationTabGroupGDB"
+            type="su.softcom.cldt.debug.core.launchConfigurationTypeGDB">
+      </launchConfigurationTabGroup>
+   </extension>
+   <extension
+         point="org.eclipse.debug.ui.consoleColorProviders">
+      <consoleColorProvider
+            class="su.softcom.cldt.internal.debug.ui.console.LLDBColorProvider"
+            id="su.softcom.cldt.debug.ui.console.LLDBColorProvider"
+            processType="LLDBProcess">
+      </consoleColorProvider>
+   </extension>
+   <extension
+         point="org.eclipse.debug.ui.consoleLineTrackers">
+      <consoleLineTracker
+            class="su.softcom.cldt.internal.debug.ui.console.LLDBLineTracker"
+            id="su.softcom.cldt.debug.ui.LLDBLineTracker"
+            processType="LLDBProcess">
+      </consoleLineTracker>
+   </extension>
+   
+	 <extension point="org.eclipse.ui.menus">
+	   <menuContribution
+          allPopups="true"
+          id="example.RulerPopupActions"
+          locationURI="popup:#TextRulerContext?after=additions">
+        <command
+              commandId="su.softcom.cldt.debug.ui.toggleBreakpointCommand"
+              label="Toggle Software Breakpoint"
+              style="push">
+        </command>
+	   </menuContribution>
+    <menuContribution
+          allPopups="true"
+          locationURI="menu:#TextRulerContext?after=additions">
+    </menuContribution>
+   </extension>
+   <extension point="org.eclipse.ui.editorActions">
+    <editorContribution
+          targetID="org.eclipse.ui.genericeditor.GenericEditor"
+          id="su.softcom.cldt.debug.ui.rulerActions">
+       <action
+             actionID="RulerDoubleClick"
+             class="su.softcom.cldt.internal.debug.ui.breakpoints.RulerToggleAction"
+             id="su.softcom.cldt.core.doubleClickBreakpointAction"
+             label="Not Used"
+             state="false"/>
+    </editorContribution>
+ </extension> 
+ <extension id="su.softcom.cldt.debug.core.CommandLineBreakpointMarker" point="org.eclipse.core.resources.markers">
+	<persistent value="true"> </persistent>
+ 	<super type="org.eclipse.debug.core.lineBreakpointMarker"> </super>
+ </extension>
+ <extension point="org.eclipse.debug.core.breakpoints">
+	<breakpoint class="su.softcom.cldt.debug.core.CommandLineBreakpoint" id="su.softcom.cldt.debug.core.textLineBreakpoint" markerType="su.softcom.cldt.debug.core.CommandLineBreakpointMarker"> </breakpoint>
+ </extension>
+ <extension point="org.eclipse.core.runtime.adapters">
+	<factory adaptableType="org.eclipse.ui.texteditor.ITextEditor" class="su.softcom.cldt.internal.debug.ui.breakpoints.BreakpointAdapterFactory">
+		<adapter type="org.eclipse.debug.ui.actions.IToggleBreakpointsTarget"> </adapter>
+ 	</factory>
+ </extension>
+ <extension
+       point="org.eclipse.ui.handlers">
+    <handler
+          class="su.softcom.cldt.internal.debug.ui.breakpoints.BreakpointHandler"
+          commandId="su.softcom.cldt.debug.ui.breakpointHandler">
+    </handler>
+ </extension>
+ <extension
+       point="org.eclipse.ui.commands">
+    <command
+          defaultHandler="su.softcom.cldt.internal.debug.ui.breakpoints.BreakpointHandler"
+          id="su.softcom.cldt.debug.ui.toggleBreakpointCommand"
+          name="Toggle Software Breakpoint">
+    </command>
+ </extension>
+ <extension
+       point="org.eclipse.ui.navigator.navigatorContent">
+    <actionProvider
+          class="su.softcom.cldt.debug.ui.TargetActionProvider"
+          id="su.softcom.cldt.ui.TargetActionProvider">
+          <enablement>
+            <instanceof
+              value="su.softcom.cldt.internal.ui.CMakeTargetsFolder">
+            </instanceof>
+          </enablement>
+    </actionProvider>
+ </extension>
+ <extension
+       point="org.eclipse.debug.ui.debugModelPresentations">
+    <debugModelPresentation
+          class="su.softcom.cldt.internal.debug.ui.DebugModelPresentation"
+          id="su.softcom.cldt.debug.model.id">
+    </debugModelPresentation>
+ </extension>
+</plugin>

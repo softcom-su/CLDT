@@ -1,0 +1,525 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Template|Win32">
+      <Configuration>Template</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{4172D7F6-1340-404F-BE53-742713335561}</ProjectGuid>
+    <Keyword>MFCDLLProj</Keyword>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Template|Win32'">
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v100</PlatformToolset>
+    <UseOfAtl>Static</UseOfAtl>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)/exe\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)/tmp/Debug/NavigGraph\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)/Release/</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)/tmp/Release/NavigGraph\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Template|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Template|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Template|Win32'" />
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Template|Win32'">$(SolutionDir)/exe\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Template|Win32'">$(SolutionDir)/tmp/Debug/NavigGraph\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Template|Win32'">true</LinkIncremental>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.dll</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.dll</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Template|Win32'">.dll</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_USRDLL;__NAVIGRAPH_DLL__;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>gdiplus.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)NaviGraph.dll</OutputFile>
+      <ModuleDefinitionFile>.\NaviGraph.def</ModuleDefinitionFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <ImportLibrary>$(OutDir)NaviGraph.lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0419</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Xdcmake>
+      <SuppressStartupBanner>false</SuppressStartupBanner>
+    </Xdcmake>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;__NAVIGRAPH_DLL__;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>gdiplus.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)NaviGraph.dll</OutputFile>
+      <ModuleDefinitionFile>.\NaviGraph.def</ModuleDefinitionFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <ImportLibrary>$(OutDir)NaviGraph.lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+      <AdditionalLibraryDirectories>$(OutDir)</AdditionalLibraryDirectories>
+    </Link>
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0419</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Xdcmake>
+      <SuppressStartupBanner>false</SuppressStartupBanner>
+    </Xdcmake>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Template|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(ProjectName)</AdditionalIncludeDirectories>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_USRDLL;__CORE_DLL__;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <GenerateXMLDocumentationFiles>false</GenerateXMLDocumentationFiles>
+      <XMLDocumentationFileName>$(IntDir)</XMLDocumentationFileName>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <ForceConformanceInForLoopScope>false</ForceConformanceInForLoopScope>
+      <PrecompiledHeaderOutputFile>$(IntDir)$(TargetName).pch</PrecompiledHeaderOutputFile>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ErrorReporting>None</ErrorReporting>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <OutputFile>$(OutDir)/NaviGraph.dll</OutputFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>gdiplus.lib</AdditionalDependencies>
+      <ModuleDefinitionFile>.\NaviGraph.def</ModuleDefinitionFile>
+    </Link>
+    <Xdcmake>
+      <SuppressStartupBanner>false</SuppressStartupBanner>
+    </Xdcmake>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="AnalogParamVisualisation\AddAndConfigurateFilterDlg.cpp" />
+    <ClCompile Include="LineXDlg\AddLineXDlg.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../StdAfx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../StdAfx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="AdvancedEdit.cpp" />
+    <ClCompile Include="LineXDlg\AnalogData.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../StdAfx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../StdAfx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="Params\CalcParam.cpp" />
+    <ClCompile Include="MapWindow\CGDIPlusUse.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../StdAfx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../StdAfx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="LineXDlg\ChoiceX1X2Dlg.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../StdAfx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../StdAfx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="ColorButton\ColorButton.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../StdAfx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../StdAfx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="Config\Config.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../StdAfx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../StdAfx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="Params\ConstParam.cpp" />
+    <ClCompile Include="Vector\CoordSnapDlg.cpp" />
+    <ClCompile Include="CUserEnv\CUserEnv.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../StdAfx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../StdAfx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="Params\Filters\DataLossDetectFilter.cpp" />
+    <ClCompile Include="Params\DbParam.cpp" />
+    <ClCompile Include="MapWindow\DEMWindow.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../StdAfx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../StdAfx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="Params\DimHandler.cpp" />
+    <ClCompile Include="Vector\DrawVectors.cpp" />
+    <ClCompile Include="FilterAvailabilityData.cpp" />
+    <ClCompile Include="FilterInfoHandler.cpp" />
+    <ClCompile Include="FilterNameHandler.cpp" />
+    <ClCompile Include="FilterPresetProcessor.cpp" />
+    <ClCompile Include="FilterSettings.cpp" />
+    <ClCompile Include="FilterStringParser.cpp" />
+    <ClCompile Include="FirstDataArray.cpp" />
+    <ClCompile Include="ImageWindow\FlatSKWnd.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../StdAfx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../StdAfx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="FlexGraph\FlexGraph.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../StdAfx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../StdAfx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="MapWindow\FlyPowerUps.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../StdAfx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../StdAfx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="GiveNameNewFunction.cpp" />
+    <ClCompile Include="GoogleDB\GoogleDB.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../StdAfx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../StdAfx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="MapWindow\GoogleImage.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../StdAfx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../StdAfx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="MapWindow\GoogleMapLink.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../StdAfx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../StdAfx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="MapWindow\GoogleTransCoord.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../StdAfx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../StdAfx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="FlexGraph\GraphData.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../StdAfx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../StdAfx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="GraphWnd\GraphDialog.cpp" />
+    <ClCompile Include="Graphic\Graphic.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../StdAfx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../StdAfx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="GraphWnd\GraphManager.cpp" />
+    <ClCompile Include="GraphWnd\GraphWnd.cpp" />
+    <ClCompile Include="MapWindow\HeightsWindow.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../StdAfx.h</PrecompiledHeaderFile>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../StdAfx.h</PrecompiledHeaderFile>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="HelpOfFilters.cpp" />
+    <ClCompile Include="MapWindow\Image.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../StdAfx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../StdAfx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="ImageWindow\ImageWindow.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../StdAfx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../StdAfx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="Params\Filters\InterpolationFilter.cpp" />
+    <ClCompile Include="InterpolationSettingsDlg.cpp" />
+    <ClCompile Include="Params\IParam.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../StdAfx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../StdAfx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="ISSLPathDraw\ISSLPathDraw.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../StdAfx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../StdAfx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="MapWindow\MapSource.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../StdAfx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../StdAfx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="MapWindow\MapWindow.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../StdAfx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../StdAfx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="MeasuringParamsDlg.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">stdafx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="MotionPathDlg.cpp" />
+    <ClCompile Include="MapWindow\MouseHook.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../StdAfx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../StdAfx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="NaviGraph.cpp" />
+    <ClCompile Include="Params\ParamDocument.cpp" />
+    <ClCompile Include="AnalogParamVisualisation\ParametersBD.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../StdAfx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../StdAfx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="Params\ParamInfo.cpp" />
+    <ClCompile Include="Params\ParamsHandler.cpp" />
+    <ClCompile Include="Params\ParamsList.cpp" />
+    <ClCompile Include="ParamView\ParamView.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../StdAfx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../StdAfx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="MapWindow\PathsLimitsDlg.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../StdAfx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../StdAfx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="PathWindow\PathWindow.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../StdAfx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../StdAfx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="ProgressBox\ProgressBox.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../StdAfx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../StdAfx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="MapWindow\RastrConverter.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../StdAfx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../StdAfx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="ReprocessingData\ReprocessingData.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../StdAfx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../StdAfx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="RLIWnd\RLIWnd.cpp" />
+    <ClCompile Include="RoundGrid\RoundGrid.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../StdAfx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../StdAfx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="ScenarioDraw\ScenarioDraw.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../StdAfx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../StdAfx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="AnalogParamVisualisation\SelectAnalParamDlg.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../StdAfx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../StdAfx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="SelectParamMenu\SelectParamMenu.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../StdAfx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../StdAfx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="SharpExport\SharpExport.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../StdAfx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../StdAfx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="Params\Mathematics\SimpleMathOperations.cpp" />
+    <ClCompile Include="FlexGraph\SingleGraph.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../StdAfx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../StdAfx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="SmFilterDDParAdjDlg.cpp" />
+    <ClCompile Include="Params\SmoothingFilterDD.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../StdAfx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../StdAfx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Params\SubParams.cpp" />
+    <ClCompile Include="ThresholdFilter.cpp" />
+    <ClCompile Include="TimeLine\TimeLineForm.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../StdAfx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../StdAfx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="TopoPlaneMapWindow\TopoPlaneMapWindow.cpp" />
+    <ClCompile Include="Params\Filters\ValidanceFilterSimple.cpp" />
+    <ClCompile Include="Vector\Vector.cpp" />
+    <ClCompile Include="Vector\VectorLayer.cpp" />
+    <ClCompile Include="ImageWindow\VideoImageWindow.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../StdAfx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../StdAfx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="VisualizationTE\VisualizationTE.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../StdAfx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../StdAfx.h</PrecompiledHeaderFile>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="NaviGraph.def" />
+    <None Include="resource.hm" />
+    <None Include="bitmap1.bmp" />
+    <None Include="fix_path.ico" />
+    <None Include="fix_scenario.ico" />
+    <None Include="FixCursor.ico" />
+    <None Include="hand.ico" />
+    <None Include="ico00001.ico" />
+    <None Include="ico00002.ico" />
+    <None Include="ico00003.ico" />
+    <None Include="icon2.ico" />
+    <None Include="res\NaviGraph.rc2" />
+    <None Include="pause.ico" />
+    <None Include="play.ico" />
+    <None Include="startbutton.ico" />
+    <None Include="stop.ico" />
+    <None Include="toend.ico" />
+    <None Include="ToStart.ico" />
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AnalogParamVisualisation\AddAndConfigurateFilterDlg.h" />
+    <ClInclude Include="LineXDlg\AddLineXDlg.h" />
+    <ClInclude Include="AdvancedEdit.h" />
+    <ClInclude Include="allinclude.h" />
+    <ClInclude Include="LineXDlg\AnalogData.h" />
+    <ClInclude Include="NaviGraph.h" />
+    <ClInclude Include="Params\CalcParam.h" />
+    <ClInclude Include="MapWindow\CGDIPlusUse.h" />
+    <ClInclude Include="LineXDlg\ChoiceX1X2Dlg.h" />
+    <ClInclude Include="ColorButton\ColorButton.h" />
+    <ClInclude Include="Config\Config.h" />
+    <ClInclude Include="Params\ConstParam.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="Vector\CoordSnapDlg.h" />
+    <ClInclude Include="CUserEnv\CUserEnv.h" />
+    <ClInclude Include="Params\Filters\DataLossDetectFilter.h" />
+    <ClInclude Include="Params\DbParam.h" />
+    <ClInclude Include="MapWindow\DEMWindow.h" />
+    <ClInclude Include="Params\DimHandler.h" />
+    <ClInclude Include="Vector\DrawVectors.h" />
+    <ClInclude Include="EnumSettingsFilters.h" />
+    <ClInclude Include="FilterAvailabilityData.h" />
+    <ClInclude Include="FilterInfoHandler.h" />
+    <ClInclude Include="FilterNameHandler.h" />
+    <ClInclude Include="FilterPresetProcessor.h" />
+    <ClInclude Include="FilterSettings.h" />
+    <ClInclude Include="FilterStringParser.h" />
+    <ClInclude Include="FirstDataArray.h" />
+    <ClInclude Include="ImageWindow\FlatSKWnd.h" />
+    <ClInclude Include="FlexGraph\FlexGraph.h" />
+    <ClInclude Include="MapWindow\FlyPowerUps.h" />
+    <ClInclude Include="GiveNameNewFunction.h" />
+    <ClInclude Include="GoogleDB\GoogleDB.h" />
+    <ClInclude Include="MapWindow\GoogleImage.h" />
+    <ClInclude Include="MapWindow\GoogleMapLink.h" />
+    <ClInclude Include="MapWindow\GoogleTransCoord.h" />
+    <ClInclude Include="FlexGraph\GraphData.h" />
+    <ClInclude Include="GraphWnd\GraphDialog.h" />
+    <ClInclude Include="Graphic\Graphic.h" />
+    <ClInclude Include="GraphWnd\GraphManager.h" />
+    <ClInclude Include="GraphWnd\GraphWnd.h" />
+    <ClInclude Include="MapWindow\HeightsWindow.h" />
+    <ClInclude Include="HelpOfFilters.h" />
+    <ClInclude Include="MapWindow\Image.h" />
+    <ClInclude Include="ImageWindow\ImageWindow.h" />
+    <ClInclude Include="InterpolationSettingsDlg.h" />
+    <ClInclude Include="Params\IParam.h" />
+    <ClInclude Include="ISSLPathDraw\ISSLPathDraw.h" />
+    <ClInclude Include="LineXDlg\LineX.h" />
+    <ClInclude Include="LineXDlg\LineY.h" />
+    <ClInclude Include="MapWindow\MapSource.h" />
+    <ClInclude Include="MapWindow\MapWindow.h" />
+    <ClInclude Include="MeasuringParamsDlg.h" />
+    <ClInclude Include="MotionPathDlg.h" />
+    <ClInclude Include="MapWindow\MouseHook.h" />
+    <ClInclude Include="NaviGraphDll.h" />
+    <ClInclude Include="Params\ParamDocument.h" />
+    <ClInclude Include="AnalogParamVisualisation\ParametersBD.h" />
+    <ClInclude Include="Params\ParamInfo.h" />
+    <ClInclude Include="Params\ParamsHandler.h" />
+    <ClInclude Include="Params\ParamsList.h" />
+    <ClInclude Include="ParamView\ParamView.h" />
+    <ClInclude Include="MapWindow\PathsLimitsDlg.h" />
+    <ClInclude Include="PathWindow\PathWindow.h" />
+    <ClInclude Include="ProgressBox\ProgressBox.h" />
+    <ClInclude Include="MapWindow\RastrConverter.h" />
+    <ClInclude Include="ReprocessingData\ReprocessingData.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="RLIWnd\RLIWnd.h" />
+    <ClInclude Include="RoundGrid\RoundGrid.h" />
+    <ClInclude Include="ScenarioDraw\ScenarioDraw.h" />
+    <ClInclude Include="AnalogParamVisualisation\SelectAnalParamDlg.h" />
+    <ClInclude Include="SelectParamMenu\SelectParamMenu.h" />
+    <ClInclude Include="SharpExport\SharpExport.h" />
+    <ClInclude Include="Params\Mathematics\SimpleMathOperations.h" />
+    <ClInclude Include="FlexGraph\SingleGraph.h" />
+    <ClInclude Include="SmFilterDDParAdjDlg.h" />
+    <ClInclude Include="Params\SmoothingFilterDD.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="Params\SubParams.h" />
+    <ClInclude Include="ThresholdFilter.h" />
+    <ClInclude Include="TimeLine\TimeLineForm.h" />
+    <ClInclude Include="TopoPlaneMapWindow\TopoPlaneMapWindow.h" />
+    <ClInclude Include="Params\Filters\ValidanceFilterSimple.h" />
+    <ClInclude Include="Vector\Vector.h" />
+    <ClInclude Include="Vector\VectorLayer.h" />
+    <ClInclude Include="ImageWindow\VideoImageWindow.h" />
+    <ClInclude Include="VisualizationTE\VisualizationTE.h" />
+    <ClInclude Include="WndProxy\WndProxy.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="NaviGraph.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Config\Config.vcxproj">
+      <Project>{b32d68ca-317d-45c1-8e5c-688645987559}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\NaviBase\NaviBase.vcxproj">
+      <Project>{66a7b4f2-862d-4366-b4ad-63b8c02b2a26}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="NaviGraph.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

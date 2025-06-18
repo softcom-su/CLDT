@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: CLDT::Linux debug extension
+Bundle-SymbolicName: su.softcom.cldt.debug.core.linux;singleton:=true
+Bundle-Version: 0.1.0.qualifier
+Eclipse-PlatformFilter: (osgi.os=linux)
+Fragment-Host: su.softcom.cldt.debug.core;bundle-version="0.1.0"
+Automatic-Module-Name: su.softcom.cldt.debug.core.linux
+Bundle-ClassPath: .
+Bundle-RequiredExecutionEnvironment: JavaSE-17
+Eclipse-PatchFragment: true
+Service-Component: OSGI-INF/*.xml
+Import-Package: org.eclipse.core.internal.registry

@@ -1,0 +1,220 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+<title>Потоки управления после оптимизации</title>
+<script src="result_after.json"></script>
+<script>
+var C=["#FFFF00","#00FF00","#8888FF","#FF4444"];
+var D=95;
+
+function init(){
+  var i,o,j,x;
+  for (i=0; i<O.length; i++){
+    o=document.createElement("div");
+    o.className="t";
+//    o.innerHTML=O[i].lu.length;
+    x=0;
+    for (j=0; j<O[i].arc.length; j++){
+      if (O[i].arc[j][2] != 0) x+=1;
+    }
+    o.innerHTML=O[i].name + " ... участков " + O[i].lu.length + " , всего дуг " + O[i].arc.length + " , внешних дуг " + x;
+    document.body.appendChild(o);
+    o=document.createElement("div");
+    o.className="o";
+    draw(o,O[i].lu,O[i].arc,O[i].prop);
+    document.body.appendChild(o);
+    o=document.createElement("div");
+    o.className="g";
+//    o.innerHTML=re(O[i].lu,O[i].arc,O[i].prop);
+//    document.body.appendChild(o);
+  }
+}
+function draw(oM,aU,aA,oP){
+  var L,W,H,H0,i,o,o1;
+  L=max2(aA);
+  W=(aU.length-1)*D+74;
+  H=(L[0]+L[1]+1)*30+24;
+  H0=L[0]*30;
+  oM.style.width=W+"px";
+  oM.style.height=H+"px";
+  for (i=0; i<aU.length; i++){
+    o=document.createElement("div");
+    o.className="lu";
+    o.innerHTML=aU[i];
+    o.style.left=i*D+"px";
+    o.style.top=H0+"px";
+    o.style.backgroundColor=C[oP[i]];
+    oM.appendChild(o);
+  }
+  for (i=0; i<aA.length; i++){
+    o=document.createElement("div");
+    o1=document.createElement("div");
+    if (aA[i][2]>0){
+      o.className="f";
+      o.style.left=(aA[i][0]*D+(aA[i][1]==aA[i][0] ? 24 : 30))+"px";
+      o.style.top=(L[0]-aA[i][2])*30+"px";
+      o.style.width=(aA[i][1]==aA[i][0] ? 4 : (aA[i][1]-aA[i][0])*D-8)+"px";
+      o.style.height=(aA[i][2]*30-4)+"px";
+      o1.className="fa";
+      o1.style.left=(aA[i][1]*D+21)+"px";
+      o1.style.top=(H0-11)+"px";
+    }else if (aA[i][2]==0){
+      if (aA[i][1]-aA[i][0]!=1) continue;
+      o.className="n";
+      o.style.left=(aA[i][0]*D+56)+"px";
+      o.style.top=(H0+16)+"px";
+      o.style.width=D-60+"px";
+      o1.className="na";
+      o1.style.left=(aA[i][0]*D+D-11)+"px";
+      o1.style.top=(H0+13)+"px";
+    }else{
+      o.className="b";
+      o.style.left=(aA[i][1]*D+30)+"px";
+      o.style.top=(H0+36)+"px";
+      o.style.width=((aA[i][0]-aA[i][1])*D-7)+"px";
+      o.style.height=(-aA[i][2]*30-4)+"px";
+      o1.className="ba";
+      o1.style.left=(aA[i][1]*D+27)+"px";
+      o1.style.top=(H0+25)+"px";
+    }
+    oM.appendChild(o);
+    oM.appendChild(o1);
+  }
+}
+function max2(a){
+  var i,p=0,m=0;
+  for (i=0; i<a.length; i++){
+    p=Math.max(p,a[i][2]);
+    m=Math.min(m,a[i][2]);
+  }
+  return([p,-m]);
+}
+function re(aU,aA,oP){
+  var i,j,k,o,oA={},o1,s,s1,s2,s3,a=[],a1,a2;
+  for (o={},i=0; i<aA.length; i++){
+    o[aA[i][0]+","+aA[i][1]]=aA[i][3];
+    oA[aA[i][3]]=aU[aA[i][1]];
+  }
+  for (k=0; k<aU.length; k++){
+    o1=o;
+    for (o={},i=0; i<aU.length; i++) for (j=0; j<aU.length; j++){
+      s=i+","+j;
+      s1=o1[s] || "";
+      s2=[o1[i+","+k],o1[k+","+k],o1[k+","+j]];
+      if (s2[0] && s2[2]){
+        if (s2[0]==s2[1]) s2[0]="";
+        if (s2[2]==s2[1]) s2[2]="";
+        if (s2[1]){
+          if (s1==s2[0] && !s2[2]) s1="";
+          if (s1==s2[2] && !s2[0]) s1="";
+          if (s1==s2[1] && !s2[0] && !s2[2]) s1="";
+        }
+        s3=s2[0]+(s2[1] ? " ("+s2[1]+")*" : "")+" "+s2[2];
+        o[s]=s1 ? "("+s1+" | "+s3+")" : s3;
+      }
+      else o[s]=s1;
+    }
+  }
+  if (O.length==1)
+    for (s in o){
+      a1=s.split(",");
+      a.push(aU[a1[0]]+"-"+aU[a1[1]]+" -- "+o[s]);
+    }
+  a2=be(oP);
+  for (i=0; i<a2.length; i++){
+    a1=a2[i].split(",");
+    if (O.length>1){
+      a.push("");
+      a.push(aU[a1[0]]+"-"+aU[a1[1]]+" -- "+o[a2[i]]);
+    }
+    a.push("");
+    a.push(aU[a1[0]]+"-"+aU[a1[1]]+" -- "+op(au(o[a2[i]],oA,aU[a1[0]])));
+  }
+  return(a.join("<br>"));
+}
+function au(sR,oA,u0){
+  var s="",m=0,i,c,a=u0 ? [u0] : [],n,l;
+  for (i=0; i<sR.length; i++){
+    c=sR.charAt(i);
+    if (c==" ") continue;
+    if (/[\da-z]/i.test(c)) while (/[\da-z]/i.test(sR.charAt(i+1))) c+=sR.charAt(++i);
+    if (!m)
+      if (c=="*")
+        s+="* ";
+      else if (c=="|"){
+        s+=(s.substr(-1)==">" ? " " : "")+a.join("-")+" | ";
+        a=[];
+      }
+      else if (c=="("){
+        s+=(s.substr(-1)==">" ? " " : "")+a.join("-")+(a.length ? " " : "")+"<span>(";
+        a=[];
+        m=1;
+        n=i+1;
+        l=0;
+      }else
+        a.push(oA[c]);
+    else
+      if (c=="(")
+        l++;
+      else if (c==")")
+        if (!l){
+          s+=au(sR.substr(n,i-n),oA)+")</span>";
+          m=0;
+        }else
+          l--;
+  }
+  if (a.length) s+=(s.substr(-1)==">" ? " " : "")+a.join("-");
+  return(s);
+}
+function op(sR){
+  var r=/ <span>\(([^\(\)]+)\)<\/span>\*/g,a,n=0,n1,s="";
+  while (a=r.exec(sR)){
+    n1=a.index-a[1].length;
+    if (sR.substr(n1,a[1].length)!=a[1] || !/[(\- ]/.test(sR[n1-1])) continue;
+    if (/[\- ]/.test(sR[n1-1])) n1--;
+    s+=sR.substr(n,n1-n);
+    n=a.index+(sR[n1-1]=="(" ? 1 : 0);
+  }
+  return(s+sR.substr(n));
+}
+function be(o){
+  var s,s0,a1=[],i,a=[];
+  for (s in o){
+    if (o[s]==1) s0=s;
+    if (o[s]==2 || o[s]==3) a1.push(s);
+  }
+  for (i=0; i<a1.length; i++) a.push(s0+","+a1[i]);
+  return(a);
+}
+function chkSpan(evt){
+  var o=evt.target,oS,i;
+  while (o.tagName!="SPAN" && o!=document.body) o=o.parentElement;
+  oS=document.getElementsByTagName("SPAN");
+  for (i=0; i<oS.length; i++) oS[i].style.backgroundColor="";
+  if (o.tagName=="SPAN") o.style.backgroundColor="#FF0";
+}
+</script>
+<style>
+  body {margin:0}
+  span {cursor:default}
+  div {position:relative; margin:10px}
+  .t  {font:bold 20px Arial}
+  .o  {background-color:#F0F0F0}
+  .g  {font:15px Arial; margin-top:12px}
+  .lu {position:absolute; width:50px; height:30px; color:#000; background-color:#FFFF00;
+       border:2px solid #000; border-radius:10px; text-align:center; font:bold 15px/30px Arial}
+  .f  {position:absolute; border-left:2px solid #000; border-top:2px solid #000; border-right:2px solid #000;
+       border-top-left-radius:10px; border-top-right-radius:10px}
+  .fa {position:absolute; width:0; height:0; border-top:10px solid #000;
+       border-left:4px solid transparent; border-botoom:10px solid transparent; border-right:4px solid transparent}
+  .n  {position:absolute; height:0; border-top:2px solid #000}
+  .na {position:absolute; width:0; height:0; border-left:10px solid #000;
+       border-top:4px solid transparent; border-bottom:4px solid transparent; border-right:10px solid transparent}
+  .b  {position:absolute; border-left:2px solid #000; border-bottom:2px solid #000; border-right:2px solid #000;
+       border-bottom-left-radius:10px; border-bottom-right-radius:10px}
+  .ba {position:absolute; width:0; height:0; border-bottom:10px solid #000;
+       border-left:4px solid transparent; border-top:10px solid transparent; border-right:4px solid transparent}
+</style>
+</head>
+<body onload="init()" onmouseover="chkSpan(event)"></body>
+</html>

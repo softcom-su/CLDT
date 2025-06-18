@@ -1,0 +1,13 @@
+arguments-container/CMAKE_C_COMPILER/argument-value=clang
+arguments-container/TEST_VAR/argument-value=ON
+arguments-list=CMAKE_C_COMPILER;TEST_VAR
+build-folder=build
+dependencies-container=
+eclipse.preferences.version=1
+source-folder=C\:\\Users\\petrb\\Documents\\excellence-devel\\clangdevelopmenttool\\tests\\su.softcom.cldt.core.tests\\resources\\TestProjects\\CMakeConfigureBuilderTestProject
+targets-container/test/artifacts=build/test.exe;build/test.pdb
+targets-container/test/build-type=1
+targets-container/test/compile_options=
+targets-container/test/link_options=
+targets-container/test/target.language.standard=
+targets-list=test

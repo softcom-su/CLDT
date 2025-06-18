@@ -1,0 +1,497 @@
+################################################################################
+# Clang static analysis flags
+################################################################################
+set(ANALYSIS_FLAGS --analyze -Xanalyzer -analyzer-output=html)
+
+################################################################################
+# List of target properties to copy
+################################################################################
+set(TARGET_PROPERTIES
+    ADDITIONAL_CLEAN_FILES
+    AIX_EXPORT_ALL_SYMBOLS
+    ALIAS_GLOBAL
+    ALIASED_TARGET
+    ANDROID_ANT_ADDITIONAL_OPTIONS
+    ANDROID_API
+    ANDROID_API_MIN
+    ANDROID_ARCH
+    ANDROID_ASSETS_DIRECTORIES
+    ANDROID_GUI
+    ANDROID_JAR_DEPENDENCIES
+    ANDROID_JAR_DIRECTORIES
+    ANDROID_JAVA_SOURCE_DIR
+    ANDROID_NATIVE_LIB_DEPENDENCIES
+    ANDROID_NATIVE_LIB_DIRECTORIES
+    ANDROID_PROCESS_MAX
+    ANDROID_PROGUARD
+    ANDROID_PROGUARD_CONFIG_PATH
+    ANDROID_SECURE_PROPS_PATH
+    ANDROID_SKIP_ANT_STEP
+    ANDROID_STL_TYPE
+    ARCHIVE_OUTPUT_DIRECTORY
+    ARCHIVE_OUTPUT_NAME
+    AUTOGEN_BUILD_DIR
+    AUTOGEN_ORIGIN_DEPENDS
+    AUTOGEN_PARALLEL
+    AUTOGEN_TARGET_DEPENDS
+    AUTOMOC
+    AUTOMOC_COMPILER_PREDEFINES
+    AUTOMOC_DEPEND_FILTERS
+    AUTOMOC_EXECUTABLE
+    AUTOMOC_MACRO_NAMES
+    AUTOMOC_MOC_OPTIONS
+    AUTOMOC_PATH_PREFIX
+    AUTORCC
+    AUTORCC_EXECUTABLE
+    AUTORCC_OPTIONS
+    AUTOUIC
+    AUTOUIC_EXECUTABLE
+    AUTOUIC_OPTIONS
+    AUTOUIC_SEARCH_PATHS
+    BINARY_DIR
+    BUILD_RPATH
+    BUILD_RPATH_USE_ORIGIN
+    BUILD_WITH_INSTALL_NAME_DIR
+    BUILD_WITH_INSTALL_RPATH
+    BUNDLE
+    BUNDLE_EXTENSION
+    C_EXTENSIONS
+    C_STANDARD
+    C_STANDARD_REQUIRED
+    COMMON_LANGUAGE_RUNTIME
+    COMPATIBLE_INTERFACE_BOOL
+    COMPATIBLE_INTERFACE_NUMBER_MAX
+    COMPATIBLE_INTERFACE_NUMBER_MIN
+    COMPATIBLE_INTERFACE_STRING
+    COMPILE_DEFINITIONS
+    COMPILE_FEATURES
+    COMPILE_FLAGS
+    COMPILE_OPTIONS
+    COMPILE_PDB_NAME
+    COMPILE_PDB_OUTPUT_DIRECTORY
+    COMPILE_WARNING_AS_ERROR
+    CROSSCOMPILING_EMULATOR
+    CUDA_ARCHITECTURES
+    CUDA_EXTENSIONS
+    CUDA_PTX_COMPILATION
+    CUDA_RESOLVE_DEVICE_SYMBOLS
+    CUDA_RUNTIME_LIBRARY
+    CUDA_SEPARABLE_COMPILATION
+    CUDA_STANDARD
+    CUDA_STANDARD_REQUIRED
+    CXX_EXTENSIONS
+    CXX_STANDARD
+    CXX_STANDARD_REQUIRED
+    DEBUG_POSTFIX
+    DEFINE_SYMBOL
+    DEPLOYMENT_ADDITIONAL_FILES
+    DEPLOYMENT_REMOTE_DIRECTORY
+    DEPRECATION
+    DISABLE_PRECOMPILE_HEADERS
+    DOTNET_SDK
+    DOTNET_TARGET_FRAMEWORK
+    DOTNET_TARGET_FRAMEWORK_VERSION
+    EchoString
+    ENABLE_EXPORTS
+    EXCLUDE_FROM_ALL
+    EXCLUDE_FROM_DEFAULT_BUILD
+    EXPORT_COMPILE_COMMANDS
+    EXPORT_NAME
+    EXPORT_PROPERTIES
+    FOLDER
+    Fortran_BUILDING_INSTRINSIC_MODULES
+    Fortran_FORMAT
+    Fortran_MODULE_DIRECTORY
+    Fortran_PREPROCESS
+    FRAMEWORK
+    FRAMEWORK_VERSION
+    GENERATOR_FILE_NAME
+    GHS_INTEGRITY_APP
+    GHS_NO_SOURCE_GROUP_FILE
+    GNUtoMS
+    HAS_CXX
+    HEADER_DIRS
+    HEADER_SET
+    HEADER_SETS
+    HIP_ARCHITECTURES
+    HIP_EXTENSIONS
+    HIP_STANDARD
+    HIP_STANDARD_REQUIRED
+    IMPLICIT_DEPENDS_INCLUDE_TRANSFORM
+    IMPORTED
+    IMPORTED_COMMON_LANGUAGE_RUNTIME
+    IMPORTED_CONFIGURATIONS
+    IMPORTED_GLOBAL
+    IMPORTED_IMPLIB
+    IMPORTED_LIBNAME
+    IMPORTED_LINK_DEPENDENT_LIBRARIES
+    IMPORTED_LINK_INTERFACE_LANGUAGES
+    IMPORTED_LINK_INTERFACE_LIBRARIES
+    IMPORTED_LINK_INTERFACE_MULTIPLICITY
+    IMPORTED_LOCATION
+    IMPORTED_NO_SONAME
+    IMPORTED_NO_SYSTEM
+    IMPORTED_OBJECTS
+    IMPORTED_SONAME
+    IMPORT_PREFIX
+    IMPORT_SUFFIX
+    INCLUDE_DIRECTORIES
+    INSTALL_NAME_DIR
+    INSTALL_REMOVE_ENVIRONMENT_RPATH
+    INSTALL_RPATH
+    INSTALL_RPATH_USE_LINK_PATH
+    INTERFACE_AUTOUIC_OPTIONS
+    INTERFACE_COMPILE_DEFINITIONS
+    INTERFACE_COMPILE_FEATURES
+    INTERFACE_COMPILE_OPTIONS
+    INTERFACE_HEADER_SETS
+    INTERFACE_HEADER_SETS_TO_VERIFY
+    INTERFACE_INCLUDE_DIRECTORIES
+    INTERFACE_LINK_DEPENDS
+    INTERFACE_LINK_DIRECTORIES
+    INTERFACE_LINK_LIBRARIES
+    INTERFACE_LINK_LIBRARIES_DIRECT
+    INTERFACE_LINK_LIBRARIES_DIRECT_EXCLUDE
+    INTERFACE_LINK_OPTIONS
+    INTERFACE_POSITION_INDEPENDENT_CODE
+    INTERFACE_PRECOMPILE_HEADERS
+    INTERFACE_SOURCES
+    INTERFACE_SYSTEM_INCLUDE_DIRECTORIES
+    INTERPROCEDURAL_OPTIMIZATION
+    IOS_INSTALL_COMBINED
+    ISPC_HEADER_DIRECTORY
+    ISPC_HEADER_SUFFIX
+    ISPC_INSTRUCTION_SETS
+    JOB_POOL_COMPILE
+    JOB_POOL_LINK
+    JOB_POOL_PRECOMPILE_HEADER
+    LABELS
+    LIBRARY_OUTPUT_DIRECTORY
+    LIBRARY_OUTPUT_NAME
+    LINK_DEPENDS
+    LINK_DEPENDS_NO_SHARED
+    LINK_DIRECTORIES
+    LINK_FLAGS
+    LINK_INTERFACE_LIBRARIES
+    LINK_INTERFACE_MULTIPLICITY
+    LINK_LIBRARIES
+    LINK_LIBRARIES_ONLY_TARGETS
+    LINK_LIBRARY_OVERRIDE
+    LINK_OPTIONS
+    LINK_SEARCH_END_STATIC
+    LINK_SEARCH_START_STATIC
+    LINK_WHAT_YOU_USE
+    LINKER_LANGUAGE
+    # The LOCATION property may not be read from target
+    MACHO_COMPATIBILITY_VERSION
+    MACHO_CURRENT_VERSION
+    MACOSX_BUNDLE
+    MACOSX_BUNDLE_INFO_PLIST
+    MACOSX_FRAMEWORK_INFO_PLIST
+    MACOSX_RPATH
+    # MANUALLY_ADDED_DEPENDENCIES property is read-only
+    MSVC_RUNTIME_LIBRARY
+    # NAME property is read-only
+    NO_SONAME
+    NO_SYSTEM_FROM_IMPORTED
+    OBJC_EXTENSIONS
+    OBJC_STANDARD
+    OBJC_STANDARD_REQUIRED
+    OBJCXX_EXTENSIONS
+    OBJCXX_STANDARD
+    OBJCXX_STANDARD_REQUIRED
+    OPTIMIZE_DEPENDENCIES
+    OSX_ARCHITECTURES
+    OUTPUT_NAME
+    PCH_WARN_INVALID
+    PCH_INSTANTIATE_TEMPLATES
+    PDB_NAME
+    PDB_OUTPUT_DIRECTORY
+    POSITION_INDEPENDENT_CODE
+    PRECOMPILE_HEADERS
+    PRECOMPILE_HEADERS_REUSE_FROM
+    PREFIX
+    PRIVATE_HEADER
+    PROJECT_LABEL
+    PUBLIC_HEADER
+    RESOURCE
+    RULE_LAUNCH_COMPILE
+    RULE_LAUNCH_CUSTOM
+    RULE_LAUNCH_LINK
+    RUNTIME_OUTPUT_DIRECTORY
+    RUNTIME_OUTPUT_NAME
+    SKIP_BUILD_RPATH
+    SOURCE_DIR
+    # No SOURCES given to target
+    SOVERSION
+    STATIC_LIBRARY_FLAGS
+    STATIC_LIBRARY_OPTIONS
+    SUFFIX
+    Swift_DEPENDENCIES_FILE
+    Swift_LANGUAGE_VERSION
+    Swift_MODULE_DIRECTORY
+    Swift_MODULE_NAME
+    # TYPE property is read-only
+    UNITY_BUILD
+    UNITY_BUILD_BATCH_SIZE
+    UNITY_BUILD_CODE_AFTER_INCLUDE
+    UNITY_BUILD_CODE_BEFORE_INCLUDE
+    UNITY_BUILD_MODE
+    UNITY_BUILD_UNIQUE_ID
+    VERIFY_INTERFACE_HEADER_SETS
+    VERSION
+    VISIBILITY_INLINES_HIDDEN
+    VS_CONFIGURATION_TYPE
+    VS_DEBUGGER_COMMAND
+    VS_DEBUGGER_COMMAND_ARGUMENTS
+    VS_DEBUGGER_ENVIRONMENT
+    VS_DEBUGGER_WORKING_DIRECTORY
+    VS_DESKTOP_EXTENSIONS_VERSION
+    VS_DOTNET_DOCUMENTATION_FILE
+    VS_DOTNET_REFERENCES
+    VS_DOTNET_REFERENCES_COPY_LOCAL
+    VS_DOTNET_STARTUP_OBJECT
+    VS_DOTNET_TARGET_FRAMEWORK_VERSION
+    VS_DPI_AWARE
+    VS_GLOBAL_KEYWORD
+    VS_GLOBAL_PROJECT_TYPES
+    VS_GLOBAL_ROOTNAMESPACE
+    VS_IOT_EXTENSIONS_VERSION
+    VS_IOT_STARTUP_TASK
+    VS_JUST_MY_CODE_DEBUGGING
+    VS_KEYWORD
+    VS_MOBILE_EXTENSIONS_VERSION
+    VS_NO_COMPILE_BATCHING
+    VS_NO_SOLUTION_DEPLOY
+    VS_PACKAGE_REFERENCES
+    VS_PLATFORM_TOOLSET
+    VS_PROJECT_IMPORT
+    VS_SCC_AUXPATH
+    VS_SCC_LOCALPATH
+    VS_SCC_PROJECTNAME
+    VS_SCC_PROVIDER
+    VS_SDK_REFERENCES
+    VS_SOLUTION_DEPLOY
+    VS_USER_PROPS
+    VS_WINDOWS_TARGET_PLATFORM_MIN_VERSION
+    VS_WINRT_COMPONENT
+    VS_WINRT_EXTENSIONS
+    VS_WINRT_REFERENCES
+    WATCOM_RUNTIME_LIBRARY
+    WIN32_EXECUTABLE
+    WINDOWS_EXPORT_ALL_SYMBOLS
+    XCODE_EMBED_FRAMEWORKS_CODE_SIGN_ON_COPY
+    XCODE_EMBED_FRAMEWORKS_REMOVE_HEADERS_ON_COPY
+    XCODE_EXPLICIT_FILE_TYPE
+    XCODE_GENERATE_SCHEME
+    XCODE_LINK_BUILD_PHASE_MODE
+    XCODE_PRODUCT_TYPE
+    XCODE_SCHEME_ADDRESS_SANITIZER
+    XCODE_SCHEME_ADDRESS_SANITIZER_USE_AFTER_RETURN
+    XCODE_SCHEME_ARGUMENTS
+    XCODE_SCHEME_DEBUG_AS_ROOT
+    XCODE_SCHEME_DEBUG_DOCUMENT_VERSIONING
+    XCODE_SCHEME_ENABLE_GPU_FRAME_CAPTURE_MODE
+    XCODE_SCHEME_DISABLE_MAIN_THREAD_CHECKER
+    XCODE_SCHEME_DYNAMIC_LIBRARY_LOADS
+    XCODE_SCHEME_DYNAMIC_LINKER_API_USAGE
+    XCODE_SCHEME_ENVIRONMENT
+    XCODE_SCHEME_EXECUTABLE
+    XCODE_SCHEME_GUARD_MALLOC
+    XCODE_SCHEME_MAIN_THREAD_CHECKER_STOP
+    XCODE_SCHEME_MALLOC_GUARD_EDGES
+    XCODE_SCHEME_MALLOC_SCRIBBLE
+    XCODE_SCHEME_MALLOC_STACK
+    XCODE_SCHEME_THREAD_SANITIZER
+    XCODE_SCHEME_THREAD_SANITIZER_STOP
+    XCODE_SCHEME_UNDEFINED_BEHAVIOUR_SANITIZER
+    XCODE_SCHEME_UNDEFINED_BEHAVIOUR_SANITIZER_STOP
+    XCODE_SCHEME_WORKING_DIRECTORY
+    XCODE_SCHEME_ZOMBIE_OBJECTS
+    XCODE_XCCONFIG
+    XCTEST)
+
+################################################################################
+# List of file properties to copy
+################################################################################
+set(FILE_PROPERTIES
+    ABSTRACT
+    AUTORCC_OPTIONS
+    AUTOUIC_OPTIONS
+    COMPILE_DEFINITIONS
+    COMPILE_FLAGS
+    COMPILE_OPTIONS
+    EXTERNAL_OBJECT
+    Fortran_FORMAT
+    Fortran_PREPROCESS
+    GENERATED
+    HEADER_FILE_ONLY
+    INCLUDE_DIRECTORIES
+    KEEP_EXTENSION
+    LABELS
+    LANGUAGE
+    LOCATION
+    MACOSX_PACKAGE_LOCATION
+    OBJECT_DEPENDS
+    OBJECT_OUTPUTS
+    SKIP_AUTOGEN
+    SKIP_AUTOMOC
+    SKIP_AUTORCC
+    SKIP_AUTOUIC
+    SKIP_PRECOMPILE_HEADERS
+    SKIP_UNITY_BUILD_INCLUSION
+    Swift_DEPENDENCIES_FILE
+    Swift_DIAGNOSTICS_FILE
+    SYMBOLIC
+    UNITY_GROUP
+    VS_COPY_TO_OUT_DIR
+    VS_DEPLOYMENT_CONTENT
+    VS_DEPLOYMENT_LOCATION
+    VS_INCLUDE_IN_VSIX
+    VS_RESOURCE_GENERATOR
+    VS_SETTINGS
+    VS_SHADER_DISABLE_OPTIMIZATIONS
+    VS_SHADER_ENABLE_DEBUG
+    VS_SHADER_ENTRYPOINT
+    VS_SHADER_FLAGS
+    VS_SHADER_MODEL
+    VS_SHADER_OBJECT_FILE_NAME
+    VS_SHADER_OUTPUT_HEADER_FILE
+    VS_SHADER_TYPE
+    VS_SHADER_VARIABLE_NAME
+    VS_TOOL_OVERRIDE
+    VS_XAML_TYPE
+    WRAP_EXCLUDE
+    XCODE_EXPLICIT_FILE_TYPE
+    XCODE_FILE_ATTRIBUTES
+    XCODE_LAST_KNOWN_FILE_TYPE)
+
+################################################################################
+# Copy property from one object to another
+#     copy_property(<type> <from_object> <to_object> <property>)
+# Input:
+#     type        - Object type
+#     from_object - Source object
+#     to_object   - Destination object
+#     property    - Property to copy
+################################################################################
+function(copy_property TYPE FROM_OBJECT TO_OBJECT PROPERTY)
+    get_property(VAR ${TYPE} ${FROM_OBJECT} PROPERTY ${PROPERTY})
+    if(VAR)
+        set_property(${TYPE} ${TO_OBJECT} PROPERTY ${PROPERTY} "${VAR}")
+    endif()
+endfunction()
+
+################################################################################
+# Copy property from one target to another
+#     copy_property(<from_target> <to_target> <property>)
+# Input:
+#     from_target - Source target
+#     to_target   - Destination target
+#     property    - Property to copy
+################################################################################
+function(copy_target_property FROM_TARGET TO_TARGET PROPERTY)
+    copy_property(TARGET ${FROM_TARGET} ${TO_TARGET} ${PROPERTY})
+endfunction()
+
+################################################################################
+# Move property from one file to another
+#     move_file_property(<from_target> <from_file> <to_target> <to_file> <property>)
+# Input:
+#     from_target - Source target of file
+#     from_file   - Source file
+#     to_target   - Destination target of file
+#     to_file     - Destination file
+#     property    - Property to copy
+################################################################################
+function(move_file_property FROM_TARGET FROM_FILE TO_TARGET TO_FILE PROPERTY)
+    get_source_file_property(VAR ${FROM_FILE} TARGET_DIRECTORY ${FROM_TARGET} ${PROPERTY})
+    if(VAR)
+        set_source_files_properties(${TO_FILE} TARGET_DIRECTORY ${TO_TARGET}
+            PROPERTIES ${PROPERTY} "${VAR}")
+    endif()
+endfunction()
+
+################################################################################
+# Get all targets form directory
+#     get_all_targets(<targets> <dir>)
+# Input:
+#     targets - Output variable name
+#     dir     - Root directory of search
+################################################################################
+function(get_all_targets TARGETS DIR)
+    get_property(SUB_DIRS DIRECTORY ${DIR} PROPERTY SUBDIRECTORIES)
+
+    foreach(SUB_DIR IN LISTS SUB_DIRS)
+        get_all_targets(${TARGETS} ${SUB_DIR})
+    endforeach()
+
+    get_property(SUB_TARGETS DIRECTORY ${DIR} PROPERTY BUILDSYSTEM_TARGETS)
+    set(${TARGETS} ${${TARGETS}} ${SUB_TARGETS} PARENT_SCOPE)
+endfunction()
+
+
+################################################################################
+# Analysis main function
+################################################################################
+function(main)
+    get_all_targets(ALL_TARGETS ${CMAKE_SOURCE_DIR})
+
+    foreach(TARGET IN LISTS ALL_TARGETS)
+        get_target_property(TYPE ${TARGET} TYPE)
+        if(TYPE STREQUAL "UTILITY")
+            set_target_properties(${TARGET} PROPERTIES EXCLUDE_FROM_ALL TRUE)
+            continue()
+        endif()
+
+        get_target_property(SOURCE_DIR ${TARGET} SOURCE_DIR)
+        get_target_property(SOURCES ${TARGET} SOURCES)
+        list(TRANSFORM SOURCES REPLACE ".*\.def" "")
+
+        unset(SOURCES_ANALYSIS)
+        foreach(SOURCE IN LISTS SOURCES)
+            if(EXISTS ${SOURCE_DIR}/${SOURCE})
+                list(APPEND SOURCES_ANALYSIS ${SOURCE_DIR}/${SOURCE})
+            elseif(EXISTS ${SOURCE})
+                list(APPEND SOURCES_ANALYSIS ${SOURCE})
+            endif()
+        endforeach()
+
+        add_library(${TARGET}_ANALYSIS OBJECT ${SOURCES_ANALYSIS})
+        foreach(PROPERTY IN LISTS TARGET_PROPERTIES)
+            copy_target_property(${TARGET} ${TARGET}_ANALYSIS ${PROPERTY})
+        endforeach()
+
+        foreach(SOURCE IN LISTS SOURCES_ANALYSIS)
+            foreach(PROPERTY IN LISTS FILE_PROPERTIES)
+                move_file_property(${TARGET} ${SOURCE} ${TARGET}_ANALYSIS ${SOURCE}
+                    ${PROPERTY})
+            endforeach()
+
+            set_source_files_properties(${SOURCE} TARGET_DIRECTORY ${TARGET}
+                PROPERTIES OBJECT_OUTPUTS "")
+        endforeach()
+
+        set_target_properties(${TARGET} PROPERTIES EXCLUDE_FROM_ALL TRUE)
+        target_compile_options(${TARGET}_ANALYSIS PRIVATE ${ANALYSIS_FLAGS})
+    endforeach()
+endfunction()
+
+################################################################################
+# System call at the end of project configuring
+################################################################################
+function(eof_call)
+    if(NOT IDS)
+        return()
+    endif()
+
+    if(MSVC)
+        list(TRANSFORM ANALYSIS_FLAGS PREPEND "/clang:")
+    endif()
+
+    main()
+    cmake_language(DEFER CANCEL_CALL ${EOF_ID})
+endfunction()
+
+cmake_language(DEFER GET_CALL_IDS IDS)
+cmake_language(DEFER ID_VAR EOF_ID CALL eof_call)

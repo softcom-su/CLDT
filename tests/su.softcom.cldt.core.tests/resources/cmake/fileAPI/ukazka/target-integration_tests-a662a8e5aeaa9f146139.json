@@ -1,0 +1,53 @@
+{
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_custom_target",
+			"add_dependencies"
+		],
+		"files" : 
+		[
+			"tests/integration/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 105,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 106,
+				"parent" : 0
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 2,
+			"id" : "tests-utils::@aee55b7cdf71401bade2"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "integration-handlers-tests::@a40f6d277e0496dfeabf"
+		}
+	],
+	"id" : "integration_tests::@a40f6d277e0496dfeabf",
+	"name" : "integration_tests",
+	"paths" : 
+	{
+		"build" : "tests/integration",
+		"source" : "tests/integration"
+	},
+	"sources" : [],
+	"type" : "UTILITY"
+}

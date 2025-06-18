@@ -1,0 +1,66 @@
+{
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_custom_target"
+		],
+		"files" : 
+		[
+			"tests/resources/plugins/prebuilt-type/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 4,
+				"parent" : 0
+			}
+		]
+	},
+	"id" : "bundle-test-prebuilt-type-header::@4e075452339d05cb7396",
+	"name" : "bundle-test-prebuilt-type-header",
+	"paths" : 
+	{
+		"build" : "tests/resources/plugins/prebuilt-type",
+		"source" : "tests/resources/plugins/prebuilt-type"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				1
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/tests/resources/plugins/prebuilt-type/CMakeFiles/bundle-test-prebuilt-type-header",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/tests/resources/plugins/prebuilt-type/CMakeFiles/bundle-test-prebuilt-type-header.rule",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "UTILITY"
+}

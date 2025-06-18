@@ -1,0 +1,8 @@
+#ifndef _PRIVATE_SYSTIME_H
+#define _PRIVATE_SYSTIME_H
+
+#define SET_SYSTEM_TIME_NONE 0
+#define SET_SYSTEM_TIME_CMOS 1
+#define SET_SYSTEM_TIME_TIME 2
+
+#endif /* !_PRIVATE_SYSTIME_H */
