@@ -10,6 +10,10 @@
 			class="su.softcom.cldt.ui.resolvers.UninitializedMarkerResolver"
 			markerType="su.softcom.cldt.core.marker.uninitialized">
 		</markerResolutionGenerator>
+		<markerResolutionGenerator
+			class="su.softcom.cldt.ui.resolvers.ClangTidyMarkerResolver"
+			markerType="su.softcom.cldt.core.marker.clangTidyMarker">
+		</markerResolutionGenerator>
 	</extension>
 	<extension
 		point="org.eclipse.ui.editors.markerAnnotationSpecification">
@@ -641,6 +645,12 @@
 			id="su.softcom.cldt.ui.preferences.ToolchainsPreferences"
 			name="Кросс-компиляция">
 		</page>
+		<page
+		    category="su.softcom.cldt.ui.preferences.CPreferences"
+            class="su.softcom.cldt.internal.ui.preferences.ClangTidyChecksPreferences"
+            id="su.softcom.cldt.ui.preferences.clangtidy"
+            name="Проверки clang-tidy">
+    </page>
 	</extension>
 
 	<extension

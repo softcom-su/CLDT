@@ -1,5 +1,6 @@
 package su.softcom.cldt.core.operations;
 
+import java.io.File;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
@@ -9,20 +10,21 @@ import org.eclipse.core.resources.IFile;
 import org.eclipse.core.resources.IFolder;
 import org.eclipse.core.resources.IProject;
 import org.eclipse.core.resources.IResource;
+import org.eclipse.core.resources.IncrementalProjectBuilder;
 import org.eclipse.core.resources.ProjectScope;
 import org.eclipse.core.runtime.CoreException;
 import org.eclipse.core.runtime.IProgressMonitor;
-import org.eclipse.core.runtime.IStatus;
-import org.eclipse.core.runtime.Status;
+import org.eclipse.core.runtime.NullProgressMonitor;
 import org.eclipse.core.runtime.jobs.Job;
 import org.eclipse.core.runtime.preferences.IEclipsePreferences;
-import org.eclipse.ui.console.ConsolePlugin;
-import org.eclipse.ui.console.IConsole;
-import org.eclipse.ui.console.MessageConsole;
+import org.eclipse.core.runtime.preferences.InstanceScope;
 import org.osgi.service.prefs.BackingStoreException;
 
 import su.softcom.cldt.analysis.core.IAnalysisTool;
 import su.softcom.cldt.common.preferences.PreferenceConstants;
+import su.softcom.cldt.core.cmake.ICMakeProject;
+import su.softcom.cldt.internal.core.CMakeProject;
+import su.softcom.cldt.internal.core.builders.CMakeConfigureBuilder;
 
 /**
  * Implementation AnalysisTool extension point for clang-tidy.
@@ -32,12 +34,15 @@ public class ClangTidyAnalysisTool implements IAnalysisTool {
 	private static final String ID = "su.softcom.cldt.core.anlyzis.clang-tidy"; //$NON-NLS-1$
 	private static final String UI_NAME = "Статический анализ clang-tidy"; //$NON-NLS-1$
 	private static final String CLANG_TIDY = "clang-tidy"; //$NON-NLS-1$
+	private static final String CLANG_TIDY_MARKER_ID = "su.softcom.cldt.core.marker.clangTidyMarker"; //$NON-NLS-1$
+	private static final String COMPILE_COMMANDS = "compile_commands.json"; //$NON-NLS-1$
 
-	private IProject project;
+	private ICMakeProject project;
 	private IEclipsePreferences store;
+	private IEclipsePreferences globalPreferences;
 	private String buildFolder;
 
-	private HashSet<IFile> projectSourceFiles = new HashSet<IFile>();
+	private HashSet<IFile> projectSourceFiles = new HashSet<>();
 
 	@Override
 	public String getID() {
@@ -50,11 +55,11 @@ public class ClangTidyAnalysisTool implements IAnalysisTool {
 	}
 
 	private Set<IFile> addSourceFiles(IResource resource) throws CoreException {
-		HashSet<IFile> ret = new HashSet<IFile>();
+		HashSet<IFile> ret = new HashSet<>();
 
 		if (resource instanceof IFolder folder) {
 			if (resource.getName().equals(buildFolder)) {
-				return new HashSet<IFile>();
+				return new HashSet<>();
 			}
 
 			for (IResource innerResource : folder.members()) {
@@ -83,56 +88,56 @@ public class ClangTidyAnalysisTool implements IAnalysisTool {
 
 	@Override
 	public void execute(List<IResource> resources, IProgressMonitor monitor) {
-		Job job = new Job(UI_NAME) {
-			@Override
-			protected IStatus run(IProgressMonitor subMonitor) {
-				return executeClangTidy(resources, subMonitor);
-			}
-		};
-
-		job.schedule();
-	}
-
-	private IStatus executeClangTidy(List<IResource> resources, IProgressMonitor monitor) {
-		MessageConsole console = findConsole("Clang-Tidy Console"); //$NON-NLS-1$
-
 		try {
 			for (IResource resource : resources) {
 				projectSourceFiles.clear();
-				project = resource.getProject();
-				store = (IEclipsePreferences) new ProjectScope(project).getNode(PreferenceConstants.NODE)
+				project = new CMakeProject(resource.getProject());
+				store = (IEclipsePreferences) new ProjectScope(project.getProject()).getNode(PreferenceConstants.NODE)
 						.node(CLANG_TIDY);
-				buildFolder = new ProjectScope(project).getNode(PreferenceConstants.NODE)
-						.get(PreferenceConstants.BUILD_FOLDER, PreferenceConstants.DEFAULT_BUILD_FOLDER);
+				globalPreferences = (IEclipsePreferences) InstanceScope.INSTANCE.getNode(PreferenceConstants.NODE)
+						.node(CLANG_TIDY);
+				buildFolder = project.getBuildFolder().getLocation().toOSString();
 
 				initProjectSourceFiles(List.of(resource));
 
-				for (IFile file : projectSourceFiles) {
-					file.deleteMarkers("su.softcom.cldt.marker.analysisMarker", false, 0); //$NON-NLS-1$
+				prepareCompilationDatabase();
+
+				if (projectSourceFiles.isEmpty()) {
+					return;
 				}
 
-				ClangTidyOperation clangTidyOperation = new ClangTidyOperation(project, projectSourceFiles, console,
+				for (IFile file : projectSourceFiles) {
+					file.deleteMarkers(CLANG_TIDY_MARKER_ID, false, 0);
+				}
+
+				ClangTidyOperation clangTidyOperation = new ClangTidyOperation(projectSourceFiles,
 						getClangTidyParameters(), buildFolder);
-				clangTidyOperation.run(monitor);
+				Job job = Job.create(UI_NAME, clangTidyOperation);
+				job.setRule(project.getProject());
+				job.schedule();
 			}
+
 		} catch (CoreException e) {
-			return new Status(IStatus.ERROR, getClass().getName(), e.getLocalizedMessage(), e);
-		} finally {
-			monitor.done();
+			e.printStackTrace();
 		}
-		return Status.OK_STATUS;
 	}
 
 	private List<String> getClangTidyParameters() {
-		ArrayList<String> parameters = new ArrayList<String>();
+		ArrayList<String> parameters = new ArrayList<>();
 		StringBuilder sb = new StringBuilder();
+
+		if (store.get("checks", null) == null && globalPreferences.get("checks", null) != null) {
+			sb.append("--").append("checks").append("=").append(globalPreferences.get("checks", null));
+			parameters.add(sb.toString());
+			sb.setLength(0);
+		}
 
 		try {
 			for (String key : store.keys()) {
 				String value = store.get(key, null);
 
 				if (value != null && !value.isEmpty()) {
-					sb.append("-").append(key).append("=").append(value); //$NON-NLS-1$ //$NON-NLS-2$
+					sb.append("--").append(key).append("=").append(value); //$NON-NLS-1$ //$NON-NLS-2$
 					parameters.add(sb.toString());
 					sb.setLength(0);
 				}
@@ -144,21 +149,17 @@ public class ClangTidyAnalysisTool implements IAnalysisTool {
 		return parameters;
 	}
 
-	private MessageConsole findConsole(String name) {
-		ConsolePlugin plugin = ConsolePlugin.getDefault();
-		MessageConsole console = null;
-		IConsole[] consoles = plugin.getConsoleManager().getConsoles();
-		for (IConsole c : consoles) {
-			if (c.getName().equals(name)) {
-				console = (MessageConsole) c;
-				console.clearConsole();
-				break;
+	private void prepareCompilationDatabase() {
+		File compileCommandsFile = new File(buildFolder, COMPILE_COMMANDS);
+
+		if (!compileCommandsFile.exists()) {
+			try {
+				project.getProject().build(IncrementalProjectBuilder.INCREMENTAL_BUILD, CMakeConfigureBuilder.ID, null,
+						new NullProgressMonitor());
+			} catch (CoreException e) {
+				e.printStackTrace();
 			}
 		}
-		if (console == null) {
-			console = new MessageConsole(name, null);
-			plugin.getConsoleManager().addConsoles(new IConsole[] { console });
-		}
-		return console;
 	}
+
 }
