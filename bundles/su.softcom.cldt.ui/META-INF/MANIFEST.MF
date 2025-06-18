@@ -7,6 +7,8 @@ Bundle-Version: 0.1.0.qualifier
 Export-Package: su.softcom.cldt.internal.ui,
  su.softcom.cldt.ui,
  su.softcom.cldt.ui.dialogs,
+ su.softcom.cldt.ui.resolvers,
+ su.softcom.cldt.ui.resolvers.quickfixes,
  su.softcom.cldt.ui.wizards
 Bundle-Name: %Bundle-Name
 Bundle-Vendor: %Bundle-Vendor

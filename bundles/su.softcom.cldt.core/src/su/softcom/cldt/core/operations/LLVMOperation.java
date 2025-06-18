@@ -37,15 +37,17 @@ public abstract class LLVMOperation implements ICoreRunnable {
 	protected LLVMOperation(String fileName) {
 		outputMonitor = (ProcessOutputMonitor) CMakeCorePlugin.getBuildOutputMonitor();
 		instancePreferences = InstanceScope.INSTANCE.getNode(PreferenceConstants.NODE);
-		pathToLLVMFolder = new Path(instancePreferences.get(PreferenceConstants.CLANG_PATH, "")); //$NON-NLS-1$
+		pathToLLVMFolder = new Path(instancePreferences.get(PreferenceConstants.CLANG_PATH, "/usr")); //$NON-NLS-1$
 		this.fileName = fileName;
 	}
 
 	protected void configure(Set<IFile> targetFiles, List<String> args) {
 		this.arguments = new ArrayList<>();
+
 		this.arguments.add(new Path(
 				"%s/bin/%s%s".formatted(pathToLLVMFolder, fileName, Platform.getOS().contains("win") ? ".exe" : "")) //$NON-NLS-1$ //$NON-NLS-2$ //$NON-NLS-3$ //$NON-NLS-4$
 				.toString());
+
 		this.arguments.addAll(args);
 		if (!targetFiles.isEmpty()) {
 			for (IFile targetFile : targetFiles) {
@@ -88,5 +90,7 @@ public abstract class LLVMOperation implements ICoreRunnable {
 				sb = new StringBuilder();
 			}
 		}
+
+		outputMonitor.addContent(sb.toString());
 	}
 }

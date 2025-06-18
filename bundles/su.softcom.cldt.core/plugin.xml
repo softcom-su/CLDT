@@ -144,7 +144,7 @@
        point="su.softcom.cldt.core.analyzisTool">
     <analyzisTool
           class="su.softcom.cldt.core.operations.CLangStaticAnalysisTool"></analyzisTool>
-           <analyzisTool
+    <analyzisTool
           class="su.softcom.cldt.core.operations.ClangTidyAnalysisTool"></analyzisTool>
  </extension>
  <extension
@@ -202,6 +202,15 @@
     <super
           type="org.eclipse.core.resources.problemmarker">
     </super>
+ </extension>
+ <extension
+ 	   id="su.softcom.cldt.core.marker.clangTidyMarker"
+ 	   name="Маркер Clang-Tidy"
+ 	   point="org.eclipse.core.resources.markers">
+	<super
+		 type="su.softcom.cldt.markers.llvm">
+	</super>
+	<persistent value="true"/>
  </extension>
   <extension
          point="org.eclipse.lsp4e.languageServer">

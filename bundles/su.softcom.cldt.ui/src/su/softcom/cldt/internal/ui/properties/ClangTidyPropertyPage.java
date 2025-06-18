@@ -15,35 +15,55 @@ import org.eclipse.jface.viewers.EditingSupport;
 import org.eclipse.jface.viewers.TableViewer;
 import org.eclipse.jface.viewers.TableViewerColumn;
 import org.eclipse.jface.viewers.TextCellEditor;
+import org.eclipse.jface.window.Window;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.events.FocusAdapter;
 import org.eclipse.swt.events.FocusEvent;
 import org.eclipse.swt.events.MouseAdapter;
 import org.eclipse.swt.events.MouseEvent;
-import org.eclipse.swt.events.TraverseEvent;
-import org.eclipse.swt.events.TraverseListener;
+import org.eclipse.swt.graphics.Font;
+import org.eclipse.swt.graphics.FontData;
 import org.eclipse.swt.graphics.Image;
 import org.eclipse.swt.layout.GridData;
 import org.eclipse.swt.layout.GridLayout;
+import org.eclipse.swt.widgets.Button;
 import org.eclipse.swt.widgets.Composite;
 import org.eclipse.swt.widgets.Control;
+import org.eclipse.swt.widgets.Label;
 import org.eclipse.swt.widgets.Table;
 import org.eclipse.swt.widgets.TableColumn;
 import org.eclipse.swt.widgets.Text;
 import org.eclipse.ui.IWorkbenchPropertyPage;
+import org.eclipse.ui.dialogs.PreferencesUtil;
 import org.osgi.service.prefs.BackingStoreException;
 
 import su.softcom.cldt.common.preferences.PreferenceConstants;
 import su.softcom.cldt.internal.ui.AddElementContentProvider;
 import su.softcom.cldt.internal.ui.AddElementLabelProvider;
+import su.softcom.cldt.ui.dialogs.ClangTidyChecksDialog;
 
+/**
+ * The page for clang-tidy settings.
+ */
 public final class ClangTidyPropertyPage extends AbstractPropertyPage implements IWorkbenchPropertyPage {
 
-	static Image IMAGE_OPT = getResourceManager().createImage(createImageDescriptor("option.png")); //$NON-NLS-1$
-	static final Image IMAGE_ADD = getResourceManager().createImage(createImageDescriptor("add.png")); //$NON-NLS-1$
-	private Map<String, String> parameters;
-	private List<String> keys = new ArrayList<String>();
+	protected static final Image IMAGE_OPT = getResourceManager().createImage(createImageDescriptor("option.png")); //$NON-NLS-1$
+	protected static final Image IMAGE_ADD = getResourceManager().createImage(createImageDescriptor("add.png")); //$NON-NLS-1$
+	protected static final String USE_GLOBAL_CHECKS = "Глобальные для всех проектов";
+	protected static final String USE_LOCAL_CHECKS = "Установлены для этого проекта";
+	protected static final String CHECKS = "checks"; //$NON-NLS-1$
+	protected static final String PREFERENCES_PAGE = "su.softcom.cldt.internal.ui.preferences.ClangTidyChecksPreferences"; //$NON-NLS-1$
 
+	private Map<String, String> parameters;
+	private List<String> keys = new ArrayList<>();
+
+	private Button resetButton;
+	private Button globalChecksButton;
+	private Button projectChecksButton;
+
+	/**
+	 * Creates a new instance of ClangTidyPropertyPage.
+	 */
 	public ClangTidyPropertyPage() {
 		super();
 	}
@@ -62,14 +82,33 @@ public final class ClangTidyPropertyPage extends AbstractPropertyPage implements
 	}
 
 	@Override
+	public boolean performOk() {
+		try {
+			store.clear();
+			for (Map.Entry<String, String> entry : parameters.entrySet()) {
+				store.put(entry.getKey(), entry.getValue());
+			}
+
+			store.flush();
+		} catch (BackingStoreException e) {
+			e.printStackTrace();
+		}
+
+		return true;
+	}
+
+	@Override
 	protected Control createContents(Composite parent) {
-		parent.setLayout(new GridLayout(1, false));
 		noDefaultButton();
+
 		Composite common = new Composite(parent, SWT.None);
 		common.setLayout(new GridLayout(1, false));
 		common.setLayoutData(new GridData(SWT.FILL, SWT.FILL, true, true));
 
+		createTopPanel(common);
+
 		TableViewer tableViewer = createTable(common);
+
 		initTable(tableViewer);
 		Table table = tableViewer.getTable();
 		packColumns(table);
@@ -82,10 +121,75 @@ public final class ClangTidyPropertyPage extends AbstractPropertyPage implements
 		return common;
 	}
 
+	private void createTopPanel(Composite parent) {
+		Composite topPanel = new Composite(parent, SWT.NONE);
+		GridLayout topPanelLayout = new GridLayout(2, false);
+		topPanelLayout.horizontalSpacing = 10;
+		topPanel.setLayout(topPanelLayout);
+
+		topPanel.setLayoutData(new GridData(SWT.FILL, SWT.TOP, true, false));
+
+		Composite checksInformation = new Composite(topPanel, SWT.NONE);
+		checksInformation.setLayout(new GridLayout(2, false));
+		checksInformation.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, true, false));
+
+		Label checksLabel = new Label(checksInformation, SWT.NONE);
+		checksLabel.setText("Проверки:");
+		FontData[] fontData = checksLabel.getFont().getFontData();
+		fontData[0].setStyle(SWT.BOLD);
+		checksLabel.setFont(new Font(checksLabel.getDisplay(), fontData));
+
+		Label statusLabel = new Label(checksInformation, SWT.NONE);
+		statusLabel.setText(isUsingProjectSettings() ? USE_LOCAL_CHECKS : USE_GLOBAL_CHECKS);
+		statusLabel.setLayoutData(new GridData(SWT.LEFT, SWT.BOTTOM, true, false));
+		GridData statusGridData = new GridData(SWT.FILL, SWT.CENTER, true, false);
+		statusGridData.widthHint = 250;
+		statusLabel.setLayoutData(statusGridData);
+
+		Composite buttonPanel = new Composite(topPanel, SWT.NONE);
+		buttonPanel.setLayout(new GridLayout(1, false));
+		buttonPanel.setLayoutData(new GridData(SWT.RIGHT, SWT.TOP, false, false));
+
+		resetButton = new Button(buttonPanel, SWT.PUSH);
+		resetButton.setText("Сброс");
+		resetButton.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, false, false));
+		resetButton.addListener(SWT.Selection, e -> {
+			resetToGlobalSettings();
+			statusLabel.setText(USE_GLOBAL_CHECKS);
+			updateButtonsState();
+		});
+
+		globalChecksButton = new Button(buttonPanel, SWT.PUSH);
+		globalChecksButton.setText("Редактировать глобальные проверки");
+		globalChecksButton.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, false, false));
+		globalChecksButton.addListener(SWT.Selection,
+				e -> PreferencesUtil.createPreferenceDialogOn(getShell(), PREFERENCES_PAGE, null, null) // $NON-NLS-1$
+						.open());
+
+		projectChecksButton = new Button(buttonPanel, SWT.PUSH);
+		projectChecksButton.setText("Выбрать для этого проекта");
+		projectChecksButton.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, false, false));
+		projectChecksButton.addListener(SWT.Selection, e -> {
+			ClangTidyChecksDialog dialog = new ClangTidyChecksDialog(getShell(), parameters.getOrDefault(CHECKS, ""));
+
+			if (dialog.open() == Window.OK) {
+				parameters.remove(CHECKS);
+				parameters.put(CHECKS, dialog.getSelectedChecksAsString());
+				statusLabel.setText(USE_LOCAL_CHECKS);
+				updateButtonsState();
+			}
+		});
+
+		updateButtonsState();
+	}
+
 	private TableViewer createTable(Composite parent) {
 		Composite tableComposite = new Composite(parent, parent.getStyle());
 		tableComposite.setLayout(new GridLayout(1, false));
 		tableComposite.setLayoutData(new GridData(SWT.FILL, SWT.FILL, true, true));
+
+		Label label = new Label(tableComposite, SWT.NONE);
+		label.setText("Дополнительные параметры");
 
 		TableViewer tableViewer = new TableViewer(tableComposite,
 				SWT.BORDER | SWT.H_SCROLL | SWT.V_SCROLL | SWT.MULTI | SWT.FULL_SELECTION);
@@ -152,7 +256,7 @@ public final class ClangTidyPropertyPage extends AbstractPropertyPage implements
 							keys.add(newName);
 						}
 
-						createValueText(table, parameters.size() - 1, newName, tableViewer);
+						createValueText(table, keys.size() - 1, newName, tableViewer);
 					}
 				}
 
@@ -191,22 +295,6 @@ public final class ClangTidyPropertyPage extends AbstractPropertyPage implements
 		return tableViewer;
 	}
 
-	@Override
-	public boolean performOk() {
-		try {
-			store.clear();
-			for (Map.Entry<String, String> entry : parameters.entrySet()) {
-				store.put(entry.getKey(), entry.getValue());
-			}
-
-			store.flush();
-		} catch (BackingStoreException e) {
-			e.printStackTrace();
-		}
-
-		return true;
-	}
-
 	private void createValueText(Composite parent, int index, String name, TableViewer tableViewer) {
 		Text valueText = new Text(parent, SWT.BORDER);
 
@@ -234,16 +322,13 @@ public final class ClangTidyPropertyPage extends AbstractPropertyPage implements
 			}
 		});
 
-		valueText.addTraverseListener(new TraverseListener() {
-			@Override
-			public void keyTraversed(TraverseEvent e) {
-				if (e.detail == SWT.TRAVERSE_RETURN) {
-					String value = valueText.getText();
-					parameters.put(name, value);
-					valueText.dispose();
-					tableViewer.refresh();
-					setValid(validatePage());
-				}
+		valueText.addTraverseListener(e -> {
+			if (e.detail == SWT.TRAVERSE_RETURN) {
+				String value = valueText.getText();
+				parameters.put(name, value);
+				valueText.dispose();
+				tableViewer.refresh();
+				setValid(validatePage());
 			}
 		});
 
@@ -259,6 +344,7 @@ public final class ClangTidyPropertyPage extends AbstractPropertyPage implements
 	}
 
 	private Map<String, String> getClangTidyParameters() {
+		System.out.println("SETTING PARAMS");
 		Map<String, String> clangTidyParams = new HashMap<>();
 
 		try {
@@ -266,9 +352,12 @@ public final class ClangTidyPropertyPage extends AbstractPropertyPage implements
 			for (String key : storeKeys) {
 				String value = store.get(key, ""); //$NON-NLS-1$
 				clangTidyParams.put(key, value);
-				keys.add(key);
+				if (!key.equals(CHECKS)) {
+					keys.add(key);
+				}
 			}
 		} catch (BackingStoreException e) {
+			System.out.println("SETTING ERROR");
 			e.printStackTrace();
 		}
 
@@ -287,6 +376,11 @@ public final class ClangTidyPropertyPage extends AbstractPropertyPage implements
 	}
 
 	private boolean validatePage() {
+		if (keys.contains(CHECKS)) {
+			setErrorMessage("Не указывайте проверки вручную. Используйте \"Выбрать для этого проекта\"");
+			return false;
+		}
+
 		for (var entry : parameters.entrySet()) {
 			String parameterName = entry.getKey();
 			String parameterValue = entry.getValue();
@@ -294,7 +388,7 @@ public final class ClangTidyPropertyPage extends AbstractPropertyPage implements
 			boolean isBlankValue = parameterValue.isBlank();
 
 			if (isBlankValue) {
-				setErrorMessage("Укажите параметр %s.".formatted(parameterName)); //$NON-NLS-1$
+				setErrorMessage("Укажите параметр %s.".formatted(parameterName));
 				return false;
 			}
 		}
@@ -302,5 +396,20 @@ public final class ClangTidyPropertyPage extends AbstractPropertyPage implements
 		setMessage(null);
 		setErrorMessage(null);
 		return true;
+	}
+
+	private boolean isUsingProjectSettings() {
+		return parameters.getOrDefault(CHECKS, null) != null;
+	}
+
+	private void resetToGlobalSettings() {
+		parameters.remove(CHECKS);
+	}
+
+	private void updateButtonsState() {
+		boolean usingProjectSettings = isUsingProjectSettings();
+		globalChecksButton.setEnabled(!usingProjectSettings);
+		projectChecksButton.setEnabled(true);
+		resetButton.setEnabled(usingProjectSettings);
 	}
 }

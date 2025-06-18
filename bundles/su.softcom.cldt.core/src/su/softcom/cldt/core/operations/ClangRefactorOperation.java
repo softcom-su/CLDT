@@ -34,7 +34,6 @@ public class ClangRefactorOperation extends LLVMOperation {
 	 * 
 	 * @param project
 	 * @param files
-	 * @param outputConsole
 	 * @param args
 	 * @param marker
 	 */
@@ -47,11 +46,14 @@ public class ClangRefactorOperation extends LLVMOperation {
 		configure(files, localArgs);
 		parser = new ClangRefactorOutputParser();
 		outputMonitor.addListener(parser);
+
 	}
 
 	@Override
 	public void run(IProgressMonitor monitor) throws CoreException {
 		super.run(monitor);
+
+		outputMonitor.flushOutStream();
 		outputMonitor.removeListener(parser);
 		String clangRefactorOutput = parser.sb.toString();
 
@@ -64,12 +66,15 @@ public class ClangRefactorOperation extends LLVMOperation {
 
 		boolean inplaceEdit = arguments.contains("-i"); //$NON-NLS-1$
 		if (!inplaceEdit) {
+
 			InputStream refactoredContent = new ByteArrayInputStream(clangRefactorOutput.getBytes());
 			file.setContents(refactoredContent, IResource.FORCE, monitor);
 		}
 		if (marker != null && marker.exists()) {
 			marker.delete();
 		}
+
+		marker.getResource().touch(monitor);
 	}
 
 	public Object getStatus() {
